@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>PogRomcy_Danych_NSS</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>PogRomcy_Danych_NSS</h1>
+
+<h1>1. Wstęp</h1>
+
+<p>Z badań przeprowadzonych przez zespół Na Straży Sondaży w 2014 r. wynika, że 95%
+Polaków nie wie jak powstają sondaże!</p>
+
+<h3>Wykres słupkowy</h3>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAjVBMVEX9/v0AAAAAACoAAFQAKlQAKn8AVX8AVakA/wAqAAAqACoqAFQqKgAqKioqKlQqKn8qf38qf9NUAABUACpUAFRUKgBUKn9UVQBUqalUqf1/KgB/Kip/VQB/fyp/f6l/qX9/1NN/1P2pVQCpVVSpqVSp1H+p/v3TfyrT/v39qVT91H/9/qn9/tP9/v3/AABEsfUxAAAAL3RSTlP///////////////////////////////////////////////////////////8A/+SDKggAAAAJcEhZcwAACxIAAAsSAdLdfvwAAA45SURBVHic7Z1xVxqJHUV3klrrpm0Wk90Wt01XswUFpt//43VmAEXj6wEelnn53fvH7hjzIN7LwODxJD+0UJIfzv0HgPNA+KIQviiELwrhi0L4ohC+KIQvCuGLQviiEL4ohC8K4YtC+KIQviiELwrhi0L4ohC+KIQvCuGLQviiEL4ohC9K5fDL6/ezc/8ZzsZ3F3553TQX9/qzO597Ct+Npm27uuk/fryBZ7d01zT9J1c3TXM5/MLi6nL7melbfB1vzfcWvq+1bfPqp199UHSr7teH8I838OyW7vrj7rN321+7237qoSH8GFhcXdyvz+R5l2gynMa/P52tf+/Dd62ad7fD/4bfso48WYd/vIGnW+o//+62m08XV+9n/a91x39Zh19cEX4UdCHWHYZzs4vT59496Guu//+wOYvb4Un/b33OoffmBh4P2vXDqb17d/vQ1+7+v/p1fdg/Vv5J+DEw5B36def05kSddCf3xX1/tnZPA+un+s2pPN9E6z7899VkCL+9gaeDDQ/DY2WyfVF/2DzjT+eEHwd3Q691ly7K6mZ4BPTRLrev8f053yd9vEDrHwd3734bLu42N7B70POwfnV4Hr7/mPCjoX+S3gk/XLHthO9floei66v4nj788vqP249febqf993b7VN9uz7cvHroa8kR872Fnw9p+suwx6f6TfjHp/p5d5puPtieq8Mz/3x4NGxv4OlgfbPDY2J7cdcSfmw8ns5PF3eb8I8Xd+ur+fez9W8dog0xu9+wvrjbXiXsXvwNm+nT27nNa3zb8lQ/Evpew3Px09u5dfjh/PypP+jqTeb9Vdnz8F3L9Qv/5gYeD9rNO7+u8NM3cAgPkRC+KIQvCuGLQviiEL4ohC8K4YtC+KIQviiELwrhi0L4ohC+KIQvCuGLQviiEL4ohC8K4YtC+KIQviiELwrhNU0YB31xhNc0/4mC8KeC8EUhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxRCF8UwheF8EUhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxRCF8UwheF8EUhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxR6oZfXjcX98PR4qrZ/lvrdSgbfnUzbefrf23502073zwG6lA2/PLzrF186E/0xcf74aNalA0/5P7U/wvqz8/44/5itTzKhn+42IbfebXfFXOYxzjKhn864xc/3rYP31zdEX5UvMVr/M65vyvmUJNhlA2/uplsruo54wM4+fv4/qR/aJp3L094wo+L03/n7qt4H0f4UXHy8KsvSsxB95RH9fBajLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNgPBKjLFNoG745XVzcT8crW6ad7ffiDnonvIoG351M23nl8Ph3bR92DwGdsQc5jGOsuGXn2ft4sNsc/SKmIPuKY+y4Rcf79vlp9vh6B87T/XNliOFplA2fP/kvgl/NR0eBi/EHGoyjLLhd8/47dEzMYeaDKNs+J3X+F8IP3pOeVU/2bmq56l+5Jz8fXx/0ndH77+5sCf8qDj9d+6+vvZeriX8yDh5+NUXJeage8qjengtxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmQHglxtgmUDf88rq5uN8cr26m34g56J7yKBu+bz2/3Hwwbwg/bk4Xfvl51i4+zIbjxV9/Jvy4OV34xcf7dvnptj9c/frb01N9s+U4nzGUDf9w8Rh+PuE1fuy8xRnfHRF+7LzFa/x8eGafvBRzqMkwyoZf3Uyeruo548fOyd/Hr096wo+d03/n7utMiDnonvKoHn71RYk56J7yqB5eizG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CRBeiTG2CdQNv7xuLu6Ho8VV00y/EXPQPeVRNvzqZtrOL/uj5afbdvHj7UsxB4pMo2z45edZu/gw644e+vx3L095wo+K04VffLwfzvU1T0fNlmNsBlE2/MPFTvjVzeQbMQfdUx5lw++e8cvrb7oTfly8xWt8d1X/zTU94UfGKa/qJ5ur+le7E35cnPx9fHfSz4drOa7qR83pv3P3dSbEHHRPeVQPv/qixBx0T3lUD6/FGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EGNsECK/EvPgwiz2+vnOnPIzzhf9TEoQ/HsKPCsLvBeGPh/CjgvB7QfjjIfyoIPxeEP54CD8qCL8XhD8ewo8Kwu8F4Y+H8KOC8HtB+OMh/Kgg/F4Q/ngIPyoIvxeEPx7CjwrC7wXhj4fwo4Lwe0H44yH8qCD8XhD+eAg/Kgi/F4Q/HsKPCsLvBeGPh/CjgvB7QfjjIfyoIPxeEP54CD8qCL8XhD8ewo8Kwu8F4Y+H8KPihOGX183F/YujXTEvPjx3y4MgvGZ1M23nl8+PCD9aThd++XnWLj7Mnh0RfrScLvzi4327/HT77GgQ8vpfFXfGv7PuGPYIH8bJwj9cbHM/HcF3wjFnPHwHOK/xEMz/vqqfPF7VT165qodg9ngf35/qr76Ph2D2+c7dV57jvz/2CL/68vZ/DPh/43yvHoIhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxRCF8UwheF8EUhfFFGGn51M/zc6PaHP1a/5v+83+Jq2v/3w2wcP8M20vBt++xn/L6P8O9n7Xh+cnHs4RdXTTPtw69uwn/2a/Hh98vHM3553bw/7yNg5OH7n+nuDrrwd5Nz/4FMui/jbroNf3f2H14defie5ecu/J/Tu/dfz/KX+3X4/vHc/8j6GRl9+Lume1Jc3fz0S/YT/frrmU824a+7K9d3Z71uGXn45fV081Q/Tz/l+69n9eu/1uHPe7b3jDx8/5/Fj7f9xV36hf366+ku7Tev8Q/nvVgdefh23jR/+HnaVx/NG6Ej2Xw977dX9ed9ph9xeHhTCF8UwheF8EUhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxRCF8UwheF8EUhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxRCF8UwheF8EUhfFEIXxTCF4XwRSF8UQhfFMIXhfBFIXxRCF8UwheF8EUhfFEIXxTCF4XwRSF8UQhfFMIX5b/fIde68KnWFgAAAABJRU5ErkJggg==" alt="plot of chunk unnamed-chunk-1"/> </p>
+
+<h3>&ldquo;Placek&rdquo;</h3>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-2"/> </p>
+
+<p>Jak interpretować ten wynik? Co on oznacza? Odpowiedź jest prosta. Praktycznie nic, bo ta informacja nie ma żadnej wartości. Dlaczego? Nie tylko dlatego, że jest zmyślona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedziałem dokładnie kiedy zorganizowano badanie, jaką techniką je przeprowadzono (telefonicznie czy bezpośrednio), jak zadano pytanie - co to znaczy, że ktoś wie jak powstają sondaże, a także nie zdefiniowałem kim są Polacy - czy są to obywatele, czy mieszkańcy Polski, w jakim byli wieku. Nie podałem również jakim błędem mogą być obarczone wyniki (tzw. błąd statystyczny), ani ile osób wzięło udział w badaniu. Codziennie w prasie i innych mediach pojawiają się podobne “dane sondażowe”. Czy mają one jakąkolwiek wartość? Czy można im zaufać? Jak odróżnić “dobry” sondaż od “złego”.
+Na te oraz inne pytania postaramy się udzielić odpowiedzi w trakcie naszego kursu. Pokażemy na czym polega sondaż, z jakich elementów się składa, jakie są jago ograniczenia - czego nie powie nam nawet najlepsze badanie. Zaczniemy od przykładów łatwych, a skończymy na bardziej zaawansowanych próbując wcielić się na chwilę w rolę “sondażyst”. W imieniu zespołu Na Straży Sondaży zapraszamy do odkrywania niezwykłych możliwości, ale także pewnych ograniczeń metody zwanej reprezentacyjną, metody która stoi za wszystkimi sondażami.</p>
+
+<p><strong>Zadania 1:</strong>  </p>
+
+<ol>
+<li>Wymień trzy artykuły prasowe z 2014 r., w których powołano się na wyniki badań społecznych (sondaży). Jeżeli w artykule podano taką informację to napisz ile osób brało udział w badaniu (ewentualnie ile firm lub innych instytucji jeżeli badanie nie dotyczyło postaw ludzi)</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>L.p.</th>
+<th>Tytuł artykułu</th>
+<th>Link do strony z artykułem</th>
+<th>Czy podano wielkość próby? Zapisz ją jeżeli została podana</th>
+<th>Czy podano dokładną datę realizacji badania? Jaką?</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1.</td>
+<td>Content Cell</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Content Cell</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Content Cell</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h1>2. Metoda reprezentacyjna</h1>
+
+<p>Na pierwszy rzut oka badanie sondażowe, badanie na próbie, może się wydawać zadaniem karkołomnym. Oto na podstawie niewielkiej liczby obserwacji np. 1000 respondentów, staramy się opisać dużo większą, czasami nawet o kilka rzędów, populację. Czy ma to jakikolwiek sens? Czy da się wyznaczyć na tej podstawie przeciętną wagę, wzrost, miesięczne wydatki, liczbę przeczytanych książek albo czas spędzany dziennie na facebooku przez dorosłych mieszkańców Polski. Trzeba wiedzieć, że oficjalnie mieszka około 31 mln ludzi w wieku 18 i więcej lat. W tej sytuacji 1000 osób stanowi w zaokrągleniu trzy dziesięciotysięczne PROCENTA populacji (1 000 /31 000 000 = 0,000032)!!! To bardzo mało. Trudno uwierzyć, że taka garstka obserwacji może dostarczyć nam wiarygodnych informacji o całej badanej zbiorowości. Dla porównania zastanówmy się, czy na podstawie jednego kilometra drogi da się powiedzieć, jak będzie wyglądała cała podróż mierząca 300 000 km (Ziemia w obwodzie liczy tylko 40 000 km). Na pierwszy rzut oka nie. Okazuje się jednak, że nauka, pod postacią statystyki, daje nam pewne narzędzia, które pozwalają trafnie wnioskować o dużych “obiektach” nawet na podstawie ich niewielkiego wycinka. W przypadku podróży kluczem do sukcesu byłoby umiejętne wybranie takich małych odcinków z całej drogi, które ułożą się w próbny kilometr.
+Statystycy i badacze społeczni wiedzą doskonale, że dobrze dobrana próba stanowi świetny opis całej populacji. Jak to możliwe? Co trzeba zrobić, żeby przy użyciu małego kamyka dowiedzieć się czegoś o wielkiej &ldquo;górze&rdquo;?</p>
+
+<p><strong>Zadania 2:</strong>      </p>
+
+<ol>
+<li>Wymień trzy badania na próbach przeprowadzone przez instytucje państwowe  i podaj link do ich wyników lub raportu. Mogą to być badania z roku 2014, ale także wcześniejszych lat. </li>
+</ol>
+
+<table><thead>
+<tr>
+<th>L.p.</th>
+<th>Nazwa instytucji</th>
+<th>Tytuł badania</th>
+<th>Link do strony z raportem</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1.</td>
+<td>Content Cell</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Content Cell</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Content Cell</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h1>3. Przykłady prób</h1>
+
+<p>Zacznijmy od naszych codziennych doświadczeń. Wbrew pozorom większość naszej wiedzy o świecie czerpiemy z prób. I nie chodzi tu o metodę prób i błędów. Przyjrzyjmy się naszemu zdrowiu. Czasami zdarza się, że lekarz każe nam zrobić badanie krwi. Ale czy to oznacza, że trzeba zbadać całą krew w organizmie, wszystkie komórki? Na szczęście nie. Wystarczy mała próbka. Lekarz pobiera od nas zaledwie 10 ml krwi. W całym organizmie mamy jej aż 4,5l (4500ml). Tak więc próba stanowi 1/450. całej objętości krwi. To bardzo bardzo mało. Mimo to lekarz potrafi określić, co dzieje się w całym organizmie, a nie tylko w pobranej próbce. 
+Weźmy inny, mniej dramatyczny przykład. Wyobraźmy sobie, że chcemy ugotować zupę i lubimy, gdy jest ona odpowiednio słona. Jak to sprawdzamy? Czy musimy wypić całą zupę z garnka? Absolutnie nie. Wystarczy jedna łyżeczka, która zawiera 15ml zupy i stanowi zaledwie 3/1000 pięciolitrowego garnka. Znowu dobraliśmy niewielką próbkę, żeby zbadać większą całość. Ale przypadek zupy jest szczególny. Żeby przekonać się, czy zupa jest odpowiednio słona, musimy ją najpierw dobrze WYMIESZAĆ. Tylko wtedy proporcja soli w łyżce zupy, będzie taka sama jak proporcja w całym garnku - łyżka zupy będzie dobrze reprezentować całą zupę. Kluczową kwestią jest więc REPREZENTATYWNOŚĆ PRÓBY.  Na pewno niektórzy słyszeli już to pojęcie. Zapamiętajmy je na chwilę, chociaż później będziemy musieli z niego zrezygnować. Reprezentatywność można rozumieć na różne sposoby. Często mówi się, że tak jak w przypadku łyżki zupy, próba musi być “miniaturą” populacji. Innymi słowy powinna odtwarzać strukturę i zależności obserwowane w całej zbiorowości. W przypadku badania krwi lub zupy brzmi to sensownie. Zauważmy jednak, że badane substancje są “jednorodne”. Każda porcja zupy czy krwi jest właściwie identyczna (dla uproszczenia, bo specjaliści z pewnością powiedzą, że to nie jest takie proste). A co jeśli badana zbiorowość nie jest i nie może być jednorodna? To problem, z którym bardzo często mierzą się nauki społeczne.</p>
+
+<p><strong>Zadania 3:</strong>      </p>
+
+<ol>
+<li>Podaj przykład z życia codziennego badania na próbie (np. badanie ilości soli w zupie). </li>
+</ol>
+
+<table><thead>
+<tr>
+<th>L.p.</th>
+<th>Czego dotyczy badanie?</th>
+<th>Co jest próbą?</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1.</td>
+<td>Opis badania</td>
+<td>Opis próby</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Opis badania</td>
+<td>Opis próby</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Opis badania</td>
+<td>Opis próby</td>
+</tr>
+</tbody></table>
+
+<h1>4. Sondaż</h1>
+
+<p>Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki często pojawiają się w prasie i mają duże znaczenie dla polityków oraz pewnie trochę mniejsze dla wyborców.  Wyobraźmy sobie, że chcemy zmierzyć poziom poparcia dla wybranej partii P w wyborach do parlamentu. Dla naszych celów odsłońmy kilka faktów dotyczących badanej zbiorowości:</p>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Nie biorę udziały w wyborach</th>
+<th>NIE</th>
+<th>Tak</th>
+<th>Razem</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Miasto</td>
+<td>30</td>
+<td>5</td>
+<td>25</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Wies</td>
+<td>20</td>
+<td>10</td>
+<td>10</td>
+<td>40</td>
+</tr>
+<tr>
+<td>RAZEM</td>
+<td>50</td>
+<td>15</td>
+<td>35</td>
+<td>100</td>
+</tr>
+</tbody></table>
+
+<p>W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą poparcie dla partii P (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię P, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię P stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. </p>
+
+<p>Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię P?
+I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na partię P (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
+Żeby przeprowadzić nasz polityczny sondaż musimy zrealizować badanie zarówno na wsi jak i w mieście. Każda osoba należąca do populacji musi mieć szansę znalezienia się w próbie. To bardzo ważne. Sposób dobierania próby, zwany schematem, nie może uniemożliwiać nikomu znalezienia się w próbie. 
+W dalszej części kursu pokażemy jak prawidłowo zdefiniować populację, jak błędy w kwestionariuszu mogą wpłynąć na zachowanie respondentów, jak dobrać, a dokładnie wylosować próbę reprezentatywną, </p>
+
+<p><strong>Zadania 4:</strong>      </p>
+
+<ol>
+<li>Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?</li>
+<li>Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poniższe pytania:<br/>
+a. Jaki procent mieszkańców wsi popiera partię P?<br/>
+b. Jaki procent mieszkańców miasta nie pójdzie na wybory?<br/>
+c. Jaki procent osób które nie popierają partii P mieszka w mieście?</li>
+</ol>
+
+<h1>5. Problem badawczy: populacja i próba</h1>
+
+<p>W reprezentacyjnych badaniach sondażowych kluczowymi terminami są <strong>populacja</strong> i <strong>próba</strong>.
+Populacja jest to zbiorowość, o której badacz chce zdobyć informacje na podstawie sondażu. Przykładami populacji mogą być  mieszkańcy Krakowa, Gdyni, uczniowie wszystkich szkół gimnazjalnych lub pełnoletni mieszkańcy Polski, nie tylko obywatele.
+Próba jest to zbiór jednostek wybranych z populacji, o której badacz chce zdobyć informacje. Problem ze zdefiniowaniem tych dwóch pojęć dobrze ilustruje przykład z historii.  W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadził w USA badanie przedwyborcze. Do ludzi wybranych z książek telefonicznych i list rejestracyjnych samochodów wysłano DZIESIĘĆ MILIONÓW kart pocztowych, pytając, na kogo zamierzają oddać głos w wyborach prezydenckich – na republikanina Alfa Landona czy demokratę Franklina Roosevelta? Odpowiedziało ponad dwa miliony ludzi, wskazując że nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mogłoby się wydawać, że przebadanie tylu osób jest dużo bardziej wiarygodne i miarodajne niż przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory dość drastycznie zweryfikowały wnioski z tych badań – nowym prezydentem został Franklin Roosevelt, mając największą przewagę głosów w historii – otrzymał 61%.
+Dla porównania w tym samym czasie przedwyborczy sondaż, przeprowadził również  George Gallup, który trafnie przewidział wyniki wyborów. W swoim badaniu posłużył się on jednak niewielką próbą kwotową (czyli opartą na znajomości określonych cech populacji, np. płeć, dochód, wiek, miejsce zamieszkania itp.).
+Na czym więc polegał problem? Na całkowitym braku kontroli nad badaną próbą. Na pytanie zadane przez „Literary Digest” odpowiedziało zaledwie 22% wszystkich zapytanych osób. Jak się okazało karty w większości odsyłali republikanie. Drugi problem polegał na nieprawidłowym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i właścicieli samochodów. Taka konstrukcja próby dawała nadreprezentację zamożnych wyborców, czyli pominięcie ludzi biednych, którzy w większości głosowali na „New deal” Roosevelta. 
+Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Analizując wyniki badań sondażowych należy zawsze zwracać uwagę na sposób definiowania populacji. Definicja zbiorowości generalnej powinna zawierać informacje o: </p>
+
+<ul>
+<li>położeniu w przestrzeni zbiorowości (mieszkańcy Polski, mieszkańcy Poznania itp.)<br/></li>
+<li>wieku respondentów (pełnoletni Polacy, osoby w wieku 15 i więcej ukończonych lat itp.)<br/></li>
+<li>inne cechy (osoby posiadające obywatelstwo polskie, osoby z wykształceniem wyższym itp.)</li>
+</ul>
+
+<p><strong>Zadania 5:</strong>      </p>
+
+<ol>
+<li>Wymień trzy firmy zajmujące się badaniem rynku i opinii społecznej, które w 2014 r. prowadziły badania sondażowe w Polsce i podaj link do strony z raportami badawczymi tej firmy: </li>
+</ol>
+
+<table><thead>
+<tr>
+<th>L.p.</th>
+<th>Nazwa firmy badawczej</th>
+<th>Link do strony z raportem?</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1.</td>
+<td>Nazwa firmy</td>
+<td>Raport</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Nazwa firmy</td>
+<td>Raport</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Nazwa firmy</td>
+<td>Raport</td>
+</tr>
+</tbody></table>
+
+<ol>
+<li>Masz następujący problem badawczy. Musisz zbadać poziom czytelnictwa tygodnika Na Straży Sondaży. Ukazuje się wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.<br/>
+a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoś staje się czytelnikiem? Jak często trzeba czytać żeby stać się czytelnikiem? Ile trzeba przeczytać żeby stać się czytelnikiem?)<br/>
+b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojwódzkich czy także w innych miejscach?)<br/>
+c. Zapisz pytanie o czytelnictwo (maksymalnie dwa zdania):&hellip;&hellip;..<br/>
+d. Czy twoim zdaniem pytanie o czytelnictwo może być uznane za drażliwe?</li>
+<li>W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI - Computer Assisted Telephone Interview) na ogólnopolskiej, reprezentatywnej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.<br/>
+a. Zdefiniuj badaną populację.
+b. Podaj liczbę uczniów klas 1-3 w Polsce w 2013 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2013 r. lub dla późniejszej daty przed końcem 2013 r.)
+c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie
+d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.</li>
+</ol>
+
+<h1>6. Kwestionariusz</h1>
+
+<p><em>Dlaczego dziennikarze powinni informować o sposobie zadania pytania (z przytoczeniem dokładnego jego brzmienia, ale to oddzielny temat) pokazuje klasyczne już badanie opisywane przez Schumana [3], zrealizowane w 1986 roku w Stanach Zjednoczonych. Badacze z Uniwersytetu Michigan zapytali o najważniejsze wydarzenia lub zmiany, jakie zaszły w ostatnich 50 latach i wydają się respondentom najbardziej istotne. Połowa ankietowanych miała do dyspozycji kafeterię: II wojna światowa, podbój kosmosu, zabójstwo J. F. Kennedy’ego, wynalezienie komputera, wojna w Wietnamie, inne, nie wiem. Druga połowa otrzymała pytanie otwarte, a więc sama proponowała odpowiedzi. Wśród tej grupy wynalezienie komputera zostało wskazane jako najbardziej istotne wydarzenie lub zmiana przez 1% badanych, podczas gdy w pierwszej połowie ankietowanych była to najczęściej wybierana odpowiedź (30%). Tak ogromna różnica wydaje się wystarczająco dobitnie pokazywać, jakie znaczenie ma forma zadanego pytania.</em> </p>
+
+<p><em>Badacze społeczni doskonale wiedzą, że umieszczanie jakiejkolwiek nazwy instytucji czy organizacji w treści pytania znacznie zniekształca wyniki. Jest to potwierdzone wieloma testami i badaniami socjologicznymi oraz psychologicznymi, a studia przypadków są szeroko opisywane w literaturze naukowej[2]. Formułowane pytania powinny odnosić się do rzeczywistości jak najbardziej neutralnie</em></p>
+
+<p><strong>Zadania 5:</strong>      </p>
+
+<ol>
+<li> Odpowiedz na pytania związane z następującym badaniem: Firmę Research.NK przygotowała w 2013 r. raport „Prezentacja treści seksualnych przez młodzież poprzez wideoczaty” dla Naukowej Akademickiej Sieci Komputerowej. Dane zostały zebrane od respondentów przez Internet. Próba liczyła 976 nastolatków - osób w wieku 13-16 lat. Spośród nich  528  zdeklarowało, że korzysta z wideo rozmów. W tej grupie 10 osób zadeklarowało, że  rozbiera się w sieci na żywo (Pytanie brzmiało: „Czy zdarzyło Ci się rozbierać się lub prezentować zachowania seksualne podczas wideorozmowy?” ). Wiadomo również, że w badaniu wzięło udział 157 szesnastolatków, z czego 96 z nich korzysta z wideo rozmów, a 5 deklaruje rozbieranie się w czasie . 
+a. Czy uważasz, że respondenci generalnie (a wiec przytłaczająca większość z nich) udzielali szczerych (zgodnych ze stanem faktycznym), odpowiedzi na pytanie o to, czy rozbierali się w trakcie wideoczatów - zarówno Ci którzy przyznali się do tego typu zachowań jak i ci którzy ich nie potwierdzili?<br/>
+  i. Tak - generalnie odpowiadali szczerze;<br/>
+  ii. Nie - generalnie odpowiadali nieszczerze;<br/>
+  iii. Nikt tego nie wie. Może część tak, a część nie.<br/>
+  iv. Jestem dzielna/y i napiszę jakie jest moje własne zdanie na ten temat : &hellip;<br/>
+b. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.
+  i. Tak, ponieważ &hellip;
+  ii. Nie. ponieważ &hellip;
+c. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.<br/>
+  i. Tak, ponieważ &hellip;<br/>
+  ii. Nie. ponieważ &hellip;<br/>
+d. Czy w badaniu przeprowadzonym przez internet byłabyś / byłbyś skłonny odpowiadać szczerze na pytania dotyczące seksualności, chorób intymnych lub łamania prawa? Dlaczego? (Pytania pomocnicze: zastanów się, czy ważna w tych kwestiach jest anonimowość i poufność danych, a także, czy w ogóle mówienie na ten temat sprawia Ci jakieś problemy):
+  i. Tak, ponieważ &hellip;<br/>
+  ii. Nie, ponieważ &hellip;<br/>
+e. Jaki procent nastolatków w powyższym badaniu zadeklarował, że korzysta z wideo rozmów i rozbiera się w ich trakcie?
+f. Jaki procent osób które zadeklarowały, że rozbierają się w trakcie wideoczatów do 16 latkowie?<br/>
+g. Jaki procent nastolatków, którzy korzystają z wideo rozmów zadeklarował, że się rozbiera w ich trakcie?<br/>
+h. Czy znając wyniki badania zgodziłabyś/zgodziłbyś się z następującymi określeniami:<br/>
+  i. „Nowa plaga w sieci. Rozbierają się na żywo” - TAK / NIE<br/>
+  ii. „Nagie gimnazjalistki w sieci. Nowa plaga w internecie” - TAK / NIE<br/>
+  iii. “Nowe zjawisko w internecie. Gizmazjaliści rozbierają się w sieci” - TAK / NIE<br/>
+  i.v “Uwaga na wideoczaty. Niektóre nastolatki występują nago”<br/></li>
+<li> Poniżej znajdują się dwa sondaże. Wypełnił je i odpowiedz na pytania:<br/>
+a. Sondaż 1:<br/>
+  i. Czy gdyby wybory odbyły się w najbliższą niedzielę to wziąłby(ęłaby) Pan(i) w nich udział?<br/>
+  ii. Jeżeli tak, to na jaką jedną partię odałby Pan(i) głos?<br/>
+    1. oddam pusty/nieważny głos;<br/>
+    2. partię P;<br/>
+    3. partię Przyjaciół Demokracji;<br/>
+    4. partię Przyjaciół Otwartości;<br/>
+    5. partię Przyjaciół Społeczeństwa;<br/>
+    6. partię Przyjaciół Środowiska;<br/>
+    7. partię Przyjaciół Uczciwości;<br/>
+b. Sondaż 2.
+  i. Proszę określić czy zgadza się Pan/Pani z następującymi stwierdzeniami:<br/>
+    1. Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć<br/>
+    2. ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze<br/>
+    3. Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu<br/>
+    4. każda rodzina powinna móc liczyć na wsparcie ze strony państwa.<br/>
+  ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii “P”, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin?<br/>
+  iii. Czy gdyby partia “P” brała udział w najbliższych wyborach do Sejmu to jaką jedną partię oddałby Pan(i) głos?
+oddam pusty/nieważny głos;
+    1. oddam pusty/nieważny głos;<br/>
+    2. partię P;<br/>
+    3. partię Przyjaciół Demokracji;<br/>
+    4. partię Przyjaciół Otwartości;<br/>
+    5. partię Przyjaciół Społeczeństwa;<br/>
+    6. partię Przyjaciół Środowiska;<br/>
+    7. partię Przyjaciół Uczciwości;<br/>
+c. Pytanie do sondaży 1. oraz 2.:<br/>
+  i. Czy w obu sondażach udzieliłaś/eś takiej samej odpowiedzi?<br/>
+  ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów?<br/></li>
+</ol>
+
+<h1>7. Dobór próby</h1>
+
+<p>Przejdź do najbardziej technicznej części sondażu, a wiec doboru próby i realizacji badania. W branży sondażowej korzysta się z różnych rozwiązań i nie zawsze są to próby losowe mimo iż wiadomo, że są one obarczone pewnymi błędami. Dlatego my zajmiemy się metodą reprezentatywną, a więc próbami losowymi. </p>
+
+<p>Wróćmy do naszej populacji, która pojawiła się w rozdziale 4. Sondaż. Załóżmy, że badana zbiorowość składa się z 20 osób wśród których preferencje i miejsce zamieszkania rozkładają się w następujący sposób (rozkład procentowy jest dokładnie taki jak w Tabeli 1. POPULACJA WYBORÓW (dane w procentach)):</p>
+
+<h3>Tabela 7.1. POPULACJA WYBORÓW (liczba obserwacji)</h3>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Nie biorę udziały w wyborach</th>
+<th>NIE</th>
+<th>Tak</th>
+<th>Razem</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Miasto</td>
+<td>6</td>
+<td>1</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Wies</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td>RAZEM</td>
+<td>10</td>
+<td>3</td>
+<td>7</td>
+<td>20</td>
+</tr>
+</tbody></table>
+
+<p>Z powyższej tabeli wynika, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii P deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. W załączonym pliku znajduje się lista zawierająca dane o wszystkich osobach należących do populacji:</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&amp;single=true">https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&amp;single=true</a></p>
+
+<p>Kolejne kolumny w pliku to:   </p>
+
+<ul>
+<li>L.p.- liczba porządkowa </li>
+<li>Miasto_wies - miejsce zamieszkania
+
+<ul>
+<li>M - miasto</li>
+<li>W - wieś</li>
+</ul></li>
+<li>Glosowanie - czy pójdziesz na wybory i na kogo zagłosujesz
+
+<ul>
+<li>-1 - nie pójdę na wybory</li>
+<li>0 - pójdę na wybory, ale NIE zagłosuję na partię P</li>
+<li>1 - pójdę na wybory i zagłosuję na partię P.</li>
+</ul></li>
+</ul>
+
+<p>Przejdźmy do badania sondażowego. Załóżmy, że chcemy oszacować nieznany nam odsetek obywateli nie pójdzie na wybory (na chwilę zapomnijmy, że wynosi on 50%). Interesują nas wartości -1 w kolumnie “Glosowanie”. la uproszczenia, losujemy dwie różne osoby spośród wszystkich 20 obywateli. Dobór próby przebiega wg. następującego schematu:</p>
+
+<ol>
+<li>Do próby losujemy jedną osobę spośród wszystkich 20. Każdy obywatel ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/20;<br/></li>
+<li>Spośród pozostałych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowości z której dobierany jest respondent każdy ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi on tym razem 1/19;<br/></li>
+<li>Otrzymujemy próbę, w której znajdują się dwie osoby. Poza próbą zostaje 18 obywateli.<br/></li>
+</ol>
+
+<p>Powyższy schamat losowania nazwiemy fachowo: losowaniem prostym bez zwracania 2 osób z populacji 20. Losowanie jest proste ponieważ na każdym etapie wszyscy obywatele pozostający w populacji mają takie samo prawdopodobieństwo dostania się do próby. Bez zwracania ponieważ po wylosowaniu jednej osoby do próby nie wraca ona do puli z której losujemy następną. Ten bardzo prosty schemat losowania próby pozwali nam przeanalizować pewne podstawowe zagadnienia związane z metodą reprezentacyją. Zastanówmy się przede wszystkim, jak będą wyglądały dobierane próby. Jako identyfikatora osób w próbie wykorzystamy liczby z kolumny L.p. z listy zawierającej wszystkich obywateli naszej populacji. Zapis (1,2) oznaczać będzie, że do próby wylosowano najpierw osobę o liczbie porządkowej 1, a następnie osobę o liczbie porządkowej 2. Próby możemy więc rozpisać wg. prostej reguły. Jeżeli do próby w pierwszym kroku dobierzemy osobę o liczbie porządkowej 1 to w drugim kroku do pary możemy dobrać osoby z liczbą 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), &hellip; lub (1,20). Jeżeli do próby w pierwszym kroku dobierzemy osobę o liczbie porządkowej 2 to w drugim kroku do pary możemy dobrać osoby z liczbą 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), &hellip; lub (2,20). Widzimy więc, że dla każdej z 20 osób w populacji możemy dobrać 19 różnych par. Łącznie możemy więc dobrać 20x19=380 dwuosobowych prób. Rozpiszmy je (<strong>poniższy fragment zostanie wygenerowany w R</strong>):<br/>
+(1,2); (1,3); (1,4); (1,5); (1,6); (1,7); (1,8); (1,9); (1,10); (1,11); (1,12); (1,13); (1,14); (1,15); (1,16); (1,17); (1,18); (1,19); (1,20); (2,1); (2,3); (2,4); (2,5); (2,6); (2,7); (2,8); (2,9); (2,10); (2,11); (2,12); (2,13); (2,14); (2,15); (2,16); (2,17); (2,18); (2,19); (2,20); (3,1); (3,2); (3,4); (3,5); (3,6); (3,7); (3,8); (3,9); (3,10); (3,11); (3,12); (3,13); (3,14); (3,15); (3,16); (3,17); (3,18); (3,19); (3,20); (4,1); (4,2); (4,3); (4,5); (4,6); (4,7); (4,8); (4,9); (4,10); (4,11); (4,12); (4,13); (4,14); (4,15); (4,16); (4,17); (4,18); (4,19); (4,20); (5,1); (5,2); (5,3); (5,4); (5,6); (5,7); (5,8); (5,9); (5,10); (5,11); (5,12); (5,13); (5,14); (5,15); (5,16); (5,17); (5,18); (5,19); (5,20); (6,1); (6,2); (6,3); (6,4); (6,5); (6,7); (6,8); (6,9); (6,10); (6,11); (6,12); (6,13); (6,14); (6,15); (6,16); (6,17); (6,18); (6,19); (6,20); (7,1); (7,2); (7,3); (7,4); (7,5); (7,6); (7,8); (7,9); (7,10); (7,11); (7,12); (7,13); (7,14); (7,15); (7,16); (7,17); (7,18); (7,19); (7,20); (8,1); (8,2); (8,3); (8,4); (8,5); (8,6); (8,7); (8,9); (8,10); (8,11); (8,12); (8,13); (8,14); (8,15); (8,16); (8,17); (8,18); (8,19); (8,20); (9,1); (9,2); (9,3); (9,4); (9,5); (9,6); (9,7); (9,8); (9,10); (9,11); (9,12); (9,13); (9,14); (9,15); (9,16); (9,17); (9,18); (9,19); (9,20); (10,1); (10,2); (10,3); (10,4); (10,5); (10,6); (10,7); (10,8); (10,9); (10,11); (10,12); (10,13); (10,14); (10,15); (10,16); (10,17); (10,18); (10,19); (10,20); (11,1); (11,2); (11,3); (11,4); (11,5); (11,6); (11,7); (11,8); (11,9); (11,10); (11,12); (11,13); (11,14); (11,15); (11,16); (11,17); (11,18); (11,19); (11,20); (12,1); (12,2); (12,3); (12,4); (12,5); (12,6); (12,7); (12,8); (12,9); (12,10); (12,11); (12,13); (12,14); (12,15); (12,16); (12,17); (12,18); (12,19); (12,20); (13,1); (13,2); (13,3); (13,4); (13,5); (13,6); (13,7); (13,8); (13,9); (13,10); (13,11); (13,12); (13,14); (13,15); (13,16); (13,17); (13,18); (13,19); (13,20); (14,1); (14,2); (14,3); (14,4); (14,5); (14,6); (14,7); (14,8); (14,9); (14,10); (14,11); (14,12); (14,13); (14,15); (14,16); (14,17); (14,18); (14,19); (14,20); (15,1); (15,2); (15,3); (15,4); (15,5); (15,6); (15,7); (15,8); (15,9); (15,10); (15,11); (15,12); (15,13); (15,14); (15,16); (15,17); (15,18); (15,19); (15,20); (16,1); (16,2); (16,3); (16,4); (16,5); (16,6); (16,7); (16,8); (16,9); (16,10); (16,11); (16,12); (16,13); (16,14); (16,15); (16,17); (16,18); (16,19); (16,20); (17,1); (17,2); (17,3); (17,4); (17,5); (17,6); (17,7); (17,8); (17,9); (17,10); (17,11); (17,12); (17,13); (17,14); (17,15); (17,16); (17,18); (17,19); (17,20); (18,1); (18,2); (18,3); (18,4); (18,5); (18,6); (18,7); (18,8); (18,9); (18,10); (18,11); (18,12); (18,13); (18,14); (18,15); (18,16); (18,17); (18,19); (18,20); (19,1); (19,2); (19,3); (19,4); (19,5); (19,6); (19,7); (19,8); (19,9); (19,10); (19,11); (19,12); (19,13); (19,14); (19,15); (19,16); (19,17); (19,18); (19,20); (20,1); (20,2); (20,3); (20,4); (20,5); (20,6); (20,7); (20,8); (20,9); (20,10); (20,11); (20,12); (20,13); (20,14); (20,15); (20,16); (20,17); (20,18); (20,19);
+Powyżej znajdują się wszystkie możliwe 380 dwuosobowe próby otrzymane wg. wcześniej opisanego schematu.  Widzimy, że niektóre pary w próbach się powtarzają. Możemy bowiem wylosować najpierw osobę o nr 1, a potem osobę numer 2. Otrzymujemy wtedy próbę (1,2). Lub na odwrót. Najpierw wylosujemy osobę numer 2. a potem osobę nr 1. Otrzymujemy wtedy próbę (2,1). Nasuwa się pytanie, w ilu próbach znajdzie się każdy obywatel.</p>
+
+</body>
+
+</html>
+
