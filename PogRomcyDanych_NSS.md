@@ -6,11 +6,8 @@ Z badañ przeprowadzonych przez zespó³ Na Stra¿y Sonda¿y w 2014 r. wynika, ¿e 95%
 Polaków nie wie jak powstaj¹ sonda¿e!
 
 ### Wykres s³upkowy
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
+<img src="figure/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
-
-### "Placek"
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
 Jak interpretowaæ ten wynik? Co on oznacza? OdpowiedŸ jest prosta. Praktycznie nic, bo ta informacja nie ma ¿adnej wartoœci. Dlaczego? Nie tylko dlatego, ¿e jest zmyœlona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedzia³em dok³adnie kiedy zorganizowano badanie, jak¹ technik¹ je przeprowadzono (telefonicznie czy bezpoœrednio), jak zadano pytanie - co to znaczy, ¿e ktoœ wie jak powstaj¹ sonda¿e, a tak¿e nie zdefiniowa³em kim s¹ Polacy - czy s¹ to obywatele, czy mieszkañcy Polski, w jakim byli wieku. Nie poda³em równie¿ jakim b³êdem mog¹ byæ obarczone wyniki (tzw. b³¹d statystyczny), ani ile osób wziê³o udzia³ w badaniu. Codziennie w prasie i innych mediach pojawiaj¹ siê podobne “dane sonda¿owe”. Czy maj¹ one jak¹kolwiek wartoœæ? Czy mo¿na im zaufaæ? Jak odró¿niæ “dobry” sonda¿ od “z³ego”.
