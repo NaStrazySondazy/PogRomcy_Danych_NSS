@@ -1,4 +1,11 @@
-PogRomcy_Danych_NSS
+---
+title: "PogRomcy_Danych_NSS"
+output: 
+  html_document:
+    keep_md: true
+---
+
+
 ========================================================
 
 # 1. Wstêp
