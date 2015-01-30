@@ -5,15 +5,11 @@ output:
     keep_md: true
 ---
 
-
-========================================================
-
 # 1. Wstêp
 Z badañ przeprowadzonych przez zespó³ Na Stra¿y Sonda¿y w 2014 r. wynika, ¿e 95%
 Polaków nie wie jak powstaj¹ sonda¿e!
 
-### Wykres s³upkowy
-```{r 1_wykres, echo=FALSE, fig.align='center'}
+```{r 1_wykres_slupkowy, echo=FALSE, fig.align='center'}
 options(OutDec= ",");
 library(ggplot2)
 
@@ -41,9 +37,9 @@ __Zadania 1:__
 
 L.p.          | Tytu³ artyku³u| Link do strony z artyku³em | Czy podano wielkoœæ próby? Zapisz j¹ je¿eli zosta³a podana | Czy podano dok³adn¹ datê realizacji badania? Jak¹?
 ------------- | --------------|----------------------------|----------------------------------------------------------------|-----------------------------------------------------
-1.            |  Content Cell |                            |
-2.            |  Content Cell |                            |
-3.            |  Content Cell |                            |
+1.            |               |                            |
+2.            |               |                            |
+3.            |               |                            |
 
 # 2. Metoda reprezentacyjna
 
@@ -56,9 +52,9 @@ __Zadania 2:__
 
 L.p.          |Nazwa instytucji | Tytu³ badania  | Link do strony z raportem 
 --------------|-----------------|----------------|----------------------------
-1.            |  Content Cell   |                |
-2.            |  Content Cell   |                |
-3.            |  Content Cell   |                |
+1.            |                 |                |
+2.            |                 |                |
+3.            |                 |                |
 
 # 3. Przyk³ady prób
 
@@ -77,7 +73,7 @@ L.p.          |Czego dotyczy badanie? | Co jest prób¹?
 
 # 4. Sonda¿ 
 
-PrzejdŸmy do badañ spo³ecznych i tzw.  sonda¿y politycznych. Ich wyniki czêsto pojawiaj¹ siê w prasie i maj¹ du¿e znaczenie dla polityków oraz pewnie trochê mniejsze dla wyborców.  WyobraŸmy sobie, ¿e chcemy zmierzyæ poziom poparcia dla wybranej partii P w wyborach do parlamentu. Dla naszych celów ods³oñmy kilka faktów dotycz¹cych badanej zbiorowoœci:
+PrzejdŸmy do badañ spo³ecznych i tzw.  sonda¿y politycznych. Ich wyniki czêsto pojawiaj¹ siê w prasie i maj¹ du¿e znaczenie dla polityków oraz pewnie trochê mniejsze dla wyborców.  WyobraŸmy sobie, ¿e chcemy zmierzyæ poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celów ods³oñmy kilka faktów dotycz¹cych badanej zbiorowoœci:
 
        | Nie biorê udzia³y w wyborach | NIE |  Tak | Razem
 -------|------------------------------|-----|------|-------
@@ -85,10 +81,10 @@ Miasto | 30                           | 5   | 25   | 60
 Wies   | 20                           | 10  | 10   | 40
 RAZEM  | 50                           | 15  | 35   | 100
 
-W powy¿szej tabeli umieœciliœmy procentowy rozk³ad dwóch cech w populacji pe³noletnich  mieszkañców Polski (dane fikcyjne). Pierwsz¹ cech¹ jest miejsce zamieszkania (w wierszach), a drug¹ poparcie dla partii P (w kolumnach). Widzimy, ¿e w miastach mieszka 60% ludnoœci, a na wsi 40%. £¹cznie w ca³ej zbiorowoœci (RAZEM) 35% obywateli zag³osowa³oby na partiê P, 15% na inn¹ partiê, a 50% w ogóle nie wziê³oby udzia³u w wyborach. Mo¿emy równie¿ powiedzieæ, ¿e osoby mieszkaj¹ce w mieœcie i popieraj¹ce partiê P stanowi¹ 25% ogó³u  uprawnionych do g³osowania, a tak¿e ¿e osoby które mieszkaj¹ na wsi i nie bior¹ udzia³u w wyborach stanowi¹ 20% populacji. Oczywiœcie, w normalnych warunkach tego typu informacje s¹ niedostêpne dla badacze. My je “ods³aniamy” potrzeby kursu. 
+W powy¿szej tabeli umieœciliœmy procentowy rozk³ad dwóch cech w populacji pe³noletnich  mieszkañców Polski (dane fikcyjne). Pierwsz¹ cech¹ jest miejsce zamieszkania (w wierszach), a drug¹ poparcie dla partii X (w kolumnach). Widzimy, ¿e w miastach mieszka 60% ludnoœci, a na wsi 40%. £¹cznie w ca³ej zbiorowoœci (RAZEM) 35% obywateli zag³osowa³oby na partiê X, 15% na inn¹ partiê, a 50% w ogóle nie wziê³oby udzia³u w wyborach. Mo¿emy równie¿ powiedzieæ, ¿e osoby mieszkaj¹ce w mieœcie i popieraj¹ce partiê X stanowi¹ 25% ogó³u  uprawnionych do g³osowania, a tak¿e ¿e osoby które mieszkaj¹ na wsi i nie bior¹ udzia³u w wyborach stanowi¹ 20% populacji. Oczywiœcie, w normalnych warunkach tego typu informacje s¹ niedostêpne dla badacze. My je “ods³aniamy” potrzeby kursu. 
  
-Zastanówmy siê jak z powy¿szej populacji dobraæ próbê reprezentatywn¹, aby móc trafnie na jej podstawie oceniæ, jaki procent mieszkañców Polski popiera partiê P?
-I tu pojawia siê pierwszy problem. Nie da siê bowiem “wymieszaæ” obywateli tak jak zupy. Zbiorowoœæ nie jest jednorodna. Preferencje wœród mieszkañców miast i wsi nie s¹ identyczne. Nie ma wiêc gwarancji, ¿e jeœli id¹c ulic¹ w mieœcie lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to bêdziemy mogli powiedzieæ jakie jest poparcie w ca³ym kraju. W uproszczeniu w mieœcie 4 na 10 osób zag³osowa³oby na partiê P (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie bêdzie zawy¿one, a w drugim zani¿one, w stosunku do ogólnokrajowych wyników (35%). Widaæ wiêc, ¿e nie ka¿da próba bêdzie “REPREZENTATYWNA”. I tu zatrzymajmy siê znowu przy definicji REPREZENTATYWNOŒCI. Zauwa¿my, ¿e zale¿y nam na tym, aby wynik z próby by³ zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi byæ tak, ¿e próba jest miniatura populacji. Wa¿niejsze jest to, ¿e na jej podstawie prawid³owo odgadujemy wyniki dla ca³ej zbiorowoœci.
+Zastanówmy siê jak z powy¿szej populacji dobraæ próbê reprezentatywn¹, aby móc trafnie na jej podstawie oceniæ, jaki procent mieszkañców Polski popiera partiê X?
+I tu pojawia siê pierwszy problem. Nie da siê bowiem “wymieszaæ” obywateli tak jak zupy. Zbiorowoœæ nie jest jednorodna. Preferencje wœród mieszkañców miast i wsi nie s¹ identyczne. Nie ma wiêc gwarancji, ¿e jeœli id¹c ulic¹ w mieœcie lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to bêdziemy mogli powiedzieæ jakie jest poparcie w ca³ym kraju. W uproszczeniu w mieœcie 4 na 10 osób zag³osowa³oby na  (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie bêdzie zawy¿one, a w drugim zani¿one, w stosunku do ogólnokrajowych wyników (35%). Widaæ wiêc, ¿e nie ka¿da próba bêdzie “REPREZENTATYWNA”. I tu zatrzymajmy siê znowu przy definicji REPREZENTATYWNOŒCI. Zauwa¿my, ¿e zale¿y nam na tym, aby wynik z próby by³ zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi byæ tak, ¿e próba jest miniatura populacji. Wa¿niejsze jest to, ¿e na jej podstawie prawid³owo odgadujemy wyniki dla ca³ej zbiorowoœci.
 ¯eby przeprowadziæ nasz polityczny sonda¿ musimy zrealizowaæ badanie zarówno na wsi jak i w mieœcie. Ka¿da osoba nale¿¹ca do populacji musi mieæ szansê znalezienia siê w próbie. To bardzo wa¿ne. Sposób dobierania próby, zwany schematem, nie mo¿e uniemo¿liwiaæ nikomu znalezienia siê w próbie. 
 W dalszej czêœci kursu poka¿emy jak prawid³owo zdefiniowaæ populacjê, jak b³êdy w kwestionariuszu mog¹ wp³yn¹æ na zachowanie respondentów, jak dobraæ, a dok³adnie wylosowaæ próbê reprezentatywn¹, 
 
@@ -96,9 +92,9 @@ __Zadania 4:__
 
   1. Czy w przypadku badania populacji mieszkañców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu mo¿na uznaæ za wiarygodne (daj¹ce siê uogólniæ na ca³¹ populacjê)?
   2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poni¿sze pytania:     
-    a. Jaki procent mieszkañców wsi popiera partiê P?    
+    a. Jaki procent mieszkañców wsi popiera ?    
     b. Jaki procent mieszkañców miasta nie pójdzie na wybory?    
-    c. Jaki procent osób które nie popieraj¹ partii P mieszka w mieœcie?
+    c. Jaki procent osób które nie popieraj¹ partii X mieszka w mieœcie?
 
 # 5. Problem badawczy: populacja i próba 
 
@@ -170,24 +166,26 @@ __Zadania 6:__
     a. Sonda¿ 1:   
       i. Czy gdyby wybory odby³y siê w najbli¿sz¹ niedzielê to wzi¹³by(ê³aby) Pan(i) w nich udzia³?   
       ii. Je¿eli tak, to na jak¹ jedn¹ partiê oda³by Pan(i) g³os?   
+      
         1. oddam pusty/niewa¿ny g³os;    
-        2. partiê P;   
+        2. partiê X;   
         3. partiê Przyjació³ Demokracji;  
         4. partiê Przyjació³ Otwartoœci;   
         5. partiê Przyjació³ Spo³eczeñstwa;   
         6. partiê Przyjació³ Œrodowiska;   
         7. partiê Przyjació³ Uczciwoœci;   
     b. Sonda¿ 2.
-      i. Proszê okreœliæ czy zgadza siê Pan/Pani z nastêpuj¹cymi stwierdzeniami:    
+      i. Proszê okreœliæ czy zgadza siê Pan/Pani z nastêpuj¹cymi stwierdzeniami:   
+      
         1. Podatki w Polsce s¹ za wysokie i nale¿y je niezw³ocznie obni¿yæ   
         2. ZUS jest organizacj¹ drog¹, nieefektywn¹ i marnuj¹c¹ publiczne pieni¹dze    
         3. Obywatele lepiej bêd¹ zarz¹dzaæ swymi pieniêdzmi ni¿ urzêdnicy w ich imieniu    
         4. ka¿da rodzina powinna móc liczyæ na wsparcie ze strony pañstwa.     
       ii. Czy s³ysza³(a) Pan(i) o powstaniu nowej partii “P”, której programem jest m. in. obni¿enie podatków, ograniczenie obci¹¿eñ biurokratycznych, zmniejszenie liczby urzêdników oraz wsparcie dla rodzin?   
-      iii. Czy gdyby partia “P” bra³a udzia³ w najbli¿szych wyborach do Sejmu to jak¹ jedn¹ partiê odda³by Pan(i) g³os?
-oddam pusty/niewa¿ny g³os;
+      iii. Czy gdyby partia “X” bra³a udzia³ w najbli¿szych wyborach do Sejmu to jak¹ jedn¹ partiê odda³by Pan(i) g³os?
+
         1. oddam pusty/niewa¿ny g³os;    
-        2. partiê P;   
+        2. partiê X;   
         3. partiê Przyjació³ Demokracji;  
         4. partiê Przyjació³ Otwartoœci;   
         5. partiê Przyjació³ Spo³eczeñstwa;   
@@ -213,7 +211,7 @@ Wies   | 4                            | 2   |  2   | 8
 RAZEM  | 10                           | 3   |  7   | 20
 
 
-Z powy¿szej tabeli wynika, ¿e w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii P deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. W za³¹czonym pliku znajduje siê lista zawieraj¹ca dane o wszystkich osobach nale¿¹cych do populacji:
+Z powy¿szej tabeli wynika, ¿e w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. W za³¹czonym pliku znajduje siê lista zawieraj¹ca dane o wszystkich osobach nale¿¹cych do populacji:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
@@ -225,8 +223,8 @@ Kolejne kolumny w pliku to:
     + W - wieœ
   * Glosowanie - czy pójdziesz na wybory i na kogo zag³osujesz
     + -1 - nie pójdê na wybory
-    + 0 - pójdê na wybory, ale NIE zag³osujê na partiê P
-    + 1 - pójdê na wybory i zag³osujê na partiê P.
+    + 0 - pójdê na wybory, ale NIE zag³osujê na partiê X
+    + 1 - pójdê na wybory i zag³osujê na partiê X.
     
 PrzejdŸmy do badania sonda¿owego. Za³ó¿my, ¿e chcemy oszacowaæ nieznany nam odsetek obywateli nie pójdzie na wybory (na chwilê zapomnijmy, ¿e wynosi on 50%). Interesuj¹ nas wartoœci -1 w kolumnie “Glosowanie”. la uproszczenia, losujemy dwie ró¿ne osoby spoœród wszystkich 20 obywateli. Dobór próby przebiega wg. nastêpuj¹cego schematu:
 
@@ -240,7 +238,7 @@ Powy¿szy schamat losowania nazwiemy fachowo: losowaniem prostym bez zwracania 2 
 ```{r 2_populacja, echo=FALSE, include=FALSE}
 # sposob czytania arkuszy Google zaporzyczony ze strony:
 # http://blog.revolutionanalytics.com/2014/06/reading-data-from-the-new-version-of-google-spreadsheets.html
-setwd( getwd() )
+# setwd( getwd() )
 # Wgranie pakietów
 options(OutDec= ",");
 library(knitr);
@@ -349,7 +347,7 @@ cat(paste( "("  ,((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-
 Na pierwszy rzut oka widaæ, ¿e nie wszystkie wyniki s¹ poprawne. W wielu próbach szacowana ABSENCJA jest zani¿ona (0%) lub zawy¿ona (100%). Nie powinno to nas jednak dziwiæ poniewa¿ wyniki s¹ œciœle zwi¹zane z tym w jaki sposób dobieraliœmy próby. Policzmy dok³adnie, ile wyników ka¿dego rodzaju daje nam przyjêty schemat losowania:
 
 ### Wykres 7.1. Rozk³ad oszacowañ z prób
-```{r}
+```{r, echo=FALSE}
 permutacje.rozklad<-table(paste( ((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%", sep=""))
 permutacje.rozklad.wykres<-barplot( permutacje.rozklad, las=1, xlab = "Absencja w próbie", ylab = "Liczba prób") # horiz=TRUE
 text(permutacje.rozklad.wykres, permutacje.rozklad-35, permutacje.rozklad,cex=1,pos=3) 
@@ -433,7 +431,7 @@ Wróæmy do naszej populacji
 kable( poparcie_dla_P, format = "markdown")
 ```
 
-Tym razem znajmiemy siê poparciem dla partii P. W stosunku do badania absencji wyborczej niewiele sie zmieni. Po prostu zamiast wartoœci -1 w kolumnie “Glosowanie” w naszym zbiorze danych teraz bêdziemy analizowali wystêpowanie wartoœci 1, czyli glosowanie na partiê P. 
+Tym razem znajmiemy siê poparciem dla partii X. W stosunku do badania absencji wyborczej niewiele sie zmieni. Po prostu zamiast wartoœci -1 w kolumnie “Glosowanie” w naszym zbiorze danych teraz bêdziemy analizowali wystêpowanie wartoœci 1, czyli glosowanie na partiê X. 
 Zmienimy trochê nasz schemat losowanie. Tym razem dobieraæ bêdziemy po 6 obywateli do próby, ale samo jak wczeœniej losujemy ich w sposób prosty bez zwracania.
 Zobaczmy jakie próby wygeneruje nasz schemat dobporu próby. Ogólnie mo¿liwych s¹ nastêpuj¹ce wyniki:   
 
@@ -464,8 +462,8 @@ kable(p6.1, row.names = F, format = "markdown")
 ```
 
 Wiemy ju¿ w ilu próba wyst¹pi ka¿dy obywatel: w oœmiu milionach trzysta siedemdziesiêciu dwóch tysi¹cach stu szeœædziesiêciu. Du¿o!
-Zastanówmy siê teraz, z jak¹ czêstotliwoœci¹ bêd¹ wystêpowa³y poszczególne wyniki z próby, czyli ile jest takich prób, w których poparcie dla partii P wyniesie  100%, ile takich, w których poparcie wyniesie ??? itd. OdpowiedŸ na to pytanie mo¿na uzyskaæ dwoma metodami. Albo stosuj¹c proste ale wymagaj¹ce du¿ego skupienia obliczenia na papierze albo stosuj¹c ¿mudne obliczenia na komputerze. Przyjrzyjmy siê pierwszej metodzie.
-Zastanówmy siê ile mo¿e byæ takich prób, w których poparcie dla partii P wyniesie 83,3% (5/6). Przyk³adowo mo¿e to byæ próba (P, P, P, P, P, nP). Nie bêdzie nas przy tym interesowa³o, którzy to obywatele (o jakich wartoœciach L.p.), w tej chwili rozró¿niamy tylko P oraz nP. Losowanie dla wszystkich tych prób bêdzie przebiega³o w nastêpuj¹cy sposób. Pierwszego respondenta dobieramy spoœród wszystkich 7 osób popieraj¹cych P, potem drugiego respondenta dobieramy spoœród pozosta³ych 6 osób popieraj¹cych P, potem trzeciego respodenta dobieramy spoœród pozosta³ych  5 osób dopieraj¹cych P, itd a¿ dochodzimy do szóstego respondenta, którego dobieramy z innej grupy, niepopieraj¹cych P (nP). Czyli takich prób jest 7\*6\*5\*4\*3\*13=32760. Ale my chcemy wiedzieæ ile jest dok³adnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich,  w których osoba niepopieraj¹ca P by³a wylosowana jako ostatnia. Zauwa¿my, ¿e obywatel deklaruj¹cy nP mo¿e zostaæ wylosowany, jako szósty, pi¹ty, czwarty, … lub jako pierwszy. Czyli ka¿dy szeœciu obywateli wœród których poparcie dla P wynosi 83,3% mo¿na ustawiæ na 6 sposobów. Ostatecznie wiêc liczba prób, w których 5 na 6 respondentów popiera P wynosi (7\*6\*5\*4\*3\*13)\*6=196560. 
+Zastanówmy siê teraz, z jak¹ czêstotliwoœci¹ bêd¹ wystêpowa³y poszczególne wyniki z próby, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100%, ile takich, w których poparcie wyniesie ??? itd. OdpowiedŸ na to pytanie mo¿na uzyskaæ dwoma metodami. Albo stosuj¹c proste ale wymagaj¹ce du¿ego skupienia obliczenia na papierze albo stosuj¹c ¿mudne obliczenia na komputerze. Przyjrzyjmy siê pierwszej metodzie.
+Zastanówmy siê ile mo¿e byæ takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przyk³adowo mo¿e to byæ próba (P, P, P, P, P, nP). Nie bêdzie nas przy tym interesowa³o, którzy to obywatele (o jakich wartoœciach L.p.), w tej chwili rozró¿niamy tylko P oraz nP. Losowanie dla wszystkich tych prób bêdzie przebiega³o w nastêpuj¹cy sposób. Pierwszego respondenta dobieramy spoœród wszystkich 7 osób popieraj¹cych P, potem drugiego respondenta dobieramy spoœród pozosta³ych 6 osób popieraj¹cych P, potem trzeciego respodenta dobieramy spoœród pozosta³ych  5 osób dopieraj¹cych P, itd a¿ dochodzimy do szóstego respondenta, którego dobieramy z innej grupy, niepopieraj¹cych P (nP). Czyli takich prób jest 7\*6\*5\*4\*3\*13=32760. Ale my chcemy wiedzieæ ile jest dok³adnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich,  w których osoba niepopieraj¹ca P by³a wylosowana jako ostatnia. Zauwa¿my, ¿e obywatel deklaruj¹cy nP mo¿e zostaæ wylosowany, jako szósty, pi¹ty, czwarty, … lub jako pierwszy. Czyli ka¿dy szeœciu obywateli wœród których poparcie dla P wynosi 83,3% mo¿na ustawiæ na 6 sposobów. Ostatecznie wiêc liczba prób, w których 5 na 6 respondentów popiera P wynosi (7\*6\*5\*4\*3\*13)\*6=196560. 
 A ile bêdzie prób, w których poparcie dla P wynosi 66,7% (4/6)? Podobnie zacznijmy od przyk³adowej kombinacji odpowiedzi (P, P, P, P , nP, nP). Dok³adnie w tej kolejnoœci poparcie mo¿emy mieæ w 7\*6\*5\*4\*13\*12=131040 próbach. Teraz zastanówmy siê, na ile sposobów mo¿emy “ustawiæ” dwóch respondentów nP na szeœciu miejscach (mo¿emy rozwa¿yæ ten problem dla 4 respondentów P, ale wynik bêdzie dok³dnie taki sam)? Pierwszy respondent nP mo¿e zaj¹æ jedno z szeœciu miejsc, a drugi nP pozosta³ych piêæ. Ale w zasadzie nie interesuje nas to ile bêdzie  £¹cznie mog¹ oni stworzyæ w ten sposób 6\*5=30 ró¿nych uk³adów. Ostatecznie wiêc liczba prób w których poparcie wyniesie 66,7%  wynosi (7\*6\*5\*4\*13\*12)\*(6\*5)/2=1965600
     
 
@@ -484,7 +482,7 @@ Oczywiœcie to samo mo¿emy policzyæ te¿ inaczej, zlecaj¹c wiêkszoœc pracy kompute
 | 1        | (7\*6\*5\*4\*3\*2)=5040                      | 5040                         |
 | Razem    | 20\*19\*18\*17\*16\*15=27907200              |                              |
 
-### Tabela 9.2. Poparcie dla partii P w próbach szeœcioosobowych
+### Tabela 9.2. Poparcie dla partii X w próbach szeœcioosobowych
 ```{r,echo=FALSE}
 p6.2=p6.3<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6)
 p6.2<-rowSums( p6.2==1)/6
@@ -498,7 +496,7 @@ par(mar=c(3,5,1,1))
 barplot(p6.2, las=1, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1")  )
 ```
 
-Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy siê wynikom.. Najwiêcej prób zawiera poparcie dla partii P na poziomie 2/6. Du¿o mniej ??? i 3/6. Wyniki 0 oraz 4/6 mo¿na nazwaæ rzadkimi, a ??? i 1 bardzo rzadkimi. Zauwa¿my równie¿, ¿e poparcia dla partii P nigdy nie jest równe 35% (7/20). Czy to oznacza, ¿e nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” okreœla siê na podstawie przeciêtnej wartoœci oszacowania w próbie. Gdy mierzyliœmy ten parametr dla sonda¿u dotycz¹cego absencji w wyborach, wiedzieliœmy, ¿e przynajmniej czêœæ prób “trafia w punkt”. Tym razem tak nie jest. ¯adna próba nie daje wyniku 35% poparcia dla partii P. Ale czy rzeczywiœcie schemat doboru respondentów jest wadliwy. Je¿eli sprawdzimy przeciêtny wynik z próby to oka¿e siê, ¿e wynosi on dok³adnie 35%, a wiêc dok³adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliœmy wczeœniej oznacza to, ¿e jest on poprawny. Ale co z tego skoro nie portafi dok³adnie “trafiæ” w wynik! Potrzebujemy dodatkowej miary trafnoœci wyników. Musi ona okreœlaæ skalê b³¹d pope³nianego przy korzystaniu z konkretnych schematów losowania. Dziêki temu bêdziemy porównywaæ schmaty, a przede wszystkim kreœliæ, jak du¿e jest ryzyko, ¿e siê myslimy.  Pos³u¿ymy siê przy tym rozwi¹zaniem wymyœlonym przez statystyków. Policzmy jak duzy jest rozstêp miêdzy wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajduj¹ siê w poni¿szej tabeli
+Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy siê wynikom.. Najwiêcej prób zawiera poparcie dla partii X na poziomie 2/6. Du¿o mniej ??? i 3/6. Wyniki 0 oraz 4/6 mo¿na nazwaæ rzadkimi, a ??? i 1 bardzo rzadkimi. Zauwa¿my równie¿, ¿e poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, ¿e nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” okreœla siê na podstawie przeciêtnej wartoœci oszacowania w próbie. Gdy mierzyliœmy ten parametr dla sonda¿u dotycz¹cego absencji w wyborach, wiedzieliœmy, ¿e przynajmniej czêœæ prób “trafia w punkt”. Tym razem tak nie jest. ¯adna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiœcie schemat doboru respondentów jest wadliwy. Je¿eli sprawdzimy przeciêtny wynik z próby to oka¿e siê, ¿e wynosi on dok³adnie 35%, a wiêc dok³adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliœmy wczeœniej oznacza to, ¿e jest on poprawny. Ale co z tego skoro nie portafi dok³adnie “trafiæ” w wynik! Potrzebujemy dodatkowej miary trafnoœci wyników. Musi ona okreœlaæ skalê b³¹d pope³nianego przy korzystaniu z konkretnych schematów losowania. Dziêki temu bêdziemy porównywaæ schmaty, a przede wszystkim kreœliæ, jak du¿e jest ryzyko, ¿e siê myslimy.  Pos³u¿ymy siê przy tym rozwi¹zaniem wymyœlonym przez statystyków. Policzmy jak duzy jest rozstêp miêdzy wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajduj¹ siê w poni¿szej tabeli
 
 
 ### Tabela 9.2. Podsumowanie obliczeñ
@@ -516,18 +514,45 @@ Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy 
 
 Zaczynamy od rozpisania wszystkich mo¿liwych wyników z próby (kolumna A). Nastêpnie dopisujemy, ile prób w naszym schemacie daje konkretny wynik (kolumna B). Obliczenia b³êdy zaczniemy od wyznaczenia ró¿nicy miêdzy wynikiem w próbie i wynikiem w populacji (A - 35%). Nastêpnie wyznaczymy kwadrat tego b³êdu ((A-35%)^2). W ten sposób otrzymaliœmy kwadrat b³êdu pope³nianego w danym rodzaju próby. Nas interesuje nie b³¹d dla konkretnej próby (choæ to te¿ jest interesuj¹ce), ale b³¹d przeciêtnie pope³niany dla danego schematu losowania prób. Czyli chcemy poprostu policzyæ œredni¹ z naszego b³êdu - œredni¹ arytmetyczn¹. Potrzebujemy do tego iloczynu kwadratów b³êdow w poszczególnych rodzajach prób i liczby prób ka¿dego rodzaju (((A-35%)^2)*B ). Nastêpnie sumujemy otrzymane wartoœci (779688) i dzielimy przez ogólna liczbe prób. W efekcie otrzymujemy  779688/27907200 = 0,02793859649 Tyle wynosi przeciêtny b³¹d kwadratowy (statystycy nazywaja go “Wariancj¹”). Czy to du¿o? Trudno powiedzieæ. Dlatego policzymy pierwiastek tej liczby. W ten sposób otrzymamy pierwiastek œredniego kwadratu b³êdu, czyli jak gdyby przeciêtny b³¹d jaki pope³niamy stosuj¹c nasz schemat losowania próby. Wynosi on 0,02793859649^(1/2) = 0,1671484265. W ten sposób otrzymujemy miarê, któr¹ nazywamy odchyleniem standardowym. Trzeba podkreœliæ, ¿e nie jest przeciêtnym b³¹d pope³niany przez próby tylko pierwiastkiem przeciêtnego kwadratu b³êdu. Mimo to zazwyczaj traktuje siê go jako przeciêtny  b³¹d pope³niany przez próbê. Wiemy wiêc, ¿e po naszej próbie mo¿emy siê spodziewaæ b³êdu na poziomie prawie 17% (0,167).  To bardzo du¿o bior¹c pod uwagê, ¿e rzeczywiste poparcie w próbie wynosi 35%. Nasz miernik pokazuje, ¿e przeciêtnie mylimy siê o oko³o po³owê w naszych oszacowaniach!!!      
 Czy jest jakiœ sposób, ¿eby temu zaradziæ? Tak, i to dosyæ prosty - mo¿emy zwiêkszyæ próbê. Ka¿dy intuicyjnie wie, ¿e wiêksza próba to wiêksza precyzja. Ale dlaczego tak jest?     
-Poni¿ej znajduj¹ siê trzy wykresy dla trzech schematów losowania i policzonych dla nich b³êdów standardowych oszacowania poparcia dla partii P. . 
-Pierwszy wykres ilustruje wyniki dla próby sk³adaj¹cej siê z piêciu respondentów, drugi dla 10, a trzeci dla 15. Ze wzglêdu na ró¿n¹ liczebnoœæ prób inne s¹ mo¿liwe oszacowania poparcia dla partii P i ró¿ny jest te¿ ich rozk³ad. Widzimy jednak, ¿e wyniki zaczynaj¹ siê “skupiaæ” wokó³ rzeczywistego wyniku (czerwona pionowa linia). To w³aœnie metoda poprawiaj¹ca dok³adnoœæ oszacowania.     
-Dlaczego tak siê dzieje? Poniewa¿ w ma³ych próbach stosunkowo ³atwiej mo¿e siê zdarzyæ, ¿e wszyscy bêd¹ za lub przeciw partii P. Innymi s³owy ³atwiej o skrajny wynik. Zwiêkszaj¹c próbê zwiêszkamy szanse na to, ¿e wyniki siê “ustabilizuj¹” - Przy wiêkszej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedn¹ frakcjê.     
+Poni¿ej znajduj¹ siê trzy wykresy dla trzech schematów losowania i policzonych dla nich b³êdów standardowych oszacowania poparcia dla partii X. . 
+Pierwszy wykres ilustruje wyniki dla próby sk³adaj¹cej siê z piêciu respondentów, drugi dla 10, a trzeci dla 15. Ze wzglêdu na ró¿n¹ liczebnoœæ prób inne s¹ mo¿liwe oszacowania poparcia dla partii X i ró¿ny jest te¿ ich rozk³ad. Widzimy jednak, ¿e wyniki zaczynaj¹ siê “skupiaæ” wokó³ rzeczywistego wyniku (czerwona pionowa linia). To w³aœnie metoda poprawiaj¹ca dok³adnoœæ oszacowania.     
+Dlaczego tak siê dzieje? Poniewa¿ w ma³ych próbach stosunkowo ³atwiej mo¿e siê zdarzyæ, ¿e wszyscy bêd¹ za lub przeciw partii X. Innymi s³owy ³atwiej o skrajny wynik. Zwiêkszaj¹c próbê zwiêszkamy szanse na to, ¿e wyniki siê “ustabilizuj¹” - Przy wiêkszej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedn¹ frakcjê.     
 Przejd¿my do kwestii wnioskowania. Prawdziwie badania sonda¿owe polegaj¹ na wnioskowaniu na podstawie pojedynczej próby. Nie ma wiêc mo¿liwoœci analizowania wyników z ze wszyskich prób     
 
 # 10. B³êdy systematyczne 
  
-Do tej pory poznaliœmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiêtaæ, ¿e samo prawdziwe badanie sonda¿owe nie sk³ada siê wy³¹cznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to g³ówna czêœæ badania. Od niej wszystko zale¿y. Mamy nadziejê, ¿e 
-WyobraŸmy sobie nasza próbê i sytuacjê, gdy niespodziewane na wywiady, pomimo bardzo wielu prób podjêcia kontaktu uda siê zrealizowaæ wy³¹cznie z osobami zamieszka³ymi w mieœcie
+Do tej pory poznaliœmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiêtaæ, ¿e samo prawdziwe badanie sonda¿owe nie sk³ada siê wy³¹cznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to g³ówna czêœæ badania. Od niej wszystko zale¿y.
+Wróæmy wiêc znowu do naszej populajcji i wyobraŸmy sobie sytuacjê, gdy niespodziewane na wywiady, pomimo bardzo wielu próŸb i grób, wszystkie osoby zamieszka³e w mieœcie w dobranej próbie konsekwentnie odmawiaj¹ naszym ankieterom wziêcia udzia³u w badaniu. To zupe³nie skrajny przypadek, takie rzeczy raczej siê nie zda¿aj¹, ale prawd¹ jest, ¿e mieszkañcy miast sa trudniej uchwytni - z ró¿nych powodów.
+Jakie dla nas konsekwencje bêdzie mia³o to zjawisko? 
+£atwo siê domyœliæ. Zmieni¹ sie wyniki otrzymywane z prób. Dalej korzystamy z próby sk³adaj¹cej sie z 6 osób. Co za tym idzie zmieni¹ siê nasze wyniki. Z jednej strony pojawi¹ siê 
+
+
+```{r,echo=FALSE}
+p6.4<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
+p6.5<-matrix( m$Miasto_wies[p6], nrow = 20*19*18*17*16*15, ncol = 6);
+
+# # rowSums((p6.4[1:2,]==1)*(p6.5[1:2,]=="W"))+(1-rowSums(p6.5[1:2,]=="W"))*999
+# 
+# p6.5[1000000:1000001,]=="W"
+# rowSums((p6.4[1000000:1000001,]==1)*(p6.5[1000000:1000001,]=="W"))+(1-rowSums(p6.5[1:2,]=="W"))*999
+# rowSums((p6.4[1000000:1000001,]==1)*(p6.5[1000000:1000001,]=="W"))/(rowSums(p6.5[1000000:1000001,]=="W")+brak.wsi[1000000:1000001] )+brak.wsi[1000000:1000001]*999;
+
+brak.wsi<-(1-rowSums(p6.5=="W")>0)
+# sum(brak.wsi)
+p6.4<-rowSums((p6.4==1)*(p6.5=="W"))/(rowSums(p6.5=="W")+brak.wsi )+brak.wsi*999;
+p6.4<-table(p6.4);
+
+getOption("scipen")
+opt <- options("scipen" = 20)
+getOption("scipen")
+ust.graf.pierwot<-par()
+par(mar=c(3,5,1,1))
+barplot(p6.4, las=1) #, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1")  )
+```
+
 
 Wnioskowanie
-Do tej pory analizowaliœmy rozk³ady wszystkich mo¿liwych wyników z próby. Potrafimy sobie wyobraziæ co nas czeka. Badanie sonda¿owe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikowaæ, ale dla których nie znamy rozk³adu preferencji politycznych czy innych badanych cech. W zwi¹zku z tym w prawdziwym badaniu nie znamy b³êdu schematu z góry. Tak samo jak poziom poparcia dla partii P musimy go oszacowaæ na podstawie próby. Jak to zrobimy      
+Do tej pory analizowaliœmy rozk³ady wszystkich mo¿liwych wyników z próby. Potrafimy sobie wyobraziæ co nas czeka. Badanie sonda¿owe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikowaæ, ale dla których nie znamy rozk³adu preferencji politycznych czy innych badanych cech. W zwi¹zku z tym w prawdziwym badaniu nie znamy b³êdu schematu z góry. Tak samo jak poziom poparcia dla partii X musimy go oszacowaæ na podstawie próby. Jak to zrobimy      
 No i tutaj te¿ mam problem, w jaki sposób podj¹æ ten temat, aby by³ on "strawny". Je¿eli nic nie
 wymyœlê, to po prostu kursant policzy œredni¹ z próby (punktowy estymator odsetka w populacji), uwzglêdniaj¹c tylko osoby, które „udzieli³y odpowiedzi”. Na koñcu kursant porównuje wyniki przeprowadzonego przez siebie „sonda¿u”, z parametrem w populacji i myœli „Ojej, ale fajne te sonda¿e!”.
 
@@ -537,8 +562,8 @@ Tu trzeba dodaæ fragment o
 O b³êdzie:
 Celem badañ sonda¿owych jest zdobycie informacji na temat wybranej zbiorowoœci, zwanej w badaniach populacj¹. Sonda¿e s¹ najczêœciej realizowane tylko na stosunkowo niewielkiej czêœæ osób z populacji, na temat której badacz chce zdobyæ informacje. Specjalne metody doboru respondentów do badania pozwalaj¹ uogólniaæ wyniki uzyskane w próbie na ca³¹ zbiorowoœæ. Niestety dziennikarze czêsto zapominaj¹, ¿e takie uogólnienie odbywa siê z okreœlon¹ dok³adnoœci¹ – nazywan¹ najczêœciej b³êdem statystycznym.
 O systematycznym b³êdzie - wieœ i miasto
-Problem wystêpuje nagminnie w badaniach poparcia dla partii politycznych [1] [2]. Gdy czyta siê w gazetach, ¿e okreœlony odsetek Polaków popiera dan¹ partiê polityczn¹, trzeba pamiêtaæ, ¿e  na podstawie sonda¿u taki wynik mo¿na podaæ tylko z okreœlonym przybli¿eniem.
-O ile jeden odsetek wystarczy traktowaæ jako przybli¿ony, o tyle powa¿ny problem pojawia siê w sytuacji, kiedy w gazetach porównuje siê odsetek osób popieraj¹cych jak¹œ partiê z odsetkiem popieraj¹cych j¹ w poprzednim miesi¹cu [3]. W standardowych badaniach spo³ecznych (próba oko³o 1000 respondentów) przyjmuje siê najczêœciej, ¿e b³¹d statystyczny wynosi  +/-3% [4]. Oznacza to, ¿e jeœli w styczniu dan¹ partiê popiera³o 25% respondentów, a w lutym 22% respondentów, to nie mo¿na powiedzieæ, ¿e poparcie dla tej partii w populacji spad³o, gdy¿ ró¿nica ta nie jest istotna statystycznie.
+Problem wystêpuje nagminnie w badaniach poparcia dla politycznych [1] [2]. Gdy czyta siê w gazetach, ¿e okreœlony odsetek Polaków popiera dan¹ partiê polityczn¹, trzeba pamiêtaæ, ¿e  na podstawie sonda¿u taki wynik mo¿na podaæ tylko z okreœlonym przybli¿eniem.
+O ile jeden odsetek wystarczy traktowaæ jako przybli¿ony, o tyle powa¿ny problem pojawia siê w sytuacji, kiedy w gazetach porównuje siê odsetek osób popieraj¹cych jak¹œ partiê z odsetkiem popieraj¹cych j¹ w poprzednim miesi¹cu [3]. W standardowych badaniach spo³ecznych (próba oko³o 1000 respondentów) przyjmuje siê najczêœciej, ¿e b³¹d statystyczny wynosi  +/-3% [4]. Oznacza to, ¿e jeœli w styczniu dan¹ partiê X popiera³o 25% respondentów, a w lutym 22% respondentów, to nie mo¿na powiedzieæ, ¿e poparcie dla tej partii w populacji spad³o, gdy¿ ró¿nica ta nie jest istotna statystycznie.
 Wyjaœniaj¹c, na czym polega owa istotnoœæ, nale¿y powiedzieæ, ¿e b³¹d statystyczny w powy¿szym przypadku oznacza, ¿e skoro w próbie ze stycznia 25% osób popiera³o rz¹d, to z prawdopodobieñstwem 95% w ca³ej populacji popiera³o go od 22% do 28%. Gdy w próbie z lutego 22% respondentów wyrazi³o poparcie dla rz¹du, to wœród wszystkich doros³ych Polaków mog³o go popieraæ od 19% do 25%. Jak widaæ przedzia³y dla stycznia i lutego siê na siebie nak³adaj¹, przez co ró¿nica w poparciu miêdzy tymi miesi¹cami mo¿e nie œwiadczyæ o spadku poparcia dla rz¹du.
 Ciekawym publicystycznym rozwi¹zaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wziêli udzia³ w badaniu (a wiêc przytaczaniu wyniku dla próby), a nie o populacji, której badani s¹ tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisz¹c na temat przyczyn niskiej aktywnoœci politycznej Polaków ani razu nie wypowiedzieli siê na temat wszystkich Polaków, opisuj¹ jedynie wyniki dla przebadanej próby. Nie jest to ju¿ niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialnoœæ na czytelnika, który sam musi oceniæ, na ile dok³adnie w danej próbie odzwierciedlone s¹ pogl¹dy wszystkich Polaków.
 Najbardziej profesjonalnym rozwi¹zaniem by³oby jednak pisanie, w jakim przedziale mieœci siê badana cecha (np. poparcie dla partii) w ca³ej zbiorowoœci, a nie wœród przebadanych respondentów. Jak widaæ bowiem, przy za³o¿eniu poprawnoœci realizacji badania, wynik ten z pewnym przybli¿eniem oddaje rzeczywisty odsetek dla ca³ej populacji. Jeœli nie podaje siê przedzia³u tego przybli¿enia, wówczas lepiej jest napisaæ o dok³adnych wynikach uzyskanych dla przebadanych respondentów, ni¿ dla ca³ej zbiorowoœci, z której zostali oni wybrani.

@@ -1,14 +1,10 @@
 # PogRomcy_Danych_NSS
 
-
-========================================================
-
 # 1. Wstęp
 Z badań przeprowadzonych przez zespół Na Straży Sondaży w 2014 r. wynika, że 95%
 Polaków nie wie jak powstają sondaże!
 
-### Wykres słupkowy
-<img src="PogRomcyDanych_NSS_files/figure-html/1_wykres.png" title="plot of chunk 1_wykres" alt="plot of chunk 1_wykres" style="display: block; margin: auto;" />
+<img src="PogRomcyDanych_NSS_files/figure-html/1_wykres_slupkowy.png" title="plot of chunk 1_wykres_slupkowy" alt="plot of chunk 1_wykres_slupkowy" style="display: block; margin: auto;" />
 
 
 Jak interpretować ten wynik? Co on oznacza? Odpowiedź jest prosta. Praktycznie nic, bo ta informacja nie ma żadnej wartości. Dlaczego? Nie tylko dlatego, że jest zmyślona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedziałem dokładnie kiedy zorganizowano badanie, jaką techniką je przeprowadzono (telefonicznie czy bezpośrednio), jak zadano pytanie - co to znaczy, że ktoś wie jak powstają sondaże, a także nie zdefiniowałem kim są Polacy - czy są to obywatele, czy mieszkańcy Polski, w jakim byli wieku. Nie podałem również jakim błędem mogą być obarczone wyniki (tzw. błąd statystyczny), ani ile osób wzięło udział w badaniu. Codziennie w prasie i innych mediach pojawiają się podobne “dane sondażowe”. Czy mają one jakąkolwiek wartość? Czy można im zaufać? Jak odróżnić “dobry” sondaż od “złego”.
@@ -21,9 +17,9 @@ __Zadania 1:__
 
 L.p.          | Tytuł artykułu| Link do strony z artykułem | Czy podano wielkość próby? Zapisz ją jeżeli została podana | Czy podano dokładną datę realizacji badania? Jaką?
 ------------- | --------------|----------------------------|----------------------------------------------------------------|-----------------------------------------------------
-1.            |  Content Cell |                            |
-2.            |  Content Cell |                            |
-3.            |  Content Cell |                            |
+1.            |               |                            |
+2.            |               |                            |
+3.            |               |                            |
 
 # 2. Metoda reprezentacyjna
 
@@ -36,9 +32,9 @@ __Zadania 2:__
 
 L.p.          |Nazwa instytucji | Tytuł badania  | Link do strony z raportem 
 --------------|-----------------|----------------|----------------------------
-1.            |  Content Cell   |                |
-2.            |  Content Cell   |                |
-3.            |  Content Cell   |                |
+1.            |                 |                |
+2.            |                 |                |
+3.            |                 |                |
 
 # 3. Przykłady prób
 
@@ -57,7 +53,7 @@ L.p.          |Czego dotyczy badanie? | Co jest próbą?
 
 # 4. Sondaż 
 
-Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki często pojawiają się w prasie i mają duże znaczenie dla polityków oraz pewnie trochę mniejsze dla wyborców.  Wyobraźmy sobie, że chcemy zmierzyć poziom poparcia dla wybranej partii P w wyborach do parlamentu. Dla naszych celów odsłońmy kilka faktów dotyczących badanej zbiorowości:
+Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki często pojawiają się w prasie i mają duże znaczenie dla polityków oraz pewnie trochę mniejsze dla wyborców.  Wyobraźmy sobie, że chcemy zmierzyć poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celów odsłońmy kilka faktów dotyczących badanej zbiorowości:
 
        | Nie biorę udziały w wyborach | NIE |  Tak | Razem
 -------|------------------------------|-----|------|-------
@@ -65,10 +61,10 @@ Miasto | 30                           | 5   | 25   | 60
 Wies   | 20                           | 10  | 10   | 40
 RAZEM  | 50                           | 15  | 35   | 100
 
-W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą poparcie dla partii P (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię P, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię P stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. 
+W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą poparcie dla partii X (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię X, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię X stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. 
  
-Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię P?
-I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na partię P (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
+Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię X?
+I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na  (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
 Żeby przeprowadzić nasz polityczny sondaż musimy zrealizować badanie zarówno na wsi jak i w mieście. Każda osoba należąca do populacji musi mieć szansę znalezienia się w próbie. To bardzo ważne. Sposób dobierania próby, zwany schematem, nie może uniemożliwiać nikomu znalezienia się w próbie. 
 W dalszej części kursu pokażemy jak prawidłowo zdefiniować populację, jak błędy w kwestionariuszu mogą wpłynąć na zachowanie respondentów, jak dobrać, a dokładnie wylosować próbę reprezentatywną, 
 
@@ -76,9 +72,9 @@ __Zadania 4:__
 
   1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?
   2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poniższe pytania:     
-    a. Jaki procent mieszkańców wsi popiera partię P?    
+    a. Jaki procent mieszkańców wsi popiera ?    
     b. Jaki procent mieszkańców miasta nie pójdzie na wybory?    
-    c. Jaki procent osób które nie popierają partii P mieszka w mieście?
+    c. Jaki procent osób które nie popierają partii X mieszka w mieście?
 
 # 5. Problem badawczy: populacja i próba 
 
@@ -150,24 +146,26 @@ __Zadania 6:__
     a. Sondaż 1:   
       i. Czy gdyby wybory odbyły się w najbliższą niedzielę to wziąłby(ęłaby) Pan(i) w nich udział?   
       ii. Jeżeli tak, to na jaką jedną partię odałby Pan(i) głos?   
+      
         1. oddam pusty/nieważny głos;    
-        2. partię P;   
+        2. partię X;   
         3. partię Przyjaciół Demokracji;  
         4. partię Przyjaciół Otwartości;   
         5. partię Przyjaciół Społeczeństwa;   
         6. partię Przyjaciół Środowiska;   
         7. partię Przyjaciół Uczciwości;   
     b. Sondaż 2.
-      i. Proszę określić czy zgadza się Pan/Pani z następującymi stwierdzeniami:    
+      i. Proszę określić czy zgadza się Pan/Pani z następującymi stwierdzeniami:   
+      
         1. Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć   
         2. ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze    
         3. Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu    
         4. każda rodzina powinna móc liczyć na wsparcie ze strony państwa.     
       ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii “P”, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin?   
-      iii. Czy gdyby partia “P” brała udział w najbliższych wyborach do Sejmu to jaką jedną partię oddałby Pan(i) głos?
-oddam pusty/nieważny głos;
+      iii. Czy gdyby partia “X” brała udział w najbliższych wyborach do Sejmu to jaką jedną partię oddałby Pan(i) głos?
+
         1. oddam pusty/nieważny głos;    
-        2. partię P;   
+        2. partię X;   
         3. partię Przyjaciół Demokracji;  
         4. partię Przyjaciół Otwartości;   
         5. partię Przyjaciół Społeczeństwa;   
@@ -193,7 +191,7 @@ Wies   | 4                            | 2   |  2   | 8
 RAZEM  | 10                           | 3   |  7   | 20
 
 
-Z powyższej tabeli wynika, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii P deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. W załączonym pliku znajduje się lista zawierająca dane o wszystkich osobach należących do populacji:
+Z powyższej tabeli wynika, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. W załączonym pliku znajduje się lista zawierająca dane o wszystkich osobach należących do populacji:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
@@ -205,8 +203,8 @@ Kolejne kolumny w pliku to:
     + W - wieś
   * Glosowanie - czy pójdziesz na wybory i na kogo zagłosujesz
     + -1 - nie pójdę na wybory
-    + 0 - pójdę na wybory, ale NIE zagłosuję na partię P
-    + 1 - pójdę na wybory i zagłosuję na partię P.
+    + 0 - pójdę na wybory, ale NIE zagłosuję na partię X
+    + 1 - pójdę na wybory i zagłosuję na partię X.
     
 Przejdźmy do badania sondażowego. Załóżmy, że chcemy oszacować nieznany nam odsetek obywateli nie pójdzie na wybory (na chwilę zapomnijmy, że wynosi on 50%). Interesują nas wartości -1 w kolumnie “Glosowanie”. la uproszczenia, losujemy dwie różne osoby spośród wszystkich 20 obywateli. Dobór próby przebiega wg. następującego schematu:
 
@@ -272,13 +270,6 @@ Policzmy dla wszystkich wymienionych wyżej prób odsetek osób, które deklaruj
 Na pierwszy rzut oka widać, że nie wszystkie wyniki są poprawne. W wielu próbach szacowana ABSENCJA jest zaniżona (0%) lub zawyżona (100%). Nie powinno to nas jednak dziwić ponieważ wyniki są ściśle związane z tym w jaki sposób dobieraliśmy próby. Policzmy dokładnie, ile wyników każdego rodzaju daje nam przyjęty schemat losowania:
 
 ### Wykres 7.1. Rozkład oszacowań z prób
-
-```r
-permutacje.rozklad<-table(paste( ((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%", sep=""))
-permutacje.rozklad.wykres<-barplot( permutacje.rozklad, las=1, xlab = "Absencja w próbie", ylab = "Liczba prób") # horiz=TRUE
-text(permutacje.rozklad.wykres, permutacje.rozklad-35, permutacje.rozklad,cex=1,pos=3) 
-```
-
 ![plot of chunk unnamed-chunk-5](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-5.png) 
 
 Na powyższym wykresie widzimy, że w 90 próbach absencja wynosi 0%, w 90 próbach 100%, a w 200 próba 50%. To bardzo logiczny rezultat. Jeżeli połowa obywateli będzie głosować w wyborach, a połowa nie, to oczywiste jest, że najczęściej jedna z dwóch osób w próbie będzie podwyższać frekwencję, a druga obniżać. Wiemy więc dokładnie czego możemy się spodziewać po naszym schemacie losowania próby - jakie wynika pojawią się najczęściej, a jakie najrzadziej. Zastanówmy, co by było gdybyśmy doświadczenie z losowaniem próby powtórzyli wielokrotnie. Załóżmy, że 1000 razy dobieramy, a potem zwracamy do naszej 20-osobowej populacji dwie osoby i za każdym razem notujemy poziom absencji. Wokół jakiego odsetka będą oscylować wyniki? Możesz się domyślać, że na 1000 przypadków w około 237 (90/380\*1000) absencja wyniosłaby 0%, podobnie w 237 (90/380\*1000) 100%, a w 526 (200/380\*1000) 50%. Czyli rozkład wyników będzie podobny do tego na na wykresie słupkowym powyżej.     
@@ -366,7 +357,7 @@ Wróćmy do naszej populacji
 ## |RAZEM  |                  10|   3|   7|    20|
 ```
 
-Tym razem znajmiemy się poparciem dla partii P. W stosunku do badania absencji wyborczej niewiele sie zmieni. Po prostu zamiast wartości -1 w kolumnie “Glosowanie” w naszym zbiorze danych teraz będziemy analizowali występowanie wartości 1, czyli glosowanie na partię P. 
+Tym razem znajmiemy się poparciem dla partii X. W stosunku do badania absencji wyborczej niewiele sie zmieni. Po prostu zamiast wartości -1 w kolumnie “Glosowanie” w naszym zbiorze danych teraz będziemy analizowali występowanie wartości 1, czyli glosowanie na partię X. 
 Zmienimy trochę nasz schemat losowanie. Tym razem dobierać będziemy po 6 obywateli do próby, ale samo jak wcześniej losujemy ich w sposób prosty bez zwracania.
 Zobaczmy jakie próby wygeneruje nasz schemat dobporu próby. Ogólnie możliwych są następujące wyniki:   
 
@@ -412,8 +403,8 @@ Różnych prób w których żaden obywatel się nie powtórzy otrzymamy 20\*19\*
 |       20|     8372160|
 
 Wiemy już w ilu próba wystąpi każdy obywatel: w ośmiu milionach trzysta siedemdziesięciu dwóch tysiącach stu sześćdziesięciu. Dużo!
-Zastanówmy się teraz, z jaką częstotliwością będą występowały poszczególne wyniki z próby, czyli ile jest takich prób, w których poparcie dla partii P wyniesie  100%, ile takich, w których poparcie wyniesie ??? itd. Odpowiedź na to pytanie można uzyskać dwoma metodami. Albo stosując proste ale wymagające dużego skupienia obliczenia na papierze albo stosując żmudne obliczenia na komputerze. Przyjrzyjmy się pierwszej metodzie.
-Zastanówmy się ile może być takich prób, w których poparcie dla partii P wyniesie 83,3% (5/6). Przykładowo może to być próba (P, P, P, P, P, nP). Nie będzie nas przy tym interesowało, którzy to obywatele (o jakich wartościach L.p.), w tej chwili rozróżniamy tylko P oraz nP. Losowanie dla wszystkich tych prób będzie przebiegało w następujący sposób. Pierwszego respondenta dobieramy spośród wszystkich 7 osób popierających P, potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających P, potem trzeciego respodenta dobieramy spośród pozostałych  5 osób dopierających P, itd aż dochodzimy do szóstego respondenta, którego dobieramy z innej grupy, niepopierających P (nP). Czyli takich prób jest 7\*6\*5\*4\*3\*13=32760. Ale my chcemy wiedzieć ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich,  w których osoba niepopierająca P była wylosowana jako ostatnia. Zauważmy, że obywatel deklarujący nP może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli każdy sześciu obywateli wśród których poparcie dla P wynosi 83,3% można ustawić na 6 sposobów. Ostatecznie więc liczba prób, w których 5 na 6 respondentów popiera P wynosi (7\*6\*5\*4\*3\*13)\*6=196560. 
+Zastanówmy się teraz, z jaką częstotliwością będą występowały poszczególne wyniki z próby, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100%, ile takich, w których poparcie wyniesie ??? itd. Odpowiedź na to pytanie można uzyskać dwoma metodami. Albo stosując proste ale wymagające dużego skupienia obliczenia na papierze albo stosując żmudne obliczenia na komputerze. Przyjrzyjmy się pierwszej metodzie.
+Zastanówmy się ile może być takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przykładowo może to być próba (P, P, P, P, P, nP). Nie będzie nas przy tym interesowało, którzy to obywatele (o jakich wartościach L.p.), w tej chwili rozróżniamy tylko P oraz nP. Losowanie dla wszystkich tych prób będzie przebiegało w następujący sposób. Pierwszego respondenta dobieramy spośród wszystkich 7 osób popierających P, potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających P, potem trzeciego respodenta dobieramy spośród pozostałych  5 osób dopierających P, itd aż dochodzimy do szóstego respondenta, którego dobieramy z innej grupy, niepopierających P (nP). Czyli takich prób jest 7\*6\*5\*4\*3\*13=32760. Ale my chcemy wiedzieć ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich,  w których osoba niepopierająca P była wylosowana jako ostatnia. Zauważmy, że obywatel deklarujący nP może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli każdy sześciu obywateli wśród których poparcie dla P wynosi 83,3% można ustawić na 6 sposobów. Ostatecznie więc liczba prób, w których 5 na 6 respondentów popiera P wynosi (7\*6\*5\*4\*3\*13)\*6=196560. 
 A ile będzie prób, w których poparcie dla P wynosi 66,7% (4/6)? Podobnie zacznijmy od przykładowej kombinacji odpowiedzi (P, P, P, P , nP, nP). Dokładnie w tej kolejności poparcie możemy mieć w 7\*6\*5\*4\*13\*12=131040 próbach. Teraz zastanówmy się, na ile sposobów możemy “ustawić” dwóch respondentów nP na sześciu miejscach (możemy rozważyć ten problem dla 4 respondentów P, ale wynik będzie dokłdnie taki sam)? Pierwszy respondent nP może zająć jedno z sześciu miejsc, a drugi nP pozostałych pięć. Ale w zasadzie nie interesuje nas to ile będzie  Łącznie mogą oni stworzyć w ten sposób 6\*5=30 różnych układów. Ostatecznie więc liczba prób w których poparcie wyniesie 66,7%  wynosi (7\*6\*5\*4\*13\*12)\*(6\*5)/2=1965600
     
 
@@ -432,7 +423,7 @@ Oczywiście to samo możemy policzyć też inaczej, zlecając większośc pracy 
 | 1        | (7\*6\*5\*4\*3\*2)=5040                      | 5040                         |
 | Razem    | 20\*19\*18\*17\*16\*15=27907200              |                              |
 
-### Tabela 9.2. Poparcie dla partii P w próbach sześcioosobowych
+### Tabela 9.2. Poparcie dla partii X w próbach sześcioosobowych
 
 ```
 ## [1] 0
@@ -444,7 +435,7 @@ Oczywiście to samo możemy policzyć też inaczej, zlecając większośc pracy 
 
 ![plot of chunk unnamed-chunk-9](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-9.png) 
 
-Widzimy jak wiele różnych możliwości możemy uzyskać z naszych prób. Przyjrzyjmy się wynikom.. Najwięcej prób zawiera poparcie dla partii P na poziomie 2/6. Dużo mniej ??? i 3/6. Wyniki 0 oraz 4/6 można nazwać rzadkimi, a ??? i 1 bardzo rzadkimi. Zauważmy również, że poparcia dla partii P nigdy nie jest równe 35% (7/20). Czy to oznacza, że nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” określa się na podstawie przeciętnej wartości oszacowania w próbie. Gdy mierzyliśmy ten parametr dla sondażu dotyczącego absencji w wyborach, wiedzieliśmy, że przynajmniej część prób “trafia w punkt”. Tym razem tak nie jest. Żadna próba nie daje wyniku 35% poparcia dla partii P. Ale czy rzeczywiście schemat doboru respondentów jest wadliwy. Jeżeli sprawdzimy przeciętny wynik z próby to okaże się, że wynosi on dokładnie 35%, a więc dokładnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliśmy wcześniej oznacza to, że jest on poprawny. Ale co z tego skoro nie portafi dokładnie “trafić” w wynik! Potrzebujemy dodatkowej miary trafności wyników. Musi ona określać skalę błąd popełnianego przy korzystaniu z konkretnych schematów losowania. Dzięki temu będziemy porównywać schmaty, a przede wszystkim kreślić, jak duże jest ryzyko, że się myslimy.  Posłużymy się przy tym rozwiązaniem wymyślonym przez statystyków. Policzmy jak duzy jest rozstęp między wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajdują się w poniższej tabeli
+Widzimy jak wiele różnych możliwości możemy uzyskać z naszych prób. Przyjrzyjmy się wynikom.. Najwięcej prób zawiera poparcie dla partii X na poziomie 2/6. Dużo mniej ??? i 3/6. Wyniki 0 oraz 4/6 można nazwać rzadkimi, a ??? i 1 bardzo rzadkimi. Zauważmy również, że poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, że nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” określa się na podstawie przeciętnej wartości oszacowania w próbie. Gdy mierzyliśmy ten parametr dla sondażu dotyczącego absencji w wyborach, wiedzieliśmy, że przynajmniej część prób “trafia w punkt”. Tym razem tak nie jest. Żadna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiście schemat doboru respondentów jest wadliwy. Jeżeli sprawdzimy przeciętny wynik z próby to okaże się, że wynosi on dokładnie 35%, a więc dokładnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliśmy wcześniej oznacza to, że jest on poprawny. Ale co z tego skoro nie portafi dokładnie “trafić” w wynik! Potrzebujemy dodatkowej miary trafności wyników. Musi ona określać skalę błąd popełnianego przy korzystaniu z konkretnych schematów losowania. Dzięki temu będziemy porównywać schmaty, a przede wszystkim kreślić, jak duże jest ryzyko, że się myslimy.  Posłużymy się przy tym rozwiązaniem wymyślonym przez statystyków. Policzmy jak duzy jest rozstęp między wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajdują się w poniższej tabeli
 
 
 ### Tabela 9.2. Podsumowanie obliczeń
@@ -462,18 +453,33 @@ Widzimy jak wiele różnych możliwości możemy uzyskać z naszych prób. Przyj
 
 Zaczynamy od rozpisania wszystkich możliwych wyników z próby (kolumna A). Następnie dopisujemy, ile prób w naszym schemacie daje konkretny wynik (kolumna B). Obliczenia błędy zaczniemy od wyznaczenia różnicy między wynikiem w próbie i wynikiem w populacji (A - 35%). Następnie wyznaczymy kwadrat tego błędu ((A-35%)^2). W ten sposób otrzymaliśmy kwadrat błędu popełnianego w danym rodzaju próby. Nas interesuje nie błąd dla konkretnej próby (choć to też jest interesujące), ale błąd przeciętnie popełniany dla danego schematu losowania prób. Czyli chcemy poprostu policzyć średnią z naszego błędu - średnią arytmetyczną. Potrzebujemy do tego iloczynu kwadratów błędow w poszczególnych rodzajach prób i liczby prób każdego rodzaju (((A-35%)^2)*B ). Następnie sumujemy otrzymane wartości (779688) i dzielimy przez ogólna liczbe prób. W efekcie otrzymujemy  779688/27907200 = 0,02793859649 Tyle wynosi przeciętny błąd kwadratowy (statystycy nazywaja go “Wariancją”). Czy to dużo? Trudno powiedzieć. Dlatego policzymy pierwiastek tej liczby. W ten sposób otrzymamy pierwiastek średniego kwadratu błędu, czyli jak gdyby przeciętny błąd jaki popełniamy stosując nasz schemat losowania próby. Wynosi on 0,02793859649^(1/2) = 0,1671484265. W ten sposób otrzymujemy miarę, którą nazywamy odchyleniem standardowym. Trzeba podkreślić, że nie jest przeciętnym błąd popełniany przez próby tylko pierwiastkiem przeciętnego kwadratu błędu. Mimo to zazwyczaj traktuje się go jako przeciętny  błąd popełniany przez próbę. Wiemy więc, że po naszej próbie możemy się spodziewać błędu na poziomie prawie 17% (0,167).  To bardzo dużo biorąc pod uwagę, że rzeczywiste poparcie w próbie wynosi 35%. Nasz miernik pokazuje, że przeciętnie mylimy się o około połowę w naszych oszacowaniach!!!      
 Czy jest jakiś sposób, żeby temu zaradzić? Tak, i to dosyć prosty - możemy zwiększyć próbę. Każdy intuicyjnie wie, że większa próba to większa precyzja. Ale dlaczego tak jest?     
-Poniżej znajdują się trzy wykresy dla trzech schematów losowania i policzonych dla nich błędów standardowych oszacowania poparcia dla partii P. . 
-Pierwszy wykres ilustruje wyniki dla próby składającej się z pięciu respondentów, drugi dla 10, a trzeci dla 15. Ze względu na różną liczebność prób inne są możliwe oszacowania poparcia dla partii P i różny jest też ich rozkład. Widzimy jednak, że wyniki zaczynają się “skupiać” wokół rzeczywistego wyniku (czerwona pionowa linia). To właśnie metoda poprawiająca dokładność oszacowania.     
-Dlaczego tak się dzieje? Ponieważ w małych próbach stosunkowo łatwiej może się zdarzyć, że wszyscy będą za lub przeciw partii P. Innymi słowy łatwiej o skrajny wynik. Zwiększając próbę zwięszkamy szanse na to, że wyniki się “ustabilizują” - Przy większej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedną frakcję.     
+Poniżej znajdują się trzy wykresy dla trzech schematów losowania i policzonych dla nich błędów standardowych oszacowania poparcia dla partii X. . 
+Pierwszy wykres ilustruje wyniki dla próby składającej się z pięciu respondentów, drugi dla 10, a trzeci dla 15. Ze względu na różną liczebność prób inne są możliwe oszacowania poparcia dla partii X i różny jest też ich rozkład. Widzimy jednak, że wyniki zaczynają się “skupiać” wokół rzeczywistego wyniku (czerwona pionowa linia). To właśnie metoda poprawiająca dokładność oszacowania.     
+Dlaczego tak się dzieje? Ponieważ w małych próbach stosunkowo łatwiej może się zdarzyć, że wszyscy będą za lub przeciw partii X. Innymi słowy łatwiej o skrajny wynik. Zwiększając próbę zwięszkamy szanse na to, że wyniki się “ustabilizują” - Przy większej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedną frakcję.     
 Przejdżmy do kwestii wnioskowania. Prawdziwie badania sondażowe polegają na wnioskowaniu na podstawie pojedynczej próby. Nie ma więc możliwości analizowania wyników z ze wszyskich prób     
 
 # 10. Błędy systematyczne 
  
-Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że samo prawdziwe badanie sondażowe nie składa się wyłącznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy. Mamy nadzieję, że 
-Wyobraźmy sobie nasza próbę i sytuację, gdy niespodziewane na wywiady, pomimo bardzo wielu prób podjęcia kontaktu uda się zrealizować wyłącznie z osobami zamieszkałymi w mieście
+Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że samo prawdziwe badanie sondażowe nie składa się wyłącznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy.
+Wróćmy więc znowu do naszej populajcji i wyobraźmy sobie sytuację, gdy niespodziewane na wywiady, pomimo bardzo wielu próźb i grób, wszystkie osoby zamieszkałe w mieście w dobranej próbie konsekwentnie odmawiają naszym ankieterom wzięcia udziału w badaniu. To zupełnie skrajny przypadek, takie rzeczy raczej się nie zdażają, ale prawdą jest, że mieszkańcy miast sa trudniej uchwytni - z różnych powodów.
+Jakie dla nas konsekwencje będzie miało to zjawisko? 
+Łatwo się domyślić. Zmienią sie wyniki otrzymywane z prób. Dalej korzystamy z próby składającej sie z 6 osób. Co za tym idzie zmienią się nasze wyniki. Z jednej strony pojawią się 
+
+
+
+```
+## [1] 20
+```
+
+```
+## [1] 20
+```
+
+![plot of chunk unnamed-chunk-10](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-10.png) 
+
 
 Wnioskowanie
-Do tej pory analizowaliśmy rozkłady wszystkich możliwych wyników z próby. Potrafimy sobie wyobrazić co nas czeka. Badanie sondażowe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikować, ale dla których nie znamy rozkładu preferencji politycznych czy innych badanych cech. W związku z tym w prawdziwym badaniu nie znamy błędu schematu z góry. Tak samo jak poziom poparcia dla partii P musimy go oszacować na podstawie próby. Jak to zrobimy      
+Do tej pory analizowaliśmy rozkłady wszystkich możliwych wyników z próby. Potrafimy sobie wyobrazić co nas czeka. Badanie sondażowe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikować, ale dla których nie znamy rozkładu preferencji politycznych czy innych badanych cech. W związku z tym w prawdziwym badaniu nie znamy błędu schematu z góry. Tak samo jak poziom poparcia dla partii X musimy go oszacować na podstawie próby. Jak to zrobimy      
 No i tutaj też mam problem, w jaki sposób podjąć ten temat, aby był on "strawny". Jeżeli nic nie
 wymyślę, to po prostu kursant policzy średnią z próby (punktowy estymator odsetka w populacji), uwzględniając tylko osoby, które „udzieliły odpowiedzi”. Na końcu kursant porównuje wyniki przeprowadzonego przez siebie „sondażu”, z parametrem w populacji i myśli „Ojej, ale fajne te sondaże!”.
 
@@ -483,8 +489,8 @@ Tu trzeba dodać fragment o
 O błędzie:
 Celem badań sondażowych jest zdobycie informacji na temat wybranej zbiorowości, zwanej w badaniach populacją. Sondaże są najczęściej realizowane tylko na stosunkowo niewielkiej część osób z populacji, na temat której badacz chce zdobyć informacje. Specjalne metody doboru respondentów do badania pozwalają uogólniać wyniki uzyskane w próbie na całą zbiorowość. Niestety dziennikarze często zapominają, że takie uogólnienie odbywa się z określoną dokładnością – nazywaną najczęściej błędem statystycznym.
 O systematycznym błędzie - wieś i miasto
-Problem występuje nagminnie w badaniach poparcia dla partii politycznych [1] [2]. Gdy czyta się w gazetach, że określony odsetek Polaków popiera daną partię polityczną, trzeba pamiętać, że  na podstawie sondażu taki wynik można podać tylko z określonym przybliżeniem.
-O ile jeden odsetek wystarczy traktować jako przybliżony, o tyle poważny problem pojawia się w sytuacji, kiedy w gazetach porównuje się odsetek osób popierających jakąś partię z odsetkiem popierających ją w poprzednim miesiącu [3]. W standardowych badaniach społecznych (próba około 1000 respondentów) przyjmuje się najczęściej, że błąd statystyczny wynosi  +/-3% [4]. Oznacza to, że jeśli w styczniu daną partię popierało 25% respondentów, a w lutym 22% respondentów, to nie można powiedzieć, że poparcie dla tej partii w populacji spadło, gdyż różnica ta nie jest istotna statystycznie.
+Problem występuje nagminnie w badaniach poparcia dla politycznych [1] [2]. Gdy czyta się w gazetach, że określony odsetek Polaków popiera daną partię polityczną, trzeba pamiętać, że  na podstawie sondażu taki wynik można podać tylko z określonym przybliżeniem.
+O ile jeden odsetek wystarczy traktować jako przybliżony, o tyle poważny problem pojawia się w sytuacji, kiedy w gazetach porównuje się odsetek osób popierających jakąś partię z odsetkiem popierających ją w poprzednim miesiącu [3]. W standardowych badaniach społecznych (próba około 1000 respondentów) przyjmuje się najczęściej, że błąd statystyczny wynosi  +/-3% [4]. Oznacza to, że jeśli w styczniu daną partię X popierało 25% respondentów, a w lutym 22% respondentów, to nie można powiedzieć, że poparcie dla tej partii w populacji spadło, gdyż różnica ta nie jest istotna statystycznie.
 Wyjaśniając, na czym polega owa istotność, należy powiedzieć, że błąd statystyczny w powyższym przypadku oznacza, że skoro w próbie ze stycznia 25% osób popierało rząd, to z prawdopodobieństwem 95% w całej populacji popierało go od 22% do 28%. Gdy w próbie z lutego 22% respondentów wyraziło poparcie dla rządu, to wśród wszystkich dorosłych Polaków mogło go popierać od 19% do 25%. Jak widać przedziały dla stycznia i lutego się na siebie nakładają, przez co różnica w poparciu między tymi miesiącami może nie świadczyć o spadku poparcia dla rządu.
 Ciekawym publicystycznym rozwiązaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wzięli udział w badaniu (a więc przytaczaniu wyniku dla próby), a nie o populacji, której badani są tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisząc na temat przyczyn niskiej aktywności politycznej Polaków ani razu nie wypowiedzieli się na temat wszystkich Polaków, opisują jedynie wyniki dla przebadanej próby. Nie jest to już niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialność na czytelnika, który sam musi ocenić, na ile dokładnie w danej próbie odzwierciedlone są poglądy wszystkich Polaków.
 Najbardziej profesjonalnym rozwiązaniem byłoby jednak pisanie, w jakim przedziale mieści się badana cecha (np. poparcie dla partii) w całej zbiorowości, a nie wśród przebadanych respondentów. Jak widać bowiem, przy założeniu poprawności realizacji badania, wynik ten z pewnym przybliżeniem oddaje rzeczywisty odsetek dla całej populacji. Jeśli nie podaje się przedziału tego przybliżenia, wówczas lepiej jest napisać o dokładnych wynikach uzyskanych dla przebadanych respondentów, niż dla całej zbiorowości, z której zostali oni wybrani.
