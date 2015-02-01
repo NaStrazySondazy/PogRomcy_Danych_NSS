@@ -101,13 +101,13 @@ Co powinien zrobiæ ka¿dy prawdziwy sonda¿ysta przed rozpoczêciem badania? Powien
 
 1.  **Jak definiujemy badan¹ populacjê. Kto nale¿y, a kto nie nale¿y do badanej zbiorowoœci?**   
 
-Za³ó¿my, ¿e interesuje nas populacja Polaków. Czy chodzi o wszystkich ludzi na œwiecie posiadaj¹cych obywatelstwo polskie? A mo¿e tylko tych spoœród nich, którzy mieszkaj¹ w kraju? Albo chodzi ogólnie o mieszkañców Polski niezale¿nie od tego czy posiadaj¹ obywatelstwo? Czy interesuj¹ nas ludzie w ka¿dym wieku, czy tez mo¿e tylko pe³noletni z prawem do g³osowania (18+)? Lub trochê szerzej osoby w wieku produkcyjnym i poprodukcyjnym (15+)? Przyk³adami populacji mog¹ byæ mieszkañcy Krakowa, mieszkañcy Gdyni, uczniowie wszystkich szkó³ gimnazjalnych w Polsce lub wszyscy pe³noletni mieszkañcy Polski (posiadaj¹cy i nieposiadaj¹cy obywatelstwa). 
+Za³ó¿my, ¿e interesuje nas populacja Polaków. Czy chodzi o wszystkich ludzi na œwiecie posiadaj¹cych obywatelstwo polskie? A mo¿e tylko tych spoœród nich, którzy mieszkaj¹ w kraju? Albo ogólnie o mieszkañców Polski niezale¿nie od tego czy posiadaj¹ obywatelstwo? Czy interesuj¹ nas ludzie w ka¿dym wieku, czy tez mo¿e tylko pe³noletni z prawem do g³osowania (18+)? Lub osoby w wieku produkcyjnym i poprodukcyjnym (15+)? Przyk³adami populacji mog¹ byæ mieszkañcy Krakowa, mieszkañcy Gdyni, uczniowie wszystkich szkó³ gimnazjalnych w Polsce lub wszyscy pe³noletni mieszkañcy Polski (posiadaj¹cy i nieposiadaj¹cy obywatelstwa). 
 W Polsce sonda¿e dotycz¹ce kwestii politycznych najczêœciej obejmuj¹ populacjê pe³noletnich obywateli RP zamieszka³ych na terenie kraju. Nie musi jednak tak byæ. Wszystko bowiem zale¿y od tego:   
 
 2.	**Jak definiujemy problem badawczy?**     
 
-W przypadku badañ sonda¿owych to pytanie mo¿emy uœciœliæ w nastêpuj¹cy sposób: jak¹ cechê opisuj¹ca nasz¹ zbiorowoœæ chcemy zmierzyæ. Co oznacza cecha w tym przypadku? Opisuj¹c du¿a zbiorowoœæ musimy zdecydowaæ siê na jakiœ kompromis i uogólnienia. Sonda¿ nie odpowiemy na pytanie jak zachowuj¹ siê poszczególni mieszkañcy Polski. Mo¿emy za to okreœliæ jak zachowuj¹ siê przeciêtnie albo jak zachowuje siê wiêkszoœæ z nich. Innymi s³owy mo¿emy badaæ takie parametry populacji jak œrednia (np. waga) lub odsetek osób z dan¹ popieraj¹cych dan¹ partiê. 
-Sonda¿e, nie tylko w Polsce, zazwyczaj przeprowadza siê, aby poznaæ preferencje wyborcze 
+W przypadku badañ sonda¿owych to pytanie mo¿emy uœciœliæ w nastêpuj¹cy sposób: jak¹ cechê naszej zbiorowoœci chcemy zmierzyæ. Co oznacza cecha w tym przypadku? Opisuj¹c du¿a zbiorowoœæ musimy zdecydowaæ siê na jakiœ kompromis i uogólnienia. Sonda¿ nie odpowie nam na pytanie, jak zachowuj¹ siê poszczególni mieszkañcy Polski. Mo¿emy za to za jego pomoc¹ okreœliæ, jak zachowuj¹ siê przeciêtnie albo jak zachowuje siê wiêkszoœæ z nich. Oznacza to, ¿e przy pomocy sonda¿u mo¿emy badaæ takie parametry populacji jak œrednia (np. waga) lub odsetek osób z dan¹ cech¹ (np. popieraj¹cych dan¹ partiê). 
+Zazwyczaj sonda¿e prowadzi siê, aby poznaæ preferencje wyborcze obywateli. Ale problemem badawczym mo¿e byæ tak¿e coœ innego. Wiele sondazy s³u¿y ocenie  przeciêtnych dochody lub wydatków osób nale¿¹cych do badanej populacji lub preferencji zwi¹zanych z zakupami.   
 
 3.	**Jak¹ technikk¹ przeprowadzamy badanie i jak dobieramy próbê**   
 
