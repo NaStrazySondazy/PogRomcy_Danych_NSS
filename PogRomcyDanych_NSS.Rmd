@@ -96,24 +96,48 @@ __Zadania 4:__
     b. Jaki procent mieszkañców miasta nie pójdzie na wybory?    
     c. Jaki procent osób które nie popieraj¹ partii X mieszka w mieœcie?
 
-# 5. Problem badawczy: populacja i próba 
-Co powinien zrobiæ ka¿dy prawdziwy sonda¿ysta przed rozpoczêciem badania? Powienien przeprowadziæ „konceptualizacjê” problemy badawczego. Musi bowiem odpowiedzieæ sobie na trzy podstawowe pytania.   
+# 5. Problem badawczy->populacja->technika 
+Co powinien zrobiæ ka¿dy prawdziwy sonda¿ysta przed rozpoczêciem badania? Powienien odpowiedzieæ sobie na  trzy podstawowe pytania.   
 
-1.  **Jak definiujemy badan¹ populacjê. Kto nale¿y, a kto nie nale¿y do badanej zbiorowoœci?**   
+1.  **Jak definiuje problem badawczy?**     
 
-Za³ó¿my, ¿e interesuje nas populacja Polaków. Czy chodzi o wszystkich ludzi na œwiecie posiadaj¹cych obywatelstwo polskie? A mo¿e tylko tych spoœród nich, którzy mieszkaj¹ w kraju? Albo ogólnie o mieszkañców Polski niezale¿nie od tego czy posiadaj¹ obywatelstwo? Czy interesuj¹ nas ludzie w ka¿dym wieku, czy tez mo¿e tylko pe³noletni z prawem do g³osowania (18+)? Lub osoby w wieku produkcyjnym i poprodukcyjnym (15+)? Przyk³adami populacji mog¹ byæ mieszkañcy Krakowa, mieszkañcy Gdyni, uczniowie wszystkich szkó³ gimnazjalnych w Polsce lub wszyscy pe³noletni mieszkañcy Polski (posiadaj¹cy i nieposiadaj¹cy obywatelstwa). 
-W Polsce sonda¿e dotycz¹ce kwestii politycznych najczêœciej obejmuj¹ populacjê pe³noletnich obywateli RP zamieszka³ych na terenie kraju. Nie musi jednak tak byæ. Wszystko bowiem zale¿y od tego:   
+W przypadku badañ sonda¿owych to pytanie mo¿emy uœciœliæ w nastêpuj¹cy sposób: jak¹ cechê naszej zbiorowoœci chcemy zmierzyæ. Co rozumieæ przez cechê w tym przypadku? Opisuj¹c du¿a zbiorowoœæ musimy zdecydowaæ siê na jakiœ kompromis i uogólnienia. Sonda¿ nie odpowie nam na pytanie, jak zachowuj¹ siê poszczególni mieszkañcy Polski. Mo¿emy za to za jego pomoc¹ okreœliæ, jak zachowuj¹ siê przeciêtnie albo jak zachowuje siê wiêkszoœæ z nich. Oznacza to, ¿e przy pomocy sonda¿u mo¿emy badaæ parametry, cechy, populacji takie jak œrednia (np. waga) lub odsetek osób z dan¹ cech¹ (np. odsetek popieraj¹cych uczestnicz¹cych w wyborach - frekfencjê). 
+Najczêsciej sonda¿e realizuje siê, aby poznaæ preferencje wyborcze obywateli. Problemem badawczym mo¿e byæ jednak tak¿e coœ innego. Wiele sondazy s³u¿y ocenie  przeciêtnych dochody lub wydatków osób nale¿¹cych do badanej populacji, a tak¿e preferencji konsumenckich. 
+Okreœlenie problemu badawczego stanowi punkt wyjœcia do nastêpego pytania.
 
-2.	**Jak definiujemy problem badawczy?**     
+2.  **Jak definiuje badan¹ populacjê. O jakiej zbiorowoœci chcemy wnioskowaæ??**   
 
-W przypadku badañ sonda¿owych to pytanie mo¿emy uœciœliæ w nastêpuj¹cy sposób: jak¹ cechê naszej zbiorowoœci chcemy zmierzyæ. Co oznacza cecha w tym przypadku? Opisuj¹c du¿a zbiorowoœæ musimy zdecydowaæ siê na jakiœ kompromis i uogólnienia. Sonda¿ nie odpowie nam na pytanie, jak zachowuj¹ siê poszczególni mieszkañcy Polski. Mo¿emy za to za jego pomoc¹ okreœliæ, jak zachowuj¹ siê przeciêtnie albo jak zachowuje siê wiêkszoœæ z nich. Oznacza to, ¿e przy pomocy sonda¿u mo¿emy badaæ takie parametry populacji jak œrednia (np. waga) lub odsetek osób z dan¹ cech¹ (np. popieraj¹cych dan¹ partiê). 
-Zazwyczaj sonda¿e prowadzi siê, aby poznaæ preferencje wyborcze obywateli. Ale problemem badawczym mo¿e byæ tak¿e coœ innego. Wiele sondazy s³u¿y ocenie  przeciêtnych dochody lub wydatków osób nale¿¹cych do badanej populacji lub preferencji zwi¹zanych z zakupami.   
+Za³ó¿my, ¿e interesuje nas populacja Polaków. Czy to znaczy, ¿e bêdziemy badaæ wszystkich ludzi na œwiecie posiadaj¹cych obywatelstwo polskie albo mówi¹cych po polsku? A mo¿e tylko tych spoœród nich, którzy mieszkaj¹ w kraju? Albo ogólnie mieszkañców Polski niezale¿nie od tego, czy posiadaj¹ obywatelstwo czy te¿ nie?    
+Musimy równie¿ zadecydowaæ, czy interesuj¹ nas ludzie w ka¿dym wieku, czy mo¿e tylko pe³noletni z prawem do g³osowania (18+)? Lub te¿ osoby w wieku produkcyjnym i poprodukcyjnym (15+)? 
+Najczêœciej sonda¿e w Polsce obejmuj¹ populacjê pe³noletnich obywateli zamieszka³ych na terenie kraju. Istniej¹ jednak badania spo³eczne dla których, ze wzglêdu na poruszan¹ problematykê, populacje definiuje siê zupe³nie inaczeæ. I tak istniej¹ badania zbiorowoœci osób w wieku dok³adnie 15 ukoñczonych lat, albo zbiorowoœci pe³noletnich obywateli województwa ma³opolskiego.
+Okreœlenie problemu badawczego i zdefiniowanie populacji to nie wszystko. Trzeba bowiem jeszcze dostosowaæ do nich sposób w jaki pozyskiwane bêda dane od respondentów.
 
-3.	**Jak¹ technikk¹ przeprowadzamy badanie i jak dobieramy próbê**   
+3.	**Jak¹ technikk¹ realizujemy badanie?**   
 
-W reprezentacyjnych badaniach sonda¿owych kluczowymi terminami s¹ __populacja__ i __próba__.
-Populacja jest to zbiorowoœæ, o której badacz chce zdobyæ informacje na podstawie sonda¿u. Przyk³adami populacji mog¹ byæ  mieszkañcy Krakowa, Gdyni, uczniowie wszystkich szkó³ gimnazjalnych lub pe³noletni mieszkañcy Polski, nie tylko obywatele.
-Próba jest to zbiór jednostek wybranych z populacji, o której badacz chce zdobyæ informacje. Problem ze zdefiniowaniem tych dwóch pojêæ dobrze ilustruje przyk³ad z historii.  W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadzi³ w USA badanie przedwyborcze. Do ludzi wybranych z ksi¹¿ek telefonicznych i list rejestracyjnych samochodów wys³ano DZIESIÊÆ MILIONÓW kart pocztowych, pytaj¹c, na kogo zamierzaj¹ oddaæ g³os w wyborach prezydenckich – na republikanina Alfa Landona czy demokratê Franklina Roosevelta? Odpowiedzia³o ponad dwa miliony ludzi, wskazuj¹c ¿e nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mog³oby siê wydawaæ, ¿e przebadanie tylu osób jest du¿o bardziej wiarygodne i miarodajne ni¿ przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory doœæ drastycznie zweryfikowa³y wnioski z tych badañ – nowym prezydentem zosta³ Franklin Roosevelt, maj¹c najwiêksz¹ przewagê g³osów w historii – otrzyma³ 61%.
+To jedno z powa¿niejszych kluczowych zagadnieñ zwi¹zanych z badaniami sonda¿ymi. Istniej¹ trzy podstawowe rozwi¹zania tego problemu. Obecnie badania s¹ najczêœciej realizowaæ przy pomocyjednej z trzech nastêpujacych technik:   
+
+  1. Wywiadów bezpoœrednich;   
+  2. Wywiadów telefonicznych;    
+  3. ankiet internetowych.    
+  
+Do pierwszej grupy nale¿¹ badania realizowane przy pomocy ankiety papierowej lub na komputerze przy udziale ankietera. Druga grupa to badania, w których ankieterzy dzwoni¹ do respondentów i zbieraj¹ od nich informacje przez telefon. Ostatni rodzaj to techniki polegaj¹ce na zbieraniu informacji od respondentów przez internet bez udzia³u ankietera. W poni¿ej tabeli znajduje siê, krótki opis wybranych technik badawczych.
+
+### Tabela 6.1. Techniki realizacji badañ
+
+| Technika | PAPI (Paper And Pencil Interviewing)                                                                                                             | CAPI,(ComputerAssisted Personal Interviewing)                                                                                                                | CATI (Computer Assisted Telephone Interviewing)      | CAWI (Computer Assisted Web Interviewing)                                 |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
+| Opis     | ankieta papierowa, wype³niana przez ankietera lub samodzielnie przez respondenta                                                                 | konieczny udzia³ ankietera, który sprawuje nadzór techniczny nad realizacj¹ ankiety                                                                          | dane s¹ zbierane przez ankieterów przez telefon      | dane s¹ zbierane przez internet bez poœrednictwa, czy wsparcia ankieterów |
+| Zalety   | - mo¿liwoœc dotarcia do ka¿dej osoby znajduj¹cej sie w populacji - brak ograniczeñ technicznych                                                  | - mo¿liwoœc dotarcia do ka¿dej osoby znajduj¹cej sie w populacji - brak ograniczeñ technicznych;- mozliwoœæ zapisywania wyników od razu w bazie komputerowej | - szybka realizacja                                  | -niewielki koszt- stosunkowo szybka realizacja                            |
+| Wady     | realizacja d³uga i kosztowna ze wzglêdu na rozproszenie respondentów w przestrzeni i koniecznoœæ podjêcia bezpœredniego kontaktu z ka¿dym z nich | realizacja d³uga i kosztowna ze wzglêdu na rozproszenie respondentów w przestrzeni i koniecznoœæ podjêcia bezpœredniego kontaktu z ka¿dym z nich             | ograniczenie do osób posiadaj¹cych telefon komórkowy | - ograniczenie do osób korzystajacych z internetu                         |
+
+Badania realizowane technikami bezpoœrednimi s¹ realizowane w “terenie”, czyli najczêœciej w miejscu zamieszkania respondenta. Ankieterzy musz¹ wiêc wiedzieæ, gdzie mog¹ zastaæ respondenta. Aby pos³ugiwaæ siê t¹ metod¹ konieczne s¹ dane o miejscach zamieszkania osób nale¿¹cych do populacji. Na szczêœcie w Polsce istniej¹ przynajmniej dwa bardzo dobrze rozwiniête bazy danych, które umo¿liwiaj¹ pozyskanie tego rodzaju danych. S¹ to rejestr PESEL (baza ewidencji ludnoœci w Polsce prowadzona przez MSW) oraz rejestr TERYT (baza adresów wszyskich mieszkañ w Polsce prowadzona przez GUS). W dwóch najpopularniejszych wariantach techniki bezpoœredniej odpowiedzi respondentów s¹ zapisywane przez ankietera na papierowym kwestionariuszu (technika PAPI - Pencil and Paper Interview), b¹dŸ na laptopie lub innym urz¹dzeniu mobilnym ( technika CAPI - Computer Assisted Personal Interview). To drugie, czêœciej stosowane rozwi¹zanie eliminuje mozolny proces kodowania odpowiedzi, czyli przenoszenia ich z papieru do komputera. Techniki bezpoœrednie s¹ czêsto stosowane do realizacji ogólnopolskich badañ sonda¿owych, ale nie tylko. Cechuj¹ siê one relatywnie niskim odsetkiem odmów wziêcia udzia³u w badaniu. Respondentowi trudniej odmówiæ jest wziêcia udzia³u w badaniu, je¿eli ankieter odwiedza go osobiœcie, ni¿ w przypadku, gdy kontaktuje siê z nim na przyk³ad przez telefon. Tego rodzaju techniki pozwalaj¹ równie¿ na dotarcie do najwiêkszej grupy ludnoœci, nieosi¹galnej poprzez po³¹czenie telefoniczne, b¹dŸ przez internet. Jakoœæ ma jednak swoj¹ cenê. Ze wzglêdu na koniecznoœæ poniesienia kosztów pracy i podró¿y ankieterów (którzy w przypadku badañ ogólnopolskich musz¹ przecie¿ odwiedziæ miejscowoœci rozrzucone po ca³ym kraju) techniki oparte na bezpoœrednim kontakcie ankietera z respondentem s¹ najdro¿sze ze wszytkich technik badawczych. Ten sposób prowadzenia badañ wi¹¿e siê równie¿ z doœæ d³ugim okresem gromadzenia danych.     
+Kolejn¹ czêsto wykorzystywana technika polega na przeprowadzeniu wywiadów przez telefon (CATI - computer assisted telephone interview). Ta metoda jest du¿o szybsza i tañsza od wywiadów face-to-face (eliminuje siê w niej koszt oraz czas potrzebny na dotarcie ankietera na miejsce wywiadu), jednak¿e jest to obwarowane pewnymi wadami. Przede wszystkim, metoda ta nie powinna byæ wykorzystywana w przypadku badañ o charakterze ogólnopolskim. W Polsce wci¹¿ nie wszyscy s¹ posiadaczami telefonów (wed³ug badañ 89% Polaków posiada telefon komórkowy). Powoduje to, ¿e ¿adne badanie prowadzone t¹ metod¹ nie bêdzie w pe³ni obejmowa³o wszystkich mieszkañców Polski. Dodatkowo, w przypadku badañ telefonicznych liczba odmów wziêcia udzia³u w badania jest wy¿sza, ni¿ w przypadku badañ face-to-face. Technika ta sprawdza siê natomiast w sytuacjach, gdy do zbadania jest mniejsza populacja, do której cz³onków posiadamy kontakt telefoniczny.    
+Ostatni¹ technik¹ s¹ badania internetowe (CAWI - Computer Assisted Web Interview). W przypadku tej metody respondenci wype³niaj¹ ankietê w specjalnie do tego celu przygotowanym serwisie internetowym.     
+Sposób pozyskiwania informacji od respondentów powinien byæ dostosowany do  populacji, kwestionariusza (pytañ badawczych), harmonogramu realizacji oraz co bardzo istotne, bud¿etubadania.Istniej¹ cztery podstawowe techniki zbierania danych, których najwa¿niejsze wady i zalety.   
+Szczególnie istotn¹ cech¹ ró¿nicuj¹c¹ opisane powy¿ej techniki jest tak zwany poziom realizacji próby (nazywany równie¿ poziomem response-rate), czyli odsetek osób wytypowanych przez nas do udzia³u w badaniu, z którymi faktycznie uda³o siê przeprowadziæ wywiad. Trzeba pamiêtaæ, ¿e praktycznie nigdy nie wystêpuje sytuacja, w której badaczom udaje siê zapytaæ o opiniê wszystkie osoby w³¹czone przez nich do próby. Dzieje siê tak z kilku powodów. Po pierwsze, nie do wszystkich osób mo¿na dotrzeæ. Zdarzaj¹ siê osoby do których dotarcie jest ca³kowicie niemo¿liwe (na przyk³ad ¿o³nierze pe³ni¹cy czynn¹ s³u¿bê na okrêcie podwodnym przez d³u¿szy czas), a tak¿e takie, do których dotarcie jest bardzo trudne (ze wzglêdu na absorbuj¹ce ¿ycie zawodowe, czêste podró¿e i tym podobne czynniki). Ponadto, czêœæ osób, do których uda siê dotrzeæ z ró¿nych przyczyn odmawia wziêcia udzia³u w badaniu.  Oba te czynniki s¹ dodatkowym Ÿród³em b³êdu w badaniu i celem ka¿dego dobrego badacza jest ich zminimalizowanie. Okazuje siê, ¿e ró¿ne sposoby dotarcia do respondentów cechuj¹ siê innym œrednim wskaŸnikiem realizacji próby.    
+Drug¹ wa¿n¹ kwesti¹, decyduj¹c¹ o wyborze metody realizacji badania jest badana populacja. Nie ka¿d¹ populacjê mo¿na zbadaæ dowolnie wybran¹ technik¹, w niektórych przypadkach wybór techniki odpowiednio dobranej do badanej populacji pozwala skutecznie zminimalizowaæ b³êdy realizacji.    
+
+dobrze ilustruje przyk³ad z historii.  W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadzi³ w USA badanie przedwyborcze. Do ludzi wybranych z ksi¹¿ek telefonicznych i list rejestracyjnych samochodów wys³ano DZIESIÊÆ MILIONÓW kart pocztowych, pytaj¹c, na kogo zamierzaj¹ oddaæ g³os w wyborach prezydenckich – na republikanina Alfa Landona czy demokratê Franklina Roosevelta? Odpowiedzia³o ponad dwa miliony ludzi, wskazuj¹c ¿e nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mog³oby siê wydawaæ, ¿e przebadanie tylu osób jest du¿o bardziej wiarygodne i miarodajne ni¿ przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory doœæ drastycznie zweryfikowa³y wnioski z tych badañ – nowym prezydentem zosta³ Franklin Roosevelt, maj¹c najwiêksz¹ przewagê g³osów w historii – otrzyma³ 61%.
 Dla porównania w tym samym czasie przedwyborczy sonda¿, przeprowadzi³ równie¿  George Gallup, który trafnie przewidzia³ wyniki wyborów. W swoim badaniu pos³u¿y³ siê on jednak niewielk¹ prób¹ kwotow¹ (czyli opart¹ na znajomoœci okreœlonych cech populacji, np. p³eæ, dochód, wiek, miejsce zamieszkania itp.).
 Na czym wiêc polega³ problem? Na ca³kowitym braku kontroli nad badan¹ prób¹. Na pytanie zadane przez „Literary Digest” odpowiedzia³o zaledwie 22% wszystkich zapytanych osób. Jak siê okaza³o karty w wiêkszoœci odsy³ali republikanie. Drugi problem polega³ na nieprawid³owym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i w³aœcicieli samochodów. Taka konstrukcja próby dawa³a nadreprezentacjê zamo¿nych wyborców, czyli pominiêcie ludzi biednych, którzy w wiêkszoœci g³osowali na „New deal” Roosevelta. 
 Przyk³ad ten ilustruje, jak dobór nawet du¿ej próby z niepoprawnie zdefiniowanej populacji mo¿e doprowadziæ do zupe³nie nietrafnych wniosków.  Analizuj¹c wyniki badañ sonda¿owych nale¿y zawsze zwracaæ uwagê na sposób definiowania populacji. Definicja zbiorowoœci generalnej powinna zawieraæ informacje o: 
@@ -142,6 +166,24 @@ L.p.          | Nazwa firmy badawczej| Link do strony z raportem?
     b. Podaj liczbê uczniów klas 1-3 w Polsce w 2013 r.(mog¹ to byæ dane zgodne ze stanem na 1 czerwca 2013 r. lub dla póŸniejszej daty przed koñcem 2013 r.)
     c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedo¿ywienie
     d. Czy z danych przedstawionych w raporcie mo¿e wynikaæ, ¿e w Polsce z g³odu cierpi oko³o 800 000 dzieci? OdpowiedŸ uzasadnij.
+    
+
+
+  1. Uniwersytecki Zespó³ Na Stra¿y Sonda¿y zamówi³ badanie dotycz¹ce popularnoœci strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodzi³o oszacowanie odsetka osób w wieku 18-35 lat zamieszka³ych w Polsce, które w ci¹gu ostatniego miesi¹ca zapozna³y siê z treœci¹ (przeczyta³y ca³y lub prawie ca³y) przynajmniej jednego artyku³u na stronie. Badanie zosta³o przeprowadzone metoda CAWI przez firmê “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spoœród 50 tys. osób które dobrowolnie zarejestrowa³y siê do bazy internetowej firmy i za drobna op³at¹ zgadzaj¹ siê odpowiadaæ na pytania w ró¿nych ankietach. Wiadomo równie¿, ze osoby do badania zosta³y dobrane w ten sposób, aby rozk³ad p³ci wieku oraz wielkoœci miejscowoœci deklarowenego zamieszkania by³ zgodny z danymi podawanymi przez GUS na temat mieszkañców Polski. Odpowiedz na pytania zwi¹zane z tym badaniem:
+    a) Czy populacja osób z posiadaj¹cych dostêp do internetu (korzystaj¹cych z internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) zawiera wszystkich mieszkañców Polski?     
+      i. Tak;   
+      ii. Nie - Nie wszyscy mieszkañcy Polski maj¹ dostêp do Internetu - sprwd¿ dane GUS.    
+    b) Czy próba badawcza 917 osób zosta³a dobrana z populacji polskich internautów - osób korzystaj¹cych z internetu do celów prywatnych (nie zwi¹zanych z praca zarobkowa, ale np. komunikacj¹ ze znajomymi i rodzin¹, nauk¹, czytaniem prasy, graniem, ogl¹daniem fimów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
+      i. Tak    
+      ii. Nie - próba zosta³a dobrana spoœród 50 tys. osób, które same zg³osi³y siê do udzielania odpowiedzi na pytania ankietowe przez Internet. Choæ jest to ma³o prawdopodobne mo¿na sobie wyobraŸiæ, ¿e w próbie mog³ znaleŸæ siê  kogoœ kto korzysta z Internetu tylko w celach zarobkowych, w tym do wype³niania ankiet za pieni¹dze. Zgodnie z nasza definicj¹ taka osoba nie jest internaut¹.    
+    c) Czy badanie zlecone przez Na Stra¿y Sonda¿y obejmuje popluacjê polskich internautów.    
+      i. Tak - badanie dotyczy oszacowania odsetka wœród mieszkañców Polski ogó³em nie tylko internautów. Musimy jednak pamiêtaæ, ¿e Polscy internauci nie maja   poniewa¿ pytanie dotyczy  odwiedziania strony “Na strazy sonda¿y”. Nie mozna odwiedziæ strony internetowej nie bêd¹c    
+      ii. Nie.  
+    d) Czy badanie zrealizowne przez “Polski Panel Internetowy” obejmujê populacje;   
+    e) Czy rozk³ad p³ci, wieku i wielkoœci miejscowoœci zamieszkania w próbie jest zgodny z rozkladem tych cech w populacji mieszkañców Polski?    
+      i. Tak    
+      ii. Nie - rozklad jest zgodny z danymi GUS dotycz¹cymi populacji mieszkañców Polski, a nie polskich internautów.    
+    
     
 # 6. Kwestionariusz
 
@@ -318,8 +360,7 @@ m <- cleanGoogleTable(elem, table=1)
 m<-m[,colnames(m)!="X"]
 ```
 
-
-Poparcie w populacji
+## Poparcie w populacji
 ```{r, echo=FALSE, results='asis'}
 poparcie_dla_P<-addmargins(table( m$Miasto_wies, m$Glosowanie ) )
 colnames( poparcie_dla_P)<-c("Nie pójdê na wybory", "Nie", "Tak", "RAZEM")
@@ -396,49 +437,8 @@ __Zadania 7:__
     c) jaki jest przeciêtnych poziom absencji w próbie losowanej wg. takiego schematu jak ta wylosowana przez Ciebie?    
     d) Napisz o ile punktów procentowych ró¿ni siê wynik z twojej próby od wyniku w ca³ej popualcji (50%)
     
-
-# 8. Technika realizacji badania
-Gdy ju¿ wiemy kogo dok³adnie chcemy zbadaæ, musimy zastanowiæ siê nad tym w jaki sposób dotrzeæ do wybranych respondentów. Istniej¹ trzy podstawowe rodzaje technik realizowania badañ sonda¿owych:   
-  1. Wywiady bezpoœrednie;   
-  2. Wywiady telefoniczne;    
-  3. ankiety internetowe.    
-Do pierwszej grupy nale¿¹ badania realizowane przy pomocy ankiety papierowej lub na komputerze przy udziale ankietera. Druga grupa badania, w których ankieterzy dzwoni¹ do respondentów i zbieraj¹ od nich informacje przez telefon. Ostatni rodzaj to techniki polegaj¹ce na zbieraniu informacji od respondentów przez internet bez udzia³u ankietera. W poni¿ej tabeli znajduje siê, krótki opis wybranych technik badawczych.
-
-### Tabela 8.1. Techniki realizacji badañ
-
-
-
-| Technika | PAPI (Paper And Pencil Interviewing)                                                                                                             | CAPI,(ComputerAssisted Personal Interviewing)                                                                                                                | CATI (Computer Assisted Telephone Interviewing)      | CAWI (Computer Assisted Web Interviewing)                                 |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
-| Opis     | ankieta papierowa, wype³niana przez ankietera lub samodzielnie przez respondenta                                                                 | konieczny udzia³ ankietera, który sprawuje nadzór techniczny nad realizacj¹ ankiety                                                                          | dane s¹ zbierane przez ankieterów przez telefon      | dane s¹ zbierane przez internet bez poœrednictwa, czy wsparcia ankieterów |
-| Zalety   | - mo¿liwoœc dotarcia do ka¿dej osoby znajduj¹cej sie w populacji - brak ograniczeñ technicznych                                                  | - mo¿liwoœc dotarcia do ka¿dej osoby znajduj¹cej sie w populacji - brak ograniczeñ technicznych;- mozliwoœæ zapisywania wyników od razu w bazie komputerowej | - szybka realizacja                                  | -niewielki koszt- stosunkowo szybka realizacja                            |
-| Wady     | realizacja d³uga i kosztowna ze wzglêdu na rozproszenie respondentów w przestrzeni i koniecznoœæ podjêcia bezpœredniego kontaktu z ka¿dym z nich | realizacja d³uga i kosztowna ze wzglêdu na rozproszenie respondentów w przestrzeni i koniecznoœæ podjêcia bezpœredniego kontaktu z ka¿dym z nich             | ograniczenie do osób posiadaj¹cych telefon komórkowy | - ograniczenie do osób korzystajacych z internetu                         |
-
-Badania realizowane technikami bezpoœrednimi s¹ realizowane w “terenie”, czyli najczêœciej w miejscu zamieszkania respondenta. Ankieterzy musz¹ wiêc wiedzieæ, gdzie mog¹ zastaæ respondenta. Aby pos³ugiwaæ siê t¹ metod¹ konieczne s¹ dane o miejscach zamieszkania osób nale¿¹cych do populacji. Na szczêœcie w Polsce istniej¹ przynajmniej dwa bardzo dobrze rozwiniête bazy danych, które umo¿liwiaj¹ pozyskanie tego rodzaju danych. S¹ to rejestr PESEL (baza ewidencji ludnoœci w Polsce prowadzona przez MSW) oraz rejestr TERYT (baza adresów wszyskich mieszkañ w Polsce prowadzona przez GUS). W dwóch najpopularniejszych wariantach techniki bezpoœredniej odpowiedzi respondentów s¹ zapisywane przez ankietera na papierowym kwestionariuszu (technika PAPI - Pencil and Paper Interview), b¹dŸ na laptopie lub innym urz¹dzeniu mobilnym ( technika CAPI - Computer Assisted Personal Interview). To drugie, czêœciej stosowane rozwi¹zanie eliminuje mozolny proces kodowania odpowiedzi, czyli przenoszenia ich z papieru do komputera. Techniki bezpoœrednie s¹ czêsto stosowane do realizacji ogólnopolskich badañ sonda¿owych, ale nie tylko. Cechuj¹ siê one relatywnie niskim odsetkiem odmów wziêcia udzia³u w badaniu. Respondentowi trudniej odmówiæ jest wziêcia udzia³u w badaniu, je¿eli ankieter odwiedza go osobiœcie, ni¿ w przypadku, gdy kontaktuje siê z nim na przyk³ad przez telefon. Tego rodzaju techniki pozwalaj¹ równie¿ na dotarcie do najwiêkszej grupy ludnoœci, nieosi¹galnej poprzez po³¹czenie telefoniczne, b¹dŸ przez internet. Jakoœæ ma jednak swoj¹ cenê. Ze wzglêdu na koniecznoœæ poniesienia kosztów pracy i podró¿y ankieterów (którzy w przypadku badañ ogólnopolskich musz¹ przecie¿ odwiedziæ miejscowoœci rozrzucone po ca³ym kraju) techniki oparte na bezpoœrednim kontakcie ankietera z respondentem s¹ najdro¿sze ze wszytkich technik badawczych. Ten sposób prowadzenia badañ wi¹¿e siê równie¿ z doœæ d³ugim okresem gromadzenia danych.     
-Kolejn¹ czêsto wykorzystywana technika polega na przeprowadzeniu wywiadów przez telefon (CATI - computer assisted telephone interview). Ta metoda jest du¿o szybsza i tañsza od wywiadów face-to-face (eliminuje siê w niej koszt oraz czas potrzebny na dotarcie ankietera na miejsce wywiadu), jednak¿e jest to obwarowane pewnymi wadami. Przede wszystkim, metoda ta nie powinna byæ wykorzystywana w przypadku badañ o charakterze ogólnopolskim. W Polsce wci¹¿ nie wszyscy s¹ posiadaczami telefonów (wed³ug badañ 89% Polaków posiada telefon komórkowy). Powoduje to, ¿e ¿adne badanie prowadzone t¹ metod¹ nie bêdzie w pe³ni obejmowa³o wszystkich mieszkañców Polski. Dodatkowo, w przypadku badañ telefonicznych liczba odmów wziêcia udzia³u w badania jest wy¿sza, ni¿ w przypadku badañ face-to-face. Technika ta sprawdza siê natomiast w sytuacjach, gdy do zbadania jest mniejsza populacja, do której cz³onków posiadamy kontakt telefoniczny.    
-Ostatni¹ technik¹ s¹ badania internetowe (CAWI - Computer Assisted Web Interview). W przypadku tej metody respondenci wype³niaj¹ ankietê w specjalnie do tego celu przygotowanym serwisie internetowym.     
-Sposób pozyskiwania informacji od respondentów powinien byæ dostosowany do  populacji, kwestionariusza (pytañ badawczych), harmonogramu realizacji oraz co bardzo istotne, bud¿etubadania.Istniej¹ cztery podstawowe techniki zbierania danych, których najwa¿niejsze wady i zalety.   
-Szczególnie istotn¹ cech¹ ró¿nicuj¹c¹ opisane powy¿ej techniki jest tak zwany poziom realizacji próby (nazywany równie¿ poziomem response-rate), czyli odsetek osób wytypowanych przez nas do udzia³u w badaniu, z którymi faktycznie uda³o siê przeprowadziæ wywiad. Trzeba pamiêtaæ, ¿e praktycznie nigdy nie wystêpuje sytuacja, w której badaczom udaje siê zapytaæ o opiniê wszystkie osoby w³¹czone przez nich do próby. Dzieje siê tak z kilku powodów. Po pierwsze, nie do wszystkich osób mo¿na dotrzeæ. Zdarzaj¹ siê osoby do których dotarcie jest ca³kowicie niemo¿liwe (na przyk³ad ¿o³nierze pe³ni¹cy czynn¹ s³u¿bê na okrêcie podwodnym przez d³u¿szy czas), a tak¿e takie, do których dotarcie jest bardzo trudne (ze wzglêdu na absorbuj¹ce ¿ycie zawodowe, czêste podró¿e i tym podobne czynniki). Ponadto, czêœæ osób, do których uda siê dotrzeæ z ró¿nych przyczyn odmawia wziêcia udzia³u w badaniu.  Oba te czynniki s¹ dodatkowym Ÿród³em b³êdu w badaniu i celem ka¿dego dobrego badacza jest ich zminimalizowanie. Okazuje siê, ¿e ró¿ne sposoby dotarcia do respondentów cechuj¹ siê innym œrednim wskaŸnikiem realizacji próby.    
-Drug¹ wa¿n¹ kwesti¹, decyduj¹c¹ o wyborze metody realizacji badania jest badana populacja. Nie ka¿d¹ populacjê mo¿na zbadaæ dowolnie wybran¹ technik¹, w niektórych przypadkach wybór techniki odpowiednio dobranej do badanej populacji pozwala skutecznie zminimalizowaæ b³êdy realizacji.    
-
-__Zadania 8.__
-
-  1. Uniwersytecki Zespó³ Na Stra¿y Sonda¿y zamówi³ badanie dotycz¹ce popularnoœci strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodzi³o oszacowanie odsetka osób w wieku 18-35 lat zamieszka³ych w Polsce, które w ci¹gu ostatniego miesi¹ca zapozna³y siê z treœci¹ (przeczyta³y ca³y lub prawie ca³y) przynajmniej jednego artyku³u na stronie. Badanie zosta³o przeprowadzone metoda CAWI przez firmê “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spoœród 50 tys. osób które dobrowolnie zarejestrowa³y siê do bazy internetowej firmy i za drobna op³at¹ zgadzaj¹ siê odpowiadaæ na pytania w ró¿nych ankietach. Wiadomo równie¿, ze osoby do badania zosta³y dobrane w ten sposób, aby rozk³ad p³ci wieku oraz wielkoœci miejscowoœci deklarowenego zamieszkania by³ zgodny z danymi podawanymi przez GUS na temat mieszkañców Polski. Odpowiedz na pytania zwi¹zane z tym badaniem:
-    a) Czy populacja osób z posiadaj¹cych dostêp do internetu (korzystaj¹cych z internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) zawiera wszystkich mieszkañców Polski?     
-      i. Tak;   
-      ii. Nie - Nie wszyscy mieszkañcy Polski maj¹ dostêp do Internetu - sprwd¿ dane GUS.    
-    b) Czy próba badawcza 917 osób zosta³a dobrana z populacji polskich internautów - osób korzystaj¹cych z internetu do celów prywatnych (nie zwi¹zanych z praca zarobkowa, ale np. komunikacj¹ ze znajomymi i rodzin¹, nauk¹, czytaniem prasy, graniem, ogl¹daniem fimów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
-      i. Tak    
-      ii. Nie - próba zosta³a dobrana spoœród 50 tys. osób, które same zg³osi³y siê do udzielania odpowiedzi na pytania ankietowe przez Internet. Choæ jest to ma³o prawdopodobne mo¿na sobie wyobraŸiæ, ¿e w próbie mog³ znaleŸæ siê  kogoœ kto korzysta z Internetu tylko w celach zarobkowych, w tym do wype³niania ankiet za pieni¹dze. Zgodnie z nasza definicj¹ taka osoba nie jest internaut¹.    
-    c) Czy badanie zlecone przez Na Stra¿y Sonda¿y obejmuje popluacjê polskich internautów.    
-      i. Tak - badanie dotyczy oszacowania odsetka wœród mieszkañców Polski ogó³em nie tylko internautów. Musimy jednak pamiêtaæ, ¿e Polscy internauci nie maja   poniewa¿ pytanie dotyczy  odwiedziania strony “Na strazy sonda¿y”. Nie mozna odwiedziæ strony internetowej nie bêd¹c    
-      ii. Nie.  
-    d) Czy badanie zrealizowne przez “Polski Panel Internetowy” obejmujê populacje;   
-    e) Czy rozk³ad p³ci, wieku i wielkoœci miejscowoœci zamieszkania w próbie jest zgodny z rozkladem tych cech w populacji mieszkañców Polski?    
-      i. Tak    
-      ii. Nie - rozklad jest zgodny z danymi GUS dotycz¹cymi populacji mieszkañców Polski, a nie polskich internautów.
-      
-# 9. Wnioskowanie i b³edy w oszacowaniach
+    
+# 8. Wnioskowanie i b³edy w oszacowaniach
 Wróæmy do naszej populacji 
 ```{r,echo=FALSE}
 kable( poparcie_dla_P, format = "markdown")
@@ -464,7 +464,7 @@ library("gtools")
 p6<-permutations(n = 20, r = 6)
 ```
 
-### Tabela 9.1. LICZBA PRÓB, W KTÓRYCH WYSTÊPUJE KA¯DY OBYWATEL
+### Tabela 8.1. LICZBA PRÓB, W KTÓRYCH WYSTÊPUJE KA¯DY OBYWATEL
 ```{r, echo=FALSE, results='asis'}
 p6.1<-NULL
 for(i in 1:20) {
@@ -482,7 +482,7 @@ A ile bêdzie prób, w których poparcie dla P wynosi 66,7% (4/6)? Podobnie zacznij
 
 Oczywiœcie to samo mo¿emy policzyæ te¿ inaczej, zlecaj¹c wiêkszoœc pracy komputerowci. To rozwi¹zanie nie wymaga od nas rozumienia procesu losowania i dlatego jest mniej “eleganckie”, ale za to pozwoli szybko otrzymaæ interesuj¹ce nas wyniki. Przy pomocy programu R udalo nam sie otrzymaæ nastêpuj¹ce rozwi¹zanie dla próby szeœcioosobowej:
 
-### Tabela 9.1. Liczba prób 6-osobowych z danym poparciem
+### Tabela 8.1. Liczba prób 6-osobowych z danym poparciem
 
 | Poparcie | Obliczenia na papierze                       | Wynik obliczeñ komputerowych |
 |----------|----------------------------------------------|------------------------------|
@@ -495,7 +495,7 @@ Oczywiœcie to samo mo¿emy policzyæ te¿ inaczej, zlecaj¹c wiêkszoœc pracy kompute
 | 1        | (7\*6\*5\*4\*3\*2)=5040                      | 5040                         |
 | Razem    | 20\*19\*18\*17\*16\*15=27907200              |                              |
 
-### Tabela 9.2. Poparcie dla partii X w próbach szeœcioosobowych
+### Tabela 8.2. Poparcie dla partii X w próbach szeœcioosobowych
 ```{r,echo=FALSE}
 p6.2=p6.3<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6)
 p6.2<-rowSums( p6.2==1)/6
@@ -512,7 +512,7 @@ barplot(p6.2, las=1, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1") 
 Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy siê wynikom.. Najwiêcej prób zawiera poparcie dla partii X na poziomie 2/6. Du¿o mniej ??? i 3/6. Wyniki 0 oraz 4/6 mo¿na nazwaæ rzadkimi, a ??? i 1 bardzo rzadkimi. Zauwa¿my równie¿, ¿e poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, ¿e nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” okreœla siê na podstawie przeciêtnej wartoœci oszacowania w próbie. Gdy mierzyliœmy ten parametr dla sonda¿u dotycz¹cego absencji w wyborach, wiedzieliœmy, ¿e przynajmniej czêœæ prób “trafia w punkt”. Tym razem tak nie jest. ¯adna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiœcie schemat doboru respondentów jest wadliwy. Je¿eli sprawdzimy przeciêtny wynik z próby to oka¿e siê, ¿e wynosi on dok³adnie 35%, a wiêc dok³adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliœmy wczeœniej oznacza to, ¿e jest on poprawny. Ale co z tego skoro nie portafi dok³adnie “trafiæ” w wynik! Potrzebujemy dodatkowej miary trafnoœci wyników. Musi ona okreœlaæ skalê b³¹d pope³nianego przy korzystaniu z konkretnych schematów losowania. Dziêki temu bêdziemy porównywaæ schmaty, a przede wszystkim kreœliæ, jak du¿e jest ryzyko, ¿e siê myslimy.  Pos³u¿ymy siê przy tym rozwi¹zaniem wymyœlonym przez statystyków. Policzmy jak duzy jest rozstêp miêdzy wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajduj¹ siê w poni¿szej tabeli
 
 
-### Tabela 9.2. Podsumowanie obliczeñ
+### Tabela 8.2. Podsumowanie obliczeñ
 
 | Poparciedla partii X (A) | Liczba prób z danym poparciem dla partii X (B) | Ró¿nica miêdzy wynikiem w próbie, a poparciem w populacji (A -35%) | Kwadrat ró¿nicy (A-35%)^2 | Iloczyn liczby prób ikwadratu b³êdu ((A-35%)^2)*B |
 |--------------------------|------------------------------------------------|--------------------------------------------------------------------|---------------------------|---------------------------------------------------|
@@ -532,7 +532,7 @@ Pierwszy wykres ilustruje wyniki dla próby sk³adaj¹cej siê z piêciu respondentów
 Dlaczego tak siê dzieje? Poniewa¿ w ma³ych próbach stosunkowo ³atwiej mo¿e siê zdarzyæ, ¿e wszyscy bêd¹ za lub przeciw partii X. Innymi s³owy ³atwiej o skrajny wynik. Zwiêkszaj¹c próbê zwiêszkamy szanse na to, ¿e wyniki siê “ustabilizuj¹” - Przy wiêkszej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedn¹ frakcjê.     
 Przejd¿my do kwestii wnioskowania. Prawdziwie badania sonda¿owe polegaj¹ na wnioskowaniu na podstawie pojedynczej próby. Nie ma wiêc mo¿liwoœci analizowania wyników z ze wszyskich prób     
 
-# 10. B³êdy systematyczne 
+# 9. B³êdy systematyczne 
  
 Do tej pory poznaliœmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiêtaæ, ¿e samo prawdziwe badanie sonda¿owe nie sk³ada siê wy³¹cznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to g³ówna czêœæ badania. Od niej wszystko zale¿y.
 Wróæmy wiêc znowu do naszej populajcji i wyobraŸmy sobie sytuacjê, gdy niespodziewane na wywiady, pomimo bardzo wielu próŸb i grób, wszystkie osoby zamieszka³e w mieœcie w dobranej próbie konsekwentnie odmawiaj¹ naszym ankieterom wziêcia udzia³u w badaniu. To zupe³nie skrajny przypadek, takie rzeczy raczej siê nie zda¿aj¹, ale prawd¹ jest, ¿e mieszkañcy miast sa trudniej uchwytni - z ró¿nych powodów.
