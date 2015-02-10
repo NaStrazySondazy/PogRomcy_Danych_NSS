@@ -268,15 +268,12 @@ __Zadania 6:__
       
 # 7. Dobór próby
 
-Maj¹c ju¿ okreœlony problem badawczy, wybran¹ technikê zbierania danych oraz przygotowany, odporny na kwestie wra¿liwe kwestionariusz, mo¿emy przejœæ do doboru respondentów. 
+Maj¹c ju¿ okreœlony problem badawczy, wybran¹ technikê zbierania danych oraz przygotowany, odporny na kwestie wra¿liwe, kwestionariusz, mo¿emy przejœæ do doboru respondentów. W bran¿y sonda¿owej korzysta siê w tym zakresie z ró¿nych rozwi¹zañ, ale tylko jedno jest dobrze opracowne od strony teoretycznej i przy odpowieniej starannoœci wykonania pozwala rzetelnie wnioskowaæ o populacji. Dlatego te¿ zajmiemy siê tylko nim - jest to dobór losowy. Prosty przyk³¹d doboru losowego pozwoli nam zrozumieæ mechanikê wnioskowania o du¿ych populacjach na podstawie ma³ych prób. 
 
-PrzejdŸ do najbardziej technicznej czêœci sonda¿u, a wiec doboru próby. W bran¿y sonda¿owej korzysta siê z ró¿nych rozwi¹zañ i nie zawsze s¹ to próby losowe mimo i¿ wiadomo, ze wzglêdu na wysokie koszty realizacji prób rozproszonych w przestrzeni. Metoda ta jest jednak najlepiej poznan¹ i gwarantuj¹  Dlatego my zajmiemy siê metod¹ reprezentatywn¹, a wiêc próbami losowymi. 
+Zacznijmy od tego, ¿e chc¹c dobraæ próbê z populacji w sposób losowy musimy mieæ "spis" wszystkich osób do niej nale¿¹cych. Musimy mieæ z czego wybieraæ. Taka lista nazywana jest "operatem losowania". Powinna ona zawieraæ nie tylko informacjê o tym ile osób znajduje siê w populacji, ale tak¿e jak mo¿na siê z nimi "skontaktowaæ", czyli np. gdzie mieszkaj¹. Na szczêœcie w Polsce istniej¹ przynajmniej dwa takie operaty, które umo¿liwiaj¹ dobieranie w sposób losowy prób sonda¿owych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji Ludnoœci) zawieraj¹cy spis wszystkich obywateli Polski oraz osób posiadaj¹cych prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarz¹dzany przez _Ministerstwo Spraw Wewnêtrznych_. Drugim operatem jest __TERYT__ zawieraj¹cy informacjê o wszystkich mieszkaniach w Polsce. Za jego pomoc¹, dobieraj¹c mieszkasznia, mo¿na dobieraæ próby mieszkañców Polski. Rejestr ten prowadzi _G³ówny Urz¹d Statystyczny_.
 
-__Aby pos³ugiwaæ siê t¹ metod¹ konieczne s¹ dane o miejscach zamieszkania osób nale¿¹cych do populacji. Na szczêœcie w Polsce istniej¹ przynajmniej dwa bardzo dobrze rozwiniête bazy danych, które umo¿liwiaj¹ pozyskanie tego rodzaju danych. S¹ to rejestr PESEL (baza ewidencji ludnoœci w Polsce prowadzona przez MSW) oraz rejestr TERYT (baza adresów wszyskich mieszkañ w Polsce prowadzona przez GUS).__
+Wiemy ju¿ czego potrzebujemy, ¿eby dobraæ prób¹ wiêc teraz mo¿emy siê zastanowiæ, jak to zrobiæ. Najlepiej gdy skorzystamy z uproszczoengo przyk³¹du. Zacznijmy od probmemu badawczego i populacji. Za³ó¿my, ¿e chcemy oszacowaæ __poziom absencji wyborczaj__ w fikcyjnej populacji wyborców zamieszka³ych w Polsce sk³adaj¹cej siê z 20 osób (korzystaliœmy ju¿ z niej wczeœniej).  Bêdzie nam zale¿a³o na tym, aby dowiedziêæ siê, jaki odsetek obywateli deklaruje, ¿e nie pójdzie na wybory (wynosi on 50%, ale na chwile o tym zapomnijmy). ¯eby oszacowaæ interesuj¹cy nas odsetek zastosujemy technikê wywiadu bezpoœredniego, w którym zadamy pytanie: "Gdyby w najbli¿sz¹ niedzielê odbywa³y siê wybory do Sejmu i Senatu, to czy wzi¹³(ê³a)by Pan(i) w nich udzia³?" Zak³adamy, ¿e pytanie to nie jest dra¿liwe i wszyscy respondenci odpowiedz¹ na nie zgodnie ze swoim sumieniem. 
 
-__Czêsto ze wzglêdu na ni¿sze koszty lub inne trudnoœci(?) korzysta siê z innych metod dobierania prób.__
-
-Wróæmy do naszej populacji, która pojawi³a siê w rozdziale 4. Sonda¿. Za³ó¿my, ¿e badana zbiorowoœæ sk³ada siê z 20 osób wœród których preferencje i miejsce zamieszkania rozk³adaj¹ siê w nastêpuj¹cy sposób (rozk³ad procentowy jest dok³adnie taki jak w Tabeli 1. POPULACJA WYBORÓW (dane w procentach):
 
 ```{r 2_populacja, echo=FALSE, include=FALSE}
 # sposob czytania arkuszy Google zaporzyczony ze strony:
@@ -348,7 +345,7 @@ m <- cleanGoogleTable(elem, table=1)
 m<-m[,colnames(m)!="X"]
 ```
 
-### Tabela 7.1. POPULACJA WYBORÓW (liczba obserwacji)
+### Tabela 7.1. POPULACJA WYBORCÓW (liczba obserwacji)
 ```{r, echo=FALSE, results='asis'}
 poparcie_dla_P<-addmargins(table( m$Miasto_wies, m$Glosowanie ) )
 colnames( poparcie_dla_P)<-c("Nie pójdê na wybory", "Nie", "Tak", "RAZEM")
@@ -356,44 +353,41 @@ row.names( poparcie_dla_P)<-c("Miasto", "Wieœ", "RAZEM")
 kable( poparcie_dla_P, format = "markdown")
 ```
 
-
-Z powy¿szej tabeli wynika, ¿e w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. W za³¹czonym pliku znajduje siê lista zawieraj¹ca dane o wszystkich osobach nale¿¹cych do populacji:
-
-https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
+W powy¿szej tabeli rozk³ad liczebnoœci miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, ¿e w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. ¯eby dibraæ próbê potrzebujemy jeszcze operatu losowania. W naszym przypadku wygl¹da on nastêpuj¹co:
 
 ```{r, echo=F, results='asis'}
 kable( m, format = "markdown")
 ```
 
-Kolejne kolumny w pliku to:   
+Operat mo¿na pobraæ z nastêpuj¹cej strony:
 
-  * L.p.- liczba porz¹dkowa 
-  * Miasto_wies - miejsce zamieszkania
-    + M - miasto
-    + W - wieœ
-  * Glosowanie - czy pójdziesz na wybory i na kogo zag³osujesz
-    + -1 - nie pójdê na wybory
-    + 0 - pójdê na wybory, ale NIE zag³osujê na partiê X
+https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
+
+Dla wyjaœnienia ustalmy, ¿e kolejne kolumny w operacie oznaczaj¹:   
+
+  * L.p.- liczba porz¹dkowa obywatela;
+  * Miasto_wies - miejsce zamieszkania obywatela;
+    + M - miasto;
+    + W - wieœ;
+  * Glosowanie - czy pójdziesz na wybory i na kogo zag³osujesz;
+    + -1 - nie pójdê na wybory;
+    + 0 - pójdê na wybory, ale NIE zag³osujê na partiê X;
     + 1 - pójdê na wybory i zag³osujê na partiê X.
     
-PrzejdŸmy do przyk³adu badania sonda¿owego. Za³ó¿my, ¿e chcemy oszacowaæ __poziom absencji wyborczaj__ w badanej populacji. Innymi s³owy chcemy siê dowiedzieæ, jaki odsetek obywateli deklaruje, ¿e nie pójdzie na wybory. Na chwilê zapominamy, ¿e jest to 50% populacji.
+Nasz problem badawczy dotyczy absencji wyborczej. Interesuje wiêc nas odsetek osób, które w kolumnie "Glosowanie" maj¹ warstoœæ -1, a wiec na pytanie o to na kogo zag³osuj¹ odpowiadaj¹, ¿e nie wybieraj¹ siê na wybory.
 
-¯eby oszacowaæ interesuj¹cy nas odsetek przeprowadzimy badanie sonda¿owe, w którym zadamy pytanie: "Gdyby w najbli¿sz¹ niedzielê odbywa³y siê wybory do Sejmu i Senatu, to czy wzi¹³(ê³a)by Pan(i) w nich udzia³?"
+PrzejdŸmy do najwa¿niejszego. Mamy problem badawczym, populacjê, technikê realizacji, kwestionariusz, operat losowania, a wiêc wszystko co jest nam potrzebne, aby zaj¹æ siê doborem respondentów.
 
-Zak³adamy, ¿e pytanie to nie jest dra¿liwe i wszyscy odpowiadaj¹ zgodnie ze swoim sumieniem. Ozaczna to, ¿e osoby dla których w kolumnie “Glosowanie” 
+Dla naszych potrzeb skorzystamy z bardzo uproszczonego sposobu losowania próby. Pozwoli on nam przeanalizowaæ podstawowe zagadnienia z doborem respondentów, a jednoczeœnie ....................  
+Przymiemy nastêpuj¹cy __schemta losowania próby__ - w ten sposób sonda¿yœci okreœlaj¹ zasady wg których dobieraj¹ respondentów: z naszej 20 osobowej populacji bêdziemy losowali 2 ró¿ne osoby w nastêpuj¹cych krokach:
 
-W naszym zbiorze danych interesowaæ nas bêd¹ osoby z wartoœci¹ -1 w kolumnie .    
-
-Dla uproszczenia, losujemy dwie ró¿ne osoby spoœród wszystkich 20 obywateli. Dobór próby przebiega wg. nastêpuj¹cego schematu:
-
-  1. Do próby losujemy jedn¹ osobê spoœród wszystkich 20. Ka¿dy obywatel ma takie samo prawdopodobieñstwo znalezienia siê w próbie - wynosi ono 1/20;   
-  2. Spoœród pozosta³ych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowoœci z której dobierany jest respondent ka¿dy ma takie samo prawdopodobieñstwo znalezienia siê w próbie - wynosi on tym razem 1/19;    
+  1. Do próby losujemy jedn¹ osobê spoœród 20. Ka¿dy obywatel ma takie samo prawdopodobieñstwo znalezienia siê w próbie - wynosi ono 1/20;   
+  2. Spoœród pozosta³ych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowoœci z której dobierany jest respondent ka¿dy ma takie samo prawdopodobieñstwo znalezienia siê w próbie - wynosi ono tym razem 1/19;    
   3. Otrzymujemy próbê, w której znajduj¹ siê dwie osoby. Poza prób¹ zostaje 18 obywateli.   
 
-Powy¿szy schamat losowania nazwiemy fachowo: losowaniem prostym bez zwracania 2 osób z populacji 20. Losowanie jest proste poniewa¿ na ka¿dym etapie wszyscy obywatele pozostaj¹cy w populacji maj¹ takie samo prawdopodobieñstwo dostania siê do próby. Bez zwracania poniewa¿ po wylosowaniu jednej osoby do próby nie wraca ona do puli z której losujemy nastêpn¹. Ten bardzo prosty schemat losowania próby pozwali nam przeanalizowaæ pewne podstawowe zagadnienia zwi¹zane z metod¹ reprezentacyj¹. Zastanówmy siê przede wszystkim, jak bêd¹ wygl¹da³y dobierane próby. Jako identyfikatora osób w próbie wykorzystamy liczby z kolumny L.p. z listy zawieraj¹cej wszystkich obywateli naszej populacji. Zapis (1,2) oznaczaæ bêdzie, ¿e do próby wylosowano najpierw osobê o liczbie porz¹dkowej 1, a nastêpnie osobê o liczbie porz¹dkowej 2. Próby mo¿emy wiêc rozpisaæ wg. prostej regu³y. Je¿eli do próby w pierwszym kroku dobierzemy osobê o liczbie porz¹dkowej 1 to w drugim kroku do pary mo¿emy dobraæ osoby z liczb¹ 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). Je¿eli do próby w pierwszym kroku dobierzemy osobê o liczbie porz¹dkowej 2 to w drugim kroku do pary mo¿emy dobraæ osoby z liczb¹ 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy wiêc, ¿e dla ka¿dej z 20 osób w populacji mo¿emy dobraæ 19 ró¿nych par. £¹cznie mo¿emy wiêc dobraæ 20x19=380 dwuosobowych prób. Rozpiszmy je (__poni¿szy fragment zostanie wygenerowany w R__):  
+Powy¿szy schamat losowania 2 osób z populacji 20 nazwiemy: __losowaniem prostym bez zwracania__. Losowanie to jest proste poniewa¿ na ka¿dym etapie wszyscy obywatele pozostaj¹cy w populacji maj¹ takie samo prawdopodobieñstwo dostania siê do próby. Bez zwracania poniewa¿ po wylosowaniu jednej osoby do próby nie wraca ona do puli z której losujemy nastêpn¹. Ten bardzo prosty schemat losowania próby pozwali nam przeanalizowaæ pewne podstawowe zagadnienia zwi¹zane z metod¹ reprezentacyj¹.    
 
-
-
+Zastanówmy siê przede wszystkim, jak bêd¹ wygl¹da³y dobierane próby. Jako identyfikator osób w próbie wykorzystamy liczby z kolumny L.p. z listy zawieraj¹cej wszystkich obywateli naszej populacji. Zapis (1,2) oznaczaæ bêdzie, ¿e do próby wylosowano najpierw osobê o liczbie porz¹dkowej 1, a nastêpnie osobê o liczbie porz¹dkowej 2. Próby mo¿emy wiêc rozpisaæ wg. prostej regu³y. Je¿eli w pierwszym kroku dobierzemy osobê o liczbie porz¹dkowej 1 to w drugim kroku do pary mo¿emy dobraæ osoby z liczb¹ 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). Je¿eli do próby w pierwszym kroku dobierzemy osobê o liczbie porz¹dkowej 2 to w drugim kroku do pary mo¿emy dobraæ osoby z liczb¹ 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy wiêc, ¿e dla ka¿dej z 20 osób w populacji mo¿emy dobraæ 19 ró¿nych par. Czyli ³¹cznie mo¿emy stworzyæ w ten sposób 20x19=380 ró¿nych dwuosobowych prób. Rozpiszmy je, ¿eby zobaczyæ jak wygl¹daj¹.
 
 ```{r, echo=FALSE, results='asis'}
 permutacje<-rep(1:20, each=19)
@@ -402,8 +396,7 @@ permutacje2<-permutacje2[ -seq(1,length( permutacje2),21 )]
 cat(paste0(paste( "(", unlist( permutacje), ",", unlist(permutacje2), ")"  , sep=""), sep="; "))
 ```
 
-
-Powy¿ej znajduj¹ siê wszystkie mo¿liwe 380 dwuosobowe próby otrzymane wg. wczeœniej opisanego schematu.  Widzimy, ¿e niektóre pary w próbach siê powtarzaj¹. Mo¿emy bowiem wylosowaæ najpierw osobê o nr 1, a potem osobê numer 2. Otrzymujemy wtedy próbê (1,2). Lub na odwrót. Najpierw wylosujemy osobê numer 2. a potem osobê nr 1. Otrzymujemy wtedy próbê (2,1). Nasuwa siê pytanie, w ilu próbach znajdzie siê ka¿dy obywatel.
+Oto wszystkie mo¿liwe 380 dwuosobowe próby otrzymane wg. wczeœniej opisanego schematu.  Widzimy, ¿e niektóre pary w próbach powtarzaj¹ siê. Mo¿emy bowiem wylosowaæ najpierw osobê o numerze 1, a potem numerze 2. Otrzymujemy wtedy próbê (1,2). Mo¿e równie¿ zdarzyæ siê na odwrót. Najpierw wylosujemy osobê o numerze 2. a potem osobê o numerze 1. Otrzymujemy wtedy próbê (2,1). W taki razie nasuwa siê pytanie, w ilu próbach znajdzie siê ka¿dy obywatel.
 
 ### Tabela 7.2. W ilu próbach ka¿dy siê znalaz³?
 ```{r, echo=FALSE, results='asis'}
@@ -412,29 +405,39 @@ colnames(permutacje.wzstepowanie.w.probie)<-c("L.p.", "Liczba wyst¹pieñ")
 kable( x = permutacje.wzstepowanie.w.probie, row.names = F, format = "markdown")
 ```
 
-Odpowied¿ znajduje siê powy¿ej. Ka¿dy obywatel mo¿e znaleœæ siê w 38 próbach. Dlaczego? Bo tworzy 19 ró¿nych par z ka¿dym innym obywatelem, a dodatkowo w ka¿dej parze mo¿e byæ pierwszy lub drugi. Dlatego liczba wyst¹pieñ wyniesie 19x2=38. 
-Jak policzyæ ogólna liczbê prób które mo¿emy wylosowanæ. Bardzo prosto. W populacji jest 20 osób. Zgodnie z naszymi za³o¿eniami losowanie dwuelemntowej próby przebiega w dwóch etapach. Najpierw losujemy pierwsz¹ osobê spoœród 20 dostêpnych. Nastêpnie z pozosta³ych 19 osób losujemy drug¹ osobê. Czyli próbê mo¿emy wylosowaæ na 20x19=380 sposobów. 
-Widzimy wiêc, ¿e przyjêty schemat losowania próby z danej populacji generuje pewn¹ skoñczon¹ i policzaln¹ zbiorowoœæ prób. To bardzo wa¿ne. Sposób w jaki generujemy próby decyduje o tym, co w nich siê znajdzie. Zobaczmy wiêc co generuje nasz schemat.
-Policzmy dla wszystkich wymienionych wy¿ej prób odsetek osób, które deklaruj¹ udzia³a w wyborach. Poniewa¿ próba liczy tylko dwie osoby wiêc mo¿liwe s¹ tylko trzy rodzaje wyników:   
+Odpowied¿ znajduje siê w powy¿szej tabeli. Ka¿dy obywatel mo¿e znaleœæ siê w 38 próbach. Dlaczego? Tworzy on 19 ró¿nych par z ka¿dym innym obywatelem, a dodatkowo w ka¿dej parze mo¿e byæ na pierwszym lub drugim miejscu. Dlatego liczba wyst¹pieñ wynosi 19x2=38.    
 
- * (ABSENCJA, ABSENCJA)  = (100%) - ¿adna z dwóch osób NIE zamierza wzi¹æ udzia³u w wyborach;    
- * (G£OSOWANIE, G£OSOWANIE) =  (0%) -  obie osoby zamierzaj¹ wzi¹æ udzia³u w wyborach;    
+Jak policzyæ ogólna liczbê prób które mo¿emy wylosowanæ. W populacji mamy 20 osób. Zgodnie z naszymi za³o¿eniami losowanie dwuelemntowej próby przebiega w dwóch etapach. Najpierw losujemy pierwsz¹ osobê spoœród 20 dostêpnych., a nastêpnie z pozosta³ych 19 losujemy drug¹ osobê. Czyli próbê mo¿emy wylosowaæ na 20x19=380 sposobów. 
+Widzimy wiêc, ¿e przyjêty schemat losowania próby z danej populacji generuje pewn¹ skoñczon¹ i policzaln¹ zbiorowoœæ prób. To bardzo wa¿ne. Sposób w jaki generujemy próby decyduje o tym, co w nich siê znajdzie. Zobaczmy wiêc co generuje nasz schemat.   
+
+Policzmy dla wszystkich wymienionych wy¿ej prób odsetek osób, które nie chc¹ iœæ na wybory. Poniewa¿ próba liczy tylko dwie osoby wiêc mo¿liwe s¹ tylko trzy rodzaje wyników:   
+
+ * (ABSENCJA, ABSENCJA)  = (100%) - ¿adna z dwóch osób NIE zamierza pójœæ na wybory;      
  * (ABSENCJA, G£OSOWANIE) lub (G£OSOWANIE, ABSENCJA) = (50%) - jedna z dwóch osób zamierza wzi¹æ udzia³ w wyborach.
+ * (G£OSOWANIE, G£OSOWANIE) =  (0%) -  obie osoby zamierzaj¹ pójœæ na wybory;  
  
+Skoro wiemy czego mo¿emy siê spodziewaæ, to rozpiszmy poziomy absencji we wszystkich próbach (zachowano wczeœniejsz¹ kolejnoœæ prób):
+
 ```{r,echo=FALSE, results='asis'}
 cat(paste( "("  ,((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%); ", sep=""))
 ```
 
-Na pierwszy rzut oka widaæ, ¿e nie wszystkie wyniki s¹ poprawne. W wielu próbach szacowana ABSENCJA jest zani¿ona (0%) lub zawy¿ona (100%). Nie powinno to nas jednak dziwiæ poniewa¿ wyniki s¹ œciœle zwi¹zane z tym w jaki sposób dobieraliœmy próby. Policzmy dok³adnie, ile wyników ka¿dego rodzaju daje nam przyjêty schemat losowania:
+Na pierwszy rzut oka widaæ, ¿e nie wszystkie wyniki s¹ zgodne z tym co obserwujemy w ca³ej populacji. W wielu próbach szacowana ABSENCJA jest zani¿ona (0%) lub zawy¿ona (100%). Ale to nas nie dziwi, bo wynika to z przyjêtego schamatu losowania próby. Zabaczmy wiêc ile dok³¹dnie wyników ka¿dego rodzaju daje nam przyjêty schemat losowania próby. 
 
-### Wykres 7.1. Rozk³ad oszacowañ z prób
+### Wykres 7.1. Rozk³ad oszacowañ absencji z prób
 ```{r, echo=FALSE}
 permutacje.rozklad<-table(paste( ((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%", sep=""))
 permutacje.rozklad.wykres<-barplot( permutacje.rozklad, las=1, xlab = "Absencja w próbie", ylab = "Liczba prób") # horiz=TRUE
 text(permutacje.rozklad.wykres, permutacje.rozklad-35, permutacje.rozklad,cex=1,pos=3) 
 ```
 
-Na powy¿szym wykresie widzimy, ¿e w 90 próbach absencja wynosi 0%, w 90 próbach 100%, a w 200 próba 50%. To bardzo logiczny rezultat. Je¿eli po³owa obywateli bêdzie g³osowaæ w wyborach, a po³owa nie, to oczywiste jest, ¿e najczêœciej jedna z dwóch osób w próbie bêdzie podwy¿szaæ frekwencjê, a druga obni¿aæ. Wiemy wiêc dok³adnie czego mo¿emy siê spodziewaæ po naszym schemacie losowania próby - jakie wynika pojawi¹ siê najczêœciej, a jakie najrzadziej. Zastanówmy, co by by³o gdybyœmy doœwiadczenie z losowaniem próby powtórzyli wielokrotnie. Za³ó¿my, ¿e 1000 razy dobieramy, a potem zwracamy do naszej 20-osobowej populacji dwie osoby i za ka¿dym razem notujemy poziom absencji. Wokó³ jakiego odsetka bêd¹ oscylowaæ wyniki? Mo¿esz siê domyœlaæ, ¿e na 1000 przypadków w oko³o 237 (90/380\*1000) absencja wynios³aby 0%, podobnie w 237 (90/380\*1000) 100%, a w 526 (200/380\*1000) 50%. Czyli rozk³ad wyników bêdzie podobny do tego na na wykresie s³upkowym powy¿ej.     
+Na powy¿szym wykresie widzimy, ¿e w 90 próbach absencja wynosi 0%, w 200 próba 50%, a w 90 próbach 100%. To ca³kiem logiczny rezultat. Je¿eli w populacji po³owa obywateli bêdzie g³osowaæ w wyborach, a po³owa nie, to mo¿emy siê spodziewaæ, ¿e najczêœciej jedna z dwóch osób w próbie bêdzie zwiêkszaæ absencjê, a druga zwiêkszaæ. Wiemy teraz dok³adnie czego mo¿emy siê spodziewaæ po naszym schemacie losowania próby - jakie wynika wystêpuj¹ najczêœciej, a jakie najrzadziej. 
+
+Ale jakie to ma dla nas znaczenie skorl badanie sonda¿owe polega na wylosowaniu tylko jednej próby? ¯eby siê przekonaæ za³ó¿my na chwilê, ¿e jednak mo¿emy nasz eksperyment powtarzaæ wielokrotnie. WyobraŸmy sobue na przyk³ad, ¿e stosuj¹c nasz schemat doboru próby 1000 razy powtarzamy losowanie dwuosobowej próby i za ka¿dym razem obliczamy deklarowan¹ absencjê, a nastêpnie zwracamy wylosowane osoby do populacji. W ten sposób otrzymujemy 1000 niezale¿nyc wyników naszego badania. Czy mo¿na jakoœ na tej podstawie przewidzieæ wokó³ jakiego poziomu bêd¹ oscylowa³y nasze oszacowania? Odpowied¿ brzmi tak.
+
+###############wykres z wymulacj¹ #################
+
+Zastanówmy, co by by³o gdybyœmy doœwiadczenie z losowaniem próby powtórzyli wielokrotnie. Za³ó¿my, ¿e 1000 razy dobieramy, a potem zwracamy do naszej 20-osobowej populacji dwie osoby i za ka¿dym razem notujemy poziom absencji. Wokó³ jakiego odsetka bêd¹ oscylowaæ wyniki? Mo¿esz siê domyœlaæ, ¿e na 1000 przypadków w oko³o 237 (90/380\*1000) absencja wynios³aby 0%, podobnie w 237 (90/380\*1000) 100%, a w 526 (200/380\*1000) 50%. Czyli rozk³ad wyników bêdzie podobny do tego na na wykresie s³upkowym powy¿ej.     
 Wiemy ju¿, ¿e nie wszystkie próby odwzorowuj¹ poziom absencji w populacji. Wprawdzie dla ponad po³owy wszystkich mo¿liwch prób wynik jest prawid³owy niemniej jednak wci¹¿ istnieje  spore ryzyko, ¿e siê pomylimy. Czy to znaczy, ¿e nasz schemat losowania jest “z³y”? Jak w ogóle sprawdziæ, czy jest “dobry”? ¯e nasze wnioski z badania mog¹ byæ trafne?  Spójrzmy na nasz problem w nastêpuj¹cy sposób: wiadomo, ¿e poszczególne próby dobierane do badania sonda¿owego mog¹ dawaæ trochê inne wyniki. Najlepiej gdyby oszacowania te, je¿eli nie trafia³y w punkt, to przynajmniej oscylowa³y wokó³ prawid³owego wyniki. Schemat doboru próby powinien byæ tak zaprojektowany, aby wyniki z generowanych przy jego u¿yciu prób “ci¹y³y” w kierunku wartoœci obserwowanej w populacji. Co to znaczy? Zastanówmy siê jaki wynik przeciêtnie daj¹ próby. Zastosujemy zasadê czêsto stosowan¹ w szkole. Gdy chcemy siê czegoœ dowiedzieæ o wynikach ucznia z ca³ego roku liczmy œredni¹ arytmetyczn¹ jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego mo¿emy siê po nich przeciêtnie spodziewaæ. W tym celu dodajemy do siebie wszystkie 380 wyników ze wszystkich prób, a nastêpnie dzielimy je przez liczbê wszystkich prób, czyli 380 - zupe³nie jak œredni¹ ocen w szkole. Mo¿emy sobie uproœciæ to zadanie i zsumowaæ wyniki w nastêpuj¹cy sposób: 0%x90+100%x90+50%x200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbê prób: 19000% / (90+90+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okaza³o siê, ¿e “przeciêtnie” na próbê przypada 50% absencja!!! To jest dok³adnie tyle ile wynosi ono w ca³ej populacji!!! Oto podstawa ca³ej metody reprezentacyjnej - przeciêtny wynik z próby powinien byæ równy wynikowi dla ca³e popualcji. Jest to najwa¿niejsza zasada badañ sonda¿owych, ale tak¿e ogólnie wszyskich badañ prowadzonych na próbach. Dziêki temu wiemy, ¿e przeciêtnie trafiamy w punkt - próba nie jest obci¹¿ona.
 
 ### Tabela 7.3. Podsumowanie obliczeñ 
