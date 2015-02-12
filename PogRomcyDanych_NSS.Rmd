@@ -553,19 +553,21 @@ Podobne obliczenia mo¿na przeprowadziæ dla pozosta³ych odsetów poparcia. Mo¿emy 
 
 ### Tabela 8.2. Poparcie dla partii X w próbach szeœcioosobowych
 ```{r,echo=FALSE}
-p6.2=p6.3<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6)
-p6.2<-rowSums( p6.2==1)/6
-p6.2<-table(p6.2)
-opt <- options("scipen" = 20)
-ust.graf.pierwot<-par()
-par(mar=c(3,5,1,1))
-library(dplyr)
-Sesiones_Campanas1  %>% 
-ggvis(~Campanas1, ~sessions, fill := "red") %>% 
-barplot(p6.2, las=1, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1")  )
+p6.2=p6.3<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
+p6.2<-rowSums( p6.2==1)/6;
+p6.2<-data.frame(table(p6.2));
+ 
+ggplot(p6.2, aes(x = factor(p6.2), y = Freq)) + 
+  geom_bar(stat="identity", fill="lightskyblue", colour="black")+
+  scale_x_discrete(labels=c("0","1/6","2/6","3/6", "4/6", "5/6", "1"))+
+  theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
+  xlab("Poparcie w próbie")+
+  ylab("Liczba prób")+
+   geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq, label=Freq) ,vjust=0.1, size=4, face="bold")
+
 ```
 
-Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy siê wynikom.. Najwiêcej prób zawiera poparcie dla partii X na poziomie 2/6. Du¿o mniej ??? i 3/6. Wyniki 0 oraz 4/6 mo¿na nazwaæ rzadkimi, a ??? i 1 bardzo rzadkimi. Zauwa¿my równie¿, ¿e poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, ¿e nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” okreœla siê na podstawie przeciêtnej wartoœci oszacowania w próbie. Gdy mierzyliœmy ten parametr dla sonda¿u dotycz¹cego absencji w wyborach, wiedzieliœmy, ¿e przynajmniej czêœæ prób “trafia w punkt”. Tym razem tak nie jest. ¯adna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiœcie schemat doboru respondentów jest wadliwy. Je¿eli sprawdzimy przeciêtny wynik z próby to oka¿e siê, ¿e wynosi on dok³adnie 35%, a wiêc dok³adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliœmy wczeœniej oznacza to, ¿e jest on poprawny. Ale co z tego skoro nie portafi dok³adnie “trafiæ” w wynik! Potrzebujemy dodatkowej miary trafnoœci wyników. Musi ona okreœlaæ skalê b³¹d pope³nianego przy korzystaniu z konkretnych schematów losowania. Dziêki temu bêdziemy porównywaæ schmaty, a przede wszystkim kreœliæ, jak du¿e jest ryzyko, ¿e siê myslimy.  Pos³u¿ymy siê przy tym rozwi¹zaniem wymyœlonym przez statystyków. Policzmy jak duzy jest rozstêp miêdzy wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajduj¹ siê w poni¿szej tabeli
+Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy siê wynikom. Najwiêcej prób zawiera poparcie dla partii X na poziomie 2/6. Du¿o mniej 1/6 i 3/6. Wyniki 0 oraz 4/6 mo¿na nazwaæ rzadkimi, a 5/6 i 1 bardzo rzadkimi. Zauwa¿my równie¿, ¿e poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, ¿e nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” okreœla siê na podstawie przeciêtnej wartoœci oszacowania w próbie. Gdy mierzyliœmy ten parametr dla sonda¿u dotycz¹cego absencji w wyborach, wiedzieliœmy, ¿e przynajmniej czêœæ prób “trafia w punkt”. Tym razem tak nie jest. ¯adna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiœcie schemat doboru respondentów jest wadliwy. Je¿eli sprawdzimy przeciêtny wynik z próby to oka¿e siê, ¿e wynosi on dok³adnie 35%, a wiêc dok³adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliœmy wczeœniej oznacza to, ¿e jest on poprawny. Ale co z tego skoro nie portafi dok³adnie “trafiæ” w wynik! Potrzebujemy dodatkowej miary trafnoœci wyników. Musi ona okreœlaæ skalê b³¹d pope³nianego przy korzystaniu z konkretnych schematów losowania. Dziêki temu bêdziemy porównywaæ schmaty, a przede wszystkim kreœliæ, jak du¿e jest ryzyko, ¿e siê myslimy.  Pos³u¿ymy siê przy tym rozwi¹zaniem wymyœlonym przez statystyków. Policzmy jak duzy jest rozstêp miêdzy wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajduj¹ siê w poni¿szej tabeli
 
 
 ### Tabela 8.2. Podsumowanie obliczeñ
