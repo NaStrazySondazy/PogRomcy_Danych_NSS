@@ -641,6 +641,9 @@ Wyjaœniaj¹c, na czym polega owa istotnoœæ, nale¿y powiedzieæ, ¿e b³¹d statystycz
 Ciekawym publicystycznym rozwi¹zaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wziêli udzia³ w badaniu (a wiêc przytaczaniu wyniku dla próby), a nie o populacji, której badani s¹ tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisz¹c na temat przyczyn niskiej aktywnoœci politycznej Polaków ani razu nie wypowiedzieli siê na temat wszystkich Polaków, opisuj¹ jedynie wyniki dla przebadanej próby. Nie jest to ju¿ niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialnoœæ na czytelnika, który sam musi oceniæ, na ile dok³adnie w danej próbie odzwierciedlone s¹ pogl¹dy wszystkich Polaków.
 Najbardziej profesjonalnym rozwi¹zaniem by³oby jednak pisanie, w jakim przedziale mieœci siê badana cecha (np. poparcie dla partii) w ca³ej zbiorowoœci, a nie wœród przebadanych respondentów. Jak widaæ bowiem, przy za³o¿eniu poprawnoœci realizacji badania, wynik ten z pewnym przybli¿eniem oddaje rzeczywisty odsetek dla ca³ej populacji. Jeœli nie podaje siê przedzia³u tego przybli¿enia, wówczas lepiej jest napisaæ o dok³adnych wynikach uzyskanych dla przebadanych respondentów, ni¿ dla ca³ej zbiorowoœci, z której zostali oni wybrani.
 
+# Symulacja
+![Symulacja ]( Losowanie_wielu_prob/symulacja.gif "SYMULACJA")
+
 
 zadanie: Z wylosowanej próby wy³¹cz niektóre obserwacje (PRÓBA B)
 
