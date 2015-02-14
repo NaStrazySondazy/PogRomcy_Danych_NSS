@@ -5,9 +5,9 @@ output:
     keep_md: true
 ---
 
-# 1. Wstêp
-Z badañ przeprowadzonych przez zespó³ Na Stra¿y Sonda¿y w 2014 r. wynika, ¿e 95%
-Polaków nie wie jak powstaj¹ sonda¿e!
+# 1. WstÄ™p
+Z badaÅ„ przeprowadzonych przez zespÃ³Å‚ Na StraÅ¼y SondaÅ¼y w 2014 r. wynika, Å¼e 95%
+PolakÃ³w nie wie jak powstajÄ… sondaÅ¼e!
 
 ```{r 1_wykres_slupkowy, echo=FALSE, fig.align='center'}
 options(OutDec= ",");
@@ -18,22 +18,22 @@ sonNSS<-data.frame(L=1:100, Poparcie=c(rep("TAK", 5), rep("NIE", 95)))
 qplot(factor(Poparcie), data=sonNSS, geom="bar", fill=factor(Poparcie))+
     guides(fill=FALSE)+
   ylab("Procent") +
-    ggtitle("Czy wiesz jak powstaj¹ sonda¿e?") +
+    ggtitle("Czy wiesz jak powstajÄ… sondaÅ¼e?") +
   theme(axis.title.x=element_blank())+
   scale_fill_manual(values=c("red3", "green3"))+
   theme(axis.text.x = element_text(face="bold", color = "black", size=15), 
         plot.title = element_text(lineheight=.8, face="bold", size=20))
 ```
 
-Jak interpretowaæ ten wynik? Co on oznacza? OdpowiedŸ jest prosta. Praktycznie nic, bo ta informacja nie ma ¿adnej wartoœci. Dlaczego? Nie tylko dlatego, ¿e jest zmyœlona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedzia³em dok³adnie kiedy zorganizowano badanie, jak¹ technik¹ je przeprowadzono (telefonicznie czy bezpoœrednio), jak zadano pytanie - co to znaczy, ¿e ktoœ wie jak powstaj¹ sonda¿e, a tak¿e nie zdefiniowa³em kim s¹ Polacy - czy s¹ to obywatele, czy mieszkañcy Polski, w jakim byli wieku. Nie poda³em równie¿ jakim b³êdem mog¹ byæ obarczone wyniki (tzw. b³¹d statystyczny), ani ile osób wziê³o udzia³ w badaniu. Codziennie w prasie i innych mediach pojawiaj¹ siê podobne “dane sonda¿owe”. Czy maj¹ one jak¹kolwiek wartoœæ? Czy mo¿na im zaufaæ? Jak odró¿niæ “dobry” sonda¿ od “z³ego”.
-Na te oraz inne pytania postaramy siê udzieliæ odpowiedzi w trakcie naszego kursu. Poka¿emy na czym polega sonda¿, z jakich elementów siê sk³ada, jakie s¹ jago ograniczenia - czego nie powie nam nawet najlepsze badanie. Zaczniemy od przyk³adów ³atwych, a skoñczymy na bardziej zaawansowanych próbuj¹c wcieliæ siê na chwilê w rolê “sonda¿yst”. W imieniu zespo³u Na Stra¿y Sonda¿y zapraszamy do odkrywania niezwyk³ych mo¿liwoœci, ale tak¿e pewnych ograniczeñ metody zwanej reprezentacyjn¹, metody która stoi za wszystkimi sonda¿ami.
+Jak interpretowaÄ‡ ten wynik? Co on oznacza? OdpowiedÅº jest prosta. Praktycznie nic, bo ta informacja nie ma Å¼adnej wartoÅ›ci. Dlaczego? Nie tylko dlatego, Å¼e jest zmyÅ›lona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedziaÅ‚em dokÅ‚adnie kiedy zorganizowano badanie, jakÄ… technikÄ… je przeprowadzono (telefonicznie czy bezpoÅ›rednio), jak zadano pytanie - co to znaczy, Å¼e ktoÅ› wie jak powstajÄ… sondaÅ¼e, a takÅ¼e nie zdefiniowaÅ‚em kim sÄ… Polacy - czy sÄ… to obywatele, czy mieszkaÅ„cy Polski, w jakim byli wieku. Nie podaÅ‚em rÃ³wnieÅ¼ jakim bÅ‚Ä™dem mogÄ… byÄ‡ obarczone wyniki (tzw. bÅ‚Ä…d statystyczny), ani ile osÃ³b wziÄ™Å‚o udziaÅ‚ w badaniu. Codziennie w prasie i innych mediach pojawiajÄ… siÄ™ podobne â€œdane sondaÅ¼oweâ€. Czy majÄ… one jakÄ…kolwiek wartoÅ›Ä‡? Czy moÅ¼na im zaufaÄ‡? Jak odrÃ³Å¼niÄ‡ â€œdobryâ€ sondaÅ¼ od â€œzÅ‚egoâ€.
+Na te oraz inne pytania postaramy siÄ™ udzieliÄ‡ odpowiedzi w trakcie naszego kursu. PokaÅ¼emy na czym polega sondaÅ¼, z jakich elementÃ³w siÄ™ skÅ‚ada, jakie sÄ… jago ograniczenia - czego nie powie nam nawet najlepsze badanie. Zaczniemy od przykÅ‚adÃ³w Å‚atwych, a skoÅ„czymy na bardziej zaawansowanych prÃ³bujÄ…c wcieliÄ‡ siÄ™ na chwilÄ™ w rolÄ™ â€œsondaÅ¼ystâ€. W imieniu zespoÅ‚u Na StraÅ¼y SondaÅ¼y zapraszamy do odkrywania niezwykÅ‚ych moÅ¼liwoÅ›ci, ale takÅ¼e pewnych ograniczeÅ„ metody zwanej reprezentacyjnÄ…, metody ktÃ³ra stoi za wszystkimi sondaÅ¼ami.
 
 __Zadania 1:__  
 
-  1. Wymieñ trzy artyku³y prasowe z 2014 r., w których powo³ano siê na wyniki badañ spo³ecznych (sonda¿y). Je¿eli w artykule podano tak¹ informacjê to napisz ile osób bra³o udzia³ w badaniu (ewentualnie ile firm lub innych instytucji je¿eli badanie nie dotyczy³o postaw ludzi)
+  1. WymieÅ„ trzy artykuÅ‚y prasowe z 2014 r., w ktÃ³rych powoÅ‚ano siÄ™ na wyniki badaÅ„ spoÅ‚ecznych (sondaÅ¼y). JeÅ¼eli w artykule podano takÄ… informacjÄ™ to napisz ile osÃ³b braÅ‚o udziaÅ‚ w badaniu (ewentualnie ile firm lub innych instytucji jeÅ¼eli badanie nie dotyczyÅ‚o postaw ludzi)
 
 
-L.p.          | Tytu³ artyku³u| Link do strony z artyku³em | Czy podano wielkoœæ próby? Zapisz j¹ je¿eli zosta³a podana | Czy podano dok³adn¹ datê realizacji badania? Jak¹?
+L.p.          | TytuÅ‚ artykuÅ‚u| Link do strony z artykuÅ‚em | Czy podano wielkoÅ›Ä‡ prÃ³by? Zapisz jÄ… jeÅ¼eli zostaÅ‚a podana | Czy podano dokÅ‚adnÄ… datÄ™ realizacji badania? JakÄ…?
 ------------- | --------------|----------------------------|----------------------------------------------------------------|-----------------------------------------------------
 1.            |               |                            |
 2.            |               |                            |
@@ -41,114 +41,114 @@ L.p.          | Tytu³ artyku³u| Link do strony z artyku³em | Czy podano wielkoœæ
 
 # 2. Metoda reprezentacyjna
 
-Na pierwszy rzut oka badanie sonda¿owe, badanie na próbie, mo¿e siê wydawaæ zadaniem karko³omnym. Oto na podstawie niewielkiej liczby obserwacji np. 1000 respondentów, staramy siê opisaæ du¿o wiêksz¹, czasami nawet o kilka rzêdów, populacjê. Czy ma to jakikolwiek sens? Czy da siê wyznaczyæ na tej podstawie przeciêtn¹ wagê, wzrost, miesiêczne wydatki, liczbê przeczytanych ksi¹¿ek albo czas spêdzany dziennie na facebooku przez doros³ych mieszkañców Polski. Trzeba wiedzieæ, ¿e oficjalnie mieszka oko³o 31 mln ludzi w wieku 18 i wiêcej lat. W tej sytuacji 1000 osób stanowi w zaokr¹gleniu trzy dziesiêciotysiêczne PROCENTA populacji (1 000 /31 000 000 = 0,000032)!!! To bardzo ma³o. Trudno uwierzyæ, ¿e taka garstka obserwacji mo¿e dostarczyæ nam wiarygodnych informacji o ca³ej badanej zbiorowoœci. Dla porównania zastanówmy siê, czy na podstawie jednego kilometra drogi da siê powiedzieæ, jak bêdzie wygl¹da³a ca³a podró¿ mierz¹ca 300 000 km (Ziemia w obwodzie liczy tylko 40 000 km). Na pierwszy rzut oka nie. Okazuje siê jednak, ¿e nauka, pod postaci¹ statystyki, daje nam pewne narzêdzia, które pozwalaj¹ trafnie wnioskowaæ o du¿ych “obiektach” nawet na podstawie ich niewielkiego wycinka. W przypadku podró¿y kluczem do sukcesu by³oby umiejêtne wybranie takich ma³ych odcinków z ca³ej drogi, które u³o¿¹ siê w próbny kilometr.
-Statystycy i badacze spo³eczni wiedz¹ doskonale, ¿e dobrze dobrana próba stanowi œwietny opis ca³ej populacji. Jak to mo¿liwe? Co trzeba zrobiæ, ¿eby przy u¿yciu ma³ego kamyka dowiedzieæ siê czegoœ o wielkiej "górze"?
+Na pierwszy rzut oka badanie sondaÅ¼owe, badanie na prÃ³bie, moÅ¼e siÄ™ wydawaÄ‡ zadaniem karkoÅ‚omnym. Oto na podstawie niewielkiej liczby obserwacji np. 1000 respondentÃ³w, staramy siÄ™ opisaÄ‡ duÅ¼o wiÄ™kszÄ…, czasami nawet o kilka rzÄ™dÃ³w, populacjÄ™. Czy ma to jakikolwiek sens? Czy da siÄ™ wyznaczyÄ‡ na tej podstawie przeciÄ™tnÄ… wagÄ™, wzrost, miesiÄ™czne wydatki, liczbÄ™ przeczytanych ksiÄ…Å¼ek albo czas spÄ™dzany dziennie na facebooku przez dorosÅ‚ych mieszkaÅ„cÃ³w Polski. Trzeba wiedzieÄ‡, Å¼e oficjalnie mieszka okoÅ‚o 31 mln ludzi w wieku 18 i wiÄ™cej lat. W tej sytuacji 1000 osÃ³b stanowi w zaokrÄ…gleniu trzy dziesiÄ™ciotysiÄ™czne PROCENTA populacji (1 000 /31 000 000 = 0,000032)!!! To bardzo maÅ‚o. Trudno uwierzyÄ‡, Å¼e taka garstka obserwacji moÅ¼e dostarczyÄ‡ nam wiarygodnych informacji o caÅ‚ej badanej zbiorowoÅ›ci. Dla porÃ³wnania zastanÃ³wmy siÄ™, czy na podstawie jednego kilometra drogi da siÄ™ powiedzieÄ‡, jak bÄ™dzie wyglÄ…daÅ‚a caÅ‚a podrÃ³Å¼ mierzÄ…ca 300 000 km (Ziemia w obwodzie liczy tylko 40 000 km). Na pierwszy rzut oka nie. Okazuje siÄ™ jednak, Å¼e nauka, pod postaciÄ… statystyki, daje nam pewne narzÄ™dzia, ktÃ³re pozwalajÄ… trafnie wnioskowaÄ‡ o duÅ¼ych â€œobiektachâ€ nawet na podstawie ich niewielkiego wycinka. W przypadku podrÃ³Å¼y kluczem do sukcesu byÅ‚oby umiejÄ™tne wybranie takich maÅ‚ych odcinkÃ³w z caÅ‚ej drogi, ktÃ³re uÅ‚oÅ¼Ä… siÄ™ w prÃ³bny kilometr.
+Statystycy i badacze spoÅ‚eczni wiedzÄ… doskonale, Å¼e dobrze dobrana prÃ³ba stanowi Å›wietny opis caÅ‚ej populacji. Jak to moÅ¼liwe? Co trzeba zrobiÄ‡, Å¼eby przy uÅ¼yciu maÅ‚ego kamyka dowiedzieÄ‡ siÄ™ czegoÅ› o wielkiej "gÃ³rze"?
 
 __Zadania 2:__      
 
-  1. Wymieñ trzy badania na próbach przeprowadzone przez instytucje pañstwowe  i podaj link do ich wyników lub raportu. Mog¹ to byæ badania z roku 2014, ale tak¿e wczeœniejszych lat. 
+  1. WymieÅ„ trzy badania na prÃ³bach przeprowadzone przez instytucje paÅ„stwowe  i podaj link do ich wynikÃ³w lub raportu. MogÄ… to byÄ‡ badania z roku 2014, ale takÅ¼e wczeÅ›niejszych lat. 
 
-L.p.          |Nazwa instytucji | Tytu³ badania  | Link do strony z raportem 
+L.p.          |Nazwa instytucji | TytuÅ‚ badania  | Link do strony z raportem 
 --------------|-----------------|----------------|----------------------------
 1.            |                 |                |
 2.            |                 |                |
 3.            |                 |                |
 
-# 3. Przyk³ady prób
+# 3. PrzykÅ‚ady prÃ³b
 
-Zacznijmy od naszych codziennych doœwiadczeñ. Wbrew pozorom wiêkszoœæ naszej wiedzy o œwiecie czerpiemy z prób. I nie chodzi tu o metodê prób i b³êdów. Przyjrzyjmy siê naszemu zdrowiu. Czasami zdarza siê, ¿e lekarz ka¿e nam zrobiæ badanie krwi. Ale czy to oznacza, ¿e trzeba zbadaæ ca³¹ krew w organizmie, wszystkie komórki? Na szczêœcie nie. Wystarczy ma³a próbka. Lekarz pobiera od nas zaledwie 10 ml krwi. W ca³ym organizmie mamy jej a¿ 4,5l (4500ml). Tak wiêc próba stanowi 1/450. ca³ej objêtoœci krwi. To bardzo bardzo ma³o. Mimo to lekarz potrafi okreœliæ, co dzieje siê w ca³ym organizmie, a nie tylko w pobranej próbce. 
-WeŸmy inny, mniej dramatyczny przyk³ad. WyobraŸmy sobie, ¿e chcemy ugotowaæ zupê i lubimy, gdy jest ona odpowiednio s³ona. Jak to sprawdzamy? Czy musimy wypiæ ca³¹ zupê z garnka? Absolutnie nie. Wystarczy jedna ³y¿eczka, która zawiera 15ml zupy i stanowi zaledwie 3/1000 piêciolitrowego garnka. Znowu dobraliœmy niewielk¹ próbkê, ¿eby zbadaæ wiêksz¹ ca³oœæ. Ale przypadek zupy jest szczególny. ¯eby przekonaæ siê, czy zupa jest odpowiednio s³ona, musimy j¹ najpierw dobrze WYMIESZAÆ. Tylko wtedy proporcja soli w ³y¿ce zupy, bêdzie taka sama jak proporcja w ca³ym garnku - ³y¿ka zupy bêdzie dobrze reprezentowaæ ca³¹ zupê. Kluczow¹ kwesti¹ jest wiêc REPREZENTATYWNOŒÆ PRÓBY.  Na pewno niektórzy s³yszeli ju¿ to pojêcie. Zapamiêtajmy je na chwilê, chocia¿ póŸniej bêdziemy musieli z niego zrezygnowaæ. Reprezentatywnoœæ mo¿na rozumieæ na ró¿ne sposoby. Czêsto mówi siê, ¿e tak jak w przypadku ³y¿ki zupy, próba musi byæ “miniatur¹” populacji. Innymi s³owy powinna odtwarzaæ strukturê i zale¿noœci obserwowane w ca³ej zbiorowoœci. W przypadku badania krwi lub zupy brzmi to sensownie. Zauwa¿my jednak, ¿e badane substancje s¹ “jednorodne”. Ka¿da porcja zupy czy krwi jest w³aœciwie identyczna (dla uproszczenia, bo specjaliœci z pewnoœci¹ powiedz¹, ¿e to nie jest takie proste). A co jeœli badana zbiorowoœæ nie jest i nie mo¿e byæ jednorodna? To problem, z którym bardzo czêsto mierz¹ siê nauki spo³eczne.
+Zacznijmy od naszych codziennych doÅ›wiadczeÅ„. Wbrew pozorom wiÄ™kszoÅ›Ä‡ naszej wiedzy o Å›wiecie czerpiemy z prÃ³b. I nie chodzi tu o metodÄ™ prÃ³b i bÅ‚Ä™dÃ³w. Przyjrzyjmy siÄ™ naszemu zdrowiu. Czasami zdarza siÄ™, Å¼e lekarz kaÅ¼e nam zrobiÄ‡ badanie krwi. Ale czy to oznacza, Å¼e trzeba zbadaÄ‡ caÅ‚Ä… krew w organizmie, wszystkie komÃ³rki? Na szczÄ™Å›cie nie. Wystarczy maÅ‚a prÃ³bka. Lekarz pobiera od nas zaledwie 10 ml krwi. W caÅ‚ym organizmie mamy jej aÅ¼ 4,5l (4500ml). Tak wiÄ™c prÃ³ba stanowi 1/450. caÅ‚ej objÄ™toÅ›ci krwi. To bardzo bardzo maÅ‚o. Mimo to lekarz potrafi okreÅ›liÄ‡, co dzieje siÄ™ w caÅ‚ym organizmie, a nie tylko w pobranej prÃ³bce. 
+WeÅºmy inny, mniej dramatyczny przykÅ‚ad. WyobraÅºmy sobie, Å¼e chcemy ugotowaÄ‡ zupÄ™ i lubimy, gdy jest ona odpowiednio sÅ‚ona. Jak to sprawdzamy? Czy musimy wypiÄ‡ caÅ‚Ä… zupÄ™ z garnka? Absolutnie nie. Wystarczy jedna Å‚yÅ¼eczka, ktÃ³ra zawiera 15ml zupy i stanowi zaledwie 3/1000 piÄ™ciolitrowego garnka. Znowu dobraliÅ›my niewielkÄ… prÃ³bkÄ™, Å¼eby zbadaÄ‡ wiÄ™kszÄ… caÅ‚oÅ›Ä‡. Ale przypadek zupy jest szczegÃ³lny. Å»eby przekonaÄ‡ siÄ™, czy zupa jest odpowiednio sÅ‚ona, musimy jÄ… najpierw dobrze WYMIESZAÄ†. Tylko wtedy proporcja soli w Å‚yÅ¼ce zupy, bÄ™dzie taka sama jak proporcja w caÅ‚ym garnku - Å‚yÅ¼ka zupy bÄ™dzie dobrze reprezentowaÄ‡ caÅ‚Ä… zupÄ™. KluczowÄ… kwestiÄ… jest wiÄ™c REPREZENTATYWNOÅšÄ† PRÃ“BY.  Na pewno niektÃ³rzy sÅ‚yszeli juÅ¼ to pojÄ™cie. ZapamiÄ™tajmy je na chwilÄ™, chociaÅ¼ pÃ³Åºniej bÄ™dziemy musieli z niego zrezygnowaÄ‡. ReprezentatywnoÅ›Ä‡ moÅ¼na rozumieÄ‡ na rÃ³Å¼ne sposoby. CzÄ™sto mÃ³wi siÄ™, Å¼e tak jak w przypadku Å‚yÅ¼ki zupy, prÃ³ba musi byÄ‡ â€œminiaturÄ…â€ populacji. Innymi sÅ‚owy powinna odtwarzaÄ‡ strukturÄ™ i zaleÅ¼noÅ›ci obserwowane w caÅ‚ej zbiorowoÅ›ci. W przypadku badania krwi lub zupy brzmi to sensownie. ZauwaÅ¼my jednak, Å¼e badane substancje sÄ… â€œjednorodneâ€. KaÅ¼da porcja zupy czy krwi jest wÅ‚aÅ›ciwie identyczna (dla uproszczenia, bo specjaliÅ›ci z pewnoÅ›ciÄ… powiedzÄ…, Å¼e to nie jest takie proste). A co jeÅ›li badana zbiorowoÅ›Ä‡ nie jest i nie moÅ¼e byÄ‡ jednorodna? To problem, z ktÃ³rym bardzo czÄ™sto mierzÄ… siÄ™ nauki spoÅ‚eczne.
 
 __Zadania 3:__      
 
-  1. Podaj przyk³ad z ¿ycia codziennego badania na próbie (np. badanie iloœci soli w zupie). 
+  1. Podaj przykÅ‚ad z Å¼ycia codziennego badania na prÃ³bie (np. badanie iloÅ›ci soli w zupie). 
 
-L.p.          |Czego dotyczy badanie? | Co jest prób¹?  
+L.p.          |Czego dotyczy badanie? | Co jest prÃ³bÄ…?  
 --------------|-----------------------|----------------
-1.            |  Opis badania         | Opis próby          
-2.            |  Opis badania         | Opis próby      
-3.            |  Opis badania         | Opis próby      
+1.            |  Opis badania         | Opis prÃ³by          
+2.            |  Opis badania         | Opis prÃ³by      
+3.            |  Opis badania         | Opis prÃ³by      
 
-# 4. Sonda¿ 
+# 4. SondaÅ¼ 
 
-PrzejdŸmy do badañ spo³ecznych i tzw.  sonda¿y politycznych. Ich wyniki czêsto pojawiaj¹ siê w prasie i maj¹ du¿e znaczenie dla polityków oraz pewnie trochê mniejsze dla wyborców.  WyobraŸmy sobie, ¿e chcemy zmierzyæ poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celów ods³oñmy kilka faktów dotycz¹cych badanej zbiorowoœci:
+PrzejdÅºmy do badaÅ„ spoÅ‚ecznych i tzw.  sondaÅ¼y politycznych. Ich wyniki czÄ™sto pojawiajÄ… siÄ™ w prasie i majÄ… duÅ¼e znaczenie dla politykÃ³w oraz pewnie trochÄ™ mniejsze dla wyborcÃ³w.  WyobraÅºmy sobie, Å¼e chcemy zmierzyÄ‡ poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celÃ³w odsÅ‚oÅ„my kilka faktÃ³w dotyczÄ…cych badanej zbiorowoÅ›ci:
 
-       | Nie biorê udzia³y w wyborach | NIE |  Tak | Razem
+       | Nie biorÄ™ udziaÅ‚y w wyborach | NIE |  Tak | Razem
 -------|------------------------------|-----|------|-------
 Miasto | 30                           | 5   | 25   | 60
 Wies   | 20                           | 10  | 10   | 40
 RAZEM  | 50                           | 15  | 35   | 100
 
-W powy¿szej tabeli umieœciliœmy procentowy rozk³ad dwóch cech w populacji pe³noletnich  mieszkañców Polski (dane fikcyjne). Pierwsz¹ cech¹ jest miejsce zamieszkania (w wierszach), a drug¹ poparcie dla partii X (w kolumnach). Widzimy, ¿e w miastach mieszka 60% ludnoœci, a na wsi 40%. £¹cznie w ca³ej zbiorowoœci (RAZEM) 35% obywateli zag³osowa³oby na partiê X, 15% na inn¹ partiê, a 50% w ogóle nie wziê³oby udzia³u w wyborach. Mo¿emy równie¿ powiedzieæ, ¿e osoby mieszkaj¹ce w mieœcie i popieraj¹ce partiê X stanowi¹ 25% ogó³u  uprawnionych do g³osowania, a tak¿e ¿e osoby które mieszkaj¹ na wsi i nie bior¹ udzia³u w wyborach stanowi¹ 20% populacji. Oczywiœcie, w normalnych warunkach tego typu informacje s¹ niedostêpne dla badacze. My je “ods³aniamy” potrzeby kursu. 
+W powyÅ¼szej tabeli umieÅ›ciliÅ›my procentowy rozkÅ‚ad dwÃ³ch cech w populacji peÅ‚noletnich  mieszkaÅ„cÃ³w Polski (dane fikcyjne). PierwszÄ… cechÄ… jest miejsce zamieszkania (w wierszach), a drugÄ… poparcie dla partii X (w kolumnach). Widzimy, Å¼e w miastach mieszka 60% ludnoÅ›ci, a na wsi 40%. ÅÄ…cznie w caÅ‚ej zbiorowoÅ›ci (RAZEM) 35% obywateli zagÅ‚osowaÅ‚oby na partiÄ™ X, 15% na innÄ… partiÄ™, a 50% w ogÃ³le nie wziÄ™Å‚oby udziaÅ‚u w wyborach. MoÅ¼emy rÃ³wnieÅ¼ powiedzieÄ‡, Å¼e osoby mieszkajÄ…ce w mieÅ›cie i popierajÄ…ce partiÄ™ X stanowiÄ… 25% ogÃ³Å‚u  uprawnionych do gÅ‚osowania, a takÅ¼e Å¼e osoby ktÃ³re mieszkajÄ… na wsi i nie biorÄ… udziaÅ‚u w wyborach stanowiÄ… 20% populacji. OczywiÅ›cie, w normalnych warunkach tego typu informacje sÄ… niedostÄ™pne dla badacze. My je â€œodsÅ‚aniamyâ€ potrzeby kursu. 
  
-Zastanówmy siê jak z powy¿szej populacji dobraæ próbê reprezentatywn¹, aby móc trafnie na jej podstawie oceniæ, jaki procent mieszkañców Polski popiera partiê X?
-I tu pojawia siê pierwszy problem. Nie da siê bowiem “wymieszaæ” obywateli tak jak zupy. Zbiorowoœæ nie jest jednorodna. Preferencje wœród mieszkañców miast i wsi nie s¹ identyczne. Nie ma wiêc gwarancji, ¿e jeœli id¹c ulic¹ w mieœcie lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to bêdziemy mogli powiedzieæ jakie jest poparcie w ca³ym kraju. W uproszczeniu w mieœcie 4 na 10 osób zag³osowa³oby na  (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie bêdzie zawy¿one, a w drugim zani¿one, w stosunku do ogólnokrajowych wyników (35%). Widaæ wiêc, ¿e nie ka¿da próba bêdzie “REPREZENTATYWNA”. I tu zatrzymajmy siê znowu przy definicji REPREZENTATYWNOŒCI. Zauwa¿my, ¿e zale¿y nam na tym, aby wynik z próby by³ zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi byæ tak, ¿e próba jest miniatura populacji. Wa¿niejsze jest to, ¿e na jej podstawie prawid³owo odgadujemy wyniki dla ca³ej zbiorowoœci.
-¯eby przeprowadziæ nasz polityczny sonda¿ musimy zrealizowaæ badanie zarówno na wsi jak i w mieœcie. Ka¿da osoba nale¿¹ca do populacji musi mieæ szansê znalezienia siê w próbie. To bardzo wa¿ne. Sposób dobierania próby, zwany schematem, nie mo¿e uniemo¿liwiaæ nikomu znalezienia siê w próbie. 
-W dalszej czêœci kursu poka¿emy jak prawid³owo zdefiniowaæ populacjê, jak b³êdy w kwestionariuszu mog¹ wp³yn¹æ na zachowanie respondentów, jak dobraæ, a dok³adnie wylosowaæ próbê reprezentatywn¹, 
+ZastanÃ³wmy siÄ™ jak z powyÅ¼szej populacji dobraÄ‡ prÃ³bÄ™ reprezentatywnÄ…, aby mÃ³c trafnie na jej podstawie oceniÄ‡, jaki procent mieszkaÅ„cÃ³w Polski popiera partiÄ™ X?
+I tu pojawia siÄ™ pierwszy problem. Nie da siÄ™ bowiem â€œwymieszaÄ‡â€ obywateli tak jak zupy. ZbiorowoÅ›Ä‡ nie jest jednorodna. Preferencje wÅ›rÃ³d mieszkaÅ„cÃ³w miast i wsi nie sÄ… identyczne. Nie ma wiÄ™c gwarancji, Å¼e jeÅ›li idÄ…c ulicÄ… w mieÅ›cie lub na wsi zapytamy dowolnych 10 osÃ³b o ich preferencje partyjne to bÄ™dziemy mogli powiedzieÄ‡ jakie jest poparcie w caÅ‚ym kraju. W uproszczeniu w mieÅ›cie 4 na 10 osÃ³b zagÅ‚osowaÅ‚oby na  (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie bÄ™dzie zawyÅ¼one, a w drugim zaniÅ¼one, w stosunku do ogÃ³lnokrajowych wynikÃ³w (35%). WidaÄ‡ wiÄ™c, Å¼e nie kaÅ¼da prÃ³ba bÄ™dzie â€œREPREZENTATYWNAâ€. I tu zatrzymajmy siÄ™ znowu przy definicji REPREZENTATYWNOÅšCI. ZauwaÅ¼my, Å¼e zaleÅ¼y nam na tym, aby wynik z prÃ³by byÅ‚ zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi byÄ‡ tak, Å¼e prÃ³ba jest miniatura populacji. WaÅ¼niejsze jest to, Å¼e na jej podstawie prawidÅ‚owo odgadujemy wyniki dla caÅ‚ej zbiorowoÅ›ci.
+Å»eby przeprowadziÄ‡ nasz polityczny sondaÅ¼ musimy zrealizowaÄ‡ badanie zarÃ³wno na wsi jak i w mieÅ›cie. KaÅ¼da osoba naleÅ¼Ä…ca do populacji musi mieÄ‡ szansÄ™ znalezienia siÄ™ w prÃ³bie. To bardzo waÅ¼ne. SposÃ³b dobierania prÃ³by, zwany schematem, nie moÅ¼e uniemoÅ¼liwiaÄ‡ nikomu znalezienia siÄ™ w prÃ³bie. 
+W dalszej czÄ™Å›ci kursu pokaÅ¼emy jak prawidÅ‚owo zdefiniowaÄ‡ populacjÄ™, jak bÅ‚Ä™dy w kwestionariuszu mogÄ… wpÅ‚ynÄ…Ä‡ na zachowanie respondentÃ³w, jak dobraÄ‡, a dokÅ‚adnie wylosowaÄ‡ prÃ³bÄ™ reprezentatywnÄ…, 
 
 __Zadania 4:__      
 
-  1. Czy w przypadku badania populacji mieszkañców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu mo¿na uznaæ za wiarygodne (daj¹ce siê uogólniæ na ca³¹ populacjê)?
-  2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poni¿sze pytania:     
-    a. Jaki procent mieszkañców wsi popiera ?    
-    b. Jaki procent mieszkañców miasta nie pójdzie na wybory?    
-    c. Jaki procent osób które nie popieraj¹ partii X mieszka w mieœcie?
+  1. Czy w przypadku badania populacji mieszkaÅ„cÃ³w Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu moÅ¼na uznaÄ‡ za wiarygodne (dajÄ…ce siÄ™ uogÃ³lniÄ‡ na caÅ‚Ä… populacjÄ™)?
+  2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÃ“W odpowiedz na poniÅ¼sze pytania:     
+    a. Jaki procent mieszkaÅ„cÃ³w wsi popiera ?    
+    b. Jaki procent mieszkaÅ„cÃ³w miasta nie pÃ³jdzie na wybory?    
+    c. Jaki procent osÃ³b ktÃ³re nie popierajÄ… partii X mieszka w mieÅ›cie?
 
 # 5. Problem badawczy -> populacja -> technika
-Co powinien zrobiæ ka¿dy prawdziwy sonda¿ysta przed rozpoczêciem badania? Powienien odpowiedzieæ sobie na  trzy podstawowe pytania.   
+Co powinien zrobiÄ‡ kaÅ¼dy prawdziwy sondaÅ¼ysta przed rozpoczÄ™ciem badania? Powienien odpowiedzieÄ‡ sobie na  trzy podstawowe pytania.   
 
-1.  **Jak zdefiniowaæ problem badawczy?**     
+1.  **Jak zdefiniowaÄ‡ problem badawczy?**     
 
-W przypadku badañ sonda¿owych to pytanie mo¿emy uœciœliæ w nastêpuj¹cy sposób: jak¹ cechê naszej zbiorowoœci chcemy zmierzyæ. Co rozumieæ przez cechê w tym przypadku? Opisuj¹c du¿a zbiorowoœæ musimy zdecydowaæ siê na jakiœ kompromis i uogólnienia. Sonda¿ nie odpowie nam na pytanie, jak zachowuj¹ siê poszczególni mieszkañcy Polski. Mo¿emy natomiast za jego pomoc¹ okreœliæ, jak zachowuj¹ siê przeciêtnie albo jak zachowuje siê wiêkszoœæ z nich. Sonda¿ pozwala wiêc badaæ parametry, cechy, populacji takie jak œrednia (np. waga) lub odsetek osób w pewien sposób wyró¿nionych(np. odsetek osób uczestnicz¹cych w wyborach). 
-Najczêsciej sonda¿e realizuje siê, aby poznaæ preferencje wyborcze obywateli. Problemem badawczym mo¿e byæ jednak tak¿e coœ innego. Wiele sondazy s³u¿y ocenie  przeciêtnych dochody, wydatków, a tak¿e preferencji konsumenckich w danej grupie spo³ecznej. 
-Okreœlenie problemu badawczego stanowi punkt wyjœcia do nastêpego pytania.
+W przypadku badaÅ„ sondaÅ¼owych to pytanie moÅ¼emy uÅ›ciÅ›liÄ‡ w nastÄ™pujÄ…cy sposÃ³b: jakÄ… cechÄ™ naszej zbiorowoÅ›ci chcemy zmierzyÄ‡. Co rozumieÄ‡ przez cechÄ™ w tym przypadku? OpisujÄ…c duÅ¼a zbiorowoÅ›Ä‡ musimy zdecydowaÄ‡ siÄ™ na jakiÅ› kompromis i uogÃ³lnienia. SondaÅ¼ nie odpowie nam na pytanie, jak zachowujÄ… siÄ™ poszczegÃ³lni mieszkaÅ„cy Polski. MoÅ¼emy natomiast za jego pomocÄ… okreÅ›liÄ‡, jak zachowujÄ… siÄ™ przeciÄ™tnie albo jak zachowuje siÄ™ wiÄ™kszoÅ›Ä‡ z nich. SondaÅ¼ pozwala wiÄ™c badaÄ‡ parametry, cechy, populacji takie jak Å›rednia (np. waga) lub odsetek osÃ³b w pewien sposÃ³b wyrÃ³Å¼nionych(np. odsetek osÃ³b uczestniczÄ…cych w wyborach). 
+NajczÄ™sciej sondaÅ¼e realizuje siÄ™, aby poznaÄ‡ preferencje wyborcze obywateli. Problemem badawczym moÅ¼e byÄ‡ jednak takÅ¼e coÅ› innego. Wiele sondazy sÅ‚uÅ¼y ocenie  przeciÄ™tnych dochody, wydatkÃ³w, a takÅ¼e preferencji konsumenckich w danej grupie spoÅ‚ecznej. 
+OkreÅ›lenie problemu badawczego stanowi punkt wyjÅ›cia do nastÄ™pego pytania.
 
-2.  **Jak zdefiniowaæ badan¹ populacjê? O jakiej zbiorowoœci chcemy wnioskowaæ?**   
+2.  **Jak zdefiniowaÄ‡ badanÄ… populacjÄ™? O jakiej zbiorowoÅ›ci chcemy wnioskowaÄ‡?**   
 
-Za³ó¿my, ¿e interesuje nas populacja Polaków. Czy to znaczy, ¿e bêdziemy badaæ wszystkich ludzi na œwiecie posiadaj¹cych obywatelstwo polskie albo mówi¹cych po polsku? A mo¿e tylko tych spoœród nich, którzy mieszkaj¹ w kraju? Albo ogólnie mieszkañców Polski niezale¿nie od tego, czy posiadaj¹ obywatelstwo czy te¿ nie?    
-Musimy równie¿ zadecydowaæ, czy interesuj¹ nas ludzie w ka¿dym wieku, czy mo¿e tylko pe³noletni z prawem do g³osowania (18+)? Lub te¿ osoby w wieku produkcyjnym i poprodukcyjnym (15+)? 
-Najczêœciej sonda¿e w Polsce obejmuj¹ populacjê pe³noletnich obywateli zamieszka³ych na terenie kraju. Istniej¹ jednak badania spo³eczne dla których, ze wzglêdu na poruszan¹ problematykê, populacje definiuje siê zupe³nie inaczeæ. I tak istniej¹ badania zbiorowoœci osób w wieku dok³adnie 15 ukoñczonych lat, albo zbiorowoœci pe³noletnich obywateli województwa ma³opolskiego.
-Okreœlenie problemu badawczego i zdefiniowanie populacji to nie wszystko. Trzeba bowiem jeszcze dostosowaæ do nich sposób w jaki pozyskiwane bêda dane od respondentów.
+ZaÅ‚Ã³Å¼my, Å¼e interesuje nas populacja PolakÃ³w. Czy to znaczy, Å¼e bÄ™dziemy badaÄ‡ wszystkich ludzi na Å›wiecie posiadajÄ…cych obywatelstwo polskie albo mÃ³wiÄ…cych po polsku? A moÅ¼e tylko tych spoÅ›rÃ³d nich, ktÃ³rzy mieszkajÄ… w kraju? Albo ogÃ³lnie mieszkaÅ„cÃ³w Polski niezaleÅ¼nie od tego, czy posiadajÄ… obywatelstwo czy teÅ¼ nie?    
+Musimy rÃ³wnieÅ¼ zadecydowaÄ‡, czy interesujÄ… nas ludzie w kaÅ¼dym wieku, czy moÅ¼e tylko peÅ‚noletni z prawem do gÅ‚osowania (18+)? Lub teÅ¼ osoby w wieku produkcyjnym i poprodukcyjnym (15+)? 
+NajczÄ™Å›ciej sondaÅ¼e w Polsce obejmujÄ… populacjÄ™ peÅ‚noletnich obywateli zamieszkaÅ‚ych na terenie kraju. IstniejÄ… jednak badania spoÅ‚eczne dla ktÃ³rych, ze wzglÄ™du na poruszanÄ… problematykÄ™, populacje definiuje siÄ™ zupeÅ‚nie inaczeÄ‡. I tak istniejÄ… badania zbiorowoÅ›ci osÃ³b w wieku dokÅ‚adnie 15 ukoÅ„czonych lat, albo zbiorowoÅ›ci peÅ‚noletnich obywateli wojewÃ³dztwa maÅ‚opolskiego.
+OkreÅ›lenie problemu badawczego i zdefiniowanie populacji to nie wszystko. Trzeba bowiem jeszcze dostosowaÄ‡ do nich sposÃ³b w jaki pozyskiwane bÄ™da dane od respondentÃ³w.
 
-3.	**Jak¹ technikk¹ zrealizowaæ badanie?**   
+3.	**JakÄ… technikkÄ… zrealizowaÄ‡ badanie?**   
 
-Trudno sobie bowiem wyobraziæ badanie dochodów mieszkañców Polski przeprowadzone przy pomocy ankiety internetowej. Dalece bowiem nie wszyscy cz³onkowie tej zbiorowoœci s¹ w ³¹cznoœci z "globaln¹ sieci¹". Bywaj¹ oczywiœcie sytuacje, w których stosowanie takiej metody jest uzuasadnione i z pewnoœci¹ w przysz³oœci, wraz z popraw¹ dostêpu do sieci, zdominuje ona badania sonda¿owe.  Jak narazie jednak ankiety internetowe funkcjonuj¹ w cieniu dwóch innych czêœciej stosowanych metod zbierania danych. Ogólnie mo¿emy wiêc wyró¿niæ trzy nastêpuj¹ce grupy technik realizowania badañ sonda¿owych: 
+Trudno sobie bowiem wyobraziÄ‡ badanie dochodÃ³w mieszkaÅ„cÃ³w Polski przeprowadzone przy pomocy ankiety internetowej. Dalece bowiem nie wszyscy czÅ‚onkowie tej zbiorowoÅ›ci sÄ… w Å‚Ä…cznoÅ›ci z "globalnÄ… sieciÄ…". BywajÄ… oczywiÅ›cie sytuacje, w ktÃ³rych stosowanie takiej metody jest uzuasadnione i z pewnoÅ›ciÄ… w przyszÅ‚oÅ›ci, wraz z poprawÄ… dostÄ™pu do sieci, zdominuje ona badania sondaÅ¼owe.  Jak narazie jednak ankiety internetowe funkcjonujÄ… w cieniu dwÃ³ch innych czÄ™Å›ciej stosowanych metod zbierania danych. OgÃ³lnie moÅ¼emy wiÄ™c wyrÃ³Å¼niÄ‡ trzy nastÄ™pujÄ…ce grupy technik realizowania badaÅ„ sondaÅ¼owych: 
 
-  1. Wywiady bezpoœrednie;   
+  1. Wywiady bezpoÅ›rednie;   
   2. Wywiady telefoniczne;    
   3. Ankiety internetowe. 
 
-Wywiady "bezpoœrednie" s¹ realizowane w "terenie", najczêœciej w miejscu zamieszkania losowo dobranych respondentów. Pozwalaj¹ on dotrzeæ do najwiêkszej grupy ludnoœci, nieosi¹galnej poprzez po³¹czenie telefoniczne, b¹dŸ przez internet. Tego typu technikê czêsto stosuje siê w badaniach ogólnopolskich, dotycz¹cych populacji mieszkañców ca³ego kraju. Metoda bezpoœrednia wi¹¿e siê z du¿ymi kosztami oraz d³ugim okresem realizacji. Ankieterzy musza bowiem dotrzeæ osobiœcie do wszystkich respondentów. Czasami pokonuj¹ w tym celu kilkadziesi¹t kilometrów. Zda¿a siê bowiem, ¿e  odleg³oœci miêdzy poszczególnymi respondentami s¹ bardzo du¿e. Co wiêcej, respondenci bywaj¹ nieuchwytni i w zwi¹zku z tym, aby siê z nimi skontaktowaæ, trzeba wielokrotnie ponawiaæ wizyty. Sondaze bezpoœrednie wymagaj¹ wiêc du¿ych nak³adów pracy. Maj¹ one jednak jedn¹ powa¿n¹ zaletê. S¹ ni¹ ankieterzy. Dziêki nim respondenci chêtniej bior¹ udzia³ w badaniu. Odsetkiem odmów wziêcia udzia³u w sonda¿ach realizowanych metod¹ bezpoœreni¹ jest stosunkowo niski. Respondentom trudniej jest odmówiæ ankieterowi, który odwiedza ich bezpoœrednio, ni¿ takiemu który kontaktuje siê z nimi telefonicznie.  
+Wywiady "bezpoÅ›rednie" sÄ… realizowane w "terenie", najczÄ™Å›ciej w miejscu zamieszkania losowo dobranych respondentÃ³w. PozwalajÄ… on dotrzeÄ‡ do najwiÄ™kszej grupy ludnoÅ›ci, nieosiÄ…galnej poprzez poÅ‚Ä…czenie telefoniczne, bÄ…dÅº przez internet. Tego typu technikÄ™ czÄ™sto stosuje siÄ™ w badaniach ogÃ³lnopolskich, dotyczÄ…cych populacji mieszkaÅ„cÃ³w caÅ‚ego kraju. Metoda bezpoÅ›rednia wiÄ…Å¼e siÄ™ z duÅ¼ymi kosztami oraz dÅ‚ugim okresem realizacji. Ankieterzy musza bowiem dotrzeÄ‡ osobiÅ›cie do wszystkich respondentÃ³w. Czasami pokonujÄ… w tym celu kilkadziesiÄ…t kilometrÃ³w. ZdaÅ¼a siÄ™ bowiem, Å¼e  odlegÅ‚oÅ›ci miÄ™dzy poszczegÃ³lnymi respondentami sÄ… bardzo duÅ¼e. Co wiÄ™cej, respondenci bywajÄ… nieuchwytni i w zwiÄ…zku z tym, aby siÄ™ z nimi skontaktowaÄ‡, trzeba wielokrotnie ponawiaÄ‡ wizyty. Sondaze bezpoÅ›rednie wymagajÄ… wiÄ™c duÅ¼ych nakÅ‚adÃ³w pracy. MajÄ… one jednak jednÄ… powaÅ¼nÄ… zaletÄ™. SÄ… niÄ… ankieterzy. DziÄ™ki nim respondenci chÄ™tniej biorÄ… udziaÅ‚ w badaniu. Odsetkiem odmÃ³w wziÄ™cia udziaÅ‚u w sondaÅ¼ach realizowanych metodÄ… bezpoÅ›reniÄ… jest stosunkowo niski. Respondentom trudniej jest odmÃ³wiÄ‡ ankieterowi, ktÃ³ry odwiedza ich bezpoÅ›rednio, niÅ¼ takiemu ktÃ³ry kontaktuje siÄ™ z nimi telefonicznie.  
 
-Wywiady telefoniczne to zupe³nie inna bajka. Obecnie jest to jedna z najczêœciej wykorzystywanych metod zbierania danych. Jej popularnoœæ wynika  przede wszystkim z niskich kosztów oraz krótkiego czasu realizacji. £atwiej jest bowiem przeprowadziæ 1000 rozmów telefonicznych ni¿ zorganizowaæ 1000 spotkañ z respondentami. Sami jednak wiemy, jak takie badania wygl¹daj¹ w praktyce: „przepraszam, nie mam czasu” albo „ju¿ bra³em udzia³ w tym badaniu” przychodzi nam przez telefon du¿o ³atwiej, ni¿ podobne zachowanie w bezpoœredniej konfrontacji z ankieterem. Nic wiêc dziwnego, ¿e w tego rodzaju badaniach tylko co dziesi¹ty telefon koñczy siê zrealizowanym wywiadem. Dla porównania technika bezpoœrednia pozwala zrealizowaæ wywiad z co trzeci¹ dobran¹ do próby osob¹. 
-Powa¿nym ograniczeniem badañ telefonicznych jest to, ¿e mog¹ one byæ relizowane tylko w odniesieniu do populacji, której cz³onkowie posiadaj¹ telefony. CO wiêcej Wywiady telefoniczne  musza byæ w miarê krótkie poniewa¿ resopndenci nie lubi¹ d³ugo "wisieæ" na telefonie. W zwi¹zku z tym konieczne jest równiez ograniczenie liczby pytañ w ankiecie, a co za tym idzie ograniczenie liczby mo¿liwych do przeprowadzenia analiz.  
+Wywiady telefoniczne to zupeÅ‚nie inna bajka. Obecnie jest to jedna z najczÄ™Å›ciej wykorzystywanych metod zbierania danych. Jej popularnoÅ›Ä‡ wynika  przede wszystkim z niskich kosztÃ³w oraz krÃ³tkiego czasu realizacji. Åatwiej jest bowiem przeprowadziÄ‡ 1000 rozmÃ³w telefonicznych niÅ¼ zorganizowaÄ‡ 1000 spotkaÅ„ z respondentami. Sami jednak wiemy, jak takie badania wyglÄ…dajÄ… w praktyce: â€przepraszam, nie mam czasuâ€ albo â€juÅ¼ braÅ‚em udziaÅ‚ w tym badaniuâ€ przychodzi nam przez telefon duÅ¼o Å‚atwiej, niÅ¼ podobne zachowanie w bezpoÅ›redniej konfrontacji z ankieterem. Nic wiÄ™c dziwnego, Å¼e w tego rodzaju badaniach tylko co dziesiÄ…ty telefon koÅ„czy siÄ™ zrealizowanym wywiadem. Dla porÃ³wnania technika bezpoÅ›rednia pozwala zrealizowaÄ‡ wywiad z co trzeciÄ… dobranÄ… do prÃ³by osobÄ…. 
+PowaÅ¼nym ograniczeniem badaÅ„ telefonicznych jest to, Å¼e mogÄ… one byÄ‡ relizowane tylko w odniesieniu do populacji, ktÃ³rej czÅ‚onkowie posiadajÄ… telefony. CO wiÄ™cej Wywiady telefoniczne  musza byÄ‡ w miarÄ™ krÃ³tkie poniewaÅ¼ resopndenci nie lubiÄ… dÅ‚ugo "wisieÄ‡" na telefonie. W zwiÄ…zku z tym konieczne jest rÃ³wniez ograniczenie liczby pytaÅ„ w ankiecie, a co za tym idzie ograniczenie liczby moÅ¼liwych do przeprowadzenia analiz.  
 
-Ostatnia grupa technik to wspomniane wczeœniej ankiety internetowe. Nie chodzi tu o sondy umieszczane na stronach WWW, ale o badania, w których "sondazysta" wybiera respondentów np. wysy³aj¹c im maile z kluczem do ankiety umieszczonej w sieci. Tego typu techniki budz¹ wiele kontrowersji, szczególnie gdy s¹ wykorzystywane do wnioskowania o populacjach, takich jak mieszkañcy Polski. Wiadomo bowiem, ¿e nie wszyscy cz³onkowie takiej zbiorowoœci posiaj¹ komputer i wiedz¹ jak korzystaæ z Internetu. Innymi s³owy jest to technika wykluczaj¹ca du¿e grupy spo³eczne, prawdopodobnie wiêksze ni¿ w przypadku badania telefonicznego. W zwi¹zku z tym trudno jest mówiæ o reprezentatywnoœci wyników w tym przypadku. Powodem dla którego realizuje siê tego rodzaju badania jest koszt, niew¹tpliwie ni¿szy ni¿ w przypadku wywiadów bezpoœrednich czy telefonicznych. 
+Ostatnia grupa technik to wspomniane wczeÅ›niej ankiety internetowe. Nie chodzi tu o sondy umieszczane na stronach WWW, ale o badania, w ktÃ³rych "sondazysta" wybiera respondentÃ³w np. wysyÅ‚ajÄ…c im maile z kluczem do ankiety umieszczonej w sieci. Tego typu techniki budzÄ… wiele kontrowersji, szczegÃ³lnie gdy sÄ… wykorzystywane do wnioskowania o populacjach, takich jak mieszkaÅ„cy Polski. Wiadomo bowiem, Å¼e nie wszyscy czÅ‚onkowie takiej zbiorowoÅ›ci posiajÄ… komputer i wiedzÄ… jak korzystaÄ‡ z Internetu. Innymi sÅ‚owy jest to technika wykluczajÄ…ca duÅ¼e grupy spoÅ‚eczne, prawdopodobnie wiÄ™ksze niÅ¼ w przypadku badania telefonicznego. W zwiÄ…zku z tym trudno jest mÃ³wiÄ‡ o reprezentatywnoÅ›ci wynikÃ³w w tym przypadku. Powodem dla ktÃ³rego realizuje siÄ™ tego rodzaju badania jest koszt, niewÄ…tpliwie niÅ¼szy niÅ¼ w przypadku wywiadÃ³w bezpoÅ›rednich czy telefonicznych. 
 
-Aby ³atwiej rozró¿niaæ poszczególne metody zbierania danych sonda¿yœci, nadali im specjalne oznaczania. Mo¿na siê na nie natk¹æ w artyku³ach prasowych lub w notach metodologicznych ró¿nych badañ. Poni¿ej znajduje siê tabela z obajaœnieniami oznaczeñ czterech najczêsciej sotosowanych technik zbierania danych wraz z ich oznaczeniem. 
+Aby Å‚atwiej rozrÃ³Å¼niaÄ‡ poszczegÃ³lne metody zbierania danych sondaÅ¼yÅ›ci, nadali im specjalne oznaczania. MoÅ¼na siÄ™ na nie natkÄ…Ä‡ w artykuÅ‚ach prasowych lub w notach metodologicznych rÃ³Å¼nych badaÅ„. PoniÅ¼ej znajduje siÄ™ tabela z obajaÅ›nieniami oznaczeÅ„ czterech najczÄ™sciej sotosowanych technik zbierania danych wraz z ich oznaczeniem. 
 
-### Tabela 5.1. Techniki realizacji badañ
+### Tabela 5.1. Techniki realizacji badaÅ„
 
 | Technika | PAPI (Paper And Pencil Interviewing)                                                                                                         | CAPI,(ComputerAssisted Personal Interviewing)                                                                                                                                                | CATI (Computer Assisted Telephone Interviewing)                                                                                                                                                                  | CAWI (Computer Assisted Web Interviewing)                                                                             |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Opis     | Wywiad bezpoœredni - respondent dostaje od ankietera kartkê z pytaniami, bierze o³ówek lub d³ugopis i zapisuje (zaznacza) swoje odowiedzi;   | Wywiad bezpoœredni - ankieter przychodzi do repondenta z laptopem (lub innym urz¹dzeniem mobilnym) i odczytuje ze specjalnego programu pytania, a nasêpnie zapisuje w nim odpowiedzi.        | Wywiad telefoniczny - ankieter dzwoni pod losowo wybrany numer telefonu i osobie, która odbierze, zadaje pytania z przygotowanego kwestionariusza. Odpowiedzi s¹ zapisywane w specjalnym programie komputerowym. | Ankieta internetowe - brak ankietera, respondent wype³nia kwestionariusz samodzielnie na stronie internetowej. |
-| Zalety   | * mo¿liwoœæ stosowania techniki do bardzo ró¿nych populacji; * stosunkowo niski odsetek odmów wziêcia udzia³u w badaniu;                     | * mo¿liwoœæ stosowania techniki do bardzo ró¿nych populacji; * stosunkowo niski odsetek odmów wziêcia udzia³u w badaniu; * mo¿liwoœæ gromadzenia danych bezpoœrednio w systemie komputerowym | * bardzo szybka realizacja; * stosunkowo niskie koszty; * mo¿liwoœæ gromadzenia danych bezpoœrednio w systemie komputerowym                                                                                      | * bardzo niskie koszty; * mo¿liwoœæ gromadzenia danych bezpoœrednio w systemie komputerowym                           |
-| Wady     | * wysokie koszty; * d³ugi czas realizacji; * koniecznoœæ przepisywania wyników z ankiety papierowej do systemu komputerowego - mo¿liwe b³êdy | * wysoki koszt; * d³ugi czas realizacji;                                                                                                                                                     | * du¿y odsetek odmów wziêcia udzia³u w badaniu; * ograniczone zastosowanie techniki                                                                                                                              | * bardzo ograniczone zastosowanie techniki;                                                                                                                     |
+| Opis     | Wywiad bezpoÅ›redni - respondent dostaje od ankietera kartkÄ™ z pytaniami, bierze oÅ‚Ã³wek lub dÅ‚ugopis i zapisuje (zaznacza) swoje odowiedzi;   | Wywiad bezpoÅ›redni - ankieter przychodzi do repondenta z laptopem (lub innym urzÄ…dzeniem mobilnym) i odczytuje ze specjalnego programu pytania, a nasÄ™pnie zapisuje w nim odpowiedzi.        | Wywiad telefoniczny - ankieter dzwoni pod losowo wybrany numer telefonu i osobie, ktÃ³ra odbierze, zadaje pytania z przygotowanego kwestionariusza. Odpowiedzi sÄ… zapisywane w specjalnym programie komputerowym. | Ankieta internetowe - brak ankietera, respondent wypeÅ‚nia kwestionariusz samodzielnie na stronie internetowej. |
+| Zalety   | * moÅ¼liwoÅ›Ä‡ stosowania techniki do bardzo rÃ³Å¼nych populacji; * stosunkowo niski odsetek odmÃ³w wziÄ™cia udziaÅ‚u w badaniu;                     | * moÅ¼liwoÅ›Ä‡ stosowania techniki do bardzo rÃ³Å¼nych populacji; * stosunkowo niski odsetek odmÃ³w wziÄ™cia udziaÅ‚u w badaniu; * moÅ¼liwoÅ›Ä‡ gromadzenia danych bezpoÅ›rednio w systemie komputerowym | * bardzo szybka realizacja; * stosunkowo niskie koszty; * moÅ¼liwoÅ›Ä‡ gromadzenia danych bezpoÅ›rednio w systemie komputerowym                                                                                      | * bardzo niskie koszty; * moÅ¼liwoÅ›Ä‡ gromadzenia danych bezpoÅ›rednio w systemie komputerowym                           |
+| Wady     | * wysokie koszty; * dÅ‚ugi czas realizacji; * koniecznoÅ›Ä‡ przepisywania wynikÃ³w z ankiety papierowej do systemu komputerowego - moÅ¼liwe bÅ‚Ä™dy | * wysoki koszt; * dÅ‚ugi czas realizacji;                                                                                                                                                     | * duÅ¼y odsetek odmÃ³w wziÄ™cia udziaÅ‚u w badaniu; * ograniczone zastosowanie techniki                                                                                                                              | * bardzo ograniczone zastosowanie techniki;                                                                                                                     |
 
-Szczególnie istotn¹ cech¹ ró¿nicuj¹c¹ opisane powy¿ej techniki jest tak zwany poziom realizacji próby (nazywany równie¿ poziomem response-rate), czyli odsetek osób wytypowanych przez nas do udzia³u w badaniu, z którymi faktycznie uda³o siê przeprowadziæ wywiad. Warto wiedzieæ, ¿e praktycznie nigdy nie wystêpuje sytuacja, w której sonda¿ystom udaje siê zapytaæ o opiniê wszystkie osoby dobrane przez nich do próby. Dzieje siê tak z kilku powodów. Po pierwsze, nie do wszystkich osób udaje siê dotrzeæ/dodzwoniæ. Powodem mog¹ byæ choroby,wakacje, delegacje s³u¿bowe itp. Ponadto czêœæ osób, do których uda siê dotrzeæ, z ró¿nych przyczyn odmawia wziêcia udzia³u w badaniu.  Oba te czynniki s¹ dodatkowym Ÿród³em b³êdu w badaniu i celem ka¿dego dobrego badacza jest ich zminimalizowanie. Jest to kolejny powód dla które technika zbierania danych ma tak istotne znacznie.  
+SzczegÃ³lnie istotnÄ… cechÄ… rÃ³Å¼nicujÄ…cÄ… opisane powyÅ¼ej techniki jest tak zwany poziom realizacji prÃ³by (nazywany rÃ³wnieÅ¼ poziomem response-rate), czyli odsetek osÃ³b wytypowanych przez nas do udziaÅ‚u w badaniu, z ktÃ³rymi faktycznie udaÅ‚o siÄ™ przeprowadziÄ‡ wywiad. Warto wiedzieÄ‡, Å¼e praktycznie nigdy nie wystÄ™puje sytuacja, w ktÃ³rej sondaÅ¼ystom udaje siÄ™ zapytaÄ‡ o opiniÄ™ wszystkie osoby dobrane przez nich do prÃ³by. Dzieje siÄ™ tak z kilku powodÃ³w. Po pierwsze, nie do wszystkich osÃ³b udaje siÄ™ dotrzeÄ‡/dodzwoniÄ‡. Powodem mogÄ… byÄ‡ choroby,wakacje, delegacje sÅ‚uÅ¼bowe itp. Ponadto czÄ™Å›Ä‡ osÃ³b, do ktÃ³rych uda siÄ™ dotrzeÄ‡, z rÃ³Å¼nych przyczyn odmawia wziÄ™cia udziaÅ‚u w badaniu.  Oba te czynniki sÄ… dodatkowym ÅºrÃ³dÅ‚em bÅ‚Ä™du w badaniu i celem kaÅ¼dego dobrego badacza jest ich zminimalizowanie. Jest to kolejny powÃ³d dla ktÃ³re technika zbierania danych ma tak istotne znacznie.  
 
-Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przyk³ad historyczny. W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadzi³ w USA badanie przedwyborcze. Do ludzi wybranych z ksi¹¿ek telefonicznych i list rejestracyjnych samochodów wys³ano DZIESIÊÆ MILIONÓW kart pocztowych, pytaj¹c, na kogo zamierzaj¹ oddaæ g³os w wyborach prezydenckich – na republikanina Alfa Landona czy demokratê Franklina Roosevelta? Odpowiedzia³o ponad dwa miliony ludzi, wskazuj¹c ¿e nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mog³oby siê wydawaæ, ¿e przebadanie tylu osób jest du¿o bardziej wiarygodne i miarodajne ni¿ przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory doœæ drastycznie zweryfikowa³y wnioski z tych badañ – nowym prezydentem zosta³ Franklin Roosevelt, maj¹c najwiêksz¹ przewagê g³osów w historii – otrzyma³ 61%.
-Dla porównania w tym samym czasie przedwyborczy sonda¿, przeprowadzi³ równie¿  George Gallup, który trafnie przewidzia³ wyniki wyborów. W swoim badaniu pos³u¿y³ siê on jednak niewielk¹ prób¹ kwotow¹ (czyli opart¹ na znajomoœci okreœlonych cech populacji, np. p³eæ, dochód, wiek, miejsce zamieszkania itp.).
-Na czym wiêc polega³ problem? Na ca³kowitym braku kontroli nad badan¹ prób¹. Na pytanie zadane przez „Literary Digest” odpowiedzia³o zaledwie 22% wszystkich zapytanych osób. Jak siê okaza³o karty w wiêkszoœci odsy³ali republikanie. Drugi problem polega³ na nieprawid³owym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i w³aœcicieli samochodów. Taka konstrukcja próby dawa³a nadreprezentacjê zamo¿nych wyborców, czyli pominiêcie ludzi biednych, którzy w wiêkszoœci g³osowali na „New deal” Roosevelta. 
-Przyk³ad ten ilustruje, jak dobór nawet du¿ej próby z niepoprawnie zdefiniowanej populacji mo¿e doprowadziæ do zupe³nie nietrafnych wniosków.  Analizuj¹c wyniki badañ sonda¿owych nale¿y zawsze zwracaæ uwagê na sposób definiowania populacji oraz technikê realizacji badania. Definicja zbiorowoœci generalnej powinna zawieraæ informacje o: 
+Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przykÅ‚ad historyczny. W 1936 roku â€Literary Digestâ€, popularny magazyn informacyjny przeprowadziÅ‚ w USA badanie przedwyborcze. Do ludzi wybranych z ksiÄ…Å¼ek telefonicznych i list rejestracyjnych samochodÃ³w wysÅ‚ano DZIESIÄ˜Ä† MILIONÃ“W kart pocztowych, pytajÄ…c, na kogo zamierzajÄ… oddaÄ‡ gÅ‚os w wyborach prezydenckich â€“ na republikanina Alfa Landona czy demokratÄ™ Franklina Roosevelta? OdpowiedziaÅ‚o ponad dwa miliony ludzi, wskazujÄ…c Å¼e nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). MogÅ‚oby siÄ™ wydawaÄ‡, Å¼e przebadanie tylu osÃ³b jest duÅ¼o bardziej wiarygodne i miarodajne niÅ¼ przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory doÅ›Ä‡ drastycznie zweryfikowaÅ‚y wnioski z tych badaÅ„ â€“ nowym prezydentem zostaÅ‚ Franklin Roosevelt, majÄ…c najwiÄ™kszÄ… przewagÄ™ gÅ‚osÃ³w w historii â€“ otrzymaÅ‚ 61%.
+Dla porÃ³wnania w tym samym czasie przedwyborczy sondaÅ¼, przeprowadziÅ‚ rÃ³wnieÅ¼  George Gallup, ktÃ³ry trafnie przewidziaÅ‚ wyniki wyborÃ³w. W swoim badaniu posÅ‚uÅ¼yÅ‚ siÄ™ on jednak niewielkÄ… prÃ³bÄ… kwotowÄ… (czyli opartÄ… na znajomoÅ›ci okreÅ›lonych cech populacji, np. pÅ‚eÄ‡, dochÃ³d, wiek, miejsce zamieszkania itp.).
+Na czym wiÄ™c polegaÅ‚ problem? Na caÅ‚kowitym braku kontroli nad badanÄ… prÃ³bÄ…. Na pytanie zadane przez â€Literary Digestâ€ odpowiedziaÅ‚o zaledwie 22% wszystkich zapytanych osÃ³b. Jak siÄ™ okazaÅ‚o karty w wiÄ™kszoÅ›ci odsyÅ‚ali republikanie. Drugi problem polegaÅ‚ na nieprawidÅ‚owym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentÃ³w telefonicznych i wÅ‚aÅ›cicieli samochodÃ³w. Taka konstrukcja prÃ³by dawaÅ‚a nadreprezentacjÄ™ zamoÅ¼nych wyborcÃ³w, czyli pominiÄ™cie ludzi biednych, ktÃ³rzy w wiÄ™kszoÅ›ci gÅ‚osowali na â€New dealâ€ Roosevelta. 
+PrzykÅ‚ad ten ilustruje, jak dobÃ³r nawet duÅ¼ej prÃ³by z niepoprawnie zdefiniowanej populacji moÅ¼e doprowadziÄ‡ do zupeÅ‚nie nietrafnych wnioskÃ³w.  AnalizujÄ…c wyniki badaÅ„ sondaÅ¼owych naleÅ¼y zawsze zwracaÄ‡ uwagÄ™ na sposÃ³b definiowania populacji oraz technikÄ™ realizacji badania. Definicja zbiorowoÅ›ci generalnej powinna zawieraÄ‡ informacje o: 
 
-* po³o¿eniu w przestrzeni zbiorowoœci (mieszkañcy Polski, mieszkañcy Poznania itp.)  
-* wieku respondentów (pe³noletni Polacy, osoby w wieku 15 i wiêcej ukoñczonych lat itp.)   
-* inne cechy (osoby posiadaj¹ce obywatelstwo polskie, osoby z wykszta³ceniem wy¿szym itp.)
+* poÅ‚oÅ¼eniu w przestrzeni zbiorowoÅ›ci (mieszkaÅ„cy Polski, mieszkaÅ„cy Poznania itp.)  
+* wieku respondentÃ³w (peÅ‚noletni Polacy, osoby w wieku 15 i wiÄ™cej ukoÅ„czonych lat itp.)   
+* inne cechy (osoby posiadajÄ…ce obywatelstwo polskie, osoby z wyksztaÅ‚ceniem wyÅ¼szym itp.)
 
 __Zadania 5:__      
 
-  1. Wymieñ trzy firmy zajmuj¹ce siê badaniem rynku i opinii spo³ecznej, które w 2014 r. prowadzi³y badania sonda¿owe w Polsce i podaj link do strony z raportami badawczymi tej firmy: 
+  1. WymieÅ„ trzy firmy zajmujÄ…ce siÄ™ badaniem rynku i opinii spoÅ‚ecznej, ktÃ³re w 2014 r. prowadziÅ‚y badania sondaÅ¼owe w Polsce i podaj link do strony z raportami badawczymi tej firmy: 
   
 L.p.          | Nazwa firmy badawczej| Link do strony z raportem?  
 --------------|----------------------|----------------
@@ -156,52 +156,52 @@ L.p.          | Nazwa firmy badawczej| Link do strony z raportem?
 2.            |  Nazwa firmy         | Raport     
 3.            |  Nazwa firmy         | Raport     
 
-  2. Masz nastêpuj¹cy problem badawczy. Musisz zbadaæ poziom czytelnictwa tygodnika Na Stra¿y Sonda¿y. Ukazuje siê wy³¹cznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezale¿nie od wykszta³cenia czy wieku.   
-    a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoœ staje siê czytelnikiem? Jak czêsto trzeba czytaæ ¿eby staæ siê czytelnikiem? Ile trzeba przeczytaæ ¿eby staæ siê czytelnikiem?)   
-    b. Jak zdefiniujesz populacjê czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkaj¹ tylko w miastach wojwódzkich czy tak¿e w innych miejscach?)   
+  2. Masz nastÄ™pujÄ…cy problem badawczy. Musisz zbadaÄ‡ poziom czytelnictwa tygodnika Na StraÅ¼y SondaÅ¼y. Ukazuje siÄ™ wyÅ‚Ä…cznie w formie drukowanej w miastach wojewÃ³dzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezaleÅ¼nie od wyksztaÅ‚cenia czy wieku.   
+    a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoÅ› staje siÄ™ czytelnikiem? Jak czÄ™sto trzeba czytaÄ‡ Å¼eby staÄ‡ siÄ™ czytelnikiem? Ile trzeba przeczytaÄ‡ Å¼eby staÄ‡ siÄ™ czytelnikiem?)   
+    b. Jak zdefiniujesz populacjÄ™ czytelnikÃ³w? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkajÄ… tylko w miastach wojwÃ³dzkich czy takÅ¼e w innych miejscach?)   
     c. Zapisz pytanie o czytelnictwo (maksymalnie dwa zdania):........    
-    d. Czy twoim zdaniem pytanie o czytelnictwo mo¿e byæ uznane za dra¿liwe?
-  3. W 2013 r. Dom Badawczy Maison przygotowa³a na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuœ” raport pt.:“G³ód i niedo¿ywienie dzieci w Polsce”. Zosta³ on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI - Computer Assisted Telephone Interview) na ogólnopolskiej, reprezentatywnej próbie 800 przedstawicieli instytucji zajmuj¹cych siê dzieæmi i ich sytuacj¹ ¿yciow¹. Z raportu wynika, ¿e pracownicy szkó³ i pracownicy OPS/PCPR szacuj¹, ¿e co dziesi¹te dziecko z klas 1–3 dotyka problem niedo¿ywienia.   
-    a. Zdefiniuj badan¹ populacjê.
-    b. Podaj liczbê uczniów klas 1-3 w Polsce w 2013 r.(mog¹ to byæ dane zgodne ze stanem na 1 czerwca 2013 r. lub dla póŸniejszej daty przed koñcem 2013 r.)
-    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedo¿ywienie
-    d. Czy z danych przedstawionych w raporcie mo¿e wynikaæ, ¿e w Polsce z g³odu cierpi oko³o 800 000 dzieci? OdpowiedŸ uzasadnij.
+    d. Czy twoim zdaniem pytanie o czytelnictwo moÅ¼e byÄ‡ uznane za draÅ¼liwe?
+  3. W 2013 r. Dom Badawczy Maison przygotowaÅ‚a na zlecenie Polskiej Fundacji Pomocy Dzieciom â€MaciuÅ›â€ raport pt.:â€œGÅ‚Ã³d i niedoÅ¼ywienie dzieci w Polsceâ€. ZostaÅ‚ on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI - Computer Assisted Telephone Interview) na ogÃ³lnopolskiej, reprezentatywnej prÃ³bie 800 przedstawicieli instytucji zajmujÄ…cych siÄ™ dzieÄ‡mi i ich sytuacjÄ… Å¼yciowÄ…. Z raportu wynika, Å¼e pracownicy szkÃ³Å‚ i pracownicy OPS/PCPR szacujÄ…, Å¼e co dziesiÄ…te dziecko z klas 1â€“3 dotyka problem niedoÅ¼ywienia.   
+    a. Zdefiniuj badanÄ… populacjÄ™.
+    b. Podaj liczbÄ™ uczniÃ³w klas 1-3 w Polsce w 2013 r.(mogÄ… to byÄ‡ dane zgodne ze stanem na 1 czerwca 2013 r. lub dla pÃ³Åºniejszej daty przed koÅ„cem 2013 r.)
+    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedoÅ¼ywienie
+    d. Czy z danych przedstawionych w raporcie moÅ¼e wynikaÄ‡, Å¼e w Polsce z gÅ‚odu cierpi okoÅ‚o 800 000 dzieci? OdpowiedÅº uzasadnij.
     
-  4. Uniwersytecki Zespó³ Na Stra¿y Sonda¿y zamówi³ badanie dotycz¹ce popularnoœci strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodzi³o oszacowanie odsetka osób w wieku 18-35 lat zamieszka³ych w Polsce, które w ci¹gu ostatniego miesi¹ca zapozna³y siê z treœci¹ (przeczyta³y ca³y lub prawie ca³y) przynajmniej jednego artyku³u na stronie. Badanie zosta³o przeprowadzone metoda CAWI przez firmê “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spoœród 50 tys. osób które dobrowolnie zarejestrowa³y siê do bazy internetowej firmy i za drobna op³at¹ zgadzaj¹ siê odpowiadaæ na pytania w ró¿nych ankietach. Wiadomo równie¿, ze osoby do badania zosta³y dobrane w ten sposób, aby rozk³ad p³ci wieku oraz wielkoœci miejscowoœci deklarowenego zamieszkania by³ zgodny z danymi podawanymi przez GUS na temat mieszkañców Polski. Odpowiedz na pytania zwi¹zane z tym badaniem:
-    a) Czy populacja osób z posiadaj¹cych dostêp do internetu (korzystaj¹cych z internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkañców Polski?     
+  4. Uniwersytecki ZespÃ³Å‚ Na StraÅ¼y SondaÅ¼y zamÃ³wiÅ‚ badanie dotyczÄ…ce popularnoÅ›ci strony internetowej â€œwww.nastrazysondazy.uw.edu.plâ€. ChodziÅ‚o oszacowanie odsetka osÃ³b w wieku 18-35 lat zamieszkaÅ‚ych w Polsce, ktÃ³re w ciÄ…gu ostatniego miesiÄ…ca zapoznaÅ‚y siÄ™ z treÅ›ciÄ… (przeczytaÅ‚y caÅ‚y lub prawie caÅ‚y) przynajmniej jednego artykuÅ‚u na stronie. Badanie zostaÅ‚o przeprowadzone metoda CAWI przez firmÄ™ â€œPolski Panel Internetowyâ€ na prÃ³bie 917 osÃ³b w wieku 18-35 lat spoÅ›rÃ³d 50 tys. osÃ³b ktÃ³re dobrowolnie zarejestrowaÅ‚y siÄ™ do bazy internetowej firmy i za drobna opÅ‚atÄ… zgadzajÄ… siÄ™ odpowiadaÄ‡ na pytania w rÃ³Å¼nych ankietach. Wiadomo rÃ³wnieÅ¼, ze osoby do badania zostaÅ‚y dobrane w ten sposÃ³b, aby rozkÅ‚ad pÅ‚ci wieku oraz wielkoÅ›ci miejscowoÅ›ci deklarowenego zamieszkania byÅ‚ zgodny z danymi podawanymi przez GUS na temat mieszkaÅ„cÃ³w Polski. Odpowiedz na pytania zwiÄ…zane z tym badaniem:
+    a) Czy populacja osÃ³b z posiadajÄ…cych dostÄ™p do internetu (korzystajÄ…cych z internetu do celÃ³w prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkaÅ„cÃ³w Polski?     
       i. Tak;   
-      ii. Nie - Nie wszyscy mieszkañcy Polski maj¹ dostêp do Internetu - sprwd¿ dane GUS.    
-    b) Czy próba badawcza 917 osób zosta³a dobrana z populacji polskich internautów - osób korzystaj¹cych z internetu do celów prywatnych (nie zwi¹zanych z praca zarobkowa, ale np. komunikacj¹ ze znajomymi i rodzin¹, nauk¹, czytaniem prasy, graniem, ogl¹daniem fimów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
+      ii. Nie - Nie wszyscy mieszkaÅ„cy Polski majÄ… dostÄ™p do Internetu - sprwdÅ¼ dane GUS.    
+    b) Czy prÃ³ba badawcza 917 osÃ³b zostaÅ‚a dobrana z populacji polskich internautÃ³w - osÃ³b korzystajÄ…cych z internetu do celÃ³w prywatnych (nie zwiÄ…zanych z praca zarobkowa, ale np. komunikacjÄ… ze znajomymi i rodzinÄ…, naukÄ…, czytaniem prasy, graniem, oglÄ…daniem fimÃ³w, robieniem zakupÃ³w itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
       i. Tak    
-      ii. Nie - próba zosta³a dobrana spoœród 50 tys. osób, które same zg³osi³y siê do udzielania odpowiedzi na pytania ankietowe przez Internet. Choæ jest to ma³o prawdopodobne mo¿na sobie wyobraŸiæ, ¿e w próbie mog³ znaleŸæ siê  kogoœ kto korzysta z Internetu tylko w celach zarobkowych, w tym do wype³niania ankiet za pieni¹dze. Zgodnie z nasza definicj¹ taka osoba nie jest internaut¹.    
-    c) Czy badanie zlecone przez Na Stra¿y Sonda¿y obejmuje popluacjê polskich internautów.    
-      i. Tak - badanie dotyczy oszacowania odsetka wœród mieszkañców Polski ogó³em nie tylko internautów. Musimy jednak pamiêtaæ, ¿e Polscy internauci nie maja   poniewa¿ pytanie dotyczy  odwiedziania strony “Na strazy sonda¿y”. Nie mozna odwiedziæ strony internetowej nie bêd¹c    
+      ii. Nie - prÃ³ba zostaÅ‚a dobrana spoÅ›rÃ³d 50 tys. osÃ³b, ktÃ³re same zgÅ‚osiÅ‚y siÄ™ do udzielania odpowiedzi na pytania ankietowe przez Internet. ChoÄ‡ jest to maÅ‚o prawdopodobne moÅ¼na sobie wyobraÅºiÄ‡, Å¼e w prÃ³bie mogÅ‚ znaleÅºÄ‡ siÄ™  kogoÅ› kto korzysta z Internetu tylko w celach zarobkowych, w tym do wypeÅ‚niania ankiet za pieniÄ…dze. Zgodnie z nasza definicjÄ… taka osoba nie jest internautÄ….    
+    c) Czy badanie zlecone przez Na StraÅ¼y SondaÅ¼y obejmuje popluacjÄ™ polskich internautÃ³w.    
+      i. Tak - badanie dotyczy oszacowania odsetka wÅ›rÃ³d mieszkaÅ„cÃ³w Polski ogÃ³Å‚em nie tylko internautÃ³w. Musimy jednak pamiÄ™taÄ‡, Å¼e Polscy internauci nie maja   poniewaÅ¼ pytanie dotyczy  odwiedziania strony â€œNa strazy sondaÅ¼yâ€. Nie mozna odwiedziÄ‡ strony internetowej nie bÄ™dÄ…c    
       ii. Nie.  
-    d) Czy badanie zrealizowne przez “Polski Panel Internetowy” obejmujê populacje;   
-    e) Czy rozk³ad p³ci, wieku i wielkoœci miejscowoœci zamieszkania w próbie jest zgodny z rozkladem tych cech w populacji mieszkañców Polski?    
+    d) Czy badanie zrealizowne przez â€œPolski Panel Internetowyâ€ obejmujÄ™ populacje;   
+    e) Czy rozkÅ‚ad pÅ‚ci, wieku i wielkoÅ›ci miejscowoÅ›ci zamieszkania w prÃ³bie jest zgodny z rozkladem tych cech w populacji mieszkaÅ„cÃ³w Polski?    
       i. Tak    
-      ii. Nie - rozklad jest zgodny z danymi GUS dotycz¹cymi populacji mieszkañców Polski, a nie polskich internautów.    
+      ii. Nie - rozklad jest zgodny z danymi GUS dotyczÄ…cymi populacji mieszkaÅ„cÃ³w Polski, a nie polskich internautÃ³w.    
     
     
 # 6. Kwestionariusz
 
-Maj¹c wybrany problem badawczy i dobran¹ do niego odpowiedni¹ technikê zbierania danych mo¿emy przejœæ do kolejnego elementu sonda¿u, a wiêc kwestionariusza. Choæ rzadko siê o tym mówi jego konstrukcja ma ogromne znaczenie dla wyników badania. Ilustruje to dobrze klasyczny ju¿ przyk³ad eksperymentu opisanego przez Schumana, zrealizowanego w 1986 roku w Stanach Zjednoczonych. Badacze z Uniwersytetu Michigan zapytali o najwa¿niejsze wydarzenia lub zmiany, jakie zasz³y w ostatnich 50 latach i wydaj¹ siê respondentom najbardziej istotne. Po³owa ankietowanych mia³a do dyspozycji nastêpuj¹c¹ listê odpowiedzi:  
+MajÄ…c wybrany problem badawczy i dobranÄ… do niego odpowiedniÄ… technikÄ™ zbierania danych moÅ¼emy przejÅ›Ä‡ do kolejnego elementu sondaÅ¼u, a wiÄ™c kwestionariusza. ChoÄ‡ rzadko siÄ™ o tym mÃ³wi jego konstrukcja ma ogromne znaczenie dla wynikÃ³w badania. Ilustruje to dobrze klasyczny juÅ¼ przykÅ‚ad eksperymentu opisanego przez Schumana, zrealizowanego w 1986 roku w Stanach Zjednoczonych. Badacze z Uniwersytetu Michigan zapytali o najwaÅ¼niejsze wydarzenia lub zmiany, jakie zaszÅ‚y w ostatnich 50 latach i wydajÄ… siÄ™ respondentom najbardziej istotne. PoÅ‚owa ankietowanych miaÅ‚a do dyspozycji nastÄ™pujÄ…cÄ… listÄ™ odpowiedzi:  
 
-* II wojna œwiatowa, 
-* podbój kosmosu, 
-* zabójstwo J. F. Kennedy’ego, 
+* II wojna Å›wiatowa, 
+* podbÃ³j kosmosu, 
+* zabÃ³jstwo J. F. Kennedyâ€™ego, 
 * wynalezienie komputera, 
 * wojna w Wietnamie, 
 * inne, 
 * nie wiem. 
 
-W pierwszej grupie a¿ 30% respondentów wybra³o wynalezienie komputera jako najbardziej istotne wydarzenie lub zmianê ostatnich 50 lat. Wœród pozosta³ych osób podobnej odpowiedzi udzieli³ zaledwie 1% ankietowanych. Ta agromna ró¿nica najlepiej popazuje, jak wiele zale¿y od formy zadawanych pytañ.
+W pierwszej grupie aÅ¼ 30% respondentÃ³w wybraÅ‚o wynalezienie komputera jako najbardziej istotne wydarzenie lub zmianÄ™ ostatnich 50 lat. WÅ›rÃ³d pozostaÅ‚ych osÃ³b podobnej odpowiedzi udzieliÅ‚ zaledwie 1% ankietowanych. Ta agromna rÃ³Å¼nica najlepiej popazuje, jak wiele zaleÅ¼y od formy zadawanych pytaÅ„.
 
-To jednak nie wszystko. Na sposób udzielania odpowiedzi przez respondentów wp³yw ma nie tylko konstrukacja pytañ ale tak¿e u¿yty w nich jêzyk. Dlatego kwestionariusz powinien odnosiæ siê do rzeczywistoœci w sposób neutralny, bez s¹dów czy sugerowania, które odpowiedzi s¹ "dobre".
+To jednak nie wszystko. Na sposÃ³b udzielania odpowiedzi przez respondentÃ³w wpÅ‚yw ma nie tylko konstrukacja pytaÅ„ ale takÅ¼e uÅ¼yty w nich jÄ™zyk. Dlatego kwestionariusz powinien odnosiÄ‡ siÄ™ do rzeczywistoÅ›ci w sposÃ³b neutralny, bez sÄ…dÃ³w czy sugerowania, ktÃ³re odpowiedzi sÄ… "dobre".
 
-Czasami jednak kontrowersje s¹ nie do unikniêcia. Dotyczy to tzw. kwestii dra¿liwych. Stanowi¹ one powa¿ny problem dla sonda¿ystów. Respondenci raczej niechêtnie udzielaj¹ odpowiedzi na pytania dotyczaj¹ce ich intymnych spraw.  Trudno im siê przyznaæ do problemów z na³ogami, do niewiernoœci w zwi¹zku czy pope³nonych przestêpstw. Zazwyczaj w takich sytuacjach nawet gwarancja anonimowoœci nie jest wystarczaj¹c¹ "zachêt¹" dla respondentów, aby udzielac szczerych odpowiedzi.
+Czasami jednak kontrowersje sÄ… nie do unikniÄ™cia. Dotyczy to tzw. kwestii draÅ¼liwych. StanowiÄ… one powaÅ¼ny problem dla sondaÅ¼ystÃ³w. Respondenci raczej niechÄ™tnie udzielajÄ… odpowiedzi na pytania dotyczajÄ…ce ich intymnych spraw.  Trudno im siÄ™ przyznaÄ‡ do problemÃ³w z naÅ‚ogami, do niewiernoÅ›ci w zwiÄ…zku czy popeÅ‚nonych przestÄ™pstw. Zazwyczaj w takich sytuacjach nawet gwarancja anonimowoÅ›ci nie jest wystarczajÄ…cÄ… "zachÄ™tÄ…" dla respondentÃ³w, aby udzielac szczerych odpowiedzi.
 
-Wiêcej o problemach zwi¹zanych z kwestiami dra¿liwymi i sposobach radzenia sobie z nimi mo¿ecie przeczytaæ na naszych stronach stronie:
+WiÄ™cej o problemach zwiÄ…zanych z kwestiami draÅ¼liwymi i sposobach radzenia sobie z nimi moÅ¼ecie przeczytaÄ‡ na naszych stronach stronie:
 
 1. http://nastrazysondazy.uw.edu.pl/know-how-pytan-o-kwestie-drazliwe-czyli-jak-zachecic-badanych-do-szczerych-odpowiedzi/   
 
@@ -209,81 +209,81 @@ Wiêcej o problemach zwi¹zanych z kwestiami dra¿liwymi i sposobach radzenia sobie
 
 __Zadania 6:__      
 
-  1.  Odpowiedz na pytania zwi¹zane z nastêpuj¹cym badaniem: Firmê Research.NK przygotowa³a w 2013 r. raport „Prezentacja treœci seksualnych przez m³odzie¿ poprzez wideoczaty” dla Naukowej Akademickiej Sieci Komputerowej. Dane zosta³y zebrane od respondentów przez Internet. Próba liczy³a 976 nastolatków - osób w wieku 13-16 lat. Spoœród nich  528  zdeklarowa³o, ¿e korzysta z wideo rozmów. W tej grupie 10 osób zadeklarowa³o, ¿e  rozbiera siê w sieci na ¿ywo (Pytanie brzmia³o: „Czy zdarzy³o Ci siê rozbieraæ siê lub prezentowaæ zachowania seksualne podczas wideorozmowy?” ). Wiadomo równie¿, ¿e w badaniu wziê³o udzia³ 157 szesnastolatków, z czego 96 z nich korzysta z wideo rozmów, a 5 deklaruje rozbieranie siê w czasie . 
-    a. Czy uwa¿asz, ¿e respondenci generalnie (a wiec przyt³aczaj¹ca wiêkszoœæ z nich) udzielali szczerych (zgodnych ze stanem faktycznym), odpowiedzi na pytanie o to, czy rozbierali siê w trakcie wideoczatów - zarówno Ci którzy przyznali siê do tego typu zachowañ jak i ci którzy ich nie potwierdzili?  
+  1.  Odpowiedz na pytania zwiÄ…zane z nastÄ™pujÄ…cym badaniem: FirmÄ™ Research.NK przygotowaÅ‚a w 2013 r. raport â€Prezentacja treÅ›ci seksualnych przez mÅ‚odzieÅ¼ poprzez wideoczatyâ€ dla Naukowej Akademickiej Sieci Komputerowej. Dane zostaÅ‚y zebrane od respondentÃ³w przez Internet. PrÃ³ba liczyÅ‚a 976 nastolatkÃ³w - osÃ³b w wieku 13-16 lat. SpoÅ›rÃ³d nich  528  zdeklarowaÅ‚o, Å¼e korzysta z wideo rozmÃ³w. W tej grupie 10 osÃ³b zadeklarowaÅ‚o, Å¼e  rozbiera siÄ™ w sieci na Å¼ywo (Pytanie brzmiaÅ‚o: â€Czy zdarzyÅ‚o Ci siÄ™ rozbieraÄ‡ siÄ™ lub prezentowaÄ‡ zachowania seksualne podczas wideorozmowy?â€ ). Wiadomo rÃ³wnieÅ¼, Å¼e w badaniu wziÄ™Å‚o udziaÅ‚ 157 szesnastolatkÃ³w, z czego 96 z nich korzysta z wideo rozmÃ³w, a 5 deklaruje rozbieranie siÄ™ w czasie . 
+    a. Czy uwaÅ¼asz, Å¼e respondenci generalnie (a wiec przytÅ‚aczajÄ…ca wiÄ™kszoÅ›Ä‡ z nich) udzielali szczerych (zgodnych ze stanem faktycznym), odpowiedzi na pytanie o to, czy rozbierali siÄ™ w trakcie wideoczatÃ³w - zarÃ³wno Ci ktÃ³rzy przyznali siÄ™ do tego typu zachowaÅ„ jak i ci ktÃ³rzy ich nie potwierdzili?  
       i. Tak - generalnie odpowiadali szczerze;   
       ii. Nie - generalnie odpowiadali nieszczerze;   
-      iii. Nikt tego nie wie. Mo¿e czêœæ tak, a czêœæ nie.   
-      iv. Jestem dzielna/y i napiszê jakie jest moje w³asne zdanie na ten temat : ...  
-    b. Czy uwa¿asz, ¿e badanie przez Internet daje wiêksze poczucie anonimowoœci ni¿ klasyczne badania prowadzone przez telefon lub twarz¹ w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.
-      i. Tak, poniewa¿ ...
-      ii. Nie. poniewa¿ ...
-    c. Czy uwa¿asz, ¿e badanie przez Internet daje wiêksze poczucie anonimowoœci ni¿ klasyczne badania prowadzone przez telefon lub twarz¹ w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.   
-      i. Tak, poniewa¿ ...   
-      ii. Nie. poniewa¿ ...    
-    d. Czy w badaniu przeprowadzonym przez internet by³abyœ / by³byœ sk³onny odpowiadaæ szczerze na pytania dotycz¹ce seksualnoœci, chorób intymnych lub ³amania prawa? Dlaczego? (Pytania pomocnicze: zastanów siê, czy wa¿na w tych kwestiach jest anonimowoœæ i poufnoœæ danych, a tak¿e, czy w ogóle mówienie na ten temat sprawia Ci jakieœ problemy):
-      i. Tak, poniewa¿ ...    
-      ii. Nie, poniewa¿ ...    
-    e. Jaki procent nastolatków w powy¿szym badaniu zadeklarowa³, ¿e korzysta z wideo rozmów i rozbiera siê w ich trakcie?
-    f. Jaki procent osób które zadeklarowa³y, ¿e rozbieraj¹ siê w trakcie wideoczatów do 16 latkowie?    
-    g. Jaki procent nastolatków, którzy korzystaj¹ z wideo rozmów zadeklarowa³, ¿e siê rozbiera w ich trakcie?    
-    h. Czy znaj¹c wyniki badania zgodzi³abyœ/zgodzi³byœ siê z nastêpuj¹cymi okreœleniami:    
-      i. „Nowa plaga w sieci. Rozbieraj¹ siê na ¿ywo” - TAK / NIE    
-      ii. „Nagie gimnazjalistki w sieci. Nowa plaga w internecie” - TAK / NIE    
-      iii. “Nowe zjawisko w internecie. Gizmazjaliœci rozbieraj¹ siê w sieci” - TAK / NIE     
-      i.v “Uwaga na wideoczaty. Niektóre nastolatki wystêpuj¹ nago”    
-  1.  Poni¿ej znajduj¹ siê dwa sonda¿e. Wype³ni³ je i odpowiedz na pytania:   
-    a. Sonda¿ 1:   
-      i. Czy gdyby wybory odby³y siê w najbli¿sz¹ niedzielê to wzi¹³by(ê³aby) Pan(i) w nich udzia³?   
-      ii. Je¿eli tak, to na jak¹ jedn¹ partiê oda³by Pan(i) g³os?   
+      iii. Nikt tego nie wie. MoÅ¼e czÄ™Å›Ä‡ tak, a czÄ™Å›Ä‡ nie.   
+      iv. Jestem dzielna/y i napiszÄ™ jakie jest moje wÅ‚asne zdanie na ten temat : ...  
+    b. Czy uwaÅ¼asz, Å¼e badanie przez Internet daje wiÄ™ksze poczucie anonimowoÅ›ci niÅ¼ klasyczne badania prowadzone przez telefon lub twarzÄ… w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.
+      i. Tak, poniewaÅ¼ ...
+      ii. Nie. poniewaÅ¼ ...
+    c. Czy uwaÅ¼asz, Å¼e badanie przez Internet daje wiÄ™ksze poczucie anonimowoÅ›ci niÅ¼ klasyczne badania prowadzone przez telefon lub twarzÄ… w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.   
+      i. Tak, poniewaÅ¼ ...   
+      ii. Nie. poniewaÅ¼ ...    
+    d. Czy w badaniu przeprowadzonym przez internet byÅ‚abyÅ› / byÅ‚byÅ› skÅ‚onny odpowiadaÄ‡ szczerze na pytania dotyczÄ…ce seksualnoÅ›ci, chorÃ³b intymnych lub Å‚amania prawa? Dlaczego? (Pytania pomocnicze: zastanÃ³w siÄ™, czy waÅ¼na w tych kwestiach jest anonimowoÅ›Ä‡ i poufnoÅ›Ä‡ danych, a takÅ¼e, czy w ogÃ³le mÃ³wienie na ten temat sprawia Ci jakieÅ› problemy):
+      i. Tak, poniewaÅ¼ ...    
+      ii. Nie, poniewaÅ¼ ...    
+    e. Jaki procent nastolatkÃ³w w powyÅ¼szym badaniu zadeklarowaÅ‚, Å¼e korzysta z wideo rozmÃ³w i rozbiera siÄ™ w ich trakcie?
+    f. Jaki procent osÃ³b ktÃ³re zadeklarowaÅ‚y, Å¼e rozbierajÄ… siÄ™ w trakcie wideoczatÃ³w do 16 latkowie?    
+    g. Jaki procent nastolatkÃ³w, ktÃ³rzy korzystajÄ… z wideo rozmÃ³w zadeklarowaÅ‚, Å¼e siÄ™ rozbiera w ich trakcie?    
+    h. Czy znajÄ…c wyniki badania zgodziÅ‚abyÅ›/zgodziÅ‚byÅ› siÄ™ z nastÄ™pujÄ…cymi okreÅ›leniami:    
+      i. â€Nowa plaga w sieci. RozbierajÄ… siÄ™ na Å¼ywoâ€ - TAK / NIE    
+      ii. â€Nagie gimnazjalistki w sieci. Nowa plaga w internecieâ€ - TAK / NIE    
+      iii. â€œNowe zjawisko w internecie. GizmazjaliÅ›ci rozbierajÄ… siÄ™ w sieciâ€ - TAK / NIE     
+      i.v â€œUwaga na wideoczaty. NiektÃ³re nastolatki wystÄ™pujÄ… nagoâ€    
+  1.  PoniÅ¼ej znajdujÄ… siÄ™ dwa sondaÅ¼e. WypeÅ‚niÅ‚ je i odpowiedz na pytania:   
+    a. SondaÅ¼ 1:   
+      i. Czy gdyby wybory odbyÅ‚y siÄ™ w najbliÅ¼szÄ… niedzielÄ™ to wziÄ…Å‚by(Ä™Å‚aby) Pan(i) w nich udziaÅ‚?   
+      ii. JeÅ¼eli tak, to na jakÄ… jednÄ… partiÄ™ odaÅ‚by Pan(i) gÅ‚os?   
       
-        1. oddam pusty/niewa¿ny g³os;    
-        2. partiê X;   
-        3. partiê Przyjació³ Demokracji;  
-        4. partiê Przyjació³ Otwartoœci;   
-        5. partiê Przyjació³ Spo³eczeñstwa;   
-        6. partiê Przyjació³ Œrodowiska;   
-        7. partiê Przyjació³ Uczciwoœci;   
-    b. Sonda¿ 2.
-      i. Proszê okreœliæ czy zgadza siê Pan/Pani z nastêpuj¹cymi stwierdzeniami:   
+        1. oddam pusty/niewaÅ¼ny gÅ‚os;    
+        2. partiÄ™ X;   
+        3. partiÄ™ PrzyjaciÃ³Å‚ Demokracji;  
+        4. partiÄ™ PrzyjaciÃ³Å‚ OtwartoÅ›ci;   
+        5. partiÄ™ PrzyjaciÃ³Å‚ SpoÅ‚eczeÅ„stwa;   
+        6. partiÄ™ PrzyjaciÃ³Å‚ Åšrodowiska;   
+        7. partiÄ™ PrzyjaciÃ³Å‚ UczciwoÅ›ci;   
+    b. SondaÅ¼ 2.
+      i. ProszÄ™ okreÅ›liÄ‡ czy zgadza siÄ™ Pan/Pani z nastÄ™pujÄ…cymi stwierdzeniami:   
       
-        1. Podatki w Polsce s¹ za wysokie i nale¿y je niezw³ocznie obni¿yæ   
-        2. ZUS jest organizacj¹ drog¹, nieefektywn¹ i marnuj¹c¹ publiczne pieni¹dze    
-        3. Obywatele lepiej bêd¹ zarz¹dzaæ swymi pieniêdzmi ni¿ urzêdnicy w ich imieniu    
-        4. ka¿da rodzina powinna móc liczyæ na wsparcie ze strony pañstwa.     
-      ii. Czy s³ysza³(a) Pan(i) o powstaniu nowej partii “P”, której programem jest m. in. obni¿enie podatków, ograniczenie obci¹¿eñ biurokratycznych, zmniejszenie liczby urzêdników oraz wsparcie dla rodzin?   
-      iii. Czy gdyby partia “X” bra³a udzia³ w najbli¿szych wyborach do Sejmu to jak¹ jedn¹ partiê odda³by Pan(i) g³os?
+        1. Podatki w Polsce sÄ… za wysokie i naleÅ¼y je niezwÅ‚ocznie obniÅ¼yÄ‡   
+        2. ZUS jest organizacjÄ… drogÄ…, nieefektywnÄ… i marnujÄ…cÄ… publiczne pieniÄ…dze    
+        3. Obywatele lepiej bÄ™dÄ… zarzÄ…dzaÄ‡ swymi pieniÄ™dzmi niÅ¼ urzÄ™dnicy w ich imieniu    
+        4. kaÅ¼da rodzina powinna mÃ³c liczyÄ‡ na wsparcie ze strony paÅ„stwa.     
+      ii. Czy sÅ‚yszaÅ‚(a) Pan(i) o powstaniu nowej partii â€œPâ€, ktÃ³rej programem jest m. in. obniÅ¼enie podatkÃ³w, ograniczenie obciÄ…Å¼eÅ„ biurokratycznych, zmniejszenie liczby urzÄ™dnikÃ³w oraz wsparcie dla rodzin?   
+      iii. Czy gdyby partia â€œXâ€ braÅ‚a udziaÅ‚ w najbliÅ¼szych wyborach do Sejmu to jakÄ… jednÄ… partiÄ™ oddaÅ‚by Pan(i) gÅ‚os?
 
-        1. oddam pusty/niewa¿ny g³os;    
-        2. partiê X;   
-        3. partiê Przyjació³ Demokracji;  
-        4. partiê Przyjació³ Otwartoœci;   
-        5. partiê Przyjació³ Spo³eczeñstwa;   
-        6. partiê Przyjació³ Œrodowiska;   
-        7. partiê Przyjació³ Uczciwoœci;  
-    c. Pytanie do sonda¿y 1. oraz 2.:     
-      i. Czy w obu sonda¿ach udzieli³aœ/eœ takiej samej odpowiedzi?    
-      ii. Czy twoim zdaniem kolejnoœæ pytañ w sonda¿u 1. 2. mo¿e mieæ wp³yw na odpowiedzi respondentów?    
+        1. oddam pusty/niewaÅ¼ny gÅ‚os;    
+        2. partiÄ™ X;   
+        3. partiÄ™ PrzyjaciÃ³Å‚ Demokracji;  
+        4. partiÄ™ PrzyjaciÃ³Å‚ OtwartoÅ›ci;   
+        5. partiÄ™ PrzyjaciÃ³Å‚ SpoÅ‚eczeÅ„stwa;   
+        6. partiÄ™ PrzyjaciÃ³Å‚ Åšrodowiska;   
+        7. partiÄ™ PrzyjaciÃ³Å‚ UczciwoÅ›ci;  
+    c. Pytanie do sondaÅ¼y 1. oraz 2.:     
+      i. Czy w obu sondaÅ¼ach udzieliÅ‚aÅ›/eÅ› takiej samej odpowiedzi?    
+      ii. Czy twoim zdaniem kolejnoÅ›Ä‡ pytaÅ„ w sondaÅ¼u 1. 2. moÅ¼e mieÄ‡ wpÅ‚yw na odpowiedzi respondentÃ³w?    
       
-# 7. Dobór próby
+# 7. DobÃ³r prÃ³by
 
-Maj¹c ju¿ okreœlony problem badawczy, wybran¹ technikê zbierania danych oraz przygotowany, odporny na kwestie wra¿liwe, kwestionariusz, mo¿emy przejœæ do doboru respondentów. W bran¿y sonda¿owej korzysta siê w tym zakresie z ró¿nych rozwi¹zañ, ale tylko jedno jest dobrze opracowne od strony teoretycznej i przy odpowieniej starannoœci wykonania pozwala rzetelnie wnioskowaæ o populacji. Dlatego te¿ zajmiemy siê tylko nim - jest to dobór losowy. Prosty przyk³¹d doboru losowego pozwoli nam zrozumieæ mechanikê wnioskowania o du¿ych populacjach na podstawie ma³ych prób. 
+MajÄ…c juÅ¼ okreÅ›lony problem badawczy, wybranÄ… technikÄ™ zbierania danych oraz przygotowany, odporny na kwestie wraÅ¼liwe, kwestionariusz, moÅ¼emy przejÅ›Ä‡ do doboru respondentÃ³w. W branÅ¼y sondaÅ¼owej korzysta siÄ™ w tym zakresie z rÃ³Å¼nych rozwiÄ…zaÅ„, ale tylko jedno jest dobrze opracowne od strony teoretycznej i przy odpowieniej starannoÅ›ci wykonania pozwala rzetelnie wnioskowaÄ‡ o populacji. Dlatego teÅ¼ zajmiemy siÄ™ tylko nim - jest to dobÃ³r losowy. Prosty przykÅ‚Ä…d doboru losowego pozwoli nam zrozumieÄ‡ mechanikÄ™ wnioskowania o duÅ¼ych populacjach na podstawie maÅ‚ych prÃ³b. 
 
-Zacznijmy od tego, ¿e chc¹c dobraæ próbê z populacji w sposób losowy musimy mieæ "spis" wszystkich osób do niej nale¿¹cych. Musimy mieæ z czego wybieraæ. Taka lista nazywana jest "operatem losowania". Powinna ona zawieraæ nie tylko informacjê o tym ile osób znajduje siê w populacji, ale tak¿e jak mo¿na siê z nimi "skontaktowaæ", czyli np. gdzie mieszkaj¹. Na szczêœcie w Polsce istniej¹ przynajmniej dwa takie operaty, które umo¿liwiaj¹ dobieranie w sposób losowy prób sonda¿owych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji Ludnoœci) zawieraj¹cy spis wszystkich obywateli Polski oraz osób posiadaj¹cych prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarz¹dzany przez _Ministerstwo Spraw Wewnêtrznych_. Drugim operatem jest __TERYT__ zawieraj¹cy informacjê o wszystkich mieszkaniach w Polsce. Za jego pomoc¹, dobieraj¹c mieszkasznia, mo¿na dobieraæ próby mieszkañców Polski. Rejestr ten prowadzi _G³ówny Urz¹d Statystyczny_.
+Zacznijmy od tego, Å¼e chcÄ…c dobraÄ‡ prÃ³bÄ™ z populacji w sposÃ³b losowy musimy mieÄ‡ "spis" wszystkich osÃ³b do niej naleÅ¼Ä…cych. Musimy mieÄ‡ z czego wybieraÄ‡. Taka lista nazywana jest "operatem losowania". Powinna ona zawieraÄ‡ nie tylko informacjÄ™ o tym ile osÃ³b znajduje siÄ™ w populacji, ale takÅ¼e jak moÅ¼na siÄ™ z nimi "skontaktowaÄ‡", czyli np. gdzie mieszkajÄ…. Na szczÄ™Å›cie w Polsce istniejÄ… przynajmniej dwa takie operaty, ktÃ³re umoÅ¼liwiajÄ… dobieranie w sposÃ³b losowy prÃ³b sondaÅ¼owych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji LudnoÅ›ci) zawierajÄ…cy spis wszystkich obywateli Polski oraz osÃ³b posiadajÄ…cych prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarzÄ…dzany przez _Ministerstwo Spraw WewnÄ™trznych_. Drugim operatem jest __TERYT__ zawierajÄ…cy informacjÄ™ o wszystkich mieszkaniach w Polsce. Za jego pomocÄ…, dobierajÄ…c mieszkasznia, moÅ¼na dobieraÄ‡ prÃ³by mieszkaÅ„cÃ³w Polski. Rejestr ten prowadzi _GÅ‚Ã³wny UrzÄ…d Statystyczny_.
 
-Wiemy ju¿ czego potrzebujemy, ¿eby dobraæ prób¹ wiêc teraz mo¿emy siê zastanowiæ, jak to zrobiæ. Najlepiej gdy skorzystamy z uproszczoengo przyk³¹du. Zacznijmy od probmemu badawczego i populacji. Za³ó¿my, ¿e chcemy oszacowaæ __poziom absencji wyborczaj__ w fikcyjnej populacji wyborców zamieszka³ych w Polsce sk³adaj¹cej siê z 20 osób (korzystaliœmy ju¿ z niej wczeœniej).  Bêdzie nam zale¿a³o na tym, aby dowiedziêæ siê, jaki odsetek obywateli deklaruje, ¿e nie pójdzie na wybory (wynosi on 50%, ale na chwile o tym zapomnijmy). ¯eby oszacowaæ interesuj¹cy nas odsetek zastosujemy technikê wywiadu bezpoœredniego, w którym zadamy pytanie: "Gdyby w najbli¿sz¹ niedzielê odbywa³y siê wybory do Sejmu i Senatu, to czy wzi¹³(ê³a)by Pan(i) w nich udzia³?" Zak³adamy, ¿e pytanie to nie jest dra¿liwe i wszyscy respondenci odpowiedz¹ na nie zgodnie ze swoim sumieniem. 
+Wiemy juÅ¼ czego potrzebujemy, Å¼eby dobraÄ‡ prÃ³bÄ… wiÄ™c teraz moÅ¼emy siÄ™ zastanowiÄ‡, jak to zrobiÄ‡. Najlepiej gdy skorzystamy z uproszczoengo przykÅ‚Ä…du. Zacznijmy od probmemu badawczego i populacji. ZaÅ‚Ã³Å¼my, Å¼e chcemy oszacowaÄ‡ __poziom absencji wyborczaj__ w fikcyjnej populacji wyborcÃ³w zamieszkaÅ‚ych w Polsce skÅ‚adajÄ…cej siÄ™ z 20 osÃ³b (korzystaliÅ›my juÅ¼ z niej wczeÅ›niej).  BÄ™dzie nam zaleÅ¼aÅ‚o na tym, aby dowiedziÄ™Ä‡ siÄ™, jaki odsetek obywateli deklaruje, Å¼e nie pÃ³jdzie na wybory (wynosi on 50%, ale na chwile o tym zapomnijmy). Å»eby oszacowaÄ‡ interesujÄ…cy nas odsetek zastosujemy technikÄ™ wywiadu bezpoÅ›redniego, w ktÃ³rym zadamy pytanie: "Gdyby w najbliÅ¼szÄ… niedzielÄ™ odbywaÅ‚y siÄ™ wybory do Sejmu i Senatu, to czy wziÄ…Å‚(Ä™Å‚a)by Pan(i) w nich udziaÅ‚?" ZakÅ‚adamy, Å¼e pytanie to nie jest draÅ¼liwe i wszyscy respondenci odpowiedzÄ… na nie zgodnie ze swoim sumieniem. 
 
 
 ```{r 2_populacja, echo=FALSE, include=FALSE}
 # sposob czytania arkuszy Google zaporzyczony ze strony:
 # http://blog.revolutionanalytics.com/2014/06/reading-data-from-the-new-version-of-google-spreadsheets.html
 # setwd( getwd() )
-# Wgranie pakietów
+# Wgranie pakietÃ³w
 options(OutDec= ",");
 library(knitr);
 library(XML);
 library(RCurl)
-# Przygotowanie funkcji czytaj¹cej dane
+# Przygotowanie funkcji czytajÄ…cej dane
 cleanGoogleTable <- function(dat, table=1, skip=0, ncols=NA, nrows=-1, header=TRUE, dropFirstCol=NA){
   if(!is.data.frame(dat)){
     dat <- dat[[table]]
@@ -322,7 +322,7 @@ cleanGoogleTable <- function(dat, table=1, skip=0, ncols=NA, nrows=-1, header=TR
   rownames(dat) <- seq_len(nrow(dat))
   dat
 }
-# Przygotowanie funkcji czytaj¹cej dane
+# Przygotowanie funkcji czytajÄ…cej dane
 
 readGoogleSheet <- function(url, na.string="", header=TRUE){
   stopifnot(require(XML))
@@ -344,49 +344,49 @@ m <- cleanGoogleTable(elem, table=1)
 m<-m[,colnames(m)!="X"]
 ```
 
-### Tabela 7.1. POPULACJA WYBORCÓW (liczba obserwacji)
+### Tabela 7.1. POPULACJA WYBORCÃ“W (liczba obserwacji)
 ```{r, echo=FALSE, results='asis'}
 poparcie_dla_P<-addmargins(table( m$Miasto_wies, m$Glosowanie ) )
-colnames( poparcie_dla_P)<-c("Nie pójdê na wybory", "Nie", "Tak", "RAZEM")
-row.names( poparcie_dla_P)<-c("Miasto", "Wieœ", "RAZEM")
+colnames( poparcie_dla_P)<-c("Nie pÃ³jdÄ™ na wybory", "Nie", "Tak", "RAZEM")
+row.names( poparcie_dla_P)<-c("Miasto", "WieÅ›", "RAZEM")
 kable( poparcie_dla_P, format = "markdown")
 ```
 
-W powy¿szej tabeli rozk³ad liczebnoœci miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, ¿e w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. ¯eby dibraæ próbê potrzebujemy jeszcze operatu losowania. W naszym przypadku wygl¹da on nastêpuj¹co:
+W powyÅ¼szej tabeli rozkÅ‚ad liczebnoÅ›ci miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, Å¼e w miastach mieszka 12 osÃ³b, a na wsi 8. Poparcie dla partii X deklaruje 7 osÃ³b, poparcie dla innych partii 3, a na wybory w ogÃ³le nie pÃ³jdzie 10 osÃ³b. Å»eby dibraÄ‡ prÃ³bÄ™ potrzebujemy jeszcze operatu losowania. W naszym przypadku wyglÄ…da on nastÄ™pujÄ…co:
 
 ```{r, echo=F, results='asis'}
 kable( m, format = "markdown")
 ```
 
-Operat mo¿na pobraæ z nastêpuj¹cej strony:
+Operat moÅ¼na pobraÄ‡ z nastÄ™pujÄ…cej strony:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
-Dla wyjaœnienia ustalmy, ¿e kolejne kolumny w operacie oznaczaj¹:   
+Dla wyjaÅ›nienia ustalmy, Å¼e kolejne kolumny w operacie oznaczajÄ…:   
 
-  * L.p.- liczba porz¹dkowa obywatela;
+  * L.p.- liczba porzÄ…dkowa obywatela;
   * Miasto_wies - miejsce zamieszkania obywatela;
     + M - miasto;
-    + W - wieœ;
-  * Glosowanie - czy pójdziesz na wybory i na kogo zag³osujesz;
-    + -1 - nie pójdê na wybory;
-    + 0 - pójdê na wybory, ale NIE zag³osujê na partiê X;
-    + 1 - pójdê na wybory i zag³osujê na partiê X.
+    + W - wieÅ›;
+  * Glosowanie - czy pÃ³jdziesz na wybory i na kogo zagÅ‚osujesz;
+    + -1 - nie pÃ³jdÄ™ na wybory;
+    + 0 - pÃ³jdÄ™ na wybory, ale NIE zagÅ‚osujÄ™ na partiÄ™ X;
+    + 1 - pÃ³jdÄ™ na wybory i zagÅ‚osujÄ™ na partiÄ™ X.
     
-Nasz problem badawczy dotyczy absencji wyborczej. Interesuje wiêc nas odsetek osób, które w kolumnie "Glosowanie" maj¹ warstoœæ -1, a wiec na pytanie o to na kogo zag³osuj¹ odpowiadaj¹, ¿e nie wybieraj¹ siê na wybory.
+Nasz problem badawczy dotyczy absencji wyborczej. Interesuje wiÄ™c nas odsetek osÃ³b, ktÃ³re w kolumnie "Glosowanie" majÄ… warstoÅ›Ä‡ -1, a wiec na pytanie o to na kogo zagÅ‚osujÄ… odpowiadajÄ…, Å¼e nie wybierajÄ… siÄ™ na wybory.
 
-PrzejdŸmy do najwa¿niejszego. Mamy problem badawczym, populacjê, technikê realizacji, kwestionariusz, operat losowania, a wiêc wszystko co jest nam potrzebne, aby zaj¹æ siê doborem respondentów.
+PrzejdÅºmy do najwaÅ¼niejszego. Mamy problem badawczym, populacjÄ™, technikÄ™ realizacji, kwestionariusz, operat losowania, a wiÄ™c wszystko co jest nam potrzebne, aby zajÄ…Ä‡ siÄ™ doborem respondentÃ³w.
 
-Dla naszych potrzeb skorzystamy z bardzo uproszczonego sposobu losowania próby. Pozwoli on nam przeanalizowaæ podstawowe zagadnienia z doborem respondentów, a jednoczeœnie ....................  
-Przymiemy nastêpuj¹cy __schemta losowania próby__ - w ten sposób sonda¿yœci okreœlaj¹ zasady wg których dobieraj¹ respondentów: z naszej 20 osobowej populacji bêdziemy losowali 2 ró¿ne osoby w nastêpuj¹cych krokach:
+Dla naszych potrzeb skorzystamy z bardzo uproszczonego sposobu losowania prÃ³by. Pozwoli on nam przeanalizowaÄ‡ podstawowe zagadnienia z doborem respondentÃ³w, a jednoczeÅ›nie ....................  
+Przymiemy nastÄ™pujÄ…cy __schemta losowania prÃ³by__ - w ten sposÃ³b sondaÅ¼yÅ›ci okreÅ›lajÄ… zasady wg ktÃ³rych dobierajÄ… respondentÃ³w: z naszej 20 osobowej populacji bÄ™dziemy losowali 2 rÃ³Å¼ne osoby w nastÄ™pujÄ…cych krokach:
 
-  1. Do próby losujemy jedn¹ osobê spoœród 20. Ka¿dy obywatel ma takie samo prawdopodobieñstwo znalezienia siê w próbie - wynosi ono 1/20;   
-  2. Spoœród pozosta³ych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowoœci z której dobierany jest respondent ka¿dy ma takie samo prawdopodobieñstwo znalezienia siê w próbie - wynosi ono tym razem 1/19;    
-  3. Otrzymujemy próbê, w której znajduj¹ siê dwie osoby. Poza prób¹ zostaje 18 obywateli.   
+  1. Do prÃ³by losujemy jednÄ… osobÄ™ spoÅ›rÃ³d 20. KaÅ¼dy obywatel ma takie samo prawdopodobieÅ„stwo znalezienia siÄ™ w prÃ³bie - wynosi ono 1/20;   
+  2. SpoÅ›rÃ³d pozostaÅ‚ych 19 osÃ³b znowu losujemy jednego respondenta. Ponownie w zbiorowoÅ›ci z ktÃ³rej dobierany jest respondent kaÅ¼dy ma takie samo prawdopodobieÅ„stwo znalezienia siÄ™ w prÃ³bie - wynosi ono tym razem 1/19;    
+  3. Otrzymujemy prÃ³bÄ™, w ktÃ³rej znajdujÄ… siÄ™ dwie osoby. Poza prÃ³bÄ… zostaje 18 obywateli.   
 
-Powy¿szy schamat losowania 2 osób z populacji 20 nazwiemy: __losowaniem prostym bez zwracania__. Losowanie to jest proste poniewa¿ na ka¿dym etapie wszyscy obywatele pozostaj¹cy w populacji maj¹ takie samo prawdopodobieñstwo dostania siê do próby. Bez zwracania poniewa¿ po wylosowaniu jednej osoby do próby nie wraca ona do puli z której losujemy nastêpn¹. Ten bardzo prosty schemat losowania próby pozwali nam przeanalizowaæ pewne podstawowe zagadnienia zwi¹zane z metod¹ reprezentacyj¹.    
+PowyÅ¼szy schamat losowania 2 osÃ³b z populacji 20 nazwiemy: __losowaniem prostym bez zwracania__. Losowanie to jest proste poniewaÅ¼ na kaÅ¼dym etapie wszyscy obywatele pozostajÄ…cy w populacji majÄ… takie samo prawdopodobieÅ„stwo dostania siÄ™ do prÃ³by. Bez zwracania poniewaÅ¼ po wylosowaniu jednej osoby do prÃ³by nie wraca ona do puli z ktÃ³rej losujemy nastÄ™pnÄ…. Ten bardzo prosty schemat losowania prÃ³by pozwali nam przeanalizowaÄ‡ pewne podstawowe zagadnienia zwiÄ…zane z metodÄ… reprezentacyjÄ….    
 
-Zastanówmy siê przede wszystkim, jak bêd¹ wygl¹da³y dobierane próby. Jako identyfikator osób w próbie wykorzystamy liczby z kolumny L.p. z listy zawieraj¹cej wszystkich obywateli naszej populacji. Zapis (1,2) oznaczaæ bêdzie, ¿e do próby wylosowano najpierw osobê o liczbie porz¹dkowej 1, a nastêpnie osobê o liczbie porz¹dkowej 2. Próby mo¿emy wiêc rozpisaæ wg. prostej regu³y. Je¿eli w pierwszym kroku dobierzemy osobê o liczbie porz¹dkowej 1 to w drugim kroku do pary mo¿emy dobraæ osoby z liczb¹ 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). Je¿eli do próby w pierwszym kroku dobierzemy osobê o liczbie porz¹dkowej 2 to w drugim kroku do pary mo¿emy dobraæ osoby z liczb¹ 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy wiêc, ¿e dla ka¿dej z 20 osób w populacji mo¿emy dobraæ 19 ró¿nych par. Czyli ³¹cznie mo¿emy stworzyæ w ten sposób 20x19=380 ró¿nych dwuosobowych prób. Rozpiszmy je, ¿eby zobaczyæ jak wygl¹daj¹.
+ZastanÃ³wmy siÄ™ przede wszystkim, jak bÄ™dÄ… wyglÄ…daÅ‚y dobierane prÃ³by. Jako identyfikator osÃ³b w prÃ³bie wykorzystamy liczby z kolumny L.p. z listy zawierajÄ…cej wszystkich obywateli naszej populacji. Zapis (1,2) oznaczaÄ‡ bÄ™dzie, Å¼e do prÃ³by wylosowano najpierw osobÄ™ o liczbie porzÄ…dkowej 1, a nastÄ™pnie osobÄ™ o liczbie porzÄ…dkowej 2. PrÃ³by moÅ¼emy wiÄ™c rozpisaÄ‡ wg. prostej reguÅ‚y. JeÅ¼eli w pierwszym kroku dobierzemy osobÄ™ o liczbie porzÄ…dkowej 1 to w drugim kroku do pary moÅ¼emy dobraÄ‡ osoby z liczbÄ… 2, 3, 4, 5, â€¦lub 20. W ten sposÃ³b otrzymamy prÃ³by: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). JeÅ¼eli do prÃ³by w pierwszym kroku dobierzemy osobÄ™ o liczbie porzÄ…dkowej 2 to w drugim kroku do pary moÅ¼emy dobraÄ‡ osoby z liczbÄ… 1, 3, 4, 5, â€¦lub 20. W ten sposÃ³b otrzymamy prÃ³by: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy wiÄ™c, Å¼e dla kaÅ¼dej z 20 osÃ³b w populacji moÅ¼emy dobraÄ‡ 19 rÃ³Å¼nych par. Czyli Å‚Ä…cznie moÅ¼emy stworzyÄ‡ w ten sposÃ³b 20x19=380 rÃ³Å¼nych dwuosobowych prÃ³b. Rozpiszmy je, Å¼eby zobaczyÄ‡ jak wyglÄ…dajÄ….
 
 ```{r, echo=FALSE, results='asis'}
 permutacje<-rep(1:20, each=19)
@@ -395,35 +395,35 @@ permutacje2<-permutacje2[ -seq(1,length( permutacje2),21 )]
 cat(paste0(paste( "(", unlist( permutacje), ",", unlist(permutacje2), ")"  , sep=""), sep="; "))
 ```
 
-Oto wszystkie mo¿liwe 380 dwuosobowe próby otrzymane wg. wczeœniej opisanego schematu.  Widzimy, ¿e niektóre pary w próbach powtarzaj¹ siê. Mo¿emy bowiem wylosowaæ najpierw osobê o numerze 1, a potem numerze 2. Otrzymujemy wtedy próbê (1,2). Mo¿e równie¿ zdarzyæ siê na odwrót. Najpierw wylosujemy osobê o numerze 2. a potem osobê o numerze 1. Otrzymujemy wtedy próbê (2,1). W taki razie nasuwa siê pytanie, w ilu próbach znajdzie siê ka¿dy obywatel.
+Oto wszystkie moÅ¼liwe 380 dwuosobowe prÃ³by otrzymane wg. wczeÅ›niej opisanego schematu.  Widzimy, Å¼e niektÃ³re pary w prÃ³bach powtarzajÄ… siÄ™. MoÅ¼emy bowiem wylosowaÄ‡ najpierw osobÄ™ o numerze 1, a potem numerze 2. Otrzymujemy wtedy prÃ³bÄ™ (1,2). MoÅ¼e rÃ³wnieÅ¼ zdarzyÄ‡ siÄ™ na odwrÃ³t. Najpierw wylosujemy osobÄ™ o numerze 2. a potem osobÄ™ o numerze 1. Otrzymujemy wtedy prÃ³bÄ™ (2,1). W taki razie nasuwa siÄ™ pytanie, w ilu prÃ³bach znajdzie siÄ™ kaÅ¼dy obywatel.
 
-### Tabela 7.2. W ilu próbach ka¿dy siê znalaz³?
+### Tabela 7.2. W ilu prÃ³bach kaÅ¼dy siÄ™ znalazÅ‚?
 ```{r, echo=FALSE, results='asis'}
 permutacje.wzstepowanie.w.probie<-as.data.frame(table(c(permutacje, permutacje2)))
-colnames(permutacje.wzstepowanie.w.probie)<-c("L.p.", "Liczba wyst¹pieñ")
+colnames(permutacje.wzstepowanie.w.probie)<-c("L.p.", "Liczba wystÄ…pieÅ„")
 kable( x = permutacje.wzstepowanie.w.probie, row.names = F, format = "markdown")
 ```
 
-Odpowied¿ znajduje siê w powy¿szej tabeli. Ka¿dy obywatel mo¿e znaleœæ siê w 38 próbach. Dlaczego? Tworzy on 19 ró¿nych par z ka¿dym innym obywatelem, a dodatkowo w ka¿dej parze mo¿e byæ na pierwszym lub drugim miejscu. Dlatego liczba wyst¹pieñ wynosi 19x2=38.    
+OdpowiedÅ¼ znajduje siÄ™ w powyÅ¼szej tabeli. KaÅ¼dy obywatel moÅ¼e znaleÅ›Ä‡ siÄ™ w 38 prÃ³bach. Dlaczego? Tworzy on 19 rÃ³Å¼nych par z kaÅ¼dym innym obywatelem, a dodatkowo w kaÅ¼dej parze moÅ¼e byÄ‡ na pierwszym lub drugim miejscu. Dlatego liczba wystÄ…pieÅ„ wynosi 19x2=38.    
 
-Jak policzyæ ogólna liczbê prób które mo¿emy wylosowanæ. W populacji mamy 20 osób. Zgodnie z naszymi za³o¿eniami losowanie dwuelemntowej próby przebiega w dwóch etapach. Najpierw losujemy pierwsz¹ osobê spoœród 20 dostêpnych., a nastêpnie z pozosta³ych 19 losujemy drug¹ osobê. Czyli próbê mo¿emy wylosowaæ na 20x19=380 sposobów. 
-Widzimy wiêc, ¿e przyjêty schemat losowania próby z danej populacji generuje pewn¹ skoñczon¹ i policzaln¹ zbiorowoœæ prób. To bardzo wa¿ne. Sposób w jaki generujemy próby decyduje o tym, co w nich siê znajdzie. Zobaczmy wiêc co generuje nasz schemat.   
+Jak policzyÄ‡ ogÃ³lna liczbÄ™ prÃ³b ktÃ³re moÅ¼emy wylosowanÄ‡. W populacji mamy 20 osÃ³b. Zgodnie z naszymi zaÅ‚oÅ¼eniami losowanie dwuelemntowej prÃ³by przebiega w dwÃ³ch etapach. Najpierw losujemy pierwszÄ… osobÄ™ spoÅ›rÃ³d 20 dostÄ™pnych., a nastÄ™pnie z pozostaÅ‚ych 19 losujemy drugÄ… osobÄ™. Czyli prÃ³bÄ™ moÅ¼emy wylosowaÄ‡ na 20x19=380 sposobÃ³w. 
+Widzimy wiÄ™c, Å¼e przyjÄ™ty schemat losowania prÃ³by z danej populacji generuje pewnÄ… skoÅ„czonÄ… i policzalnÄ… zbiorowoÅ›Ä‡ prÃ³b. To bardzo waÅ¼ne. SposÃ³b w jaki generujemy prÃ³by decyduje o tym, co w nich siÄ™ znajdzie. Zobaczmy wiÄ™c co generuje nasz schemat.   
 
-Policzmy dla wszystkich wymienionych wy¿ej prób odsetek osób, które nie chc¹ iœæ na wybory. Poniewa¿ próba liczy tylko dwie osoby wiêc mo¿liwe s¹ tylko trzy rodzaje wyników:   
+Policzmy dla wszystkich wymienionych wyÅ¼ej prÃ³b odsetek osÃ³b, ktÃ³re nie chcÄ… iÅ›Ä‡ na wybory. PoniewaÅ¼ prÃ³ba liczy tylko dwie osoby wiÄ™c moÅ¼liwe sÄ… tylko trzy rodzaje wynikÃ³w:   
 
- * (ABSENCJA, ABSENCJA)  = (100%) - ¿adna z dwóch osób NIE zamierza pójœæ na wybory;      
- * (ABSENCJA, G£OSOWANIE) lub (G£OSOWANIE, ABSENCJA) = (50%) - jedna z dwóch osób zamierza wzi¹æ udzia³ w wyborach.
- * (G£OSOWANIE, G£OSOWANIE) =  (0%) -  obie osoby zamierzaj¹ pójœæ na wybory;  
+ * (ABSENCJA, ABSENCJA)  = (100%) - Å¼adna z dwÃ³ch osÃ³b NIE zamierza pÃ³jÅ›Ä‡ na wybory;      
+ * (ABSENCJA, GÅOSOWANIE) lub (GÅOSOWANIE, ABSENCJA) = (50%) - jedna z dwÃ³ch osÃ³b zamierza wziÄ…Ä‡ udziaÅ‚ w wyborach.
+ * (GÅOSOWANIE, GÅOSOWANIE) =  (0%) -  obie osoby zamierzajÄ… pÃ³jÅ›Ä‡ na wybory;  
  
-Skoro wiemy czego mo¿emy siê spodziewaæ, to rozpiszmy poziomy absencji we wszystkich próbach (zachowano wczeœniejsz¹ kolejnoœæ prób):
+Skoro wiemy czego moÅ¼emy siÄ™ spodziewaÄ‡, to rozpiszmy poziomy absencji we wszystkich prÃ³bach (zachowano wczeÅ›niejszÄ… kolejnoÅ›Ä‡ prÃ³b):
 
 ```{r,echo=FALSE, results='asis'}
 cat(paste( "("  ,((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%); ", sep=""))
 ```
 
-Na pierwszy rzut oka widaæ, ¿e nie wszystkie wyniki s¹ zgodne z tym co obserwujemy w ca³ej populacji. W wielu próbach szacowana ABSENCJA jest zani¿ona (0%) lub zawy¿ona (100%). Ale to nas nie dziwi, bo wynika to z wybranego przez nas schamatu losowania próby. Zabaczmy wiêc ile dok³¹dnie wyników ka¿dego rodzaju daje nam przyjêty schemat losowania próby. 
+Na pierwszy rzut oka widaÄ‡, Å¼e nie wszystkie wyniki sÄ… zgodne z tym co obserwujemy w caÅ‚ej populacji. W wielu prÃ³bach szacowana ABSENCJA jest zaniÅ¼ona (0%) lub zawyÅ¼ona (100%). Ale to nas nie dziwi, bo wynika to z wybranego przez nas schamatu losowania prÃ³by. Zabaczmy wiÄ™c ile dokÅ‚Ä…dnie wynikÃ³w kaÅ¼dego rodzaju daje nam przyjÄ™ty schemat losowania prÃ³by. 
 
-### Wykres 7.1. Rozk³ad oszacowañ absencji z prób
+### Wykres 7.1. Oszacowanie absencji wyborczej w prÃ³bach dwu osobowch
 ```{r, echo=FALSE}
 permutacje.rozklad<-data.frame(absencja=paste( ((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%", sep=""));
 permutacje.rozklad<-data.frame( Lp=c(1:dim(permutacje.rozklad)[1]), permutacje.rozklad);
@@ -434,18 +434,18 @@ permutacje.rozklad.Tab <- as.data.frame(table(permutacje.rozklad$absencja));
 
 ggplot(permutacje.rozklad, aes(per.roz.kolejnosc))+
   geom_bar( fill=c("red2","deepskyblue", "yellowgreen"), colour="black")+
-  ylab("Liczba prób")+
-  xlab("Poziom absencji wyborczej w próbie")+
+  ylab("Liczba prÃ³b")+
+  xlab("Poziom absencji wyborczej w prÃ³bie")+
   geom_text(data=permutacje.rozklad.Tab,aes(x=Var1,y=Freq,label=Freq),vjust=5, size=5, face="bold")+
   theme(axis.text.x = element_text(face="bold", color = "black", size=15));
 ```
 
-Na powy¿szym wykresie widzimy, ¿e w 90 próbach absencja wynosi 0%, w 200 próba 50%, a w 90 próbach 100%. To ca³kiem logiczny rezultat. Je¿eli w populacji po³owa obywateli bêdzie g³osowaæ w wyborach, a po³owa nie, to mo¿emy siê spodziewaæ, ¿e najczêœciej jedna z dwóch osób w próbie bêdzie zwiêkszaæ absencjê, a druga zmniejszaæ.   
+Na powyÅ¼szym wykresie widzimy, Å¼e w 90 prÃ³bach absencja wynosi 0%, w 200 prÃ³ba 50%, a w 90 prÃ³bach 100%. To caÅ‚kiem logiczny rezultat. JeÅ¼eli w populacji poÅ‚owa obywateli bÄ™dzie gÅ‚osowaÄ‡ w wyborach, a poÅ‚owa nie, to moÅ¼emy siÄ™ spodziewaÄ‡, Å¼e najczÄ™Å›ciej jedna z dwÃ³ch osÃ³b w prÃ³bie bÄ™dzie zwiÄ™kszaÄ‡ absencjÄ™, a druga zmniejszaÄ‡.   
 
-Wiemy teraz dok³adnie czego mo¿emy siê spodziewaæ po naszym schemacie losowania próby - jakie wynika generuje najczêœciej, a jakie najrzadziej. Ale jakie to ma dla nas znaczenie skoro badanie sonda¿owe polega na wylosowaniu tylko jednej próby? ¯eby siê przekonaæ za³ó¿my na chwilê, ¿e jednak mo¿emy nasz eksperyment powtarzaæ wielokrotnie. WyobraŸmy sobie, ¿e dobieramy nasz¹ dwuosobow¹ próbê nie raz ale 1000 razy. Za ka¿dym razem bêdziemy obliczaæ deklarowan¹ absencjê w próbie, a potem "zwrócimy" respondentóW do populacji. W ten sposób otrzymujemy 1000 niezale¿nyc wyników naszego badania. Czy da siê przewidzieæ jakie bêd¹ wyniki takiego eksperymentu? Okazuje siê, ¿e tak. Z du¿a dok³adnoœci¹ mo¿na przewidzieæ, ile razy wyst¹pi ka¿dy z wyników. 
-Na 1000 przypadków w oko³o 237 (90/380\*1000) absencja wyniesie 0%, podobnie w 526 (200/380\*1000) 50%, a w 237 (90/380\*1000) 100%, Czyli rozk³ad wyników powinny byæ podobne do tego na na wykresie s³upkowym powy¿ej, ilustruj¹cym rok³ad wyników wœród zbiorowoœci prób losowanych naszym schematem doboru. Zobaczmy wiêc teraz jak bêd¹ siê kszta³towa³y wyniki z naszej symulacji
+Wiemy teraz dokÅ‚adnie czego moÅ¼emy siÄ™ spodziewaÄ‡ po naszym schemacie losowania prÃ³by - jakie wynika generuje najczÄ™Å›ciej, a jakie najrzadziej. Ale jakie to ma dla nas znaczenie skoro badanie sondaÅ¼owe polega na wylosowaniu tylko jednej prÃ³by? Å»eby siÄ™ przekonaÄ‡ zaÅ‚Ã³Å¼my na chwilÄ™, Å¼e jednak moÅ¼emy nasz eksperyment powtarzaÄ‡ wielokrotnie. WyobraÅºmy sobie, Å¼e dobieramy naszÄ… dwuosobowÄ… prÃ³bÄ™ nie raz ale 1000 razy. Za kaÅ¼dym razem bÄ™dziemy obliczaÄ‡ deklarowanÄ… absencjÄ™ w prÃ³bie, a potem "zwrÃ³cimy" respondentÃ³W do populacji. W ten sposÃ³b otrzymujemy 1000 niezaleÅ¼nyc wynikÃ³w naszego badania. Czy da siÄ™ przewidzieÄ‡ jakie bÄ™dÄ… wyniki takiego eksperymentu? Okazuje siÄ™, Å¼e tak. Z duÅ¼a dokÅ‚adnoÅ›ciÄ… moÅ¼na przewidzieÄ‡, ile razy wystÄ…pi kaÅ¼dy z wynikÃ³w. 
+Na 1000 przypadkÃ³w w okoÅ‚o 237 (90/380\*1000) absencja wyniesie 0%, podobnie w 526 (200/380\*1000) 50%, a w 237 (90/380\*1000) 100%, Czyli rozkÅ‚ad wynikÃ³w powinny byÄ‡ podobne do tego na na wykresie sÅ‚upkowym powyÅ¼ej, ilustrujÄ…cym rokÅ‚ad wynikÃ³w wÅ›rÃ³d zbiorowoÅ›ci prÃ³b losowanych naszym schematem doboru. Zobaczmy wiÄ™c teraz jak bÄ™dÄ… siÄ™ ksztaÅ‚towaÅ‚y wyniki z naszej symulacji
 
-### Wykres 7.2. Symulacja - rozk³ad oszacowania absencji z 1000 prób
+### Wykres 7.2. Symulacja - rozkÅ‚ad oszacowania absencji z 1000 prÃ³b
 ```{r, echo=FALSE}
 p2<-c();
 for (i in 1:1000){
@@ -458,54 +458,58 @@ p2 <- transform(p2, # przygotowanie danych
 p2.Tab <- as.data.frame(table(p2$absencja));
 ggplot(p2, aes(p2.kolejnosc))+
   geom_bar( fill=c("firebrick1","lightskyblue", "darkolivegreen1"))+
-  ylab("Liczba prób")+
-  xlab("Poziom absencji wyborczej w próbie")+
+  ylab("Liczba prÃ³b")+
+  xlab("Poziom absencji wyborczej w prÃ³bie")+
   geom_text(data=p2.Tab,aes(x=Var1,y=Freq,label=Freq),vjust=5, size=5, face="bold")+
   theme(axis.text.x = element_text(face="bold", color = "black", size=15));
 ```
 
-Jak widaæ wyniki symulacji nie odbiegaj¹ od tego, co przewidywaliœmy. w `r p2.Tab$Freq[p2.Tab$Var1=="0%"]  ` próbach absencja wyborcza wynios³a 0%, w `r p2.Tab$Freq[p2.Tab$Var1=="50%"]` wynios³a 50%, a w `r p2.Tab$Freq[p2.Tab$Var1=="100%"]` wynios³a 100%. Ró¿nice s¹ niewielkie.
-Widzimy wiêc teraz, ¿e schemat losowania próby determinuje szansê uzyskania poprawnego oszacowania. W przypadku naszego badania wynosz¹ one 200/380, a wiêc oko³o 53%.
+Jak widaÄ‡ wyniki symulacji nie odbiegajÄ… od tego, co przewidywaliÅ›my. w `r p2.Tab$Freq[p2.Tab$Var1=="0%"]  ` prÃ³bach absencja wyborcza wyniosÅ‚a 0%, w `r p2.Tab$Freq[p2.Tab$Var1=="50%"]` wyniosÅ‚a 50%, a w `r p2.Tab$Freq[p2.Tab$Var1=="100%"]` wyniosÅ‚a 100%. RÃ³Å¼nice sÄ… niewielkie.
+Widzimy wiÄ™c teraz, Å¼e schemat losowania prÃ³by determinuje szansÄ™ uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszÄ… one 200/380, a wiÄ™c okoÅ‚o 53%.
 
-Widzimy wiêc, ¿e dla ponad po³owy wszystkich mo¿liwch prób oszacowanie poziomu absencji jest prawid³owe. Wci¹¿ jednak istnieje  spore ryzyko, ¿e siê pomylimy. Czy to znaczy, ¿e nasz schemat losowania jest “z³y”? Jak w ogóle sprawdziæ, czy jest “dobry”? ¯e nasze wnioski z badania mog¹ byæ trafne?  Spójrzmy na nasz problem w nastêpuj¹cy sposób: wiadomo, ¿e poszczególne próby dobierane do badania sonda¿owego mog¹ dawaæ trochê inne wyniki. Najlepiej gdyby oszacowania te, je¿eli nie trafia³y w punkt, to przynajmniej oscylowa³y wokó³ prawid³owego wyniki. Schemat doboru próby powinien byæ tak zaprojektowany, aby wyniki z generowanych przy jego u¿yciu prób “ci¹¿y³y” w kierunku wartoœci obserwowanej w populacji. Co to znaczy? Zastanówmy siê jaki wynik przeciêtnie daj¹ próby. Zastosujemy przy tym zasadê czêsto stosowan¹ w szkole. Gdy chcemy siê czegoœ dowiedzieæ o wynikach ucznia w skali ca³ego roku liczmy œredni¹ arytmetyczn¹ jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego mo¿emy siê po nich przeciêtnie spodziewaæ. W tym celu dodajemy do siebie wszystkie 380 mo¿liwych oszacowañ, a nastêpnie dzielimy je przez liczbê wszystkich prób, czyli 380 - zupe³nie jak œredni¹ ocen w szkole. Mo¿emy sobie uproœciæ to zadanie i zsumowaæ wyniki w nastêpuj¹cy sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbê prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okaza³o siê, ¿e “przeciêtnie” na próbê przypada 50% absencja!!! To jest dok³adnie tyle ile wynosi ono w ca³ej populacji!!! Oto podstawa ca³ej metody reprezentacyjnej - przeciêtny wynik z próby powinien byæ równy wynikowi dla ca³e popualcji. Jest to najwa¿niejsza zasada badañ sonda¿owych, ale tak¿e ogólnie wszyskich badañ prowadzonych na próbach. Dziêki temu wiemy, ¿e przeciêtnie trafiamy w punkt - próba nie jest obci¹¿ona.
+Widzimy wiÄ™c, Å¼e dla ponad poÅ‚owy wszystkich moÅ¼liwch prÃ³b oszacowanie poziomu absencji jest prawidÅ‚owe. WciÄ…Å¼ jednak istnieje  spore ryzyko, Å¼e siÄ™ pomylimy. Czy to znaczy, Å¼e nasz schemat losowania jest â€œzÅ‚yâ€? Jak w ogÃ³le sprawdziÄ‡, czy jest â€œdobryâ€? Å»e nasze wnioski z badania mogÄ… byÄ‡ trafne?  SpÃ³jrzmy na nasz problem w nastÄ™pujÄ…cy sposÃ³b: wiadomo, Å¼e poszczegÃ³lne prÃ³by dobierane do badania sondaÅ¼owego mogÄ… dawaÄ‡ trochÄ™ inne wyniki. Najlepiej gdyby oszacowania te, jeÅ¼eli nie trafiaÅ‚y w punkt, to przynajmniej oscylowaÅ‚y wokÃ³Å‚ prawidÅ‚owego wyniki. Schemat doboru prÃ³by powinien byÄ‡ tak zaprojektowany, aby wyniki z generowanych przy jego uÅ¼yciu prÃ³b â€œciÄ…Å¼yÅ‚yâ€ w kierunku wartoÅ›ci obserwowanej w populacji. Co to znaczy? ZastanÃ³wmy siÄ™ jaki wynik przeciÄ™tnie dajÄ… prÃ³by. Zastosujemy przy tym zasadÄ™ czÄ™sto stosowanÄ… w szkole. Gdy chcemy siÄ™ czegoÅ› dowiedzieÄ‡ o wynikach ucznia w skali caÅ‚ego roku liczmy Å›redniÄ… arytmetycznÄ… jego ocen. Podobnie zrÃ³bmy z naszymi prÃ³bami. Policzmy czego moÅ¼emy siÄ™ po nich przeciÄ™tnie spodziewaÄ‡. W tym celu dodajemy do siebie wszystkie 380 moÅ¼liwych oszacowaÅ„, a nastÄ™pnie dzielimy je przez liczbÄ™ wszystkich prÃ³b, czyli 380 - zupeÅ‚nie jak Å›redniÄ… ocen w szkole. MoÅ¼emy sobie uproÅ›ciÄ‡ to zadanie i zsumowaÄ‡ wyniki w nastÄ™pujÄ…cy sposÃ³b: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbÄ™ prÃ³b: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazaÅ‚o siÄ™, Å¼e â€œprzeciÄ™tnieâ€ na prÃ³bÄ™ przypada 50% absencja!!! To jest dokÅ‚adnie tyle ile wynosi ono w caÅ‚ej populacji!!! Oto podstawa caÅ‚ej metody reprezentacyjnej - przeciÄ™tny wynik z prÃ³by powinien byÄ‡ rÃ³wny wynikowi dla caÅ‚e popualcji. Jest to najwaÅ¼niejsza zasada badaÅ„ sondaÅ¼owych, ale takÅ¼e ogÃ³lnie wszyskich badaÅ„ prowadzonych na prÃ³bach. DziÄ™ki temu wiemy, Å¼e przeciÄ™tnie trafiamy w punkt - prÃ³ba nie jest obciÄ…Å¼ona.
 
-### Tabela 7.3. Podsumowanie obliczeñ 
+### Tabela 7.3. Podsumowanie obliczeÅ„ 
 
-| Absencja w próbie (A) | Liczba prób z dan¹ absencj¹ (B) | Iloczyn absencji i liczby prób z dan¹ absencj¹ (A*B) |
+| Absencja w prÃ³bie (A) | Liczba prÃ³b z danÄ… absencjÄ… (B) | Iloczyn absencji i liczby prÃ³b z danÄ… absencjÄ… (A*B) |
 |-----------------------|---------------------------------|------------------------------------------------------|
 | 0%                    | 90                              | 0%\*90=0%                                             |
 | 50%                   | 200                             | 50%\*200=10000%                                       |
 | 100%                  | 90                              | 100%\*90=9000%                                        |
 | RAZEM                 | 380                             | 19000%                                               |
 
-To ¿e schemat doboru respondentów generuje próby które przeciêtnie siê nie myl¹, nie rozwi¹zuje problemu b³êdów, czyli przeszacowañ i niedoszacowañ. W przypadku losowania prób dwuosobowych i problemu absencji wyborczej prawie co druga próba daje wynik powa¿nie obci¹¿ony. 
-Dlatego w nastêpnej czêsci naszego odcinka przyjrzymy siê sposobom wnioskowania na podstawie próby i sposobom radzenia sobie z b³êdami oszacowañ generowanymi dla danego schematu losowania próby.
+To Å¼e schemat doboru respondentÃ³w generuje prÃ³by ktÃ³re przeciÄ™tnie siÄ™ nie mylÄ…, nie rozwiÄ…zuje problemu bÅ‚Ä™dÃ³w, czyli przeszacowaÅ„ i niedoszacowaÅ„. W przypadku losowania prÃ³b dwuosobowych i problemu absencji wyborczej prawie co druga prÃ³ba daje wynik powaÅ¼nie obciÄ…Å¼ony. 
+Dlatego w nastÄ™pnej czÄ™sci naszego odcinka przyjrzymy siÄ™ sposobom wnioskowania na podstawie prÃ³by i sposobom radzenia sobie z bÅ‚Ä™dami oszacowaÅ„ generowanymi dla danego schematu losowania prÃ³by.
 
 __Zadania 7:__   
 
-  1. Odpowiedz na pytania zwi¹zane z nastêpuj¹cym schematem losowania próby z omawianej populacj (za³¹czonej do rozdzia³u): losowanie proste bez zwracania 4 obywateli z popualcji 20 i szacowania poziomu absencji na podstawie próby:    
-    a) pamiêtaj¹c, ¿e do próby dobierane s¹ 4 osoby napisz jakie wyniki ró¿ne wyniki mo¿na otrzymaæ z takiej próby;         
-    b) napisz ile ró¿nych prób mo¿na wylosowaæ na podstawie podanego schamatu losowania
-    c) napisz w ilu ró¿nych próbach mo¿e siê pojawiæ ka¿dy obywatel;      
-    d) jaki bêdzie przeciêtny poziom absencji w próbie;   
-    e) czy próba otrzymana z podanego schamatu jest obci¹¿ona
+  1. Odpowiedz na pytania zwiÄ…zane z nastÄ™pujÄ…cym schematem losowania prÃ³by z omawianej populacj (zaÅ‚Ä…czonej do rozdziaÅ‚u): losowanie proste bez zwracania 4 obywateli z popualcji 20 i szacowania poziomu absencji na podstawie prÃ³by:    
+    a) pamiÄ™tajÄ…c, Å¼e do prÃ³by dobierane sÄ… 4 osoby napisz jakie wyniki rÃ³Å¼ne wyniki moÅ¼na otrzymaÄ‡ z takiej prÃ³by;         
+    b) napisz ile rÃ³Å¼nych prÃ³b moÅ¼na wylosowaÄ‡ na podstawie podanego schamatu losowania
+    c) napisz w ilu rÃ³Å¼nych prÃ³bach moÅ¼e siÄ™ pojawiÄ‡ kaÅ¼dy obywatel;      
+    d) jaki bÄ™dzie przeciÄ™tny poziom absencji w prÃ³bie;   
+    e) czy prÃ³ba otrzymana z podanego schamatu jest obciÄ…Å¼ona
   
-  2. Wylosuj próbê 14 osób z populacji za³¹czonej do rozdzia³u:
-    a) zapisz liczby porz¹dkowe (L.p.) osób wybranych do próby;
-    b) napisz jaki poziom absencji otrzymasz z wylosowanej próby;
-    c) jaki jest przeciêtnych poziom absencji w próbach losowanych wg takiego schematu jak ta wylosowana przez Ciebie?    
-    d) Napisz o ile punktów procentowych ró¿ni siê wynik z twojej próby od wyniku w ca³ej popualcji (50%)
+  2. Wylosuj prÃ³bÄ™ 14 osÃ³b z populacji zaÅ‚Ä…czonej do rozdziaÅ‚u:
+    a) zapisz liczby porzÄ…dkowe (L.p.) osÃ³b wybranych do prÃ³by;
+    b) napisz jaki poziom absencji otrzymasz z wylosowanej prÃ³by;
+    c) jaki jest przeciÄ™tnych poziom absencji w prÃ³bach losowanych wg takiego schematu jak ta wylosowana przez Ciebie?    
+    d) Napisz o ile punktÃ³w procentowych rÃ³Å¼ni siÄ™ wynik z twojej prÃ³by od wyniku w caÅ‚ej popualcji (50%)
 
 
-# 8. Wnioskowanie i b³edy w oszacowaniach
-Wróæmy do naszej populacji 
+# 8. Wnioskowanie i bÅ‚edy w oszacowaniach
+
+OmÃ³wiliÅ›my juÅ¼ wstÄ™pnie dobÃ³r losowy prÃ³by respondentÃ³w do badania sondaÅ¼owego. Wiemy, Å¼e wyniki z prÃ³b przeciÄ™tnie powinny "trafiaÄ‡ w punkt", jeÅ¼eli chcemy mÃ³wiÄ‡ o badaniu reprezentatywnym. 
+Pozostje jednak problem bÅ‚Ä™dÃ³w. Jak zwuwaÅ¼yliÅ›y na przykÅ‚adzie sondaÅ¼u dotyczÄ…cego absencji duÅ¼a czÄ™Å›Ä‡ prÃ³b moÅ¼e siÄ™ mysliÄ‡. CÃ³z wiÄ™c z tego, Å¼e nasza metoda doboru respondentÃ³w przeciÄ™tnie siÄ™ niemyli skoro wylosujemy jednÄ… prÃ³bÄ™ i ona wÅ‚aÅ›nie siÄ™ pomyli! 
+Problem bÅ‚Ä™dÃ³w zwiÄ…zanych z doborem losowym respondentÃ³w omÃ³wimy na nowym przykÅ‚adzie. Ponownie skorzystamy z naszej populacji
+
+### Tabela 8.1. RozkÅ‚ad miejsca zamieszkania i preferencji wyborczych w populacji
 ```{r,echo=FALSE, results='asis'}
 kable( poparcie_dla_P, format = "markdown");
 ```
-
-Omówimy teraz kwestiê b³êdów oszacowañ, z która zetknêliœmy siê badaj¹c poziom absencji wyborczej.  Tym razem znajmiemy siê poparciem dla partii X. W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu zamiast wartoœci -1 w kolumnie “Glosowanie” w naszym zbiorze danych teraz bêdziemy analizowali wystêpowanie wartoœci 1, czyli glosowanie na partiê X. 
-Zmienimy te¿ trochê nasz schemat losowanie. Bêdziemy dobieraæ po 6 obywateli do próby, ale tak samo jak wczeœniej losujemy ich w sposób prosty bez zwracania.
-Zacznijmy od sprawdzenia jakie wyniki mo¿na wygenerowaæ przy u¿yciu naszego schemat dobporu próby. Ogólnie mo¿liwe s¹ nastêpuj¹ce wyniki:   
+Tym razem znajmiemy siÄ™ poparciem dla partii X. W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu zamiast wartoÅ›ci -1 w kolumnie â€œGlosowanieâ€ teraz bÄ™dziemy analizowali wystÄ™powanie wartoÅ›ci 1, czyli glosowanie na partiÄ™ X. 
+Zmienimy teÅ¼ trochÄ™ nasz schemat losowanie. BÄ™dziemy dobieraÄ‡ po 6 obywateli do prÃ³by. Tak samo jak wczeÅ›niej losujemy ich w sposÃ³b prosty bez zwracania.
+Zacznijmy od sprawdzenia jakie wyniki moÅ¼na wygenerowaÄ‡ przy uÅ¼yciu naszego schemat dobporu prÃ³by. OgÃ³lnie moÅ¼liwe sÄ… nastÄ™pujÄ…ce wyniki:   
 
   * (TAK, TAK, TAK, TAK, TAK, TAK) = 100%    
   * (TAK, TAK, TAK, TAK, TAK, NIE) = 83%    
@@ -515,32 +519,32 @@ Zacznijmy od sprawdzenia jakie wyniki mo¿na wygenerowaæ przy u¿yciu naszego sche
   * (TAK, NIE, NIE, NIE, NIE, NIE) = 17%   
   * (NIE, NIE, NIE, NIE, NIE, NIE) = 0%   
 
-Ró¿nych prób w których ¿aden obywatel siê nie powtórzy otrzymamy 20\*19\*18\*17\*16\*15=27907200. Bardzo du¿o. Trudno tak¹ iloœæ rozpisaæ. Co mo¿emy wiêc zrobiæ. Przede wszystkim mo¿emy wykonaæ proste, choæ trochê ¿mudne, obliczenia, które pozwol¹ nam okreœliæ w ilu próba pojawi siê ka¿dy obywatel. Przypomnijmy sobie wiêc, co zrobiliœmy w przypadku dwu-osobowej próby. Policzyliœmy wtedy, ¿e ka¿dy obywatel mo¿e utworzyæ 19 par z innymi obywatelami i dodatkowo mo¿e byæ wylosowany jako pierwszy lub drugi. W konsekwencji liczba prób, w których mo¿e wyst¹piæ wynosi³a 19\*2=38. A co w przypadku trzyosobowych prób? Wtedy ka¿dy obywatel móg³by dobraæ najpierw 1 z 19 pozosta³ych osób, a potem 2 z 18 pozosta³ych osób. Sam natomiast móg³by zostaæ wylosowany jako pierwszy, drugi lub trzeci. W efekcie ka¿dy obywatel wystêpowa³by w 19\*18\*3=1026 trójkach. Analogicznie dla szeœcioosobowej próby, ka¿dy obywatel mo¿e utworzyæ szóstkê najpierw z jednym z 19, potem jednym z 18, potem jednym z 17 itd. a¿ wreszcie jednym z 15 obywateli. Co wiêcej mo¿e on zostaæ wylosowany jako 1,2,3,4,5 lub 6 do próby. Ostatecznie ka¿dy obywatel wystêpuje wiec w  19\*18\*17\*16\*15\*6=8372160 szeœcioosobowych próbach. 
+RÃ³Å¼nych prÃ³b w ktÃ³rych Å¼aden obywatel siÄ™ nie powtÃ³rzy otrzymamy 20\*19\*18\*17\*16\*15=27907200. Bardzo duÅ¼o. Trudno takÄ… iloÅ›Ä‡ rozpisaÄ‡. Co moÅ¼emy wiÄ™c zrobiÄ‡. Przede wszystkim moÅ¼emy wykonaÄ‡ proste, choÄ‡ trochÄ™ Å¼mudne, obliczenia, ktÃ³re pozwolÄ… nam okreÅ›liÄ‡ w ilu prÃ³ba pojawi siÄ™ kaÅ¼dy obywatel. Przypomnijmy sobie wiÄ™c, co zrobiliÅ›my w przypadku dwu-osobowej prÃ³by. PoliczyliÅ›my wtedy, Å¼e kaÅ¼dy obywatel moÅ¼e utworzyÄ‡ 19 par z innymi obywatelami i dodatkowo moÅ¼e byÄ‡ wylosowany jako pierwszy lub drugi. W konsekwencji liczba prÃ³b, w ktÃ³rych moÅ¼e wystÄ…piÄ‡ wynosiÅ‚a 19\*2=38. A co w przypadku trzyosobowych prÃ³b? Wtedy kaÅ¼dy obywatel mÃ³gÅ‚by dobraÄ‡ najpierw 1 z 19 pozostaÅ‚ych osÃ³b, a potem 2 z 18 pozostaÅ‚ych osÃ³b. Sam natomiast mÃ³gÅ‚by zostaÄ‡ wylosowany jako pierwszy, drugi lub trzeci. W efekcie kaÅ¼dy obywatel wystÄ™powaÅ‚by w 19\*18\*3=1026 trÃ³jkach. Analogicznie dla szeÅ›cioosobowej prÃ³by, kaÅ¼dy obywatel moÅ¼e utworzyÄ‡ szÃ³stkÄ™ najpierw z jednym z 19, potem jednym z 18, potem jednym z 17 itd. aÅ¼ wreszcie jednym z 15 obywateli. Co wiÄ™cej moÅ¼e on zostaÄ‡ wylosowany jako 1,2,3,4,5 lub 6 do prÃ³by. Ostatecznie kaÅ¼dy obywatel wystÄ™puje wiec w  19\*18\*17\*16\*15\*6=8372160 szeÅ›cioosobowych prÃ³bach. 
 
 ```{r, echo=FALSE}
 library("gtools") 
 p6<-permutations(n = 20, r = 6)
 ```
 
-### Tabela 8.1. LICZBA PRÓB, W KTÓRYCH WYSTÊPUJE KA¯DY OBYWATEL
+### Tabela 8.1. LICZBA PRÃ“B, W KTÃ“RYCH WYSTÄ˜PUJE KAÅ»DY OBYWATEL
 ```{r, echo=FALSE, results='asis'}
 p6.1<-NULL
 for(i in 1:20) {
   p6.1[i]<-sum(rowSums( p6==i));
 }
-p6.1<- data.frame( obywatel=1:20, L.wyst¹pieñ=p6.1)
+p6.1<- data.frame( obywatel=1:20, L.wystÄ…pieÅ„=p6.1)
 kable(p6.1, row.names = F, format = "markdown")
 ```
 
-Wiemy ju¿ w ilu próba wyst¹pi ka¿dy obywatel: w oœmiu milionach trzystu siedemdziesiêciu dwóch tysi¹cach stu szeœædziesiêciu. Du¿o!
-Zastanówmy siê teraz, z jak¹ czêstotliwoœci¹ bêd¹ wystêpowa³y poszczególne wyniki z próby, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100% (6/6), ile takich, w których poparcie wyniesie 83% (5/6) itd. OdpowiedŸ na to pytanie mo¿na uzyskaæ na dwa sposoby. Albo stosuj¹c proste, ale wymagaj¹ce du¿ego skupienia obliczenia na papierze albo stosuj¹c mniej obci¹¿aj¹ce ale za to ¿mudne obliczenia na komputerze. Przyjrzyjmy siê pierwszej metodzie.
-Zastanówmy siê, ile mo¿e byæ takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przyk³adowo mo¿e to byæ próba (X, X, X, X, X, nX), gdzie "X" oznacza "g³osujê na partiê X", a "nX" nie g³osujê na partiê "X. Na ten moment nie bêdzie nas interesowa³o, którzy to obywatele (o jakich wartoœciach L.p.). Bêdziemy rozró¿niaæ tylko miêdzy "X"" oraz "nX". Losowanie tego rodzaju próby bêdzie przebiega³o w nastêpuj¹cy sposób. __[KONIECZNE OBJAŒNIENIE - sk¹d nagle losowanie spoœród 7 osób]__. Pierwszego respondenta dobieramy spoœród wszystkich osób popieraj¹cych partiê X, w populacji jest ich 7. Potem drugiego respondenta dobieramy spoœród pozosta³ych 6 osób popieraj¹cych X, potem trzeciego respodenta dobieramy spoœród pozosta³ych 5 osób dopieraj¹cych X, itd a¿ dochodzimy do szóstego respondenta. Dobierzemy go z innej grupy dobieramy z innej grupy, niepopieraj¹cych X (nX). W populacji jest takich osób 13. Ostatecznie wiêc liczba prób dla których preferencje uk³adaj¹ siê w kolejnoœci (X, X, X, X, X, nX) jest równa 7\*6\*5\*4\*3\*13=32760. No tak, ale my chcemy wiedzieæ ,ile jest dok³adnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich,  w których osoba niepopieraj¹ca X by³a wylosowana jako ostatnia. ¯eby siê tego dowiedzieæ musimy zauwa¿yæ, ¿e obywatel deklaruj¹cy nX mo¿e zostaæ wylosowany, jako szósty, pi¹ty, czwarty, … lub jako pierwszy. Czyli mo¿e on zostaæ ustawiony na szeœæ sposobów w próbie.  Innymi s³owy ka¿da próba typu (X, X, X, X, X, nX) ma swoich piêæ odpowiedników, w których wystêpuj¹ ci sami obywatele, ale na innych miejscach. Ostatecznie wiêc liczba prób w których poparcie wyniesie 83,3% (5/6) wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=196560.    
-A ile bêdzie prób, w których poparcie dla X wynosi 66,7% (4/6)? Podobnie jak poprzednio, zacznijmy od przyk³adowej kombinacji odpowiedzi (X, X, X, X , nX, nX). Dok³adnie w tej kolejnoœci preferencje mo¿emy mieæ w 7\*6\*5\*4\*13\*12=131040 próbach. Teraz zastanówmy siê, na ile sposobów mo¿emy “ustawiæ” dwie preferencje nX na szeœciu miejscach (alternatywnie mo¿na siê zastanawiaæ na ile sposobów mo¿na ustawiæ 4 preferencje X, ale wynik bêdzie dok³dnie taki sam)? Pierwsz¹ preferencja nX mo¿e zaj¹æ jedno z szeœciu miejsc, a druga pozosta³ych piêæ. To by oznacza³o, ¿e mo¿na je ustawiæ na 6\*5=30 sposobów. Zobaczmy jednak jak wygl¹da to w praktyce. Je¿eli pierwsza preferencja nX zajmie pierwsze miejsce, a druga drugie to otrzymamy próbê (nX, nX, X, X, X, X). Je¿eli natomiast pierwsza preferencja nX zajmie drugie miejsce, a druga pierwsze to znowu otrzymamy próbê (nX, nX, X, X, X, X). Oba przypadki daj¹ taki sam rezultat. Czyli dwie preferencje nX mog¹ zajmowaæ miejsca w 6-osobowej próbie na (6\*5)/2=15 sposobó. Ostatecznie wiêc liczba prób w których poparcie wyniesie 66,7% (4/6) wynosi (7\*6\*5\*4)\*(13\*12)\*(6\*5)/2=1965600.     
-Podobne obliczenia mo¿na przeprowadziæ dla pozosta³ych odsetów poparcia. Mo¿emy te¿ policzyæ te¿ zrobiæ inaczej i zleciæ wiêkszoœc pracy komputerowi. To rozwi¹zanie nie wymaga od nas rozumienia procesu losowania i dlatego jest mniej “eleganckie”, ale za to pozwoli szybko otrzymaæ interesuj¹ce nas wyniki. Przy pomocy programu R udalo nam sie otrzymaæ nastêpuj¹ce rozwi¹zanie dla próby szeœcioosobowej:
+Wiemy juÅ¼ w ilu prÃ³ba wystÄ…pi kaÅ¼dy obywatel: w oÅ›miu milionach trzystu siedemdziesiÄ™ciu dwÃ³ch tysiÄ…cach stu szeÅ›Ä‡dziesiÄ™ciu. DuÅ¼o!
+ZastanÃ³wmy siÄ™ teraz, z jakÄ… czÄ™stotliwoÅ›ciÄ… bÄ™dÄ… wystÄ™powaÅ‚y poszczegÃ³lne wyniki z prÃ³by, czyli ile jest takich prÃ³b, w ktÃ³rych poparcie dla partii X wyniesie  100% (6/6), ile takich, w ktÃ³rych poparcie wyniesie 83% (5/6) itd. OdpowiedÅº na to pytanie moÅ¼na uzyskaÄ‡ na dwa sposoby. Albo stosujÄ…c proste, ale wymagajÄ…ce duÅ¼ego skupienia obliczenia na papierze albo stosujÄ…c mniej obciÄ…Å¼ajÄ…ce ale za to Å¼mudne obliczenia na komputerze. Przyjrzyjmy siÄ™ pierwszej metodzie.
+ZastanÃ³wmy siÄ™, ile moÅ¼e byÄ‡ takich prÃ³b, w ktÃ³rych poparcie dla partii X wyniesie 83,3% (5/6). PrzykÅ‚adowo moÅ¼e to byÄ‡ prÃ³ba (X, X, X, X, X, nX), gdzie "X" oznacza "gÅ‚osujÄ™ na partiÄ™ X", a "nX" nie gÅ‚osujÄ™ na partiÄ™ "X. Na ten moment nie bÄ™dzie nas interesowaÅ‚o, ktÃ³rzy to obywatele (o jakich wartoÅ›ciach L.p.). BÄ™dziemy rozrÃ³Å¼niaÄ‡ tylko miÄ™dzy "X"" oraz "nX". Losowanie tego rodzaju prÃ³by bÄ™dzie przebiegaÅ‚o w nastÄ™pujÄ…cy sposÃ³b. __[KONIECZNE OBJAÅšNIENIE - skÄ…d nagle losowanie spoÅ›rÃ³d 7 osÃ³b]__. Pierwszego respondenta dobieramy spoÅ›rÃ³d wszystkich osÃ³b popierajÄ…cych partiÄ™ X, w populacji jest ich 7. Potem drugiego respondenta dobieramy spoÅ›rÃ³d pozostaÅ‚ych 6 osÃ³b popierajÄ…cych X, potem trzeciego respodenta dobieramy spoÅ›rÃ³d pozostaÅ‚ych 5 osÃ³b dopierajÄ…cych X, itd aÅ¼ dochodzimy do szÃ³stego respondenta. Dobierzemy go z innej grupy dobieramy z innej grupy, niepopierajÄ…cych X (nX). W populacji jest takich osÃ³b 13. Ostatecznie wiÄ™c liczba prÃ³b dla ktÃ³rych preferencje ukÅ‚adajÄ… siÄ™ w kolejnoÅ›ci (X, X, X, X, X, nX) jest rÃ³wna 7\*6\*5\*4\*3\*13=32760. No tak, ale my chcemy wiedzieÄ‡ ,ile jest dokÅ‚adnie wszystkich prÃ³b, w  ktÃ³rych poparcie wynosi 83,3%, nie tylko takich,  w ktÃ³rych osoba niepopierajÄ…ca X byÅ‚a wylosowana jako ostatnia. Å»eby siÄ™ tego dowiedzieÄ‡ musimy zauwaÅ¼yÄ‡, Å¼e obywatel deklarujÄ…cy nX moÅ¼e zostaÄ‡ wylosowany, jako szÃ³sty, piÄ…ty, czwarty, â€¦ lub jako pierwszy. Czyli moÅ¼e on zostaÄ‡ ustawiony na szeÅ›Ä‡ sposobÃ³w w prÃ³bie.  Innymi sÅ‚owy kaÅ¼da prÃ³ba typu (X, X, X, X, X, nX) ma swoich piÄ™Ä‡ odpowiednikÃ³w, w ktÃ³rych wystÄ™pujÄ… ci sami obywatele, ale na innych miejscach. Ostatecznie wiÄ™c liczba prÃ³b w ktÃ³rych poparcie wyniesie 83,3% (5/6) wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=196560.    
+A ile bÄ™dzie prÃ³b, w ktÃ³rych poparcie dla X wynosi 66,7% (4/6)? Podobnie jak poprzednio, zacznijmy od przykÅ‚adowej kombinacji odpowiedzi (X, X, X, X , nX, nX). DokÅ‚adnie w tej kolejnoÅ›ci preferencje moÅ¼emy mieÄ‡ w 7\*6\*5\*4\*13\*12=131040 prÃ³bach. Teraz zastanÃ³wmy siÄ™, na ile sposobÃ³w moÅ¼emy â€œustawiÄ‡â€ dwie preferencje nX na szeÅ›ciu miejscach (alternatywnie moÅ¼na siÄ™ zastanawiaÄ‡ na ile sposobÃ³w moÅ¼na ustawiÄ‡ 4 preferencje X, ale wynik bÄ™dzie dokÅ‚dnie taki sam)? PierwszÄ… preferencja nX moÅ¼e zajÄ…Ä‡ jedno z szeÅ›ciu miejsc, a druga pozostaÅ‚ych piÄ™Ä‡. To by oznaczaÅ‚o, Å¼e moÅ¼na je ustawiÄ‡ na 6\*5=30 sposobÃ³w. Zobaczmy jednak jak wyglÄ…da to w praktyce. JeÅ¼eli pierwsza preferencja nX zajmie pierwsze miejsce, a druga drugie to otrzymamy prÃ³bÄ™ (nX, nX, X, X, X, X). JeÅ¼eli natomiast pierwsza preferencja nX zajmie drugie miejsce, a druga pierwsze to znowu otrzymamy prÃ³bÄ™ (nX, nX, X, X, X, X). Oba przypadki dajÄ… taki sam rezultat. Czyli dwie preferencje nX mogÄ… zajmowaÄ‡ miejsca w 6-osobowej prÃ³bie na (6\*5)/2=15 sposobÃ³. Ostatecznie wiÄ™c liczba prÃ³b w ktÃ³rych poparcie wyniesie 66,7% (4/6) wynosi (7\*6\*5\*4)\*(13\*12)\*(6\*5)/2=1965600.     
+Podobne obliczenia moÅ¼na przeprowadziÄ‡ dla pozostaÅ‚ych odsetÃ³w poparcia. MoÅ¼emy teÅ¼ policzyÄ‡ teÅ¼ zrobiÄ‡ inaczej i zleciÄ‡ wiÄ™kszoÅ›c pracy komputerowi. To rozwiÄ…zanie nie wymaga od nas rozumienia procesu losowania i dlatego jest mniej â€œeleganckieâ€, ale za to pozwoli szybko otrzymaÄ‡ interesujÄ…ce nas wyniki. Przy pomocy programu R udalo nam sie otrzymaÄ‡ nastÄ™pujÄ…ce rozwiÄ…zanie dla prÃ³by szeÅ›cioosobowej:
 
-### Tabela 8.1. Liczba prób 6-osobowych z danym poparciem
+### Tabela 8.1. Liczba prÃ³b 6-osobowych z danym poparciem
 
-| Poparcie | Obliczenia na papierze                       | Wynik obliczeñ komputerowych |
+| Poparcie | Obliczenia na papierze                       | Wynik obliczeÅ„ komputerowych |
 |----------|----------------------------------------------|------------------------------|
 | 0        | (13\*12\*11\*10\*9\*8)=1235520               | 1235520                      |
 | 1/6      | (7)\*(13\*12\*11\*10\*9)\*(6)=6486480        | 6486480                      |
@@ -551,7 +555,7 @@ Podobne obliczenia mo¿na przeprowadziæ dla pozosta³ych odsetów poparcia. Mo¿emy 
 | 1        | (7\*6\*5\*4\*3\*2)=5040                      | 5040                         |
 | Razem    | 20\*19\*18\*17\*16\*15=27907200              | 27907200                     |
 
-### Tabela 8.2. Poparcie dla partii X w próbach szeœcioosobowych
+### Tabela 8.2. Poparcie dla partii X w prÃ³bach szeÅ›cioosobowych
 ```{r,echo=FALSE}
 p6.2=p6.3<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
 p6.2<-rowSums( p6.2==1)/6;
@@ -561,18 +565,18 @@ ggplot(p6.2, aes(x = factor(p6.2), y = Freq)) +
   geom_bar(stat="identity", fill="lightskyblue", colour="black")+
   scale_x_discrete(labels=c("0","1/6","2/6","3/6", "4/6", "5/6", "1"))+
   theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
-  xlab("Poparcie w próbie")+
-  ylab("Liczba prób")+
+  xlab("Poparcie w prÃ³bie")+
+  ylab("Liczba prÃ³b")+
    geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq, label=Freq) ,vjust=0.1, size=4, face="bold")
 
 ```
 
-Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy siê wynikom. Najwiêcej prób zawiera poparcie dla partii X na poziomie 2/6. Du¿o mniej 1/6 i 3/6. Wyniki 0 oraz 4/6 mo¿na nazwaæ rzadkimi, a 5/6 i 1 bardzo rzadkimi. Zauwa¿my równie¿, ¿e poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, ¿e nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” okreœla siê na podstawie przeciêtnej wartoœci oszacowania w próbie. Gdy mierzyliœmy ten parametr dla sonda¿u dotycz¹cego absencji w wyborach, wiedzieliœmy, ¿e przynajmniej czêœæ prób “trafia w punkt”. Tym razem tak nie jest. ¯adna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiœcie schemat doboru respondentów jest wadliwy. Je¿eli sprawdzimy przeciêtny wynik z próby to oka¿e siê, ¿e wynosi on dok³adnie 35%, a wiêc dok³adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliœmy wczeœniej oznacza to, ¿e jest on poprawny. Ale co z tego skoro nie portafi dok³adnie “trafiæ” w wynik! Potrzebujemy dodatkowej miary trafnoœci wyników. Musi ona okreœlaæ skalê b³¹d pope³nianego przy korzystaniu z konkretnych schematów losowania. Dziêki temu bêdziemy porównywaæ schmaty, a przede wszystkim kreœliæ, jak du¿e jest ryzyko, ¿e siê myslimy.  Pos³u¿ymy siê przy tym rozwi¹zaniem wymyœlonym przez statystyków. Policzmy jak duzy jest rozstêp miêdzy wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajduj¹ siê w poni¿szej tabeli
+Widzimy jak wiele rÃ³Å¼nych moÅ¼liwoÅ›ci moÅ¼emy uzyskaÄ‡ z naszych prÃ³b. Przyjrzyjmy siÄ™ wynikom. NajwiÄ™cej prÃ³b zawiera poparcie dla partii X na poziomie 2/6. DuÅ¼o mniej 1/6 i 3/6. Wyniki 0 oraz 4/6 moÅ¼na nazwaÄ‡ rzadkimi, a 5/6 i 1 bardzo rzadkimi. ZauwaÅ¼my rÃ³wnieÅ¼, Å¼e poparcia dla partii X nigdy nie jest rÃ³wne 35% (7/20). Czy to oznacza, Å¼e nasz schemat jest wadliwy. Jak wiemy to, czy prÃ³ba jest â€œtrafnaâ€ okreÅ›la siÄ™ na podstawie przeciÄ™tnej wartoÅ›ci oszacowania w prÃ³bie. Gdy mierzyliÅ›my ten parametr dla sondaÅ¼u dotyczÄ…cego absencji w wyborach, wiedzieliÅ›my, Å¼e przynajmniej czÄ™Å›Ä‡ prÃ³b â€œtrafia w punktâ€. Tym razem tak nie jest. Å»adna prÃ³ba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiÅ›cie schemat doboru respondentÃ³w jest wadliwy. JeÅ¼eli sprawdzimy przeciÄ™tny wynik z prÃ³by to okaÅ¼e siÄ™, Å¼e wynosi on dokÅ‚adnie 35%, a wiÄ™c dokÅ‚adnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania prÃ³by.  Zgdonie z tym, co mÃ³wiliÅ›my wczeÅ›niej oznacza to, Å¼e jest on poprawny. Ale co z tego skoro nie portafi dokÅ‚adnie â€œtrafiÄ‡â€ w wynik! Potrzebujemy dodatkowej miary trafnoÅ›ci wynikÃ³w. Musi ona okreÅ›laÄ‡ skalÄ™ bÅ‚Ä…d popeÅ‚nianego przy korzystaniu z konkretnych schematÃ³w losowania. DziÄ™ki temu bÄ™dziemy porÃ³wnywaÄ‡ schmaty, a przede wszystkim kreÅ›liÄ‡, jak duÅ¼e jest ryzyko, Å¼e siÄ™ myslimy.  PosÅ‚uÅ¼ymy siÄ™ przy tym rozwiÄ…zaniem wymyÅ›lonym przez statystykÃ³w. Policzmy jak duzy jest rozstÄ™p miÄ™dzy wynikiem z prÃ³by, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajdujÄ… siÄ™ w poniÅ¼szej tabeli
 
 
-### Tabela 8.2. Podsumowanie obliczeñ
+### Tabela 8.2. Podsumowanie obliczeÅ„
 
-| Poparciedla partii X (A) | Liczba prób z danym poparciem dla partii X (B) | Ró¿nica miêdzy wynikiem w próbie, a poparciem w populacji (A -35%) | Kwadrat ró¿nicy (A-35%)^2 | Iloczyn liczby prób ikwadratu b³êdu ((A-35%)^2)*B |
+| Poparciedla partii X (A) | Liczba prÃ³b z danym poparciem dla partii X (B) | RÃ³Å¼nica miÄ™dzy wynikiem w prÃ³bie, a poparciem w populacji (A -35%) | Kwadrat rÃ³Å¼nicy (A-35%)^2 | Iloczyn liczby prÃ³b ikwadratu bÅ‚Ä™du ((A-35%)^2)*B |
 |--------------------------|------------------------------------------------|--------------------------------------------------------------------|---------------------------|---------------------------------------------------|
 | 0                        | 1235520                                        | -0,3500                                                            | 0,1225                    | 151351,2                                          |
 | 1/6                      | 6486480                                        | -0,1833                                                            | 0,0336                    | 218017,8                                          |
@@ -583,22 +587,25 @@ Widzimy jak wiele ró¿nych mo¿liwoœci mo¿emy uzyskaæ z naszych prób. Przyjrzyjmy 
 | 1                        | 5040                                           | 0,6500                                                             | 0,4225                    | 2129,4                                            |
 | Razem                    | 27907200                                       | ---                                                                | ---                       |                                                   |
 
-Zaczynamy od rozpisania wszystkich mo¿liwych wyników z próby (kolumna A). Nastêpnie dopisujemy, ile prób w naszym schemacie daje konkretny wynik (kolumna B). Obliczenia b³êdy zaczniemy od wyznaczenia ró¿nicy miêdzy wynikiem w próbie i wynikiem w populacji (A - 35%). Nastêpnie wyznaczymy kwadrat tego b³êdu ((A-35%)^2). W ten sposób otrzymaliœmy kwadrat b³êdu pope³nianego w danym rodzaju próby. Nas interesuje nie b³¹d dla konkretnej próby (choæ to te¿ jest interesuj¹ce), ale b³¹d przeciêtnie pope³niany dla danego schematu losowania prób. Czyli chcemy poprostu policzyæ œredni¹ z naszego b³êdu - œredni¹ arytmetyczn¹. Potrzebujemy do tego iloczynu kwadratów b³êdow w poszczególnych rodzajach prób i liczby prób ka¿dego rodzaju (((A-35%)^2)*B ). Nastêpnie sumujemy otrzymane wartoœci (779688) i dzielimy przez ogólna liczbe prób. W efekcie otrzymujemy  779688/27907200 = 0,02793859649 Tyle wynosi przeciêtny b³¹d kwadratowy (statystycy nazywaja go “Wariancj¹”). Czy to du¿o? Trudno powiedzieæ. Dlatego policzymy pierwiastek tej liczby. W ten sposób otrzymamy pierwiastek œredniego kwadratu b³êdu, czyli jak gdyby przeciêtny b³¹d jaki pope³niamy stosuj¹c nasz schemat losowania próby. Wynosi on 0,02793859649^(1/2) = 0,1671484265. W ten sposób otrzymujemy miarê, któr¹ nazywamy odchyleniem standardowym. Trzeba podkreœliæ, ¿e nie jest przeciêtnym b³¹d pope³niany przez próby tylko pierwiastkiem przeciêtnego kwadratu b³êdu. Mimo to zazwyczaj traktuje siê go jako przeciêtny  b³¹d pope³niany przez próbê. Wiemy wiêc, ¿e po naszej pró mo¿emy siê spodziewaæ b³êdu na poziomie prawie 17% (0,167).  To bardzo du¿o bior¹c pod uwagê, ¿e rzeczywiste poparcie w próbie wynosi 35%. Nasz miernik pokazuje, ¿e przeciêtnie mylimy siê o oko³o po³owê w naszych oszacowaniach!!!      
-Czy jest jakiœ sposób, ¿eby temu zaradziæ? Tak, i to dosyæ prosty - mo¿emy zwiêkszyæ próbê. Ka¿dy intuicyjnie wie, ¿e wiêksza próba to wiêksza precyzja. Ale dlaczego tak jest?     
-Poni¿ej znajduj¹ siê trzy wykresy dla trzech schematów losowania i policzonych dla nich b³êdów standardowych oszacowania poparcia dla partii X. . 
-Pierwszy wykres ilustruje wyniki dla próby sk³adaj¹cej siê z piêciu respondentów, drugi dla 10, a trzeci dla 15. Ze wzglêdu na ró¿n¹ liczebnoœæ prób inne s¹ mo¿liwe oszacowania poparcia dla partii X i ró¿ny jest te¿ ich rozk³ad. Widzimy jednak, ¿e wyniki zaczynaj¹ siê “skupiaæ” wokó³ rzeczywistego wyniku (czerwona pionowa linia). To w³aœnie metoda poprawiaj¹ca dok³adnoœæ oszacowania.     
-Dlaczego tak siê dzieje? Poniewa¿ w ma³ych próbach stosunkowo ³atwiej mo¿e siê zdarzyæ, ¿e wszyscy bêd¹ za lub przeciw partii X. Innymi s³owy ³atwiej o skrajny wynik. Zwiêkszaj¹c próbê zwiêszkamy szanse na to, ¿e wyniki siê “ustabilizuj¹” - Przy wiêkszej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedn¹ frakcjê.     
-Przejd¿my do kwestii wnioskowania. Prawdziwie badania sonda¿owe polegaj¹ na wnioskowaniu na podstawie pojedynczej próby. Nie ma wiêc mo¿liwoœci analizowania wyników z ze wszyskich prób     
+Zaczynamy od rozpisania wszystkich moÅ¼liwych wynikÃ³w z prÃ³by (kolumna A). NastÄ™pnie dopisujemy, ile prÃ³b w naszym schemacie daje konkretny wynik (kolumna B). Obliczenia bÅ‚Ä™dy zaczniemy od wyznaczenia rÃ³Å¼nicy miÄ™dzy wynikiem w prÃ³bie i wynikiem w populacji (A - 35%). NastÄ™pnie wyznaczymy kwadrat tego bÅ‚Ä™du ((A-35%)^2). W ten sposÃ³b otrzymaliÅ›my kwadrat bÅ‚Ä™du popeÅ‚nianego w danym rodzaju prÃ³by. Nas interesuje nie bÅ‚Ä…d dla konkretnej prÃ³by (choÄ‡ to teÅ¼ jest interesujÄ…ce), ale bÅ‚Ä…d przeciÄ™tnie popeÅ‚niany dla danego schematu losowania prÃ³b. Czyli chcemy poprostu policzyÄ‡ Å›redniÄ… z naszego bÅ‚Ä™du - Å›redniÄ… arytmetycznÄ…. Potrzebujemy do tego iloczynu kwadratÃ³w bÅ‚Ä™dow w poszczegÃ³lnych rodzajach prÃ³b i liczby prÃ³b kaÅ¼dego rodzaju (((A-35%)^2)*B ). NastÄ™pnie sumujemy otrzymane wartoÅ›ci (779688) i dzielimy przez ogÃ³lna liczbe prÃ³b. W efekcie otrzymujemy  779688/27907200 = 0,02793859649 Tyle wynosi przeciÄ™tny bÅ‚Ä…d kwadratowy (statystycy nazywaja go â€œWariancjÄ…â€). Czy to duÅ¼o? Trudno powiedzieÄ‡. Dlatego policzymy pierwiastek tej liczby. W ten sposÃ³b otrzymamy pierwiastek Å›redniego kwadratu bÅ‚Ä™du, czyli jak gdyby przeciÄ™tny bÅ‚Ä…d jaki popeÅ‚niamy stosujÄ…c nasz schemat losowania prÃ³by. Wynosi on 0,02793859649^(1/2) = 0,1671484265. W ten sposÃ³b otrzymujemy miarÄ™, ktÃ³rÄ… nazywamy odchyleniem standardowym. Trzeba podkreÅ›liÄ‡, Å¼e nie jest przeciÄ™tnym bÅ‚Ä…d popeÅ‚niany przez prÃ³by tylko pierwiastkiem przeciÄ™tnego kwadratu bÅ‚Ä™du. Mimo to zazwyczaj traktuje siÄ™ go jako przeciÄ™tny  bÅ‚Ä…d popeÅ‚niany przez prÃ³bÄ™. Wiemy wiÄ™c, Å¼e po naszej prÃ³ moÅ¼emy siÄ™ spodziewaÄ‡ bÅ‚Ä™du na poziomie prawie 17% (0,167).  To bardzo duÅ¼o biorÄ…c pod uwagÄ™, Å¼e rzeczywiste poparcie w prÃ³bie wynosi 35%. Nasz miernik pokazuje, Å¼e przeciÄ™tnie mylimy siÄ™ o okoÅ‚o poÅ‚owÄ™ w naszych oszacowaniach!!!      
+Czy jest jakiÅ› sposÃ³b, Å¼eby temu zaradziÄ‡? Tak, i to dosyÄ‡ prosty - moÅ¼emy zwiÄ™kszyÄ‡ prÃ³bÄ™. KaÅ¼dy intuicyjnie wie, Å¼e wiÄ™ksza prÃ³ba to wiÄ™ksza precyzja. Ale dlaczego tak jest?     
+PoniÅ¼ej znajdujÄ… siÄ™ trzy wykresy dla trzech schematÃ³w losowania i policzonych dla nich bÅ‚Ä™dÃ³w standardowych oszacowania poparcia dla partii X. . 
+Pierwszy wykres ilustruje wyniki dla prÃ³by skÅ‚adajÄ…cej siÄ™ z piÄ™ciu respondentÃ³w, drugi dla 10, a trzeci dla 15. Ze wzglÄ™du na rÃ³Å¼nÄ… liczebnoÅ›Ä‡ prÃ³b inne sÄ… moÅ¼liwe oszacowania poparcia dla partii X i rÃ³Å¼ny jest teÅ¼ ich rozkÅ‚ad. Widzimy jednak, Å¼e wyniki zaczynajÄ… siÄ™ â€œskupiaÄ‡â€ wokÃ³Å‚ rzeczywistego wyniku (czerwona pionowa linia). To wÅ‚aÅ›nie metoda poprawiajÄ…ca dokÅ‚adnoÅ›Ä‡ oszacowania.     
+Dlaczego tak siÄ™ dzieje? PoniewaÅ¼ w maÅ‚ych prÃ³bach stosunkowo Å‚atwiej moÅ¼e siÄ™ zdarzyÄ‡, Å¼e wszyscy bÄ™dÄ… za lub przeciw partii X. Innymi sÅ‚owy Å‚atwiej o skrajny wynik. ZwiÄ™kszajÄ…c prÃ³bÄ™ zwiÄ™szkamy szanse na to, Å¼e wyniki siÄ™ â€œustabilizujÄ…â€ - Przy wiÄ™kszej liczbie obserwacji jest mniejsza szansa, ze prÃ³ba zostanie zdominowana przez jednÄ… frakcjÄ™.     
+PrzejdÅ¼my do kwestii wnioskowania. Prawdziwie badania sondaÅ¼owe polegajÄ… na wnioskowaniu na podstawie pojedynczej prÃ³by. Nie ma wiÄ™c moÅ¼liwoÅ›ci analizowania wynikÃ³w z ze wszyskich prÃ³b     
 
-# 9. B³êdy systematyczne 
+# 9. BÅ‚Ä™dy systematyczne 
 
-W czêœci pi¹tej mówiliœmy min. o tym, ¿e nie ka¿dy kontakt z dobrana do próby osob¹ koñczy siê sukcesem. Wszystkie techniki zbierania danych s¹ obarczone pewn¹ liczb¹ odmów respondentow.
+W czÄ™Å›ci piÄ…tej mÃ³wiliÅ›my min. o tym, Å¼e nie kaÅ¼dy kontakt z dobrana do prÃ³by osobÄ… koÅ„czy siÄ™ sukcesem. Wszystkie techniki zbierania danych sÄ… obarczone pewnÄ… liczbÄ… odmÃ³w respondentow.
 
-Do tej pory poznaliœmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiêtaæ, ¿e samo prawdziwe badanie sonda¿owe nie sk³ada siê wy³¹cznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to g³ówna czêœæ badania. Od niej wszystko zale¿y.
-Wróæmy wiêc znowu do naszej populajcji i wyobraŸmy sobie sytuacjê, gdy niespodziewane na wywiady, pomimo bardzo wielu próŸb i grób, wszystkie osoby zamieszka³e w mieœcie w dobranej próbie konsekwentnie odmawiaj¹ naszym ankieterom wziêcia udzia³u w badaniu. To zupe³nie skrajny przypadek, takie rzeczy raczej siê nie zda¿aj¹, ale prawd¹ jest, ¿e mieszkañcy miast sa trudniej uchwytni - z ró¿nych powodów.
-Jakie dla nas konsekwencje bêdzie mia³o to zjawisko? 
-£atwo siê domyœliæ. Zmieni¹ sie wyniki otrzymywane z prób. Dalej korzystamy z próby sk³adaj¹cej sie z 6 osób. Co za tym idzie zmieni¹ siê nasze wyniki. Z jednej strony pojawi¹ siê 
+Do tej pory poznaliÅ›my sposoby wnioskowania z prÃ³by na podstawie wybranego schematu losowania. Musimy jednak pamiÄ™taÄ‡, Å¼e samo prawdziwe badanie sondaÅ¼owe nie skÅ‚ada siÄ™ wyÅ‚Ä…cznie z losowania prÃ³by, ale przede wszystkim z â€œterenowejâ€ realizacji. W zasadzie jest to gÅ‚Ã³wna czÄ™Å›Ä‡ badania. Od niej wszystko zaleÅ¼y.
+WrÃ³Ä‡my wiÄ™c znowu do naszej populajcji i wyobraÅºmy sobie sytuacjÄ™, gdy niespodziewane na wywiady, pomimo bardzo wielu prÃ³Åºb i grÃ³b, wszystkie osoby zamieszkaÅ‚e w mieÅ›cie w dobranej prÃ³bie konsekwentnie odmawiajÄ… naszym ankieterom wziÄ™cia udziaÅ‚u w badaniu. To zupeÅ‚nie skrajny przypadek, takie rzeczy raczej siÄ™ nie zdaÅ¼ajÄ…, ale prawdÄ… jest, Å¼e mieszkaÅ„cy miast sa trudniej uchwytni - z rÃ³Å¼nych powodÃ³w.
+Jakie dla nas konsekwencje bÄ™dzie miaÅ‚o to zjawisko? 
+Åatwo siÄ™ domyÅ›liÄ‡. ZmieniÄ… sie wyniki otrzymywane z prÃ³b. Dalej korzystamy z prÃ³by skÅ‚adajÄ…cej sie z 6 osÃ³b. Co za tym idzie zmieniÄ… siÄ™ nasze wyniki. Z jednej strony pojawiÄ… siÄ™ 
 
+### Tabela 9.1 Wyniki z prÃ³by szeÅ›cioosobowej, gdy osoby mieszkajÄ…ce na wsi sÄ… niedostÄ™pne
+Liczba dostÄ™pnych osÃ³b w prÃ³bie 
+MoÅ¼liwe poparcie
 
 ```{r,echo=FALSE}
 p6.4<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
@@ -623,29 +630,28 @@ par(mar=c(3,5,1,1))
 barplot(p6.4, las=1) #, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1")  )
 ```
 
-
 Wnioskowanie
-Do tej pory analizowaliœmy rozk³ady wszystkich mo¿liwych wyników z próby. Potrafimy sobie wyobraziæ co nas czeka. Badanie sonda¿owe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikowaæ, ale dla których nie znamy rozk³adu preferencji politycznych czy innych badanych cech. W zwi¹zku z tym w prawdziwym badaniu nie znamy b³êdu schematu z góry. Tak samo jak poziom poparcia dla partii X musimy go oszacowaæ na podstawie próby. Jak to zrobimy      
-No i tutaj te¿ mam problem, w jaki sposób podj¹æ ten temat, aby by³ on "strawny". Je¿eli nic nie
-wymyœlê, to po prostu kursant policzy œredni¹ z próby (punktowy estymator odsetka w populacji), uwzglêdniaj¹c tylko osoby, które „udzieli³y odpowiedzi”. Na koñcu kursant porównuje wyniki przeprowadzonego przez siebie „sonda¿u”, z parametrem w populacji i myœli „Ojej, ale fajne te sonda¿e!”.
+Do tej pory analizowaliÅ›my rozkÅ‚ady wszystkich moÅ¼liwych wynikÃ³w z prÃ³by. Potrafimy sobie wyobraziÄ‡ co nas czeka. Badanie sondaÅ¼owe polega jednak na dobraniu tylko jednej prÃ³by osÃ³b ktÃ³re potrafimy zidentyfikowaÄ‡, ale dla ktÃ³rych nie znamy rozkÅ‚adu preferencji politycznych czy innych badanych cech. W zwiÄ…zku z tym w prawdziwym badaniu nie znamy bÅ‚Ä™du schematu z gÃ³ry. Tak samo jak poziom poparcia dla partii X musimy go oszacowaÄ‡ na podstawie prÃ³by. Jak to zrobimy      
+No i tutaj teÅ¼ mam problem, w jaki sposÃ³b podjÄ…Ä‡ ten temat, aby byÅ‚ on "strawny". JeÅ¼eli nic nie
+wymyÅ›lÄ™, to po prostu kursant policzy Å›redniÄ… z prÃ³by (punktowy estymator odsetka w populacji), uwzglÄ™dniajÄ…c tylko osoby, ktÃ³re â€udzieliÅ‚y odpowiedziâ€. Na koÅ„cu kursant porÃ³wnuje wyniki przeprowadzonego przez siebie â€sondaÅ¼uâ€, z parametrem w populacji i myÅ›li â€Ojej, ale fajne te sondaÅ¼e!â€.
 
-__O podstawie procentowania (ostatnio w dzienniku gazecie prawnej podali wyniki ogó³em i w rozbiciu na wszystko, bez informowania, ¿e dane w rozbiciu s¹ niedok³adne)__    
+__O podstawie procentowania (ostatnio w dzienniku gazecie prawnej podali wyniki ogÃ³Å‚em i w rozbiciu na wszystko, bez informowania, Å¼e dane w rozbiciu sÄ… niedokÅ‚adne)__    
 
-Tu trzeba dodaæ fragment o 
-O b³êdzie:
-Celem badañ sonda¿owych jest zdobycie informacji na temat wybranej zbiorowoœci, zwanej w badaniach populacj¹. Sonda¿e s¹ najczêœciej realizowane tylko na stosunkowo niewielkiej czêœæ osób z populacji, na temat której badacz chce zdobyæ informacje. Specjalne metody doboru respondentów do badania pozwalaj¹ uogólniaæ wyniki uzyskane w próbie na ca³¹ zbiorowoœæ. Niestety dziennikarze czêsto zapominaj¹, ¿e takie uogólnienie odbywa siê z okreœlon¹ dok³adnoœci¹ – nazywan¹ najczêœciej b³êdem statystycznym.
-O systematycznym b³êdzie - wieœ i miasto
-Problem wystêpuje nagminnie w badaniach poparcia dla politycznych [1] [2]. Gdy czyta siê w gazetach, ¿e okreœlony odsetek Polaków popiera dan¹ partiê polityczn¹, trzeba pamiêtaæ, ¿e  na podstawie sonda¿u taki wynik mo¿na podaæ tylko z okreœlonym przybli¿eniem.
-O ile jeden odsetek wystarczy traktowaæ jako przybli¿ony, o tyle powa¿ny problem pojawia siê w sytuacji, kiedy w gazetach porównuje siê odsetek osób popieraj¹cych jak¹œ partiê z odsetkiem popieraj¹cych j¹ w poprzednim miesi¹cu [3]. W standardowych badaniach spo³ecznych (próba oko³o 1000 respondentów) przyjmuje siê najczêœciej, ¿e b³¹d statystyczny wynosi  +/-3% [4]. Oznacza to, ¿e jeœli w styczniu dan¹ partiê X popiera³o 25% respondentów, a w lutym 22% respondentów, to nie mo¿na powiedzieæ, ¿e poparcie dla tej partii w populacji spad³o, gdy¿ ró¿nica ta nie jest istotna statystycznie.
-Wyjaœniaj¹c, na czym polega owa istotnoœæ, nale¿y powiedzieæ, ¿e b³¹d statystyczny w powy¿szym przypadku oznacza, ¿e skoro w próbie ze stycznia 25% osób popiera³o rz¹d, to z prawdopodobieñstwem 95% w ca³ej populacji popiera³o go od 22% do 28%. Gdy w próbie z lutego 22% respondentów wyrazi³o poparcie dla rz¹du, to wœród wszystkich doros³ych Polaków mog³o go popieraæ od 19% do 25%. Jak widaæ przedzia³y dla stycznia i lutego siê na siebie nak³adaj¹, przez co ró¿nica w poparciu miêdzy tymi miesi¹cami mo¿e nie œwiadczyæ o spadku poparcia dla rz¹du.
-Ciekawym publicystycznym rozwi¹zaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wziêli udzia³ w badaniu (a wiêc przytaczaniu wyniku dla próby), a nie o populacji, której badani s¹ tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisz¹c na temat przyczyn niskiej aktywnoœci politycznej Polaków ani razu nie wypowiedzieli siê na temat wszystkich Polaków, opisuj¹ jedynie wyniki dla przebadanej próby. Nie jest to ju¿ niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialnoœæ na czytelnika, który sam musi oceniæ, na ile dok³adnie w danej próbie odzwierciedlone s¹ pogl¹dy wszystkich Polaków.
-Najbardziej profesjonalnym rozwi¹zaniem by³oby jednak pisanie, w jakim przedziale mieœci siê badana cecha (np. poparcie dla partii) w ca³ej zbiorowoœci, a nie wœród przebadanych respondentów. Jak widaæ bowiem, przy za³o¿eniu poprawnoœci realizacji badania, wynik ten z pewnym przybli¿eniem oddaje rzeczywisty odsetek dla ca³ej populacji. Jeœli nie podaje siê przedzia³u tego przybli¿enia, wówczas lepiej jest napisaæ o dok³adnych wynikach uzyskanych dla przebadanych respondentów, ni¿ dla ca³ej zbiorowoœci, z której zostali oni wybrani.
+Tu trzeba dodaÄ‡ fragment o 
+O bÅ‚Ä™dzie:
+Celem badaÅ„ sondaÅ¼owych jest zdobycie informacji na temat wybranej zbiorowoÅ›ci, zwanej w badaniach populacjÄ…. SondaÅ¼e sÄ… najczÄ™Å›ciej realizowane tylko na stosunkowo niewielkiej czÄ™Å›Ä‡ osÃ³b z populacji, na temat ktÃ³rej badacz chce zdobyÄ‡ informacje. Specjalne metody doboru respondentÃ³w do badania pozwalajÄ… uogÃ³lniaÄ‡ wyniki uzyskane w prÃ³bie na caÅ‚Ä… zbiorowoÅ›Ä‡. Niestety dziennikarze czÄ™sto zapominajÄ…, Å¼e takie uogÃ³lnienie odbywa siÄ™ z okreÅ›lonÄ… dokÅ‚adnoÅ›ciÄ… â€“ nazywanÄ… najczÄ™Å›ciej bÅ‚Ä™dem statystycznym.
+O systematycznym bÅ‚Ä™dzie - wieÅ› i miasto
+Problem wystÄ™puje nagminnie w badaniach poparcia dla politycznych [1] [2]. Gdy czyta siÄ™ w gazetach, Å¼e okreÅ›lony odsetek PolakÃ³w popiera danÄ… partiÄ™ politycznÄ…, trzeba pamiÄ™taÄ‡, Å¼e  na podstawie sondaÅ¼u taki wynik moÅ¼na podaÄ‡ tylko z okreÅ›lonym przybliÅ¼eniem.
+O ile jeden odsetek wystarczy traktowaÄ‡ jako przybliÅ¼ony, o tyle powaÅ¼ny problem pojawia siÄ™ w sytuacji, kiedy w gazetach porÃ³wnuje siÄ™ odsetek osÃ³b popierajÄ…cych jakÄ…Å› partiÄ™ z odsetkiem popierajÄ…cych jÄ… w poprzednim miesiÄ…cu [3]. W standardowych badaniach spoÅ‚ecznych (prÃ³ba okoÅ‚o 1000 respondentÃ³w) przyjmuje siÄ™ najczÄ™Å›ciej, Å¼e bÅ‚Ä…d statystyczny wynosi  +/-3% [4]. Oznacza to, Å¼e jeÅ›li w styczniu danÄ… partiÄ™ X popieraÅ‚o 25% respondentÃ³w, a w lutym 22% respondentÃ³w, to nie moÅ¼na powiedzieÄ‡, Å¼e poparcie dla tej partii w populacji spadÅ‚o, gdyÅ¼ rÃ³Å¼nica ta nie jest istotna statystycznie.
+WyjaÅ›niajÄ…c, na czym polega owa istotnoÅ›Ä‡, naleÅ¼y powiedzieÄ‡, Å¼e bÅ‚Ä…d statystyczny w powyÅ¼szym przypadku oznacza, Å¼e skoro w prÃ³bie ze stycznia 25% osÃ³b popieraÅ‚o rzÄ…d, to z prawdopodobieÅ„stwem 95% w caÅ‚ej populacji popieraÅ‚o go od 22% do 28%. Gdy w prÃ³bie z lutego 22% respondentÃ³w wyraziÅ‚o poparcie dla rzÄ…du, to wÅ›rÃ³d wszystkich dorosÅ‚ych PolakÃ³w mogÅ‚o go popieraÄ‡ od 19% do 25%. Jak widaÄ‡ przedziaÅ‚y dla stycznia i lutego siÄ™ na siebie nakÅ‚adajÄ…, przez co rÃ³Å¼nica w poparciu miÄ™dzy tymi miesiÄ…cami moÅ¼e nie Å›wiadczyÄ‡ o spadku poparcia dla rzÄ…du.
+Ciekawym publicystycznym rozwiÄ…zaniem tego problemu jest pisanie w artykule tylko o odsetku respondentÃ³w, ktÃ³rzy wziÄ™li udziaÅ‚ w badaniu (a wiÄ™c przytaczaniu wyniku dla prÃ³by), a nie o populacji, ktÃ³rej badani sÄ… tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy piszÄ…c na temat przyczyn niskiej aktywnoÅ›ci politycznej PolakÃ³w ani razu nie wypowiedzieli siÄ™ na temat wszystkich PolakÃ³w, opisujÄ… jedynie wyniki dla przebadanej prÃ³by. Nie jest to juÅ¼ niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialnoÅ›Ä‡ na czytelnika, ktÃ³ry sam musi oceniÄ‡, na ile dokÅ‚adnie w danej prÃ³bie odzwierciedlone sÄ… poglÄ…dy wszystkich PolakÃ³w.
+Najbardziej profesjonalnym rozwiÄ…zaniem byÅ‚oby jednak pisanie, w jakim przedziale mieÅ›ci siÄ™ badana cecha (np. poparcie dla partii) w caÅ‚ej zbiorowoÅ›ci, a nie wÅ›rÃ³d przebadanych respondentÃ³w. Jak widaÄ‡ bowiem, przy zaÅ‚oÅ¼eniu poprawnoÅ›ci realizacji badania, wynik ten z pewnym przybliÅ¼eniem oddaje rzeczywisty odsetek dla caÅ‚ej populacji. JeÅ›li nie podaje siÄ™ przedziaÅ‚u tego przybliÅ¼enia, wÃ³wczas lepiej jest napisaÄ‡ o dokÅ‚adnych wynikach uzyskanych dla przebadanych respondentÃ³w, niÅ¼ dla caÅ‚ej zbiorowoÅ›ci, z ktÃ³rej zostali oni wybrani.
 
 # Symulacja
 ![Symulacja ]( Losowanie_wielu_prob/symulacja.gif "SYMULACJA")
 
 
-zadanie: Z wylosowanej próby wy³¹cz niektóre obserwacje (PRÓBA B)
+zadanie: Z wylosowanej prÃ³by wyÅ‚Ä…cz niektÃ³re obserwacje (PRÃ“BA B)
 
 
 
