@@ -606,9 +606,7 @@ Wróćmy więc znowu do naszej populajcji i wyobraźmy sobie sytuację, gdy nies
 Jakie dla nas konsekwencje będzie miało to zjawisko? 
 Łatwo się domyślić. Zmienią sie wyniki otrzymywane z prób. Dalej korzystamy z próby składającej sie z 6 osób. Co za tym idzie zmienią się nasze wyniki. Z jednej strony pojawią się 
 
-### Tabela 9.1 Wyniki z próby sześcioosobowej, gdy osoby mieszkające na wsi są niedostępne
-Liczba dostępnych osób w próbie 
-Możliwe poparcie    
+### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
 
 |6 dostępnych respondnetów| 5 dostępnych respondntów | 4 dostępnych respondentów | 3 dostępnych respondnetów| 2 dostępnych respondntów | 1 dostępnych respondentów | 0 dostępnych respondentów |
 |-------------------------|--------------------------|---------------------------|--------------------------|--------------------------|---------------------------|---------------------------|
@@ -625,6 +623,11 @@ Możliwe poparcie
 |-                        |4/5                       |-                          |-                         |-                         |-                          |-                          |
 |5/6                      |-                         |-                          |-                         |-                         |-                          |-                          |
 |1                        |1                         |1                          |1                         |1                         |1                          |-                          |
+
+Jak widać sytuacja w, której część respondentów jest niedostępna może rodzić wiele problemów. Rozkład wyników z próby nie jest już taki łatwy do przewidzenia. Zależy bowiem nie tylko od deklaracji preferencji respondentów, ale także od ich dostępności.
+Podstawowe pytanie brzmi więc, jakie szanse mamy na to, że w próbie 6 osób 6,5 ,4, 3, 2, 1 będzie chciało wziąć udział w badaniu . 
+
+### Tabela 9.2. Rozkład liczby dostpnych respondentów dla schematu losowania 6 osób do próby
 
 ```{r,echo=FALSE}
 p6.4<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
