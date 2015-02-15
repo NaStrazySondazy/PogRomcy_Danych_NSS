@@ -626,23 +626,28 @@ Jakie dla nas konsekwencje będzie miało to zjawisko?
 
 Jak widać sytuacja w, której część respondentów jest niedostępna może rodzić wiele problemów. Rozkład wyników z próby nie jest już taki łatwy do przewidzenia. Zależy bowiem nie tylko od deklaracji preferencji respondentów, ale także od ich dostępności.
 Podstawowe pytanie brzmi więc, jakie szanse mamy na to, że w próbie 6 osób 6,5 ,4, 3, 2, 1 będzie chciało wziąć udział w badaniu . 
-
-### Tabela 9.2. Rozkład liczby dostpnych respondentów dla schematu losowania 6 osób do próby
-
-```{r,echo=FALSE}
+```{r 9.1.obliczenia,echo=FALSE}
 p6.4<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
 p6.5<-matrix( m$Miasto_wies[p6], nrow = 20*19*18*17*16*15, ncol = 6);
-
-# # rowSums((p6.4[1:2,]==1)*(p6.5[1:2,]=="W"))+(1-rowSums(p6.5[1:2,]=="W"))*999
-# 
-# p6.5[1000000:1000001,]=="W"
-# rowSums((p6.4[1000000:1000001,]==1)*(p6.5[1000000:1000001,]=="W"))+(1-rowSums(p6.5[1:2,]=="W"))*999
-# rowSums((p6.4[1000000:1000001,]==1)*(p6.5[1000000:1000001,]=="W"))/(rowSums(p6.5[1000000:1000001,]=="W")+brak.wsi[1000000:1000001] )+brak.wsi[1000000:1000001]*999;
-
-brak.wsi<-(1-rowSums(p6.5=="W")>0)
-# sum(brak.wsi)
+brak.wsi<-((1-rowSums(p6.5=="W"))>0)
 p6.4<-rowSums((p6.4==1)*(p6.5=="W"))/(rowSums(p6.5=="W")+brak.wsi )+brak.wsi*999;
 p6.4<-table(p6.4);
+```
+### Tabela 9.2. Rozkład liczby dostpnych respondentów dla schematu losowania 6 osób do próby
+```{r, echo=FALSE }
+p6.5<-data.frame(table(rowSums(p6.5=="W")));
+ggplot(p6.5, aes(x = factor(p6.5), y = Freq)) + 
+geom_bar(stat="identity")+
+  # scale_x_discrete(labels=c("0","1/6","2/6","3/6", "4/6", "5/6", "1"))+
+  theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
+  xlab("Poparcie w próbie")+
+  ylab("Liczba prób")+
+   geom_text(data=p6.5, aes(x = factor(p6.5), y = Freq, label=Freq) ,vjust=0.2, size=4, face="bold")
+```
+
+
+### Wykres 9.1. Rozkład poparcia partii X dla schemtu losowania 6 repondentów przy niepełnej realizacji próby (bez mieszkańców miast)
+```{r,echo=FALSE}
 
 getOption("scipen")
 opt <- options("scipen" = 20)
@@ -650,8 +655,11 @@ getOption("scipen")
 ust.graf.pierwot<-par()
 par(mar=c(3,5,1,1))
 barplot(p6.4, las=1) #, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1")  )
+
 ```
 
+**[WYKRES]**
+Jak widać wyniki mocno się różnią od wych uzyskanych przy pełnej realizajic
 Wnioskowanie
 Do tej pory analizowaliśmy rozkłady wszystkich możliwych wyników z próby. Potrafimy sobie wyobrazić co nas czeka. Badanie sondażowe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikować, ale dla których nie znamy rozkładu preferencji politycznych czy innych badanych cech. W związku z tym w prawdziwym badaniu nie znamy błędu schematu z góry. Tak samo jak poziom poparcia dla partii X musimy go oszacować na podstawie próby. Jak to zrobimy      
 No i tutaj też mam problem, w jaki sposób podjąć ten temat, aby był on "strawny". Jeżeli nic nie
