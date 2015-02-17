@@ -597,6 +597,12 @@ Przejdżmy do kwestii wnioskowania. Prawdziwie badania sondażowe polegają na w
 ### Wykres 8.1. Symulacja rozkładów wyników 1000 prób składających się od 2 dp 19 respondentów
 ![Symulacja ]( Losowanie_wielu_prob/symulacja.gif "SYMULACJA")
 
+Problem występuje nagminnie w badaniach poparcia dla politycznych [1] [2]. Gdy czyta się w gazetach, że określony odsetek Polaków popiera daną partię polityczną, trzeba pamiętać, że  na podstawie sondażu taki wynik można podać tylko z określonym przybliżeniem.
+O ile jeden odsetek wystarczy traktować jako przybliżony, o tyle poważny problem pojawia się w sytuacji, kiedy w gazetach porównuje się odsetek osób popierających jakąś partię z odsetkiem popierających ją w poprzednim miesiącu [3]. W standardowych badaniach społecznych (próba około 1000 respondentów) przyjmuje się najczęściej, że błąd statystyczny wynosi  +/-3% [4]. Oznacza to, że jeśli w styczniu daną partię X popierało 25% respondentów, a w lutym 22% respondentów, to nie można powiedzieć, że poparcie dla tej partii w populacji spadło, gdyż różnica ta nie jest istotna statystycznie.
+Wyjaśniając, na czym polega owa istotność, należy powiedzieć, że błąd statystyczny w powyższym przypadku oznacza, że skoro w próbie ze stycznia 25% osób popierało rząd, to z prawdopodobieństwem 95% w całej populacji popierało go od 22% do 28%. Gdy w próbie z lutego 22% respondentów wyraziło poparcie dla rządu, to wśród wszystkich dorosłych Polaków mogło go popierać od 19% do 25%. Jak widać przedziały dla stycznia i lutego się na siebie nakładają, przez co różnica w poparciu między tymi miesiącami może nie świadczyć o spadku poparcia dla rządu.
+Ciekawym publicystycznym rozwiązaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wzięli udział w badaniu (a więc przytaczaniu wyniku dla próby), a nie o populacji, której badani są tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisząc na temat przyczyn niskiej aktywności politycznej Polaków ani razu nie wypowiedzieli się na temat wszystkich Polaków, opisują jedynie wyniki dla przebadanej próby. Nie jest to już niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialność na czytelnika, który sam musi ocenić, na ile dokładnie w danej próbie odzwierciedlone są poglądy wszystkich Polaków.
+Najbardziej profesjonalnym rozwiązaniem byłoby jednak pisanie, w jakim przedziale mieści się badana cecha (np. poparcie dla partii) w całej zbiorowości, a nie wśród przebadanych respondentów. Jak widać bowiem, przy założeniu poprawności realizacji badania, wynik ten z pewnym przybliżeniem oddaje rzeczywisty odsetek dla całej populacji. Jeśli nie podaje się przedziału tego przybliżenia, wówczas lepiej jest napisać o dokładnych wynikach uzyskanych dla przebadanych respondentów, niż dla całej zbiorowości, z której zostali oni wybrani.
+
 # 9. Błędy systematyczne 
 
 W części piątej mówiliśmy min. o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obarczone pewną liczbą odmów respondentow.
@@ -636,15 +642,20 @@ p6.4<-table(p6.4);
 ### Tabela 9.2. Rozkład liczby dostpnych respondentów dla schematu losowania 6 osób do próby
 ```{r, echo=FALSE }
 p6.5<-data.frame(table(rowSums(p6.5=="W")));
-ggplot(p6.5, aes(x = factor(p6.5), y = Freq)) + 
-geom_bar(stat="identity")+
-  # scale_x_discrete(labels=c("0","1/6","2/6","3/6", "4/6", "5/6", "1"))+
-  theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
-  xlab("Poparcie w próbie")+
-  ylab("Liczba prób")+
-   geom_text(data=p6.5, aes(x = factor(p6.5), y = Freq, label=Freq) ,vjust=0.2, size=4, face="bold")
+p6.5<-data.frame(p6.5, round(prop.table( p6.5$Freq)*100));
+colnames(p6.5)<c("Liczba dostępnych respondentów", "Liczba prób", "Odsetek prób");
+kable(x =  p6.5, format = "markdown", row.names = F);
+## przerobic na tabele
+# ggplot(p6.5, aes(x = factor(Var1), y = Freq)) + 
+# geom_bar(stat="identity")+
+#   # scale_x_discrete(labels=c("0","1/6","2/6","3/6", "4/6", "5/6", "1"))+
+#   theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
+#   xlab("Poparcie w próbie")+
+#   ylab("Liczba prób")+
+#    geom_text(data=p6.5, aes(x = factor(Var1), y = Freq, label=Freq) ,vjust=0.2, size=4, face="bold")
 ```
 
+Jak widać tylko dla znikomej częśći prób liczba dostępnych respondnetów wyniesie 6. Większość będzie zawierała nie więcej niż 3. W tej systuacji oczywiste jest, że rozkład wyników z prób będzie inny niż poprzednio, gdy dostępni byli wszyscy respondenci. Duże znaczenie mają próby, w których dostępnych jest tylko jeden respondnet lub żaden. Dla takich przypadków nie potrafimy wyznaczyć poziomu poparcia dla partii X (dla prób jednoosobowych jest to możliwe - 0% lub 100% - ale nie możemy w takim przypadku szcować zmienności populacji w próbie więc zostawimy ten przykład). 
 
 ### Wykres 9.1. Rozkład poparcia partii X dla schemtu losowania 6 repondentów przy niepełnej realizacji próby (bez mieszkańców miast)
 ```{r,echo=FALSE}
@@ -658,26 +669,10 @@ barplot(p6.4, las=1) #, names.arg = c("0", "1/6", "2/6", "3/6", "4/6", "5/6", "1
 
 ```
 
-**[WYKRES]**
-Jak widać wyniki mocno się różnią od wych uzyskanych przy pełnej realizajic
-Wnioskowanie
-Do tej pory analizowaliśmy rozkłady wszystkich możliwych wyników z próby. Potrafimy sobie wyobrazić co nas czeka. Badanie sondażowe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikować, ale dla których nie znamy rozkładu preferencji politycznych czy innych badanych cech. W związku z tym w prawdziwym badaniu nie znamy błędu schematu z góry. Tak samo jak poziom poparcia dla partii X musimy go oszacować na podstawie próby. Jak to zrobimy      
-No i tutaj też mam problem, w jaki sposób podjąć ten temat, aby był on "strawny". Jeżeli nic nie
-wymyślę, to po prostu kursant policzy średnią z próby (punktowy estymator odsetka w populacji), uwzględniając tylko osoby, które „udzieliły odpowiedzi”. Na końcu kursant porównuje wyniki przeprowadzonego przez siebie „sondażu”, z parametrem w populacji i myśli „Ojej, ale fajne te sondaże!”.
+Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Nistety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi ....
+Nie jest to zgodne z tym co dzieje się w populacji. Możemy więc powiedzieć, że próba jest obciążona.
 
-__O podstawie procentowania (ostatnio w dzienniku gazecie prawnej podali wyniki ogółem i w rozbiciu na wszystko, bez informowania, że dane w rozbiciu są niedokładne)__    
-
-Tu trzeba dodać fragment o 
-O błędzie:
-Celem badań sondażowych jest zdobycie informacji na temat wybranej zbiorowości, zwanej w badaniach populacją. Sondaże są najczęściej realizowane tylko na stosunkowo niewielkiej część osób z populacji, na temat której badacz chce zdobyć informacje. Specjalne metody doboru respondentów do badania pozwalają uogólniać wyniki uzyskane w próbie na całą zbiorowość. Niestety dziennikarze często zapominają, że takie uogólnienie odbywa się z określoną dokładnością – nazywaną najczęściej błędem statystycznym.
-O systematycznym błędzie - wieś i miasto
-Problem występuje nagminnie w badaniach poparcia dla politycznych [1] [2]. Gdy czyta się w gazetach, że określony odsetek Polaków popiera daną partię polityczną, trzeba pamiętać, że  na podstawie sondażu taki wynik można podać tylko z określonym przybliżeniem.
-O ile jeden odsetek wystarczy traktować jako przybliżony, o tyle poważny problem pojawia się w sytuacji, kiedy w gazetach porównuje się odsetek osób popierających jakąś partię z odsetkiem popierających ją w poprzednim miesiącu [3]. W standardowych badaniach społecznych (próba około 1000 respondentów) przyjmuje się najczęściej, że błąd statystyczny wynosi  +/-3% [4]. Oznacza to, że jeśli w styczniu daną partię X popierało 25% respondentów, a w lutym 22% respondentów, to nie można powiedzieć, że poparcie dla tej partii w populacji spadło, gdyż różnica ta nie jest istotna statystycznie.
-Wyjaśniając, na czym polega owa istotność, należy powiedzieć, że błąd statystyczny w powyższym przypadku oznacza, że skoro w próbie ze stycznia 25% osób popierało rząd, to z prawdopodobieństwem 95% w całej populacji popierało go od 22% do 28%. Gdy w próbie z lutego 22% respondentów wyraziło poparcie dla rządu, to wśród wszystkich dorosłych Polaków mogło go popierać od 19% do 25%. Jak widać przedziały dla stycznia i lutego się na siebie nakładają, przez co różnica w poparciu między tymi miesiącami może nie świadczyć o spadku poparcia dla rządu.
-Ciekawym publicystycznym rozwiązaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wzięli udział w badaniu (a więc przytaczaniu wyniku dla próby), a nie o populacji, której badani są tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisząc na temat przyczyn niskiej aktywności politycznej Polaków ani razu nie wypowiedzieli się na temat wszystkich Polaków, opisują jedynie wyniki dla przebadanej próby. Nie jest to już niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialność na czytelnika, który sam musi ocenić, na ile dokładnie w danej próbie odzwierciedlone są poglądy wszystkich Polaków.
-Najbardziej profesjonalnym rozwiązaniem byłoby jednak pisanie, w jakim przedziale mieści się badana cecha (np. poparcie dla partii) w całej zbiorowości, a nie wśród przebadanych respondentów. Jak widać bowiem, przy założeniu poprawności realizacji badania, wynik ten z pewnym przybliżeniem oddaje rzeczywisty odsetek dla całej populacji. Jeśli nie podaje się przedziału tego przybliżenia, wówczas lepiej jest napisać o dokładnych wynikach uzyskanych dla przebadanych respondentów, niż dla całej zbiorowości, z której zostali oni wybrani.
-
-
+A jak układa się bład próby, na ila wynik próby różni sie o przeciętnych wyników w próbie
 
 
 zadanie: Z wylosowanej próby wyłącz niektóre obserwacje (PRÓBA B)

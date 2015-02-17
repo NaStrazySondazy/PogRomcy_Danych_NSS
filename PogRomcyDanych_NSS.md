@@ -367,7 +367,7 @@ Skoro wiemy czego możemy się spodziewać, to rozpiszmy poziomy absencji we wsz
 
 Na pierwszy rzut oka widać, że nie wszystkie wyniki są zgodne z tym co obserwujemy w całej populacji. W wielu próbach szacowana ABSENCJA jest zaniżona (0%) lub zawyżona (100%). Ale to nas nie dziwi, bo wynika to z wybranego przez nas schamatu losowania próby. Zabaczmy więc ile dokłądnie wyników każdego rodzaju daje nam przyjęty schemat losowania próby. 
 
-### Wykres 7.1. Rozkład oszacowań absencji z prób
+### Wykres 7.1. Oszacowanie absencji wyborczej w próbach dwu osobowch
 ![plot of chunk unnamed-chunk-6](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-6.png) 
 
 Na powyższym wykresie widzimy, że w 90 próbach absencja wynosi 0%, w 200 próba 50%, a w 90 próbach 100%. To całkiem logiczny rezultat. Jeżeli w populacji połowa obywateli będzie głosować w wyborach, a połowa nie, to możemy się spodziewać, że najczęściej jedna z dwóch osób w próbie będzie zwiększać absencję, a druga zmniejszać.   
@@ -378,7 +378,7 @@ Na 1000 przypadków w około 237 (90/380\*1000) absencja wyniesie 0%, podobnie w
 ### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 1000 prób
 ![plot of chunk unnamed-chunk-7](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-7.png) 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 246 próbach absencja wyborcza wyniosła 0%, w 512 wyniosła 50%, a w 242 wyniosła 100%. Różnice są niewielkie.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 249 próbach absencja wyborcza wyniosła 0%, w 520 wyniosła 50%, a w 231 wyniosła 100%. Różnice są niewielkie.
 Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Widzimy więc, że dla ponad połowy wszystkich możliwch prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry”? Że nasze wnioski z badania mogą być trafne?  Spójrzmy na nasz problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby. Zastosujemy przy tym zasadę często stosowaną w szkole. Gdy chcemy się czegoś dowiedzieć o wynikach ucznia w skali całego roku liczmy średnią arytmetyczną jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazało się, że “przeciętnie” na próbę przypada 50% absencja!!! To jest dokładnie tyle ile wynosi ono w całej populacji!!! Oto podstawa całej metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe popualcji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszyskich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt - próba nie jest obciążona.
@@ -412,16 +412,20 @@ __Zadania 7:__
 
 
 # 8. Wnioskowanie i błedy w oszacowaniach
-Wróćmy do naszej populacji 
+
+Omówiliśmy już wstępnie dobór losowy próby respondentów do badania sondażowego. Wiemy, że wyniki z prób przeciętnie powinny "trafiać w punkt", jeżeli chcemy mówić o badaniu reprezentatywnym. 
+Pozostje jednak problem błędów. Jak zwuważyliśy na przykładzie sondażu dotyczącego absencji duża część prób może się myslić. Cóz więc z tego, że nasza metoda doboru respondentów przeciętnie się niemyli skoro wylosujemy jedną próbę i ona właśnie się pomyli! 
+Problem błędów związanych z doborem losowym respondentów omówimy na nowym przykładzie. Ponownie skorzystamy z naszej populacji
+
+### Tabela 8.1. Rozkład miejsca zamieszkania i preferencji wyborczych w populacji
 
 |       | Nie pójdę na wybory| Nie| Tak| RAZEM|
 |:------|-------------------:|---:|---:|-----:|
 |Miasto |                   6|   1|   5|    12|
 |Wieś   |                   4|   2|   2|     8|
 |RAZEM  |                  10|   3|   7|    20|
-
-Omówimy teraz kwestię błędów oszacowań, z która zetknęliśmy się badając poziom absencji wyborczej.  Tym razem znajmiemy się poparciem dla partii X. W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu zamiast wartości -1 w kolumnie “Glosowanie” w naszym zbiorze danych teraz będziemy analizowali występowanie wartości 1, czyli glosowanie na partię X. 
-Zmienimy też trochę nasz schemat losowanie. Będziemy dobierać po 6 obywateli do próby, ale tak samo jak wcześniej losujemy ich w sposób prosty bez zwracania.
+Tym razem znajmiemy się poparciem dla partii X. W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu zamiast wartości -1 w kolumnie “Glosowanie” teraz będziemy analizowali występowanie wartości 1, czyli glosowanie na partię X. 
+Zmienimy też trochę nasz schemat losowanie. Będziemy dobierać po 6 obywateli do próby. Tak samo jak wcześniej losujemy ich w sposób prosty bez zwracania.
 Zacznijmy od sprawdzenia jakie wyniki można wygenerować przy użyciu naszego schemat dobporu próby. Ogólnie możliwe są następujące wyniki:   
 
   * (TAK, TAK, TAK, TAK, TAK, TAK) = 100%    
@@ -489,7 +493,7 @@ Podobne obliczenia można przeprowadzić dla pozostałych odsetów poparcia. Mo�
 Widzimy jak wiele różnych możliwości możemy uzyskać z naszych prób. Przyjrzyjmy się wynikom. Najwięcej prób zawiera poparcie dla partii X na poziomie 2/6. Dużo mniej 1/6 i 3/6. Wyniki 0 oraz 4/6 można nazwać rzadkimi, a 5/6 i 1 bardzo rzadkimi. Zauważmy również, że poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, że nasz schemat jest wadliwy. Jak wiemy to, czy próba jest “trafna” określa się na podstawie przeciętnej wartości oszacowania w próbie. Gdy mierzyliśmy ten parametr dla sondażu dotyczącego absencji w wyborach, wiedzieliśmy, że przynajmniej część prób “trafia w punkt”. Tym razem tak nie jest. Żadna próba nie daje wyniku 35% poparcia dla partii X. Ale czy rzeczywiście schemat doboru respondentów jest wadliwy. Jeżeli sprawdzimy przeciętny wynik z próby to okaże się, że wynosi on dokładnie 35%, a więc dokładnie tyle ile wynosi on w populacji. To efekt zastosowanego schamatu losowania próby.  Zgdonie z tym, co mówiliśmy wcześniej oznacza to, że jest on poprawny. Ale co z tego skoro nie portafi dokładnie “trafić” w wynik! Potrzebujemy dodatkowej miary trafności wyników. Musi ona określać skalę błąd popełnianego przy korzystaniu z konkretnych schematów losowania. Dzięki temu będziemy porównywać schmaty, a przede wszystkim kreślić, jak duże jest ryzyko, że się myslimy.  Posłużymy się przy tym rozwiązaniem wymyślonym przez statystyków. Policzmy jak duzy jest rozstęp między wynikiem z próby, a prawdziwym wynikiem w populacji (35%). Wszystkie obliczenia znajdują się w poniższej tabeli
 
 
-### Tabela 8.2. Podsumowanie obliczeń
+### Tabela 8.3. Podsumowanie obliczeń
 
 | Poparciedla partii X (A) | Liczba prób z danym poparciem dla partii X (B) | Różnica między wynikiem w próbie, a poparciem w populacji (A -35%) | Kwadrat różnicy (A-35%)^2 | Iloczyn liczby prób ikwadratu błędu ((A-35%)^2)*B |
 |--------------------------|------------------------------------------------|--------------------------------------------------------------------|---------------------------|---------------------------------------------------|
@@ -509,16 +513,44 @@ Pierwszy wykres ilustruje wyniki dla próby składającej się z pięciu respond
 Dlaczego tak się dzieje? Ponieważ w małych próbach stosunkowo łatwiej może się zdarzyć, że wszyscy będą za lub przeciw partii X. Innymi słowy łatwiej o skrajny wynik. Zwiększając próbę zwięszkamy szanse na to, że wyniki się “ustabilizują” - Przy większej liczbie obserwacji jest mniejsza szansa, ze próba zostanie zdominowana przez jedną frakcję.     
 Przejdżmy do kwestii wnioskowania. Prawdziwie badania sondażowe polegają na wnioskowaniu na podstawie pojedynczej próby. Nie ma więc możliwości analizowania wyników z ze wszyskich prób     
 
+### Wykres 8.1. Symulacja rozkładów wyników 1000 prób składających się od 2 dp 19 respondentów
+![Symulacja ]( Losowanie_wielu_prob/symulacja.gif "SYMULACJA")
+
 # 9. Błędy systematyczne 
 
 W części piątej mówiliśmy min. o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obarczone pewną liczbą odmów respondentow.
 
-Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że samo prawdziwe badanie sondażowe nie składa się wyłącznie z losowania próby, ale przede wszystkim z “terenowej” realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy.
-Wróćmy więc znowu do naszej populajcji i wyobraźmy sobie sytuację, gdy niespodziewane na wywiady, pomimo bardzo wielu próźb i grób, wszystkie osoby zamieszkałe w mieście w dobranej próbie konsekwentnie odmawiają naszym ankieterom wzięcia udziału w badaniu. To zupełnie skrajny przypadek, takie rzeczy raczej się nie zdażają, ale prawdą jest, że mieszkańcy miast sa trudniej uchwytni - z różnych powodów.
+Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z losowania próby, ale przede wszystkim z terenowej realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy.
+Wróćmy więc znowu do naszej populajcji i wyobraźmy sobie sytuację, gdy niespodziewane na wywiady, pomimo bardzo wielu próźb i grób, osoby zamieszkałe w mieście w dobranej próbie konsekwentnie odmawiają naszym ankieterom wzięcia udziału w badaniu. To zupełnie skrajny przypadek, takie rzeczy raczej się nie zdażają, ale prawdą jest, że mieszkańcy miast sa trudniej uchwytni - z różnych powodów.
 Jakie dla nas konsekwencje będzie miało to zjawisko? 
 Łatwo się domyślić. Zmienią sie wyniki otrzymywane z prób. Dalej korzystamy z próby składającej sie z 6 osób. Co za tym idzie zmienią się nasze wyniki. Z jednej strony pojawią się 
 
+### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
 
+|6 dostępnych respondnetów| 5 dostępnych respondntów | 4 dostępnych respondentów | 3 dostępnych respondnetów| 2 dostępnych respondntów | 1 dostępnych respondentów | 0 dostępnych respondentów |
+|-------------------------|--------------------------|---------------------------|--------------------------|--------------------------|---------------------------|---------------------------|
+|0                        |0                         |0                          |0                         |0                         |0                          |-                          |
+|1/6                      |-                         |-                          |-                         |-                         |-                          |-                          |
+|-                        |1/5                       |-                          |-                         |-                         |-                          |-                          |
+|-                        |-                         |1/4                        |-                         |-                         |-                          |-                          |
+|2/6                      |-                         |-                          |1/3                       |-                         |-                          |-                          |
+|-                        |2/5                       |-                          |-                         |-                         |-                          |-                          |
+|3/6                      |-                         |2/4                        |-                         |1/2                       |-                          |-                          |
+|-                        |3/5                       |-                          |-                         |-                         |-                          |-                          |
+|4/6                      |-                         |-                          |2/3                       |-                         |-                          |-                          |
+|-                        |-                         |3/4                        |-                         |-                         |-                          |-                          |
+|-                        |4/5                       |-                          |-                         |-                         |-                          |-                          |
+|5/6                      |-                         |-                          |-                         |-                         |-                          |-                          |
+|1                        |1                         |1                          |1                         |1                         |1                          |-                          |
+
+Jak widać sytuacja w, której część respondentów jest niedostępna może rodzić wiele problemów. Rozkład wyników z próby nie jest już taki łatwy do przewidzenia. Zależy bowiem nie tylko od deklaracji preferencji respondentów, ale także od ich dostępności.
+Podstawowe pytanie brzmi więc, jakie szanse mamy na to, że w próbie 6 osób 6,5 ,4, 3, 2, 1 będzie chciało wziąć udział w badaniu . 
+
+### Tabela 9.2. Rozkład liczby dostpnych respondentów dla schematu losowania 6 osób do próby
+![plot of chunk unnamed-chunk-12](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-12.png) 
+
+
+### Wykres 9.1. Rozkład poparcia partii X dla schemtu losowania 6 repondentów przy niepełnej realizacji próby (bez mieszkańców miast)
 
 ```
 ## [1] 0
@@ -528,9 +560,10 @@ Jakie dla nas konsekwencje będzie miało to zjawisko?
 ## [1] 20
 ```
 
-![plot of chunk unnamed-chunk-12](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-12.png) 
+![plot of chunk unnamed-chunk-13](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-13.png) 
 
-
+**[WYKRES]**
+Jak widać wyniki mocno się różnią od wych uzyskanych przy pełnej realizajic
 Wnioskowanie
 Do tej pory analizowaliśmy rozkłady wszystkich możliwych wyników z próby. Potrafimy sobie wyobrazić co nas czeka. Badanie sondażowe polega jednak na dobraniu tylko jednej próby osób które potrafimy zidentyfikować, ale dla których nie znamy rozkładu preferencji politycznych czy innych badanych cech. W związku z tym w prawdziwym badaniu nie znamy błędu schematu z góry. Tak samo jak poziom poparcia dla partii X musimy go oszacować na podstawie próby. Jak to zrobimy      
 No i tutaj też mam problem, w jaki sposób podjąć ten temat, aby był on "strawny". Jeżeli nic nie
@@ -548,8 +581,7 @@ Wyjaśniając, na czym polega owa istotność, należy powiedzieć, że błąd s
 Ciekawym publicystycznym rozwiązaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wzięli udział w badaniu (a więc przytaczaniu wyniku dla próby), a nie o populacji, której badani są tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisząc na temat przyczyn niskiej aktywności politycznej Polaków ani razu nie wypowiedzieli się na temat wszystkich Polaków, opisują jedynie wyniki dla przebadanej próby. Nie jest to już niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialność na czytelnika, który sam musi ocenić, na ile dokładnie w danej próbie odzwierciedlone są poglądy wszystkich Polaków.
 Najbardziej profesjonalnym rozwiązaniem byłoby jednak pisanie, w jakim przedziale mieści się badana cecha (np. poparcie dla partii) w całej zbiorowości, a nie wśród przebadanych respondentów. Jak widać bowiem, przy założeniu poprawności realizacji badania, wynik ten z pewnym przybliżeniem oddaje rzeczywisty odsetek dla całej populacji. Jeśli nie podaje się przedziału tego przybliżenia, wówczas lepiej jest napisać o dokładnych wynikach uzyskanych dla przebadanych respondentów, niż dla całej zbiorowości, z której zostali oni wybrani.
 
-# Symulacja
-![Symulacja ]( Losowanie_wielu_prob/symulacja.gif "SYMULACJA")
+
 
 
 zadanie: Z wylosowanej próby wyłącz niektóre obserwacje (PRÓBA B)
