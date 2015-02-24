@@ -467,7 +467,7 @@ ggplot(p2, aes(p2.kolejnosc))+
 Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w `r p2.Tab$Freq[p2.Tab$Var1=="0%"]  ` próbach absencja wyborcza wyniosła 0%, w `r p2.Tab$Freq[p2.Tab$Var1=="50%"]` wyniosła 50%, a w `r p2.Tab$Freq[p2.Tab$Var1=="100%"]` wyniosła 100%. Różnice są niewielkie.
 Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
-Widzimy więc, że dla ponad połowy wszystkich możliwch prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry”? Że nasze wnioski z badania mogą być trafne?  Spójrzmy na nasz problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby. Zastosujemy przy tym zasadę często stosowaną w szkole. Gdy chcemy się czegoś dowiedzieć o wynikach ucznia w skali całego roku liczmy średnią arytmetyczną jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazało się, że “przeciętnie” na próbę przypada 50% absencja!!! To jest dokładnie tyle ile wynosi ono w całej populacji!!! Oto podstawa całej metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe popualcji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszyskich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt - próba nie jest obciążona.
+Dla ponad połowy wszystkich możliwch prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry”? Że nasze wnioski z badania mogą być trafne?  Spójrzmy na nasz problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby. Zastosujemy przy tym zasadę często stosowaną w szkole. Gdy chcemy się czegoś dowiedzieć o wynikach ucznia w skali całego roku liczmy średnią arytmetyczną jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazało się, że “przeciętnie” na próbę przypada 50% absencja!!! To jest dokładnie tyle ile wynosi ono w całej populacji!!! Oto podstawa całej metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe popualcji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszyskich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt - próba nie jest obciążona.
 
 ### Tabela 7.3. Podsumowanie obliczeń 
 
@@ -497,7 +497,11 @@ __Zadania 7:__
     d) Napisz o ile punktów procentowych różni się wynik z twojej próby od wyniku w całej popualcji (50%)
 
 
-# 8. Wnioskowanie i błedy w oszacowaniach
+# 8. Błąd oszacowania
+
+**Omówiliśmy już wstępnie dobór losowy respondentów do badania sondażowego i wiemy, że wyniki z prób przeciętnie powinny "trafiać w punkt". Pozostaje jednak problem błędów. Jak zauważylimy na przykładzie sondażu dotyczącego absencji wyborczej, duża część prób może dawać nieprawidłowe oszacowania. Cóż z tego więc, że nasz schemat losowania średni rzecz biorąc daje dobre wyniki skoro my dobierzemy jedną próbę i ona włśnie chybi?!**      
+**Przeciętnie dobra celność to za mało. Schemat losowania powinien dodatkowo gwarantować, że dla przeważającej większości prób oszacowania badanego parametru populacji będą bardzo bliskie rzeczywistym wartościom. Innymi słowy ryzyko popełnienia dużego błędu powinno byc jak najmniejsze. Próby uzyskane przy pomocy schematu spełniającego powyższe warunki nazwiemy reprezentatywnymi.**      
+**Zagadnienie błędu oszacowań uzyskiwanych z prób losowych omówimy na nawym przykładzie badania sondażowego. Będzie ono dotyczyło poziomu poparcia w naszej przykładowej populacji dla partii X.**
 
 Omówiliśmy już wstępnie dobór losowy respondentów do badania sondażowego. Wiemy, że wyniki z prób przeciętnie powinny "trafiać w punkt". Pozostaje jednak problem błędów. Jak zwuważyliśy na przykładzie sondażu dotyczącego absencji, duża część prób może się myslić. Cóz z tego więc, że nasza metoda doboru respondentów przeciętnie daje dobre wyniki skoro my wylosujemy tylko jedną próbę i ona właśnie chybi. Schemat doboru próby musi więc dostarczać oszacowania, które znajdą się przynajmniej w pobliżu rzeczywistych wartości. Innymi słowy, musi gwarantować, że dla przeważającej większości prób wyniki będa poprawne bądź bardzo zbliżone do poprawnych. Ryzyko popełnienia błędu powinno być jak najmniejsze.       
 Zagadnienie błędu oszacowania omówimy na nowym przykładzie. Znajmiemy się poparciem dla partii X w naszej przykadowej populacji.    
@@ -506,27 +510,27 @@ Zagadnienie błędu oszacowania omówimy na nowym przykładzie. Znajmiemy się p
 ```{r,echo=FALSE, results='asis'}
 kable( poparcie_dla_P, format = "markdown");
 ```
-W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu zamiast wartości -1 w kolumnie “Glosowanie” teraz będziemy analizowali występowanie wartości 1, czyli glosowanie na partię X. Będziemy również dobierać nie 2, a 6 obywateli do próby. Tak samo jak wcześniej zastosujemy jednak losowanie proste bez zwracania i technikę CAPI do realizacji wywiadów. Pytanie w kwestionariuszu będzie brzmiało: "Gdyby wybory do parlamentu (sejmu i senatu) odbywały się w najbliższą niedzielę to czy zagłosowałaby/łby Pani/an na partię X"    
+W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu w kolumnie “Glosowanie” zamiast wartości -1  teraz będziemy analizowali występowanie wartości 1, czyli glosowanie na partię X. Będziemy również dobierać nie 2, a 6 obywateli do próby. Tak samo jak wcześniej zastosujemy jednak losowanie proste bez zwracania i technikę CAPI. Pytanie w kwestionariuszu będzie natomiast brzmiało: "Gdyby wybory do sejmu odbywały się w najbliższą niedzielę to czy zagłosowałaby/łby Pani/an na partię X"    
 
-Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby dobrane przy użyciu naszego nowego schemat doboru respondentów. Ponieważ w próbie znajduje się 6 osób więc możliwych jest 7 wyników:   
+Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby dobrane przy użyciu naszego nowego schemat losowania. Ponieważ będziemy dobierali 6 respondentów więc możliwych jest 7 wyników:   
 
-  * (X, X, X, X, X, X) = 100% (6/6)    
-  * (X, X, X, X, X, nX) = 83% (5/6)   
-  * (X, X, X, X, nX, nX) = 67% (4/6)    
-  * (X, X, X, nX, nX, nX) = 50% (3/5)    
-  * (X, X, nX, nX, nX, nX) = 33% (2/6)     
-  * (X, nX, xX, nX, nX, nX) = 17% (1/6)  
-  * (nX, nX, nX, nX, nX, nX) = 0% (0/6)  
+  1. (X, X, X, X, X, X) => 100% (6/6)    
+  2. (X, X, X, X, X, nX) => 83% (5/6)   
+  3. (X, X, X, X, nX, nX) => 67% (4/6)    
+  4. (X, X, X, nX, nX, nX) => 50% (3/5)    
+  5. (X, X, nX, nX, nX, nX) => 33% (2/6)     
+  6. (X, nX, xX, nX, nX, nX) => 17% (1/6)  
+  7. (nX, nX, nX, nX, nX, nX) => 0% (0/6)  
 
 gdzie X oznacza "tak, oddałabym/łbym głos na partię X", a nX oznacza "nie, oddałabym/łbym głos na inną partię lub w ogóle nie posza/edł na wybory".   
 
-Nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15=27907200 różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondantów. Tak dużej liczby prób niestety nie da się rozpisać. Możemy natomiast opisać naszą zbiorowość prób wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji każdy obywatel występował w 19\*2=38 próba. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela możnaby dobrać najpierw jedną  osobę spośród 19, a później drugą spośród pozostałych 18. Sam obywatel natomiast mógłby zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy obywatel występowałby w 19\*18\*3=1026 trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie jedną z ostatnich 15. Oczywiście nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc każdy obywatel występuje w 19\*18\*17\*16\*15\*6=8372160 sześcioosobowych próbach. Potwierdzają to obliczenia programu R:
+Nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15=27907200 różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondantów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji każdy obywatel występował w 19\*2=38 próba. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela możnaby dobrać najpierw jedną  osobę spośród 19, a później drugą spośród pozostałych 18. Sam obywatel natomiast mógłby zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy obywatel występowałby w 19\*18\*3=1026 trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie jedną ostatnią z 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6=8372160 sześcioosobowych próbach, co potwierdzają obliczenia w programie R.
 
 ```{r, echo=FALSE}
 library("gtools") 
 p6<-permutations(n = 20, r = 6)
 ```
-### Tabela 8.1. LICZBA PRÓB, W KTÓRYCH WYSTĘPUJE KAŻDY OBYWATEL
+### Tabela 8.1. Liczba prób, w których występują poszczególni obywatele
 ```{r, echo=FALSE, results='asis'}
 p6.1<-NULL
 for(i in 1:20) {
@@ -600,6 +604,9 @@ O ile jeden odsetek wystarczy traktować jako przybliżony, o tyle poważny prob
 Wyjaśniając, na czym polega owa istotność, należy powiedzieć, że błąd statystyczny w powyższym przypadku oznacza, że skoro w próbie ze stycznia 25% osób popierało rząd, to z prawdopodobieństwem 95% w całej populacji popierało go od 22% do 28%. Gdy w próbie z lutego 22% respondentów wyraziło poparcie dla rządu, to wśród wszystkich dorosłych Polaków mogło go popierać od 19% do 25%. Jak widać przedziały dla stycznia i lutego się na siebie nakładają, przez co różnica w poparciu między tymi miesiącami może nie świadczyć o spadku poparcia dla rządu.
 Ciekawym publicystycznym rozwiązaniem tego problemu jest pisanie w artykule tylko o odsetku respondentów, którzy wzięli udział w badaniu (a więc przytaczaniu wyniku dla próby), a nie o populacji, której badani są tylko reprezentantami. W artykule Marna oferta wyborcza [5] autorzy pisząc na temat przyczyn niskiej aktywności politycznej Polaków ani razu nie wypowiedzieli się na temat wszystkich Polaków, opisują jedynie wyniki dla przebadanej próby. Nie jest to już niepoprawne, tak jak w poprzednim przypadku, ale przerzuca odpowiedzialność na czytelnika, który sam musi ocenić, na ile dokładnie w danej próbie odzwierciedlone są poglądy wszystkich Polaków.
 Najbardziej profesjonalnym rozwiązaniem byłoby jednak pisanie, w jakim przedziale mieści się badana cecha (np. poparcie dla partii) w całej zbiorowości, a nie wśród przebadanych respondentów. Jak widać bowiem, przy założeniu poprawności realizacji badania, wynik ten z pewnym przybliżeniem oddaje rzeczywisty odsetek dla całej populacji. Jeśli nie podaje się przedziału tego przybliżenia, wówczas lepiej jest napisać o dokładnych wynikach uzyskanych dla przebadanych respondentów, niż dla całej zbiorowości, z której zostali oni wybrani.
+
+__Zadania 7:__   
+1. Jaką próbę możemy nazwać reprezentatywną?
 
 # 9. Błędy systematyczne 
 
