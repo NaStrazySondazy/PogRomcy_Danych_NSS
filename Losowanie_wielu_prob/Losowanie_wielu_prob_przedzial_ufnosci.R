@@ -23,4 +23,29 @@ for (i in 1:15) {
   colnames(sumy)<-c("prawdo", "od", "do")
   proby.sumy[[i]]<-sumy  
 }
-proby.sumy
+
+
+proby.sumy_przedzial<-
+  lapply(proby.sumy, 
+         FUN =function(x){ 
+                y<-(as.numeric(x[,1])-0.95)^2
+                y<-which(y==min(y))
+                return(x[y,])
+              } 
+         )
+proby.sumy_przedzial<-do.call(rbind, proby.sumy_przedzial)
+proby.sumy_przedzial<-matrix(as.numeric(proby.sumy_przedzial),15,3,byrow = F)
+proby.sumy_przedzial<-cbind(1:15, proby.sumy_przedzial)
+
+png("przedzial_ufnosci.png", height = 400, width = 500)
+plot(proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], ylim=c(0,1), 
+     xlab="liczebnoœæ próby",
+     ylab="przedzia³ ufnoœci");
+points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,4]);
+for (i in 1:15) {
+  lines( rep(i,2), rbind( proby.sumy_przedzial[i,3], proby.sumy_przedzial[i,4]) )
+}
+dev.off()
+
+
+
