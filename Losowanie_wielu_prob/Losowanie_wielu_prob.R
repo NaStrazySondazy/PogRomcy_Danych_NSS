@@ -67,12 +67,12 @@ m<-m[,colnames(m)!="X"]
 ######################################### [ANIMACJAprzygotowanie prob
 
 proba<-list();
-  for (i in 1:18) {
-    proba[[i]]<-0
-    for (j in 1:1000){
-      proba[[i]][j]<-round(sum(sample(x = m$Glosowanie, size = (i+1), replace =F ) ==1)/(i+1), 4)     
-    }
+for (i in 1:18) {
+  proba[[i]]<-0
+  for (j in 1:1000){
+    proba[[i]][j]<-round(sum(sample(x = m$Glosowanie, size = (i+1), replace =F ) ==1)/(i+1), 4)     
   }
+}
 
 ######################################### ANIMACJA zwykla
 ## set some options first
@@ -122,8 +122,97 @@ saveGIF({
   for (i in 1:ani.options("nmax")) {
     PROBY_SYMULACJA<-data.frame(poparcie=proba[[i]] )
     print(ggplot(PROBY_SYMULACJA, aes(x=poparcie))+geom_histogram(binwidth = 0.01)+
-      xlim(0,1)+
-      geom_vline(xintercept = 7/20, col="red"))
+            xlim(0,1)+
+            geom_vline(xintercept = 7/20, col="red"))
     ani.pause(2)
   }
 }, interval = 0.5, movie.name = "symulacja.gif", ani.width = 600, ani.height = 600)
+
+######################### Rozklady z prob podejscie drugie
+
+proby<-list()
+for (n in 6:20) {
+  kmin<-(n-13)*(n>12)
+  kmax<-n*(n<8)+7*(n>7)
+  prawdopo<-matrix(0,length( kmin:kmax),2)
+  rownames(prawdopo)<-kmin:kmax/n
+  prawdopo[,1]<-kmin:kmax/n
+  mianownik<- choose(20,n);
+  #l.prob<-prod(20:(20-n+1)) # prod to funkcja zwracajaca iloczyn argumentow
+  for (p in kmin:kmax){
+    prawdopo[which(kmin:kmax==p), 2]<-(choose(7,p)*choose(13,n-p))/mianownik#*l.prob
+  }
+  proby[[ which(6:20==n)]]<-prawdopo
+}
+
+par(mar = c(4.2,4.2,1,1))
+plot(c(-1,1),
+     c(-1,1), 
+     ylim=c(0,.5), 
+     xlim=c(0,1), 
+     las=1, 
+     xlab="Odsetek prób", 
+     ylab="Oszacowanie w próbie")
+rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+       "grey90")
+points( proby[[i]], pch=19)
+for( j in 1:dim(proby[[i]])[1] ){
+  lines( rep(proby[[i]][j,1],2), c(0, proby[[i]][j,2]), lwd=4 )  
+}
+abline(v=7/20, col="red", lwd=2)
+
+############# 4 wykresy
+
+png( "losowanie_wielu_prob.png",width = 600, height = 600)
+par(mar = c(4.2,4.2,1,1), mfrow=c(2,2))
+for (i in c(1,4,7,10)) {
+  plot(c(-1,1),
+       c(-1,1), 
+       ylim=c(0,.5), 
+       xlim=c(0,1), 
+       las=1, 
+       xlab="Oszacowanie w próbie", 
+       ylab="Odsetek prób")
+  rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+         "grey90")
+  points( proby[[i]], pch=19)
+  for( j in 1:dim(proby[[i]])[1] ){
+    lines( rep(proby[[i]][j,1],2), c(0, proby[[i]][j,2]), lwd=5 )  
+  }
+  abline(v=7/20, col="red", lwd=2)
+  text(0.5, 0.4, paste("Liczba\nrespondentów:", i+5, sep="\n"), adj=0, cex=1.6)
+}
+dev.off()
+
+
+######################################### ANIMACJA zwykla
+library(animation);
+par(mar = c(4.2,4.2,1,1), mfrow=c(1,1))
+## set some options first
+oopt = ani.options(interval = 0.5, nmax = 19)
+## use a loop to create images one by one
+for (i in 1:ani.options("nmax")) {
+  plot(c(-1,1),
+       c(-1,1), 
+       ylim=c(0,.7), 
+       xlim=c(0,1), 
+       las=1, 
+       xlab="Oszacowanie w próbie", 
+       ylab="Odsetek prób")
+  rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+         "grey90")
+  points( proby[[i]], pch=19)
+  for( j in 1:dim(proby[[i]])[1] ){
+    lines( rep(proby[[i]][j,1],2), c(0, proby[[i]][j,2]), lwd=4 )  
+  }
+  abline(v=7/20, col="red", lwd=2)
+  text(0.6, 0.5, paste("Liczba\nrespondentów:", i+5, sep="\n"), adj=0)
+  ani.pause(1)
+}
+## restore the options
+ani.options(oopt)
+
+
+
+
+
