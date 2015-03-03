@@ -11,7 +11,7 @@ Na te oraz inne pytania postaramy się udzielić odpowiedzi w trakcie naszego ku
 
 __Zadania 1:__  
 
-  1. Wymień trzy artykuły prasowe z 2014 r., w których powołano się na wyniki badań społecznych (sondaży). Jeżeli w artykule podano taką informację to napisz ile osób brało udział w badaniu (ewentualnie ile firm lub innych instytucji jeżeli badanie nie dotyczyło postaw ludzi)
+  1. Wymień trzy artykuły prasowe z 2015 r., w których powołano się na wyniki badań społecznych (sondaży). Napisz ile osób wzięło udział w badaniach oraz kiedy je realizowano, o ile w artykule podano tego rodzaju informację.
 
 
 L.p.          | Tytuł artykułu| Link do strony z artykułem | Czy podano wielkość próby? Zapisz ją jeżeli została podana | Czy podano dokładną datę realizacji badania? Jaką?
@@ -27,13 +27,13 @@ Statystycy i badacze społeczni wiedzą doskonale, że dobrze dobrana próba sta
 
 __Zadania 2:__      
 
-  1. Wymień trzy badania na próbach przeprowadzone przez instytucje państwowe  i podaj link do ich wyników lub raportu. Mogą to być badania z roku 2014, ale także wcześniejszych lat. 
+  1. Wymień trzy badania na próbach przeprowadzone przez instytucje państwowe  i podaj link do ich wyników lub raportu. Mogą to być badania z roku 2015, ale także wcześniejszych lat. 
 
-L.p.          |Nazwa instytucji | Tytuł badania  | Link do strony z raportem 
---------------|-----------------|----------------|----------------------------
-1.            |                 |                |
-2.            |                 |                |
-3.            |                 |                |
+L.p.          |Nazwa instytucji publikującej wyniki | Tytuł badania  | Link do strony z raportem 
+--------------|-------------------------------------|----------------|----------------------------
+1.            |                                     |                |
+2.            |                                     |                |
+3.            |                                     |                |
 
 # 3. Przykłady prób
 
@@ -42,7 +42,7 @@ Weźmy inny, mniej dramatyczny przykład. Wyobraźmy sobie, że chcemy ugotować
 
 __Zadania 3:__      
 
-  1. Podaj przykład z życia codziennego badania na próbie (np. badanie ilości soli w zupie). 
+  1. Podaj przykład badania na próbie, które można przeprowadzić w naszym codziennym życiu (np. badanie ilości soli w zupie). 
 
 L.p.          |Czego dotyczy badanie? | Co jest próbą?  
 --------------|-----------------------|----------------
@@ -54,13 +54,15 @@ L.p.          |Czego dotyczy badanie? | Co jest próbą?
 
 Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki często pojawiają się w prasie i mają duże znaczenie dla polityków oraz pewnie trochę mniejsze dla wyborców.  Wyobraźmy sobie, że chcemy zmierzyć poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celów odsłońmy kilka faktów dotyczących badanej zbiorowości:
 
-|       | Nie biorę udziały w wyborach | NIE |  Tak | Razem |
-|-------|------------------------------|-----|------|-------|
-|Miasto | 30                           | 5   | 25   | 60    |
-|Wies   | 20                           | 10  | 10   | 40    |
-|RAZEM  | 50                           | 15  | 35   | 100   |
+### Tabela 4.1. Rozkład miejsca zamieszkania i w (fikcyjnej) populacji pełnoletnich mieszkańców Polski posiadających obywatelstwo
 
-W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą poparcie dla partii X (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię X, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię X stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. 
+|       | Nie biorę udziały w wyborach | Nie zagłosuję na X |  Zagłosuję na X | Razem |
+|-------|------------------------------|--------------------|-----------------|-------|
+|Miasto | 30                           | 5                  | 25              | 60    |
+|Wies   | 20                           | 10                 | 10              | 40    |
+|RAZEM  | 50                           | 15                 | 35              | 100   |
+
+W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski posiadających obywatelstwo (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą deklaracje dotyczące głosowania na dla partii X w najbliższych wyborach parlamentarnych (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię X, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię X stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. 
  
 Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię X?
 I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na  (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
@@ -69,29 +71,31 @@ W dalszej części kursu pokażemy jak prawidłowo zdefiniować populację, jak 
 
 __Zadania 4:__      
 
-  1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?
+  1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?    
+    + TAK
+    + NIE     
   2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poniższe pytania:     
     a. Jaki procent mieszkańców wsi popiera ?    
     b. Jaki procent mieszkańców miasta nie pójdzie na wybory?    
     c. Jaki procent osób które nie popierają partii X mieszka w mieście?
 
-# 5. Problem badawczy -> populacja -> technika
+# 5. Problem badawczy -> populacja -> technika realizacji badania
 Co powinien zrobić każdy prawdziwy sondażysta przed rozpoczęciem badania? Powienien odpowiedzieć sobie na  trzy podstawowe pytania.   
 
 1.  **Jak zdefiniować problem badawczy?**     
 
-W przypadku badań sondażowych to pytanie możemy uściślić w następujący sposób: jaką cechę naszej zbiorowości chcemy zmierzyć. Co rozumieć przez cechę w tym przypadku? Opisując duża zbiorowość musimy zdecydować się na jakiś kompromis i uogólnienia. Sondaż nie odpowie nam na pytanie, jak zachowują się poszczególni mieszkańcy Polski. Możemy natomiast za jego pomocą określić, jak zachowują się przeciętnie albo jak zachowuje się większość z nich. Sondaż pozwala więc badać parametry, cechy, populacji takie jak średnia (np. waga) lub odsetek osób w pewien sposób wyróżnionych(np. odsetek osób uczestniczących w wyborach). 
-Najczęsciej sondaże realizuje się, aby poznać preferencje wyborcze obywateli. Problemem badawczym może być jednak także coś innego. Wiele sondazy służy ocenie  przeciętnych dochody, wydatków, a także preferencji konsumenckich w danej grupie społecznej. 
+W przypadku badań sondażowych to pytanie możemy uściślić w następujący sposób: jaką cechę naszej zbiorowości chcemy zmierzyć. Co rozumieć przez cechę w tym przypadku? Opisując duża zbiorowość musimy zdecydować się na jakiś kompromis i uogólnienia. Sondaż nie odpowie nam na pytanie, jak zachowują się poszczególni mieszkańcy Polski. Możemy natomiast za jego pomocą określić, jak zachowują się przeciętnie albo jak zachowuje się większość z nich. Sondaż pozwala więc badać parametry (cechy) populacji takie jak średnia (np. waga) lub odsetek osób w pewien sposób wyróżnionych(np. odsetek osób uczestniczących w wyborach).      
+Najczęściej sondaże realizuje się, aby poznać preferencje wyborcze obywateli. Problemem badawczym może być jednak także coś innego. Wiele sondazy służy ocenie  przeciętnych dochodów, wydatków, a także preferencji konsumenckich w wybranej grupie społecznej.     
 Określenie problemu badawczego stanowi punkt wyjścia do następego pytania.
 
 2.  **Jak zdefiniować badaną populację? O jakiej zbiorowości chcemy wnioskować?**   
 
 Załóżmy, że interesuje nas populacja Polaków. Czy to znaczy, że będziemy badać wszystkich ludzi na świecie posiadających obywatelstwo polskie albo mówiących po polsku? A może tylko tych spośród nich, którzy mieszkają w kraju? Albo ogólnie mieszkańców Polski niezależnie od tego, czy posiadają obywatelstwo czy też nie?    
 Musimy również zadecydować, czy interesują nas ludzie w każdym wieku, czy może tylko pełnoletni z prawem do głosowania (18+)? Lub też osoby w wieku produkcyjnym i poprodukcyjnym (15+)? 
-Najczęściej sondaże w Polsce obejmują populację pełnoletnich obywateli zamieszkałych na terenie kraju. Istnieją jednak badania społeczne dla których, ze względu na poruszaną problematykę, populacje definiuje się zupełnie inaczeć. I tak istnieją badania zbiorowości osób w wieku dokładnie 15 ukończonych lat, albo zbiorowości pełnoletnich obywateli województwa małopolskiego.
+Najczęściej sondaże w Polsce obejmują populację pełnoletnich obywateli zamieszkałych na terenie kraju. Istnieją jednak badania społeczne dla których, ze względu na poruszaną problematykę, populacje definiuje się zupełnie inaczeć. I tak istnieją badania zbiorowości osób w wieku 15 lat, zbiorowości pełnoletnich obywateli województwa małopolskiego itp.
 Określenie problemu badawczego i zdefiniowanie populacji to nie wszystko. Trzeba bowiem jeszcze dostosować do nich sposób w jaki pozyskiwane będa dane od respondentów.
 
-3.  **Jaką technikką zrealizować badanie?**   
+3.  **Jaką techniką zrealizować badanie?**   
 
 Trudno sobie bowiem wyobrazić badanie dochodów mieszkańców Polski przeprowadzone przy pomocy ankiety internetowej. Dalece bowiem nie wszyscy członkowie tej zbiorowości są w łączności z "globalną siecią". Bywają oczywiście sytuacje, w których stosowanie takiej metody jest uzuasadnione i z pewnością w przyszłości, wraz z poprawą dostępu do sieci, zdominuje ona badania sondażowe.  Jak narazie jednak ankiety internetowe funkcjonują w cieniu dwóch innych częściej stosowanych metod zbierania danych. Ogólnie możemy więc wyróżnić trzy następujące grupy technik realizowania badań sondażowych: 
 
@@ -102,7 +106,7 @@ Trudno sobie bowiem wyobrazić badanie dochodów mieszkańców Polski przeprowad
 Wywiady "bezpośrednie" są realizowane w "terenie", najczęściej w miejscu zamieszkania losowo dobranych respondentów. Pozwalają on dotrzeć do największej grupy ludności, nieosiągalnej poprzez połączenie telefoniczne, bądź przez internet. Tego typu technikę często stosuje się w badaniach ogólnopolskich, dotyczących populacji mieszkańców całego kraju. Metoda bezpośrednia wiąże się z dużymi kosztami oraz długim okresem realizacji. Ankieterzy musza bowiem dotrzeć osobiście do wszystkich respondentów. Czasami pokonują w tym celu kilkadziesiąt kilometrów. Zdaża się bowiem, że  odległości między poszczególnymi respondentami są bardzo duże. Co więcej, respondenci bywają nieuchwytni i w związku z tym, aby się z nimi skontaktować, trzeba wielokrotnie ponawiać wizyty. Sondaze bezpośrednie wymagają więc dużych nakładów pracy. Mają one jednak jedną poważną zaletę. Są nią ankieterzy. Dzięki nim respondenci chętniej biorą udział w badaniu. Odsetkiem odmów wzięcia udziału w sondażach realizowanych metodą bezpośrenią jest stosunkowo niski. Respondentom trudniej jest odmówić ankieterowi, który odwiedza ich bezpośrednio, niż takiemu który kontaktuje się z nimi telefonicznie.  
 
 Wywiady telefoniczne to zupełnie inna bajka. Obecnie jest to jedna z najczęściej wykorzystywanych metod zbierania danych. Jej popularność wynika  przede wszystkim z niskich kosztów oraz krótkiego czasu realizacji. Łatwiej jest bowiem przeprowadzić 1000 rozmów telefonicznych niż zorganizować 1000 spotkań z respondentami. Sami jednak wiemy, jak takie badania wyglądają w praktyce: „przepraszam, nie mam czasu” albo „już brałem udział w tym badaniu” przychodzi nam przez telefon dużo łatwiej, niż podobne zachowanie w bezpośredniej konfrontacji z ankieterem. Nic więc dziwnego, że w tego rodzaju badaniach tylko co dziesiąty telefon kończy się zrealizowanym wywiadem. Dla porównania technika bezpośrednia pozwala zrealizować wywiad z co trzecią dobraną do próby osobą. 
-Poważnym ograniczeniem badań telefonicznych jest to, że mogą one być relizowane tylko w odniesieniu do populacji, której członkowie posiadają telefony. CO więcej Wywiady telefoniczne  musza być w miarę krótkie ponieważ resopndenci nie lubią długo "wisieć" na telefonie. W związku z tym konieczne jest równiez ograniczenie liczby pytań w ankiecie, a co za tym idzie ograniczenie liczby możliwych do przeprowadzenia analiz.  
+Poważnym ograniczeniem badań telefonicznych jest to, że mogą one być relizowane tylko w odniesieniu do populacji, której członkowie posiadają telefony. Co więcej Wywiady telefoniczne  musza być w miarę krótkie ponieważ resopndenci nie lubią długo "wisieć" na telefonie. W związku z tym konieczne jest równiez ograniczenie liczby pytań w ankiecie, a co za tym idzie ograniczenie liczby możliwych do przeprowadzenia analiz.  
 
 Ostatnia grupa technik to wspomniane wcześniej ankiety internetowe. Nie chodzi tu o sondy umieszczane na stronach WWW, ale o badania, w których "sondazysta" wybiera respondentów np. wysyłając im maile z kluczem do ankiety umieszczonej w sieci. Tego typu techniki budzą wiele kontrowersji, szczególnie gdy są wykorzystywane do wnioskowania o populacjach, takich jak mieszkańcy Polski. Wiadomo bowiem, że nie wszyscy członkowie takiej zbiorowości posiają komputer i wiedzą jak korzystać z Internetu. Innymi słowy jest to technika wykluczająca duże grupy społeczne, prawdopodobnie większe niż w przypadku badania telefonicznego. W związku z tym trudno jest mówić o reprezentatywności wyników w tym przypadku. Powodem dla którego realizuje się tego rodzaju badania jest koszt, niewątpliwie niższy niż w przypadku wywiadów bezpośrednich czy telefonicznych. 
 
@@ -118,10 +122,10 @@ Aby łatwiej rozróżniać poszczególne metody zbierania danych sondażyści, n
 
 Szczególnie istotną cechą różnicującą opisane powyżej techniki jest tak zwany poziom realizacji próby (nazywany również poziomem response-rate), czyli odsetek osób wytypowanych przez nas do udziału w badaniu, z którymi faktycznie udało się przeprowadzić wywiad. Warto wiedzieć, że praktycznie nigdy nie występuje sytuacja, w której sondażystom udaje się zapytać o opinię wszystkie osoby dobrane przez nich do próby. Dzieje się tak z kilku powodów. Po pierwsze, nie do wszystkich osób udaje się dotrzeć/dodzwonić. Powodem mogą być choroby,wakacje, delegacje służbowe itp. Ponadto część osób, do których uda się dotrzeć, z różnych przyczyn odmawia wzięcia udziału w badaniu.  Oba te czynniki są dodatkowym źródłem błędu w badaniu i celem każdego dobrego badacza jest ich zminimalizowanie. Jest to kolejny powód dla które technika zbierania danych ma tak istotne znacznie.  
 
-Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przykład historyczny. W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadził w USA badanie przedwyborcze. Do ludzi wybranych z książek telefonicznych i list rejestracyjnych samochodów wysłano DZIESIĘĆ MILIONÓW kart pocztowych, pytając, na kogo zamierzają oddać głos w wyborach prezydenckich – na republikanina Alfa Landona czy demokratę Franklina Roosevelta? Odpowiedziało ponad dwa miliony ludzi, wskazując że nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mogłoby się wydawać, że przebadanie tylu osób jest dużo bardziej wiarygodne i miarodajne niż przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory dość drastycznie zweryfikowały wnioski z tych badań – nowym prezydentem został Franklin Roosevelt, mając największą przewagę głosów w historii – otrzymał 61%.
-Dla porównania w tym samym czasie przedwyborczy sondaż, przeprowadził również  George Gallup, który trafnie przewidział wyniki wyborów. W swoim badaniu posłużył się on jednak niewielką próbą kwotową (czyli opartą na znajomości określonych cech populacji, np. płeć, dochód, wiek, miejsce zamieszkania itp.).
-Na czym więc polegał problem? Na całkowitym braku kontroli nad badaną próbą. Na pytanie zadane przez „Literary Digest” odpowiedziało zaledwie 22% wszystkich zapytanych osób. Jak się okazało karty w większości odsyłali republikanie. Drugi problem polegał na nieprawidłowym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i właścicieli samochodów. Taka konstrukcja próby dawała nadreprezentację zamożnych wyborców, czyli pominięcie ludzi biednych, którzy w większości głosowali na „New deal” Roosevelta. 
-Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Analizując wyniki badań sondażowych należy zawsze zwracać uwagę na sposób definiowania populacji oraz technikę realizacji badania. Definicja zbiorowości generalnej powinna zawierać informacje o: 
+Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przykład historyczny. W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadził w USA badanie przedwyborcze. Do ludzi wybranych z książek telefonicznych i list rejestracyjnych samochodów wysłano DZIESIĘĆ MILIONÓW kart pocztowych, pytając, na kogo zamierzają oddać głos w wyborach prezydenckich – na republikanina Alfa Landona czy demokratę Franklina Roosevelta? Odpowiedziało ponad dwa miliony ludzi, wskazując że nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mogłoby się wydawać, że przebadanie tylu osób jest dużo bardziej wiarygodne i miarodajne niż przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory dość drastycznie zweryfikowały wnioski z tych badań – nowym prezydentem został Franklin Roosevelt, mając największą przewagę głosów w historii – otrzymał 61%.        
+Dla porównania, w tym samym czasie, przedwyborczy sondaż przeprowadził również  George Gallup, który trafnie przewidział wyniki wyborów. W swoim badaniu posłużył się on jednak niewielką próbą kwotową (czyli opartą na znajomości określonych cech populacji, np. płeć, dochód, wiek, miejsce zamieszkania itp.) zrealizowan technika bezpośrednią.     
+Na czym więc polegał problem „Literary Digest”? Na całkowitym braku kontroli nad próbą. Na pytanie zadane przez „Literary Digest” odpowiedziało zaledwie 22% wszystkich zapytanych osób. Jak się okazało karty w większości odsyłali republikanie. Drugi problem polegał na nieprawidłowym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i właścicieli samochodów. Taka konstrukcja próby dawała nadreprezentację zamożnych wyborców, czyli pominięcie ludzi biednych, którzy w większości głosowali na „New deal” Roosevelta.     
+Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Analizując wyniki badań sondażowych należy zawsze zwracać uwagę na technikę realizacji oraz sposób definiowania populacji. Prawidłowa definicja zbiorowości generalnej powinna zawierać informacje o: 
 
 * położeniu w przestrzeni zbiorowości (mieszkańcy Polski, mieszkańcy Poznania itp.)  
 * wieku respondentów (pełnoletni Polacy, osoby w wieku 15 i więcej ukończonych lat itp.)   
@@ -129,7 +133,7 @@ Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniow
 
 __Zadania 5:__      
 
-  1. Wymień trzy firmy zajmujące się badaniem rynku i opinii społecznej, które w 2014 r. prowadziły badania sondażowe w Polsce i podaj link do strony z raportami badawczymi tej firmy: 
+  1. Wymień trzy firmy zajmujące się badaniem rynku i opinii społecznej, które w 2014 r. prowadziły badania sondażowe w Polsce. Podaj link do strony, na której firmy te publikuja swoje raporty. 
   
 L.p.          | Nazwa firmy badawczej| Link do strony z raportem?  
 --------------|----------------------|----------------
@@ -137,17 +141,16 @@ L.p.          | Nazwa firmy badawczej| Link do strony z raportem?
 2.            |  Nazwa firmy         | Raport     
 3.            |  Nazwa firmy         | Raport     
 
-  2. Masz następujący problem badawczy. Musisz zbadać poziom czytelnictwa tygodnika Na Straży Sondaży. Ukazuje się wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.   
+  2. Odpowiedz na pytania związane z następujcym problemem badawczym. Zamierzasz zmierzyć poziom czytelnictwa tygodnika "_Na Straży Sondaży_". Ukazuje się on wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.   
     a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoś staje się czytelnikiem? Jak często trzeba czytać żeby stać się czytelnikiem? Ile trzeba przeczytać żeby stać się czytelnikiem?)   
-    b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojwódzkich czy także w innych miejscach?)   
-    c. Zapisz pytanie o czytelnictwo (maksymalnie dwa zdania):........    
-    d. Czy twoim zdaniem pytanie o czytelnictwo może być uznane za drażliwe?
-  3. W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI - Computer Assisted Telephone Interview) na ogólnopolskiej, reprezentatywnej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.   
-    a. Zdefiniuj badaną populację.
-    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2013 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2013 r. lub dla późniejszej daty przed końcem 2013 r.)
-    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie
-    d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.
-    
+    b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojwódzkich czy także w innych miejscach?)    
+  3. W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI) na ogólnopolskiej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.   
+    a. Zdefiniuj badaną populację:..............................................................................................................................................................................................
+    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2013 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2013 r. lub dla późniejszej daty przed końcem 2013 r.):...................     
+    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie:...................................................................................................................................................................................................................................................................................................................................................     
+    d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.  
+      + Tak,............................
+      + Nie,............................
   4. Uniwersytecki Zespół Na Straży Sondaży zamówił badanie dotyczące popularności strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodziło oszacowanie odsetka osób w wieku 18-35 lat zamieszkałych w Polsce, które w ciągu ostatniego miesiąca zapoznały się z treścią (przeczytały cały lub prawie cały) przynajmniej jednego artykułu na stronie. Badanie zostało przeprowadzone metoda CAWI przez firmę “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spośród 50 tys. osób które dobrowolnie zarejestrowały się do bazy internetowej firmy i za drobna opłatą zgadzają się odpowiadać na pytania w różnych ankietach. Wiadomo również, ze osoby do badania zostały dobrane w ten sposób, aby rozkład płci wieku oraz wielkości miejscowości deklarowenego zamieszkania był zgodny z danymi podawanymi przez GUS na temat mieszkańców Polski. Odpowiedz na pytania związane z tym badaniem:
     a) Czy populacja osób z posiadających dostęp do internetu (korzystających z internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkańców Polski?     
       i. Tak;   
