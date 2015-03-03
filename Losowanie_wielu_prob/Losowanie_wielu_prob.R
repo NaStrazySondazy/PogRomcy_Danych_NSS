@@ -163,7 +163,7 @@ abline(v=7/20, col="red", lwd=2)
 
 ############# 4 wykresy
 
-png( "losowanie_wielu_prob.png",width = 600, height = 600)
+png( "losowanie_wielu_prob.png",width = 700, height = 700)
 par(mar = c(4.2,4.2,1,1), mfrow=c(2,2))
 for (i in c(1,4,7,10)) {
   plot(c(-1,1),
@@ -175,6 +175,9 @@ for (i in c(1,4,7,10)) {
        ylab="Odsetek prób")
   rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
          "grey90")
+  abline(h=seq(0,1,0.1), col="grey100");
+  abline(v=seq(0,1,0.1), col="grey100");
+  box( col = "grey90");
   points( proby[[i]], pch=19)
   for( j in 1:dim(proby[[i]])[1] ){
     lines( rep(proby[[i]][j,1],2), c(0, proby[[i]][j,2]), lwd=5 )  

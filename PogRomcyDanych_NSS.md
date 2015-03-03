@@ -378,7 +378,7 @@ Na 1000 przypadków w około 237 (90/380\*1000) absencja wyniesie 0%, podobnie w
 ### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 1000 prób
 ![plot of chunk unnamed-chunk-7](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-7.png) 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 234 próbach absencja wyborcza wyniosła 0%, w 533 wyniosła 50%, a w 233 wyniosła 100%. Różnice są niewielkie.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 212 próbach absencja wyborcza wyniosła 0%, w 534 wyniosła 50%, a w 254 wyniosła 100%. Różnice są niewielkie.
 Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Dla ponad połowy wszystkich możliwch prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry”? Że nasze wnioski z badania mogą być trafne?  Spójrzmy na nasz problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby. Zastosujemy przy tym zasadę często stosowaną w szkole. Gdy chcemy się czegoś dowiedzieć o wynikach ucznia w skali całego roku liczmy średnią arytmetyczną jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazało się, że “przeciętnie” na próbę przypada 50% absencja!!! To jest dokładnie tyle ile wynosi ono w całej populacji!!! Oto podstawa całej metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe popualcji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszyskich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt - próba nie jest obciążona.
@@ -412,19 +412,18 @@ __Zadania 7:__
 
 # 8. Błąd oszacowania
 
-Omówiliśmy już wstępnie dobór losowy respondentów do badania sondażowego i wiemy, że wyniki z prób przeciętnie powinny "trafiać w punkt". Pozostaje jednak problem błędów. Jak zauważylimy na przykładzie sondażu dotyczącego absencji wyborczej, duża część prób może dawać nieprawidłowe oszacowania. Cóż z tego więc, że nasz schemat losowania średni rzecz biorąc daje dobre wyniki skoro my dobierzemy jedną próbę i ona włśnie chybi?!      
+Omówiliśmy już wstępnie dobór losowy respondentów do badania sondażowego i wiemy, że wyniki z prób przeciętnie powinny "trafiać w punkt". Pozostaje jednak problem błędów. Jak zauważylimy na przykładzie sondażu dotyczącego absencji wyborczej, duża część prób może dawać nieprawidłowe oszacowania. Cóż z tego więc, że nasz schemat losowania średnio rzecz biorąc daje dobre wyniki skoro my dobierzemy jedną próbę i ona włśnie chybi?!      
 Przeciętnie dobra celność to za mało. Schemat losowania powinien dodatkowo gwarantować, że dla przeważającej większości prób oszacowania badanego parametru populacji będą bardzo bliskie rzeczywistym wartościom. Innymi słowy ryzyko popełnienia dużego błędu powinno byc jak najmniejsze. Próby uzyskane przy pomocy schematu spełniającego powyższe warunki nazwiemy reprezentatywnymi.      
-Zagadnienie błędu oszacowań uzyskiwanych z prób losowych omówimy na nawym przykładzie badania sondażowego. Będzie ono dotyczyło poziomu poparcia w naszej przykładowej populacji dla partii X.
+Zagadnienie błędu oszacowań uzyskiwanych z prób losowych omówimy na nowym przykładzie badania sondażowego. Będzie ono dotyczyło poziomu poparcia w naszej przykładowej populacji dla partii X.      
+W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu w kolumnie “Glosowanie” zamiast wartości -1  teraz będziemy analizowali występowanie wartości 1, czyli glosowania na partię X. Zwiększymy również liczbę respondentów - z 2 do 6. Tak samo jak wcześniej zastosujemy jednak losowanie proste bez zwracania i technikę CAPI. Pytanie w kwestionariuszu będzie natomiast brzmiało: "__Gdyby wybory do sejmu odbywały się w najbliższą niedzielę to czy zagłosowałby/ałaby Pan/i na partię X?__"    
 
-### Tabela 8.1. Rozkład miejsca zamieszkania i preferencji wyborczych w populacji
+### Tabela 8.1. Rozkład miejsca zamieszkania i odpowiedzi na pytanie dotyczące głosowania na pratię X w przykadowej populacji.
 
 |       | Nie pójdę na wybory| Nie| Tak| RAZEM|
 |:------|-------------------:|---:|---:|-----:|
 |Miasto |                   6|   1|   5|    12|
 |Wieś   |                   4|   2|   2|     8|
 |RAZEM  |                  10|   3|   7|    20|
-
-W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu w kolumnie “Glosowanie” zamiast wartości -1  teraz będziemy analizowali występowanie wartości 1, czyli glosowania na partię X. Będziemy również dobierać nie 2, a 6 obywateli do próby. Tak samo jak wcześniej zastosujemy jednak losowanie proste bez zwracania i technikę CAPI. Pytanie w kwestionariuszu będzie natomiast brzmiało: "Gdyby wybory do sejmu odbywały się w najbliższą niedzielę to czy zagłosowałaby/łby Pani/an na partię X"    
 
 Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby dobrane przy użyciu naszego nowego schemat losowania. Ponieważ będziemy dobierali 6 respondentów więc możliwych jest 7 wyników:   
 
@@ -436,9 +435,10 @@ Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby do
   6. (X, nX, xX, nX, nX, nX) => 17% (1/6)  
   7. (nX, nX, nX, nX, nX, nX) => 0% (0/6)  
 
-gdzie X oznacza "tak, oddałabym/łbym głos na partię X", a nX oznacza "nie, oddałabym/łbym głos na inną partię lub w ogóle nie posza/edł na wybory".   
+gdzie X oznacza "tak, oddałabym/łbym głos na partię X", a nX oznacza "nie, oddałabym/łbym głos na inną partię lub w ogóle nie posza/edł na wybory".    
+Zwróćmy uwagę, że nasze oszacowania dotyczą poparcia wśród wszystkich obywateli, a nie tylko wyboróc. Takie rozwiązanie zastosujemy dla uproszczenia dalszych rozważań. Zazwyczaj jednak podstawę procentowania w polskich sondażach dotyczących preferencjji wyborczych stanowi zbiorowość wyborów, więc osób deklarujących udział w wyborach, a nie wszyskich obywateli. O problemach związanych z podstawą procentowania w sondażach warto przeczytać [na naszej stronie internetowej](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/populacja-operat-losowania-i-podstawa-procentowania/). 
 
-Nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15=2,7907 &times; 10<sup>7</sup> różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondantów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2=38 próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mogłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3=1026 trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6=8,3722 &times; 10<sup>6</sup> sześcioosobowych próbach, co potwierdzają obliczenia w programie R.
+Ogólnie rzcz biorąc nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15= różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondantów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2= próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mogłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3= trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6= sześcioosobowych próbach, co potwierdzają obliczenia w programie R.
 
 
 ```
@@ -470,35 +470,36 @@ Nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15=2,7907 &times; 1
 |       19|     8372160|
 |       20|     8372160|
 
-Wiemy już w ilu próba wystąpi każdy obywatel. Zastanówmy się więc teraz, z jaką częstotliwością będą występowały poszczególne oszacowania z próby, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100% (6/6), ile takich, w których poparcie dla parti X wyniesie 83% (5/6) itd. Odpowiedź na to pytanie można uzyskać na dwa sposoby. Albo stosując proste, ale wymagające dużego skupienia, obliczenia na papierze albo stosując mniej obciążające, ale za to żmudne, obliczenia na komputerze.      
-Zacznijmy od obliczeń na papierze. Zastanówmy się, ile może być takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przykładowo może to być próba (X, X, X, X, X, nX). Narazie rozróżniamy tylko, czy respondenci popierają partię "X" czy też nie "nX". Losowanie tego rodzaju próby przeprowadzimy w następujący sposób. Pierwszego respondenta X dobieramy spośród wszystkich osób popierających partię X w populacji - lącznie jest ich 7. Potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających X, potem trzeciego respodenta dobieramy spośród pozostałych 5 osób popierających X, itd aż dochodzimy do szóstego respondenta. Dobierzemy go z innej grupy, osób nie popierających X (nX) - w populacji jest ich 13. Ostatecznie więc liczba prób, dla których preferencje układają się w kolejności (X, X, X, X, X, nX), jest równa 7\*6\*5\*4\*3\*13=3,276 &times; 10<sup>4</sup>. No tak, ale my chcemy wiedzieć, ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich, w których osoba nX ( niepopierająca X) została wylosowana jako ostatnia. Innymi słowy chcemy się dowiedzieć, kto i w jakim układzie "wpadł" do tych prób. Żeby się tego dowiedzieć musimy zauważyć, że obywatel deklarujący nX może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli może on zostać ustawiony na sześć sposobów w próbie. Innymi słowy każda próba typu (X, X, X, X, X, nX) ma swoich pięć odpowiedników, w których występują ci sami obywatele X w tej samej kolejności i tylko obywatel nX "przeskakuje" między nimi. Ostatecznie więc liczba prób dających 83,3% (5/6) poparcia dla partii X wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=1,9656 &times; 10<sup>5</sup>.     
+Wiemy już w ilu próbach wystąpi każdy obywatel. Teraz zastanówmy się, z jaką częstotliwością występują poszczególne wyniki, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100% (6/6), ile takich, w których poparcie dla parti X wyniesie 83% (5/6) itd. Odpowiedź na to pytanie można uzyskać na dwa sposoby. Albo stosując proste, ale wymagające dużego skupienia, obliczenia na papierze albo stosując mniej obciążające i szybsze obliczenia na komputerze.      
+Zacznijmy od obliczeń na papierze. Zastanówmy się, ile może być takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przykładowo preferencje w nich mogą się ułożyć w następującej kolejności (X, X, X, X, X, nX). Losowanie tego rodzaju próby przeprowadzimy w następujący sposób. Pierwszego respondenta X dobieramy spośród wszystkich osób popierających partię X w populacji - lącznie jest ich 7. Potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających X, potem trzeciego respodenta dobieramy spośród pozostałych 5 osób popierających X, itd aż dochodzimy do szóstego respondenta. Dobierzemy go z innej grupy, osób nie popierających X (nX). W populacji jest ich 13. Ostatecznie więc liczba prób, dla których preferencje układają się w kolejności (X, X, X, X, X, nX), jest równa 7\*6\*5\*4\*3\*13=. No tak, ale my chcemy wiedzieć, ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich, w których osoba nX ( niepopierająca X) została wylosowana jako ostatnia. Żeby się tego dowiedzieć musimy zauważyć, że obywatel deklarujący nX może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli może on zostać ustawiony na sześć sposobów w próbie. Innymi słowy każda próba typu (X, X, X, X, X, nX) ma swoich pięć odpowiedników, w których występują ci sami obywatele X w tej samej kolejności i tylko obywatel nX "przeskakuje" między nimi. Ostatecznie więc liczba prób dających 83,3% (5/6) poparcia dla partii X wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=.     
 A ile będzie prób, w których poparcie dla partii X wynosi 66,7% (4/6)? Podobnie jak poprzednio, zacznijmy od przykładowej kombinacji odpowiedzi (X, X, X, X , nX, nX). Dokładnie w tej kolejności preferencje możemy mieć w 7\*6\*5\*4\*13\*12=131040 próbach. Teraz zastanówmy się, na ile sposobów możemy “ustawić” dwie preferencje nX na sześciu miejscach (alternatywnie można się zastanawiać, na ile sposobów ustawić 4 preferencje X, ale wynik będzie dokłdnie taki sam).     
-Załużmy, że preferencje nX otzymaliśmy od obywatela 7 i 8 - dokładnie w tej kolejności. Mamy więc próbę (X,X,X,X,7,8). Na ile sposobów obywatele 7 i 8 moga "przeskoczyć" innych respondentów, jednocześnie pozostając w takim samym układzie względem siebie? Jeżeli 7 zajmie pierwsze miejsce to 8 może zająć drugie, trzecie, czwarte, ..., szóste. Czyli jeżeli 7 zjamie pierwsze miejsce to 8 może zając 5 pozostałych. Idąc dalej tym tokiem myślenia  możemy napisać, że:        
+Załóżmy, że preferencje nX otzymaliśmy od obywatela 7 i 8 - dokładnie w tej kolejności. Mamy więc próbę (X,X,X,X,7,8). Na ile sposobów obywatele 7 i 8 moga "przeskoczyć" innych respondentów, jednocześnie pozostając w takim samym układzie względem siebie? Jeżeli 7 zajmie pierwsze miejsce to 8 może zająć drugie, trzecie, czwarte, ..., szóste. Czyli jeżeli 7 zjamie pierwsze miejsce to 8 może zając 5 pozostałych. Idąc dalej tym tokiem myślenia  możemy napisać, że:        
+
   * jeżeli 7 zajmuje pierwsze miejsce to 8 może zająć 5 pozostałych;
   * jeżeli 7 zajmuje drugie miejsce to 8 może zająć 4 pozostałych;
   * jeżeli 7 zajmuje trzecie miejsce to 8 może zająć 3 pozostałych;
   * jeżeli 7 zajmuje czwarte miejsce to 8 może zająć 2 pozostałych;
   * jeżeli 7 zajmuje piąte miejsce to 8 może zająć 1 pozostałe;     
  
-Mamy więc ostatecznie 5\+4\+3\+2\+1=15 różnych układów dla próby (X,X,X,X,7,8) Pamiętajmy, że poza 7,8 to tylko jedna z 13\*12=156 par dających dwie preferencje nX w próbie (inna może byc para 8,7). Na każdą z nich przypada 7\*6\*5\*4= 840 układów respondentów o preferencjach (X,X,X,X). Ostateczenie więc prób dla których szacowane popracie dla partii X wyniesie 66,7% (4/7) jest (7\*6\*5\*4)\*(13\*12)\*15=1,9656 &times; 10<sup>6</sup>    
-Na powyższy problem można też popatrzeć inaczej. Wystarczy zauważyć, że dla dwóch preferencji mamy do przydzielenia łącznie 6 miejsc. Pierwsza z preferencji może zając jedno miejsce z 6, a druga jedno z 5 pozostałych. Łącznie możemy więc wyróżnić 6\*5=30 różnych ich ustawień. Ale uwaga! Pamiętajmy , że kolejnośc respondentów musi pozostać niezmieniona. Jeżeli najpierw dibieramy obywatela 7, a potem 8 to zachowamy próbę (7,_,_,_,_,8) i odrzucimy (8,_,_,_,_,7). Musimy się pozbyć wszyskich "duplikatów". Wynika z tego, że ostatecznie różnych ustawień dla respondentów 7 i 8 będzie (6\*5)/2=15.     
-A co się stanie z próbami, w których poparcie dla partii X wynosi 50% (3/6). Na podobnej zasadzie jak wcześniej możemy dobrać (7\*6\*5)\*(13\*12\*11)=3,6036 &times; 10<sup>5</sup> prób z takim wynikiem o ustalonej kolejności respondnetów. Następnie liczmy na ile sposobów możemy "wymieszać" każdą taką próbę, nie burząc jednoczęnie porządu wśród repondentów o prefenrencjach X oraz nX oddzielnie. Pierwsza z preferencji nX może zająć jedno z 6  miejsc, druga jedno z pozostałych 5, trzecia jedno z pozostałych 4 - łącznie 6\*5\*4=120. Musimy już tylko pozbyć się "duplikatów". Trzy preferencje nX można potencjalnie ustawić na 3\*2\*1=6 sposobów. Nas interesuje tylko jeden z nich - nie zmieniamy kolejności preferencji. Czyli respondentów nX można "ustawić" nie na 6\*5\*4=120 tylko na (6\*5\*4)/6=20. Szacowana poparcie dla partii X na poziomie 50% (3/6) wystąpi więc w (7\*6\*5)\*(13\*12\*11)\*(6\*5\*4)/6=7,2072 &times; 10<sup>6</sup>
+Ostatecznie otrzymujemy więc 5\+4\+3\+2\+1= różnych wersji początkowego układu preferencji (X,X,X,X,7,8) Pamiętajmy, że poza 7,8 to tylko jedna z 13\*12= par dających dwie preferencje nX w próbie (inna może byc para 8,7). Na każdą z nich przypada 7\*6\*5\*4=  układów respondentów o preferencjach (X,X,X,X). Ostateczenie więc prób dla których szacowane popracie dla partii X wyniesie 66,7% (4/7) jest (7\*6\*5\*4)\*(13\*12)\*15=    
+Na powyższy problem można też popatrzeć inaczej. Wystarczy zauważyć, że dla dwóch preferencji mamy do przydzielenia łącznie 6 miejsc. Pierwsza z preferencji może zając jedno miejsce z 6, a druga jedno z 5 pozostałych. Łącznie możemy więc wyróżnić 6\*5= różnych ich ustawień. Ale uwaga! Pamiętajmy , że kolejnośc respondentów musi pozostać niezmieniona. Jeżeli najpierw dobieramy obywatela 7, a potem 8 to znaczy, że akceptujemy próbę (7,.........,8) a odrzucamy (8,.........7). Pozbywamy się w ten sposób wszyskich "duplikatów". W ten spób otrzymujemy (6\*5)/2= róznych ustawień dla pary obywateli 7 i 8, przy zachowaniu ich kolejności. To jest dokładnie tyle ile otrzymaliśmy dla wcześniejszych obliczeń.     
+A co z próbami, w których poparcie dla partii X wynosi 50% (3/6). Na podobnej zasadzie jak wcześniej możemy policzyć, że dla prób, w których preferencje występują w kolejności (X, X, X, nX, nX, nX) jest (7\*6\*5)\*(13\*12\*11)= . Następnie liczmy na ile sposobów możemy "wymieszać" każdą taką próbę, nie burząc jednoczęnie porządu wśród repondentów o prefenrencjach X oraz nX oddzielnie. Pierwsza z preferencji nX może zająć jedno z 6  miejsc, druga jedno z pozostałych 5, trzecia jedno z pozostałych 4 - łącznie 6\*5\*4=. Musimy już tylko pozbyć się "duplikatów". Trzy preferencje nX można potencjalnie ustawić na 3\*2\*1= sposobów. Nas interesuje tylko jeden z nich, bo nie chcemy zmieniać kolejności preferencji. W związku z tym respondentów nX można "ustawić" nie na 6\*5\*4=120 tylko na (6\*5\*4)/6=20 sposobów. Szacowana poparcie dla partii X na poziomie 50% (3/6) wystąpi więc w (7\*6\*5)\*(13\*12\*11)\*(6\*5\*4)/6= próbach.
 
-Oczywiście można też przeprowadzić obliczenia inaczej i zlecić większośc pracy komputerowi. To rozwiązanie nie wymaga od nas rozumienia procesu losowania i dlatego jest mniej interesujące, ale za to pozwoli szybko otrzymać interesujące nas wyniki. Przy pomocy programu R udalo nam sie otrzymać następujące rozwiązanie dla próby sześcioosobowej:
+Obliczenia dla pozostałych wyników otrzymywanych przy użyciu schematu losowania 6 respondentów zostały umieszczone w poniższej tabeli oraz na wykresie.
 
 ### Tabela 8.3. Liczba prób 6-osobowych z danym poparciem
 
-| Poparcie | Obliczenia na papierze                       | Wynik obliczeń R             |
-|----------|----------------------------------------------|------------------------------|
-| 1        | (7\*6\*5\*4\*3\*2)=5040                      | 5040                         |
-| 5/6      | (7\*6\*5\*4\*3)\*(13)\*(6)=196560            | 196560                       |
-| 4/6      | (7\*6\*5\*4)\*(13\*12)\*(6\*5)/2=1965600     | 1965600                      |
-| 3/6      | (7\*6\*5)\*(13\*12\*11)\*(6\*5\*4)/6=7207200 | 7207200                      |
-| 2/6      | (7\*6)\*(13\*12\*11\*10)\*(6\*5)/2=10810800  | 10810800                     |
-| 1/6      | (7)\*(13\*12\*11\*10\*9)\*(6)=6486480        | 6486480                      |
-| 0        | (13\*12\*11\*10\*9\*8)=1235520               | 1235520                      |
-| Razem    | 20\*19\*18\*17\*16\*15=27907200              | 27907200                     |
-
+| Poparcie w próbie | Liczba prób - obliczenia                     | 
+|-------------------|----------------------------------------------|
+| 1                 | (7\*6\*5\*4\*3\*2)=5040                      | 
+| 5/6               | (7\*6\*5\*4\*3)\*(13)\*(6)=196560            | 
+| 4/6               | (7\*6\*5\*4)\*(13\*12)\*(6\*5)/2=1965600     | 
+| 3/6               | (7\*6\*5)\*(13\*12\*11)\*(6\*5\*4)/6=7207200 |
+| 2/6               | (7\*6)\*(13\*12\*11\*10)\*(6\*5)/2=10810800  | 
+| 1/6               | (7)\*(13\*12\*11\*10\*9)\*(6)=6486480        | 
+| 0                 | (13\*12\*11\*10\*9\*8)=1235520               | 
+| Razem             | 20\*19\*18\*17\*16\*15=27907200              |    
+     
 ### Wykres 8.1. Poparcie dla partii X w próbach sześcioosobowych
 ![plot of chunk unnamed-chunk-11](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-11.png) 
 
@@ -558,7 +559,7 @@ Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnic
 Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
 
 ### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
-
+      
 |6 dostępnych respondnetów| 5 dostępnych respondntów | 4 dostępnych respondentów | 3 dostępnych respondnetów| 2 dostępnych respondntów | 1 dostępnych respondentów | 0 dostępnych respondentów |
 |-------------------------|--------------------------|---------------------------|--------------------------|--------------------------|---------------------------|---------------------------|
 |1                        |1                         |1                          |1                         |1                         |1                          |-                          |
@@ -580,37 +581,44 @@ W zaistniałej sytuacji rokład wyników nie jest już taki prosty do przewidzen
 
 
 
-### Tabela 9.2. Rozkład liczby dostpnych respondentów dla schematu losowania 6 osób do próby
-
-[1] FALSE  TRUE FALSE
+### Tabela 9.2. Liczba dostępnych respondentów w próbach sześcioosobowych
 
 
-|Var1 |    Freq| round.prop.table.p6.5.Freq....100.|
-|:----|-------:|----------------------------------:|
-|0    |  665280|                                  2|
-|1    | 4561920|                                 16|
-|2    | 9979200|                                 36|
-|3    | 8870400|                                 32|
-|4    | 3326400|                                 12|
-|5    |  483840|                                  2|
-|6    |   20160|                                  0|
+|Liczba dostępnych respondentów | Liczba prób| Procent prób|
+|:------------------------------|-----------:|------------:|
+|0                              |      665280|         2,38|
+|1                              |     4561920|        16,35|
+|2                              |     9979200|        35,76|
+|3                              |     8870400|        31,79|
+|4                              |     3326400|        11,92|
+|5                              |      483840|         1,73|
+|6                              |       20160|         0,07|
+|Razem                          |    27907200|       100,00|
 
 Jak widać tylko dla znikomej częśći prób liczba dostępnych respondnetów wyniesie 6. Większość będzie zawierała nie więcej niż 2. W tej systuacji oczywiste jest, że rozkład wyników z prób będzie inny niż poprzednio, gdy dostępni byli wszyscy respondenci. Zanim przystąpimy do wyznaczani rozkładu musimy ustalić, że próby, w których wszyscy respondenci dmówili wzięcia udziału w badaniu musimy odrzucić. Nie da się na ich podstawie określić, jakie może być poparcie dla partii X. natomiast w naszej zbiorowości prób pozostawymi jednoosobowe próby dla których oszacowanie poparcia może wynieść 0% lub 100%. Zobaczmy jak w takim razie rozkłdają się wyniki.
 
+### Tabela 9.3. Liczba dostępnych respondentów w próbach sześcioosobowych
+
+|Poparcie w próbie | Liczba prób| Procent prób|
+|:-----------------|-----------:|------------:|
+|0                 |    12700800|        46,62|
+|16,67             |        8640|         0,03|
+|20                |      259200|         0,95|
+|25                |     1900800|         6,98|
+|33,33             |     4762800|        17,48|
+|40                |      172800|         0,63|
+|50                |     4989600|        18,32|
+|66,67             |      950400|         3,49|
+|100               |     1496880|         5,49|
+|Razem             |    27241920|       100,00|
+
+Łącznie prób sześcioosobowych, w których dostępny jest przynajmniej 1 respondent jest , a więc mniej niż poprzednio.
+
 ### Wykres 9.1. Rozkład poparcia partii X w prónach 6 osobowych przy niepełnej realizacji (bez mieszkańców miast)
 
+![Niepełna realizacja](Losowanie_wielu_prob/niepelna_prealizacja.png)
 
-```
-## [1] 0
-```
-
-```
-## [1] 20
-```
-
-![plot of chunk unnamed-chunk-13](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-13.png) 
-
-Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Nistety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi ....
+Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Nistety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi 0,25.
 Nie jest to zgodne z tym co dzieje się w populacji. Możemy więc powiedzieć, że próba jest obciążona.
 A jak układa się bład próby, na ila wynik próby różni sie o przeciętnych wyników w próbie
 
