@@ -48,11 +48,11 @@ __Zadania 2:__
 
   1. Wymień trzy badania na próbach przeprowadzone przez instytucje państwowe  i podaj link do ich wyników lub raportu. Mogą to być badania z roku 2014, ale także wcześniejszych lat. 
 
-L.p.          |Nazwa instytucji | Tytuł badania  | Link do strony z raportem 
---------------|-----------------|----------------|----------------------------
-1.            |                 |                |
-2.            |                 |                |
-3.            |                 |                |
+L.p.          |Nazwa instytucji publikującej wyniki | Tytuł badania  | Link do strony z raportem 
+--------------|-------------------------------------|----------------|----------------------------
+1.            |                                     |                |
+2.            |                                     |                |
+3.            |                                     |                |
 
 # 3. Przykłady prób
 
@@ -61,7 +61,7 @@ Weźmy inny, mniej dramatyczny przykład. Wyobraźmy sobie, że chcemy ugotować
 
 __Zadania 3:__      
 
-  1. Podaj przykład z życia codziennego badania na próbie (np. badanie ilości soli w zupie). 
+  1. Podaj przykład badania na próbie, które można przeprowadzić w naszym codziennym życiu (np. badanie ilości soli w zupie). 
 
 L.p.          |Czego dotyczy badanie? | Co jest próbą?  
 --------------|-----------------------|----------------
@@ -88,26 +88,28 @@ W dalszej części kursu pokażemy jak prawidłowo zdefiniować populację, jak 
 
 __Zadania 4:__      
 
-  1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?
+  1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?    
+    + TAK
+    + NIE     
   2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poniższe pytania:     
     a. Jaki procent mieszkańców wsi popiera ?    
     b. Jaki procent mieszkańców miasta nie pójdzie na wybory?    
     c. Jaki procent osób które nie popierają partii X mieszka w mieście?
 
-# 5. Problem badawczy -> populacja -> technika
+# 5. Problem badawczy -> populacja -> technika realizacji badania
 Co powinien zrobić każdy prawdziwy sondażysta przed rozpoczęciem badania? Powienien odpowiedzieć sobie na  trzy podstawowe pytania.   
 
 1.  **Jak zdefiniować problem badawczy?**     
 
-W przypadku badań sondażowych to pytanie możemy uściślić w następujący sposób: jaką cechę naszej zbiorowości chcemy zmierzyć. Co rozumieć przez cechę w tym przypadku? Opisując duża zbiorowość musimy zdecydować się na jakiś kompromis i uogólnienia. Sondaż nie odpowie nam na pytanie, jak zachowują się poszczególni mieszkańcy Polski. Możemy natomiast za jego pomocą określić, jak zachowują się przeciętnie albo jak zachowuje się większość z nich. Sondaż pozwala więc badać parametry, cechy, populacji takie jak średnia (np. waga) lub odsetek osób w pewien sposób wyróżnionych(np. odsetek osób uczestniczących w wyborach). 
+W przypadku badań sondażowych to pytanie możemy uściślić w następujący sposób: jaką cechę naszej zbiorowości chcemy zmierzyć. Co rozumieć przez cechę w tym przypadku? Opisując duża zbiorowość musimy zdecydować się na jakiś kompromis i uogólnienia. Sondaż nie odpowie nam na pytanie, jak zachowują się poszczególni mieszkańcy Polski. Możemy natomiast za jego pomocą określić, jak zachowują się przeciętnie albo jak zachowuje się większość z nich. Sondaż pozwala więc badać parametry, cechy, populacji takie jak średnia (np. waga) lub odsetek osób w pewien sposób wyróżnionych(np. odsetek osób uczestniczących w wyborach).     
 Najczęściej sondaże realizuje się, aby poznać preferencje wyborcze obywateli. Problemem badawczym może być jednak także coś innego. Wiele sondaży służy ocenie  przeciętnych dochody, wydatków, a także preferencji konsumenckich w danej grupie społecznej.   
 Określenie problemu badawczego stanowi punkt wyjścia do następego pytania.
 
 2.  **Jak zdefiniować badaną populację? O jakiej zbiorowości chcemy wnioskować?**   
 
 Załóżmy, że interesuje nas populacja Polaków. Czy to znaczy, że będziemy badać wszystkich ludzi na świecie posiadających obywatelstwo polskie albo mówiących po polsku? A może tylko tych spośród nich, którzy mieszkają w kraju? Albo ogólnie mieszkańców Polski niezależnie od tego, czy posiadają obywatelstwo czy też nie?    
-Musimy również zadecydować, czy interesują nas ludzie w każdym wieku, czy może tylko pełnoletni z prawem do głosowania (18+)? Lub też osoby w wieku produkcyjnym i poprodukcyjnym (15+)? 
-Najczęściej sondaże w Polsce obejmują populację pełnoletnich obywateli zamieszkałych na terenie kraju. Istnieją jednak badania społeczne dla których, ze względu na poruszaną problematykę, populacje definiuje się zupełnie inaczej. I tak istnieją badania zbiorowości osób w wieku dokładnie 15 ukończonych lat, albo zbiorowości pełnoletnich obywateli województwa małopolskiego.
+Musimy również zadecydować, czy interesują nas ludzie w każdym wieku, czy może tylko pełnoletni z prawem do głosowania (18+)? Lub też osoby w wieku produkcyjnym i poprodukcyjnym (15+)?       
+Najczęściej sondaże w Polsce obejmują populację pełnoletnich obywateli zamieszkałych na terenie kraju. Istnieją jednak badania społeczne dla których, ze względu na poruszaną problematykę, populacje definiuje się zupełnie inaczej. I tak istnieją badania zbiorowości osób w wieku 15 lat, zbiorowości pełnoletnich obywateli województwa małopolskiego itp.      
 Określenie problemu badawczego i zdefiniowanie populacji to nie wszystko. Trzeba bowiem jeszcze dostosować do nich sposób w jaki pozyskiwane będą dane od respondentów.
 
 3.  **Jaką techniką zrealizować badanie?**   
@@ -121,7 +123,7 @@ Trudno sobie bowiem wyobrazić badanie dochodów mieszkańców Polski przeprowad
 Wywiady "bezpośrednie" są realizowane w "terenie", najczęściej w miejscu zamieszkania losowo dobranych respondentów. Pozwalają on dotrzeć do największej grupy ludności, nieosiągalnej poprzez połączenie telefoniczne, bądź przez Internet. Tego typu technikę często stosuje się w badaniach ogólnopolskich, dotyczących populacji mieszkańców całego kraju. Metoda bezpośrednia wiąże się z dużymi kosztami oraz długim okresem realizacji. Ankieterzy musza bowiem dotrzeć osobiście do wszystkich respondentów. Czasami pokonują w tym celu kilkadziesiąt kilometrów. Zdarza się bowiem, że  odległości między poszczególnymi respondentami są bardzo duże. Co więcej, respondenci bywają nieuchwytni i w związku z tym, aby się z nimi skontaktować, trzeba wielokrotnie ponawiać wizyty. Sondaże bezpośrednie wymagają więc dużych nakładów pracy. Mają one jednak jedną poważną zaletę. Są nią ankieterzy. Dzięki nim respondenci chętniej biorą udział w badaniu. Odsetkiem odmów wzięcia udziału w sondażach realizowanych metodą bezpośrednią jest stosunkowo niski. Respondentom trudniej jest odmówić ankieterowi, który odwiedza ich bezpośrednio, niż takiemu który kontaktuje się z nimi telefonicznie.       
 
 Wywiady telefoniczne to zupełnie inna bajka. Obecnie jest to jedna z najczęściej wykorzystywanych metod zbierania danych. Jej popularność wynika  przede wszystkim z niskich kosztów oraz krótkiego czasu realizacji. Łatwiej jest bowiem przeprowadzić 1000 rozmów telefonicznych niż zorganizować 1000 spotkań z respondentami. Sami jednak wiemy, jak takie badania wyglądają w praktyce: „przepraszam, nie mam czasu” albo „już brałem udział w tym badaniu” przychodzi nam przez telefon dużo łatwiej, niż podobne zachowanie w bezpośredniej konfrontacji z ankieterem. Nic więc dziwnego, że w tego rodzaju badaniach tylko co dziesiąty telefon kończy się zrealizowanym wywiadem. Dla porównania technika bezpośrednia pozwala zrealizować wywiad z co trzecią dobraną do próby osobą.      
-Poważnym ograniczeniem badań telefonicznych jest to, że mogą one być realizowane tylko w odniesieniu do populacji, której członkowie posiadają telefony. CO więcej Wywiady telefoniczne  musza być w miarę krótkie ponieważ respondenci nie lubią długo "wisieć" na telefonie. W związku z tym konieczne jest również ograniczenie liczby pytań w ankiecie, a co za tym idzie ograniczenie liczby możliwych do przeprowadzenia analiz.    
+Poważnym ograniczeniem badań telefonicznych jest to, że mogą one być realizowane tylko w odniesieniu do populacji, której członkowie posiadają telefony. Co więcej wywiady telefoniczne  musza być w miarę krótkie ponieważ respondenci nie lubią długo "wisieć" na telefonie. W związku z tym konieczne jest również ograniczenie liczby pytań w ankiecie, a co za tym idzie ograniczenie liczby możliwych do przeprowadzenia analiz.    
 
 Ostatnia grupa technik to wspomniane wcześniej ankiety internetowe. Nie chodzi tu o sondy umieszczane na stronach WWW, ale o badania, w których sondażysta wybiera respondentów np. wysyłając im maile z kluczem do ankiety umieszczonej w sieci. Tego typu techniki budzą wiele kontrowersji, szczególnie gdy są wykorzystywane do wnioskowania o populacjach, takich jak mieszkańcy Polski. Wiadomo bowiem, że nie wszyscy członkowie takiej zbiorowości posiadają komputer i wiedzą jak korzystać z Internetu. Innymi słowy jest to technika wykluczająca duże grupy społeczne, prawdopodobnie większe niż w przypadku badania telefonicznego. W związku z tym trudno jest mówić o reprezentatywności wyników w tym przypadku. Powodem dla którego realizuje się tego rodzaju badania jest koszt, niewątpliwie niższy niż w przypadku wywiadów bezpośrednich czy telefonicznych.   
 
@@ -137,10 +139,10 @@ Aby łatwiej rozróżniać poszczególne metody zbierania danych sondażyści, n
 
 Szczególnie istotną cechą różnicującą opisane powyżej techniki jest tak zwany poziom realizacji próby (nazywany również poziomem response-rate), czyli odsetek osób wytypowanych przez nas do udziału w badaniu, z którymi faktycznie udało się przeprowadzić wywiad. Warto wiedzieć, że praktycznie nigdy nie występuje sytuacja, w której sondażystom udaje się zapytać o opinię wszystkie osoby dobrane przez nich do próby. Dzieje się tak z kilku powodów. Po pierwsze, nie do wszystkich osób udaje się dotrzeć/dodzwonić. Powodem mogą być choroby, wakacje, delegacje służbowe itp. Ponadto część osób, do których uda się dotrzeć, z różnych przyczyn odmawia wzięcia udziału w badaniu.  Oba te czynniki są dodatkowym źródłem błędu w badaniu i celem każdego dobrego badacza jest ich zminimalizowanie. Jest to kolejny powód dla które technika zbierania danych ma tak istotne znacznie.     
 
-Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przykład historyczny. W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadził w USA badanie przedwyborcze. Do ludzi wybranych z książek telefonicznych i list rejestracyjnych samochodów wysłano DZIESIĘĆ MILIONÓW kart pocztowych, pytając, na kogo zamierzają oddać głos w wyborach prezydenckich – na republikanina Alfa Landona czy demokratę Franklina Roosevelta? Odpowiedziało ponad dwa miliony ludzi, wskazując że nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mogłoby się wydawać, że przebadanie tylu osób jest dużo bardziej wiarygodne i miarodajne niż przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory dość drastycznie zweryfikowały wnioski z tych badań – nowym prezydentem został Franklin Roosevelt, mając największą przewagę głosów w historii – otrzymał 61%.
-Dla porównania w tym samym czasie przedwyborczy sondaż, przeprowadził również  George Gallup, który trafnie przewidział wyniki wyborów. W swoim badaniu posłużył się on jednak niewielką próbą kwotową (czyli opartą na znajomości określonych cech populacji, np. płeć, dochód, wiek, miejsce zamieszkania itp.).
-Na czym więc polegał problem? Na całkowitym braku kontroli nad badaną próbą. Na pytanie zadane przez „Literary Digest” odpowiedziało zaledwie 22% wszystkich zapytanych osób. Jak się okazało karty w większości odsyłali republikanie. Drugi problem polegał na nieprawidłowym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i właścicieli samochodów. Taka konstrukcja próby dawała nadreprezentację zamożnych wyborców, czyli pominięcie ludzi biednych, którzy w większości głosowali na „New deal” Roosevelta. 
-Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Analizując wyniki badań sondażowych należy zawsze zwracać uwagę na sposób definiowania populacji oraz technikę realizacji badania. Definicja zbiorowości generalnej powinna zawierać informacje o: 
+Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przykład historyczny. W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadził w USA badanie przedwyborcze. Do ludzi wybranych z książek telefonicznych i list rejestracyjnych samochodów wysłano DZIESIĘĆ MILIONÓW kart pocztowych, pytając, na kogo zamierzają oddać głos w wyborach prezydenckich – na republikanina Alfa Landona czy demokratę Franklina Roosevelta? Odpowiedziało ponad dwa miliony ludzi, wskazując że nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mogłoby się wydawać, że przebadanie tylu osób jest dużo bardziej wiarygodne i miarodajne niż przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory dość drastycznie zweryfikowały wnioski z tych badań – nowym prezydentem został Franklin Roosevelt, mając największą przewagę głosów w historii – otrzymał 61%.        
+Dla porównania, w tym samym czasie, przedwyborczy sondaż przeprowadził również  George Gallup, który trafnie przewidział wyniki wyborów. W swoim badaniu posłużył się on jednak niewielką próbą kwotową (czyli opartą na znajomości określonych cech populacji, np. płeć, dochód, wiek, miejsce zamieszkania itp.) zrealizowaną technika bezpośrednią.     
+Na czym więc polegał problem „Literary Digest”? Na całkowitym braku kontroli nad próbą. Na pytanie zadane przez magazyn odpowiedziało zaledwie 22% wszystkich zapytanych osób. Jak się okazało karty w większości odsyłali republikanie. Drugi problem polegał na nieprawidłowym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i właścicieli samochodów. Taka konstrukcja próby dawała nadreprezentację zamożnych wyborców, czyli pominięcie ludzi biednych, którzy w większości głosowali na „New deal” Roosevelta.     
+Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Analizując wyniki badań sondażowych należy zawsze zwracać uwagę na technikę realizacji oraz sposób definiowania populacji. Prawidłowa definicja zbiorowości generalnej powinna zawierać informacje o:
 
 * położeniu w przestrzeni zbiorowości (mieszkańcy Polski, mieszkańcy Poznania itp.)  
 * wieku respondentów (pełnoletni Polacy, osoby w wieku 15 i więcej ukończonych lat itp.)   
@@ -148,40 +150,38 @@ Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniow
 
 __Zadania 5:__      
 
-  1. Wymień trzy firmy zajmujące się badaniem rynku i opinii społecznej, które w 2014 r. prowadziły badania sondażowe w Polsce i podaj link do strony z raportami badawczymi tej firmy: 
-  
+  1. Wymień trzy firmy zajmujące się badaniem rynku i opinii społecznej, które w 2014 r. prowadziły badania sondażowe w Polsce. Podaj link do strony, na której firmy te publikują swoje raporty.     
+
 L.p.          | Nazwa firmy badawczej| Link do strony z raportem?  
 --------------|----------------------|----------------
 1.            |  Nazwa firmy         | Raport          
 2.            |  Nazwa firmy         | Raport     
 3.            |  Nazwa firmy         | Raport     
 
-  2. Masz następujący problem badawczy. Musisz zbadać poziom czytelnictwa tygodnika Na Straży Sondaży. Ukazuje się wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.   
+  2. Odpowiedz na pytania związane z następującym problemem badawczym. Zamierzasz zmierzyć poziom czytelnictwa tygodnika "_Na Straży Sondaży_". Ukazuje się on wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.   
     a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoś staje się czytelnikiem? Jak często trzeba czytać żeby stać się czytelnikiem? Ile trzeba przeczytać żeby stać się czytelnikiem?)   
-    b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojewódzkich czy także w innych miejscach?)   
-    c. Zapisz pytanie o czytelnictwo (maksymalnie dwa zdania):........    
-    d. Czy twoim zdaniem pytanie o czytelnictwo może być uznane za drażliwe?
-  3. W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI - Computer Assisted Telephone Interview) na ogólnopolskiej, reprezentatywnej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.   
-    a. Zdefiniuj badaną populację.
-    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2013 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2013 r. lub dla późniejszej daty przed końcem 2013 r.)
-    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie
-    d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.
-    
-  4. Uniwersytecki Zespół Na Straży Sondaży zamówił badanie dotyczące popularności strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodziło oszacowanie odsetka osób w wieku 18-35 lat zamieszkałych w Polsce, które w ciągu ostatniego miesiąca zapoznały się z treścią (przeczytały cały lub prawie cały) przynajmniej jednego artykułu na stronie. Badanie zostało przeprowadzone metoda CAWI przez firmę “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spośród 50 tys. osób które dobrowolnie zarejestrowały się do bazy internetowej firmy i za drobna opłatą zgadzają się odpowiadać na pytania w różnych ankietach. Wiadomo również, ze osoby do badania zostały dobrane w ten sposób, aby rozkład płci wieku oraz wielkości miejscowości deklarowanego zamieszkania był zgodny z danymi podawanymi przez GUS na temat mieszkańców Polski. Odpowiedz na pytania związane z tym badaniem:       
-    a) Czy populacja osób z posiadających dostęp do Internetu (korzystających z Internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkańców Polski?            
+    b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojewódzkich czy także w innych miejscach?)    
+  3. W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI) na ogólnopolskiej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.   
+    a. Zdefiniuj badaną populację:..............................................................................................................................................................................................
+    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2013 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2013 r. lub dla późniejszej daty przed końcem 2013 r.):...................     
+    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie:...................................................................................................................................................................................................................................................................................................................................................     
+    d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.  
+      + Tak,............................
+      + Nie,............................
+  4. Uniwersytecki Zespół Na Straży Sondaży zamówił badanie dotyczące popularności strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodziło oszacowanie odsetka osób w wieku 18-35 lat zamieszkałych w Polsce, które w ciągu ostatniego miesiąca zapoznały się z treścią (przeczytały cały lub prawie cały) przynajmniej jednego artykułu na stronie. Badanie zostało przeprowadzone metoda CAWI przez firmę “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spośród 50 tys. osób które dobrowolnie zarejestrowały się do bazy internetowej firmy i za drobna opłatą zgadzają się odpowiadać na pytania w różnych ankietach. Wiadomo również, ze osoby do badania zostały dobrane w ten sposób, aby rozkład płci wieku oraz wielkości miejscowości deklarowanego zamieszkania był zgodny z danymi podawanymi przez GUS na temat mieszkańców Polski. Odpowiedz na pytania związane z tym badaniem:
+    a) Czy populacja osób z posiadających dostęp do Internetu (korzystających z Internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkańców Polski?     
       i. Tak;   
-      ii. Nie - Nie wszyscy mieszkańcy Polski mają dostęp do Internetu - sprawdż dane GUS.    
-    b) Czy próba badawcza 917 osób została dobrana z populacji polskich internautów - osób korzystających z Internetu do celów prywatnych (nie związanych z praca zarobkowa, ale np. komunikacją ze znajomymi i rodziną, nauką, czytaniem prasy, graniem, oglądaniem filmów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?         
+      ii. Nie - Nie wszyscy mieszkańcy Polski mają dostęp do Internetu - sprawdź dane GUS.    
+    b) Czy próba badawcza 917 osób została dobrana z populacji polskich internautów - osób korzystających z Internetu do celów prywatnych (nie związanych z praca zarobkowa, ale np. komunikacją ze znajomymi i rodziną, nauką, czytaniem prasy, graniem, oglądaniem filmów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
       i. Tak    
-      ii. Nie - próba została dobrana spośród 50 tys. osób, które same zgłosiły się do udzielania odpowiedzi na pytania ankietowe przez Internet. Choć jest to mało prawdopodobne można sobie wyobrazić, że w próbie mógł znaleźć się  kogoś kto korzysta z Internetu tylko w celach zarobkowych, w tym do wypełniania ankiet za pieniądze. Zgodnie z nasza definicją taka osoba nie jest internautą.     
-    c) Czy badanie zlecone przez Na Straży Sondaży obejmuje popluację polskich internautów.    
-      i. Tak - badanie dotyczy oszacowania odsetka wśród mieszkańców Polski ogółem nie tylko internautów. Musimy jednak pamiętać, że Polscy internauci nie maja   ponieważ pytanie dotyczy  odwiedzania strony “Na straży sondaży”. Nie można odwiedzić strony internetowej nie będąc         
+      ii. Nie - próba została dobrana spośród 50 tys. osób, które same zgłosiły się do udzielania odpowiedzi na pytania ankietowe przez Internet. Choć jest to mało prawdopodobne można sobie wyobrazić, że w próbie mógł znaleźć się  kogoś kto korzysta z Internetu tylko w celach zarobkowych, w tym do wypełniania ankiet za pieniądze. Zgodnie z nasza definicją taka osoba nie jest internautą.    
+    c) Czy badanie zlecone przez Na Straży Sondaży obejmuje populację polskich internautów.    
+      i. Tak - badanie dotyczy oszacowania odsetka wśród mieszkańców Polski ogółem nie tylko internautów. Musimy jednak pamiętać, że Polscy internauci nie maja   ponieważ pytanie dotyczy  odwiedzania strony “Na Straży Sondaży”. Nie można odwiedzić strony internetowej nie będąc    
       ii. Nie.  
     d) Czy badanie zrealizowane przez “Polski Panel Internetowy” obejmuję populacje;   
     e) Czy rozkład płci, wieku i wielkości miejscowości zamieszkania w próbie jest zgodny z rozkładem tych cech w populacji mieszkańców Polski?    
       i. Tak    
-      ii. Nie - rozkład jest zgodny z danymi GUS dotyczącymi populacji mieszkańców Polski, a nie polskich internautów.    
-    
+      ii. Nie - rozkład jest zgodny z danymi GUS dotyczącymi populacji mieszkańców Polski, a nie polskich internautów.        
     
 # 6. Kwestionariusz
 
@@ -199,9 +199,9 @@ W pierwszej grupie aż 30% respondentów wybrało wynalezienie komputera jako na
 
 To jednak nie wszystko. Na sposób udzielania odpowiedzi przez respondentów wpływ ma nie tylko konstrukcja pytań ale także użyty w nich język. Dlatego kwestionariusz powinien odnosić się do rzeczywistości w sposób neutralny, bez sądów czy sugerowania, które odpowiedzi są "dobre".   
 
-Czasami jednak kontrowersje są nie do uniknięcia. Dotyczy to tzw. kwestii drażliwych. Stanowią one poważny problem dla sondażystów. Respondenci raczej niechętnie udzielają odpowiedzi na pytania dotyczące ich intymnych spraw.  Trudno im się przyznać do problemów z nałogami, do niewierności w związku czy popełnionych przestępstw. Zazwyczaj w takich sytuacjach nawet gwarancja anonimowości nie jest wystarczającą "zachętą" dla respondentów, aby udzielać szczerych odpowiedzi.      
+Czasami jednak kontrowersje są nie do uniknięcia. Dotyczy to tzw. kwestii drażliwych. Stanowią one poważny problem dla sondażystów. Respondenci raczej niechętnie udzielają odpowiedzi na pytania dotyczące ich intymnych spraw.  Trudno im się przyznać do problemów z nałogami, do niewierności w związku czy popełnionych przestępstw. Zazwyczaj w takich sytuacjach nawet gwarancja anonimowości nie jest wystarczającą "zachętą", aby udzielać szczerych odpowiedzi.    
 
-Więcej o problemach związanych z kwestiami drażliwymi i sposobach radzenia sobie z nimi możecie przeczytać na naszych stronach stronie:
+Więcej o problemach związanych z kwestiami drażliwymi i sposobach radzenia sobie z nimi możecie przeczytać na naszych stronach:   
 
 1. http://nastrazysondazy.uw.edu.pl/know-how-pytan-o-kwestie-drazliwe-czyli-jak-zachecic-badanych-do-szczerych-odpowiedzi/   
 
@@ -214,7 +214,7 @@ __Zadania 6:__
       i. Tak - generalnie odpowiadali szczerze;   
       ii. Nie - generalnie odpowiadali nieszczerze;   
       iii. Nikt tego nie wie. Może część tak, a część nie.   
-      iv. Jestem dzielna/y i napiszę jakie jest moje własne zdanie na ten temat : ...  
+      iv. Mam własne zdanie: …………………………………………………………………………………………………………..
     b. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.
       i. Tak, ponieważ ...
       ii. Nie. ponieważ ...
@@ -224,55 +224,55 @@ __Zadania 6:__
     d. Czy w badaniu przeprowadzonym przez Internet byłabyś / byłbyś skłonny odpowiadać szczerze na pytania dotyczące seksualności, chorób intymnych lub łamania prawa? Dlaczego? (Pytania pomocnicze: zastanów się, czy ważna w tych kwestiach jest anonimowość i poufność danych, a także, czy w ogóle mówienie na ten temat sprawia Ci jakieś problemy):
       i. Tak, ponieważ ...    
       ii. Nie, ponieważ ...    
-    e. Jaki procent nastolatków w powyższym badaniu zadeklarował, że korzysta z wideo rozmów i rozbiera się w ich trakcie?
+    e. Jaki procent nastolatków, którzy wzięli udział w powyższym badaniu zadeklarował, że korzysta z wideo rozmów i rozbiera się w ich trakcie?
     f. Jaki procent osób które zadeklarowały, że rozbierają się w trakcie wideoczatów do 16 latkowie?    
     g. Jaki procent nastolatków, którzy korzystają z wideo rozmów zadeklarował, że się rozbiera w ich trakcie?    
     h. Czy znając wyniki badania zgodziłabyś/zgodziłbyś się z następującymi określeniami:    
       i. „Nowa plaga w sieci. Rozbierają się na żywo” - TAK / NIE    
-      ii. „Nagie gimnazjalistki w sieci. Nowa plaga w Internecie” - TAK / NIE    
-      iii. “Nowe zjawisko w Internecie. Gizmazjaliści rozbierają się w sieci” - TAK / NIE     
-      i.v “Uwaga na wideoczaty. Niektóre nastolatki występują nago”    
-  1.  Poniżej znajdują się dwa sondaże. Wypełnił je i odpowiedz na pytania:   
-    a. Sondaż 1:   
-      i. Czy gdyby wybory odbyły się w najbliższą niedzielę to wziąłby(ęłaby) Pan(i) w nich udział?   
-      ii. Jeżeli tak, to na jaką jedną partię oddałby/ałaby Pan(i) głos?   
+      ii. „Nagie gimnazjalistki w sieci. Nowa plaga w internecie” - TAK / NIE    
+      iii. “Nowe zjawisko w internecie. Gizmazjaliści rozbierają się w sieci” - TAK / NIE     
+      i.v “Uwaga na wideoczaty. Niektóre nastolatki występują nago” - TAK / NIE     
+  2.  Poniżej znajdują się dwa sondaże. Wypełnił je i odpowiedz na pytania:   
+    a. Sondaż 1:
+      i. Czy gdyby wybory odbyły się w najbliższą niedzielę to wziąłby(ęłaby) Pan(i) w nich udział? ” - TAK / NIE    
+      ii. Jeżeli tak, to na jaką jedną partię oddałby Pan(i) głos?   
       
         1. oddam pusty/nieważny głos;    
-        2. partię X;   
-        3. partię Przyjaciół Demokracji;  
-        4. partię Przyjaciół Otwartości;   
-        5. partię Przyjaciół Społeczeństwa;   
-        6. partię Przyjaciół Środowiska;   
-        7. partię Przyjaciół Uczciwości;   
+        2. na partię X;   
+        3. na partię Przyjaciół Demokracji;  
+        4. na partię Przyjaciół Otwartości;   
+        5. na partię Przyjaciół Społeczeństwa;   
+        6. na partię Przyjaciół Środowiska;   
+        7. na partię Przyjaciół Uczciwości;   
     b. Sondaż 2.
-      i. Proszę określić czy zgadza się Pan/Pani z następującymi stwierdzeniami:   
+      i. Proszę określić, czy zgadza się Pan/Pani z następującymi stwierdzeniami:   
       
-        1. Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć   
-        2. ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze    
-        3. Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu    
-        4. każda rodzina powinna móc liczyć na wsparcie ze strony państwa.     
-      ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii “P”, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin?   
-      iii. Czy gdyby partia “X” brała udział w najbliższych wyborach do Sejmu to jaką jedną partię oddałby Pan(i) głos?
+        1. Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć” - TAK / NIE     
+        2. ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze ” - TAK / NIE     
+        3. Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu” - TAK / NIE     
+        4. każda rodzina powinna móc liczyć na wsparcie ze strony państwa. ” - TAK / NIE     
+      ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii “X”, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin? ” - TAK / NIE        
+      iii. Czy gdyby partia “X” brała udział w najbliższych wyborach do Sejmu to na jaką jedną partię oddałby Pan(i) głos?
 
         1. oddam pusty/nieważny głos;    
-        2. partię X;   
-        3. partię Przyjaciół Demokracji;  
-        4. partię Przyjaciół Otwartości;   
-        5. partię Przyjaciół Społeczeństwa;   
-        6. partię Przyjaciół Środowiska;   
-        7. partię Przyjaciół Uczciwości;  
+        2. na partię X;   
+        3. na partię Przyjaciół Demokracji;  
+        4. na partię Przyjaciół Otwartości;   
+        5. na partię Przyjaciół Społeczeństwa;   
+        6. na partię Przyjaciół Środowiska;   
+        7. na partię Przyjaciół Uczciwości;   
     c. Pytanie do sondaży 1. oraz 2.:     
-      i. Czy w obu sondażach udzieliłaś/eś takiej samej odpowiedzi?    
-      ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów?    
-      
+      i. Czy w obu sondażach wybrałeś taką samą partię? ” - TAK / NIE    
+      ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów? ” - TAK / NIE    
+     
+ 
 # 7. Dobór próby
 
-Mając już określony problem badawczy, wybraną technikę zbierania danych oraz przygotowany, odporny na kwestie wrażliwe, kwestionariusz, możemy przejść do doboru respondentów. W branży sondażowej korzysta się w tym zakresie z różnych rozwiązań, ale tylko jedno jest dobrze opracowane od strony teoretycznej i przy odpowiedniej staranności wykonania pozwala rzetelnie wnioskować o populacji. Dlatego też zajmiemy się tylko nim - jest to dobór losowy. Prosty przykład doboru losowego pozwoli nam zrozumieć mechanikę wnioskowania o dużych populacjach na podstawie małych prób. 
+Mając już określony problem badawczy, wybraną technikę zbierania danych oraz przygotowany, odporny na kwestie wrażliwe, kwestionariusz, możemy przejść do doboru respondentów. W branży sondażowej korzysta się w tym zakresie z różnych rozwiązań, ale tylko jedno jest dobrze opracowane od strony teoretycznej i przy odpowiedniej staranności wykonania pozwala rzetelnie wnioskować o populacji. Dlatego też zajmiemy się tylko nim – mowa o doborze losowym.         
 
-Zacznijmy od tego, że chcąc dobrać próbę z populacji w sposób losowy musimy mieć "spis" wszystkich osób do niej należących. Musimy mieć z czego wybierać. Taka lista nazywana jest "operatem losowania". Powinna ona zawierać nie tylko informację o tym ile osób znajduje się w populacji, ale także jak można się z nimi "skontaktować", czyli np. gdzie mieszkają. Na szczęście w Polsce istnieją przynajmniej dwa takie operaty, które umożliwiają dobieranie w sposób losowy prób sondażowych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji Ludności) zawierający spis wszystkich obywateli Polski oraz osób posiadających prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarządzany przez _Ministerstwo Spraw Wewnętrznych_. Drugim operatem jest __TERYT__ zawierający informację o wszystkich mieszkaniach w Polsce. Za jego pomocą, dobierając mieszkania, można dobierać próby mieszkańców Polski. Rejestr ten prowadzi _Główny Urząd Statystyczny_.       
+Zacznijmy od tego, że chcąc dobrać próbę z populacji w sposób losowy musimy mieć "spis" wszystkich osób do niej należących. Musimy mieć z czego wybierać. Taka lista nazywana jest "__operatem losowania__". Powinna ona zawierać nie tylko informację o tym ile osób znajduje się w populacji, ale także jak można się z nimi "skontaktować", czyli np. gdzie mieszkają. Na szczęście w Polsce istnieją przynajmniej dwa takie operaty, które umożliwiają dobieranie w sposób losowy prób sondażowych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji Ludności) zawierający spis wszystkich obywateli Polski oraz osób posiadających prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarządzany przez _Ministerstwo Spraw Wewnętrznych_. Drugim operatem jest __TERYT__ zawierający informację o wszystkich mieszkaniach w Polsce. Za jego pomocą, dobierając mieszkania, można dobierać próby mieszkańców Polski. Rejestr ten prowadzi _Główny Urząd Statystyczny_.       
 
-Wiemy już czego potrzebujemy, żeby dobrać próbą więc teraz możemy się zastanowić, jak to zrobić. Najlepiej gdy skorzystamy z uproszczonego przykładu. Zacznijmy od problemu badawczego i populacji. Załóżmy, że chcemy oszacować __poziom absencji wyborczej__ w fikcyjnej populacji wyborców zamieszkałych w Polsce składającej się z 20 osób (korzystaliśmy już z niej wcześniej).  Będzie nam zależało na tym, aby dowiedzieć się, jaki odsetek obywateli deklaruje, że nie pójdzie na wybory (wynosi on 50%, ale na chwile o tym zapomnijmy). Żeby oszacować interesujący nas odsetek zastosujemy technikę wywiadu bezpośredniego, w którym zadamy pytanie: "Gdyby w najbliższą niedzielę odbywały się wybory do Sejmu i Senatu, to czy wziął(ęła)by Pan(i) w nich udział?" Zakładamy, że pytanie to nie jest drażliwe i wszyscy respondenci odpowiedzą na nie zgodnie ze swoim sumieniem.       
-
+Wiemy już czego potrzebujemy, żeby dobrać próbą więc możemy się zastanowić, jak to zrobić. Najlepiej gdy skorzystamy z uproszczonego przykładu. Zacznijmy od problemu badawczego i populacji. Załóżmy, że chcemy oszacować poziom absencji wyborczej w (fikcyjnej) populacji pełnoletnich obywateli Polski zamieszkałych w kraju, składającej się z 20 osób (korzystaliśmy już z niej wcześniej).  Będzie nam zależało na tym, aby oszacować, jaki odsetek obywateli deklaruje, że nie pójdzie na wybory (wynosi on 50%). Żeby określić interesującą nas wielkość zastosujemy technikę wywiadu bezpośredniego, w którym zadamy pytanie: "Gdyby w najbliższą niedzielę odbywały się wybory do Sejmu i Senatu, to czy wziął(ęła)by Pan(i) w nich udział?" Zakładamy, że pytanie to nie jest drażliwe i wszyscy respondenci odpowiedzą na nie zgodnie ze swoim sumieniem.       
 
 ```{r 2_populacja, echo=FALSE, include=FALSE}
 # sposob czytania arkuszy Google zaporzyczony ze strony:
@@ -344,7 +344,7 @@ m <- cleanGoogleTable(elem, table=1)
 m<-m[,colnames(m)!="X"]
 ```
 
-### Tabela 7.1. POPULACJA WYBORCÓW (liczba obserwacji)
+### Tabela 7.1. Populacja wyborców (liczba obserwacji)
 ```{r, echo=FALSE, results='asis'}
 poparcie_dla_P<-addmargins(table( m$Miasto_wies, m$Glosowanie ) )
 colnames( poparcie_dla_P)<-c("Nie pójdę na wybory", "Nie", "Tak", "RAZEM")
@@ -352,17 +352,17 @@ row.names( poparcie_dla_P)<-c("Miasto", "Wieś", "RAZEM")
 kable( poparcie_dla_P, format = "markdown")
 ```
 
-W powyższej tabeli rozkład liczebności miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. Żeby dobrać próbę potrzebujemy jeszcze operatu losowania. W naszym przypadku wygląda on następująco:    
+W powyższej tabeli znajduje się rozkład liczebności miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. Żeby dobrać próbę potrzebujemy jeszcze operatu losowania. W naszym przypadku wygląda on następująco:    
 
 ```{r, echo=F, results='asis'}
 kable( m, format = "markdown")
 ```
 
-Operat można pobrać z następującej strony:
+Operat można pobrać ze strony:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
-Dla wyjaśnienia ustalmy, że kolejne kolumny w operacie oznaczają:   
+Dla wyjaśnienia ustalmy, że kolumny w operacie oznaczają:   
 
   * L.p.- liczba porządkowa obywatela;
   * Miasto_wies - miejsce zamieszkania obywatela;
@@ -373,20 +373,18 @@ Dla wyjaśnienia ustalmy, że kolejne kolumny w operacie oznaczają:
     + 0 - pójdę na wybory, ale NIE zagłosuję na partię X;
     + 1 - pójdę na wybory i zagłosuję na partię X.
     
-Nasz problem badawczy dotyczy absencji wyborczej. Interesuje więc nas odsetek osób, które w kolumnie "Glosowanie" mają wartość -1, a wiec na pytanie o to na kogo zagłosują odpowiadają, że nie wybierają się na wybory.     
+Nasz problem badawczy dotyczy absencji wyborczej. Interesuje więc nas odsetek osób, które w kolumnie "Glosowanie" mają wartość -1, czyli na pytanie o to na kogo zagłosują odpowiadają, że nie wybierają się na wybory.     
 
-Przejdźmy do najważniejszego. Mamy problem badawczym, populację, technikę realizacji, kwestionariusz, operat losowania, a więc wszystko co jest nam potrzebne, aby zająć się doborem respondentów.
-
-Dla naszych potrzeb skorzystamy z bardzo uproszczonego sposobu losowania próby. Pozwoli on nam przeanalizować podstawowe zagadnienia z doborem respondentów, a jednocześnie ....................  
-Przyjmiemy następujący __schemat losowania próby__ - w ten sposób sondażyści określają zasady wg których dobierają respondentów: z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
+Wyznaczyliśmy sobie problem badawczym, zdefiniowaliśmy populację, stworzyliśmy operat losowania, wybraliśmy technikę realizacji badania, stworzyliśmy kwestionariusz - mamy wszystko co potrzeba, aby móc zając się doborem respondentów.      
+Dla naszych potrzeb skorzystamy z bardzo uproszczonego __schematu losowania próby__ ( w ten sposób sondażyści nazywają zasady wg których dobierają respondentów). Z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
 
   1. Do próby losujemy jedną osobę spośród 20. Każdy obywatel ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/20;   
-  2. Spośród pozostałych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowości z której dobierany jest respondent każdy ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono tym razem 1/19;    
+  2. Spośród pozostałych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowości z której dobierany jest respondent każdy ma takie samo prawdopodobieństwo znalezienia się w próbie - tym razem wynosi ono 1/19;    
   3. Otrzymujemy próbę, w której znajdują się dwie osoby. Poza próbą zostaje 18 obywateli.   
 
-Powyższy schemat losowania 2 osób z populacji 20 nazwiemy: __losowaniem prostym bez zwracania__. Losowanie to jest proste ponieważ na każdym etapie wszyscy obywatele pozostający w populacji mają takie samo prawdopodobieństwo dostania się do próby. Bez zwracania ponieważ po wylosowaniu jednej osoby do próby nie wraca ona do puli z której losujemy następną. Ten bardzo prosty schemat losowania próby pozwali nam przeanalizować pewne podstawowe zagadnienia związane z metodą reprezentacyjną.        
+Powyższy schemat losowania 2 osób z populacji 20 nazwiemy: __losowaniem prostym bez zwracania__. Jest ono proste ponieważ na każdym etapie wszyscy obywatele pozostający w populacji mają takie samo prawdopodobieństwo dostania się do próby. Bez zwracania ponieważ po wylosowaniu jednej osoby do próby nie wraca ona do puli, z której losujemy następną. Ten bardzo prosty schemat pozwali nam przeanalizować pewne podstawowe zagadnienia związane z metodą reprezentacyjną.        
 
-Zastanówmy się przede wszystkim, jak będą wyglądały dobierane próby. Jako identyfikator osób w próbie wykorzystamy liczby z kolumny L.p. z listy zawierającej wszystkich obywateli naszej populacji. Zapis (1,2) oznaczać będzie, że do próby wylosowano najpierw osobę o liczbie porządkowej 1, a następnie osobę o liczbie porządkowej 2. Próby możemy więc rozpisać wg. prostej reguły. Jeżeli w pierwszym kroku dobierzemy osobę o liczbie porządkowej 1 to w drugim kroku do pary możemy dobrać osoby z liczbą 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). Jeżeli do próby w pierwszym kroku dobierzemy osobę o liczbie porządkowej 2 to w drugim kroku do pary możemy dobrać osoby z liczbą 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy więc, że dla każdej z 20 osób w populacji możemy dobrać 19 różnych par. Czyli łącznie możemy stworzyć w ten sposób 20x19=380 różnych dwuosobowych prób. Rozpiszmy je, żeby zobaczyć jak wyglądają.
+Zastanówmy się przede wszystkim, jak będą wyglądały dobierane próby. Ustalmy, że respondentów będziemy identyfikować na podstawie ich liczby porządkowej, czyli liczby z kolumny L.p. w naszym operacie. Zapis (1,2) oznaczać będzie, że do próby wylosowaliśmy najpierw osobę o liczbie porządkowej 1, a następnie osobę o liczbie porządkowej 2. Wszystkie możliwe próby rozpiszemy więc korzystając z  prostej reguły. Jeżeli w pierwszym kroku dobierzemy osobę o liczbie porządkowej 1 to w drugim kroku, do pary, możemy dobrać osoby z liczbą porządkową 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). Jeżeli do próby w pierwszym kroku dobierzemy osobę o liczbie porządkowej 2 to w drugim kroku do pary możemy dobrać osoby z liczbą porządkową 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy więc, że dla każdej z 20 osób w populacji możemy dobrać 19 różnych par, czyli łącznie możemy stworzyć w ten sposób 20x19=380 różnych dwuosobowych prób. Rozpiszmy je, żeby zobaczyć jak wyglądają.     
 
 ```{r, echo=FALSE, results='asis'}
 permutacje<-rep(1:20, each=19)
@@ -394,34 +392,33 @@ permutacje2<-rep(1:20, 20)
 permutacje2<-permutacje2[ -seq(1,length( permutacje2),21 )]
 cat(paste0(paste( "(", unlist( permutacje), ",", unlist(permutacje2), ")"  , sep=""), sep="; "))
 ```
+Oto wszystkie możliwe 380 dwuosobowych prób otrzymanych wg wcześniej opisanego schematu.  Widzimy, że niektóre pary się powtarzają. Możemy bowiem wylosować najpierw osobę o numerze 1, a potem numerze 2. Otrzymujemy wtedy próbę (1,2). Ale może być też na odwrót. Najpierw wylosujemy osobę o numerze 2. a potem osobę o numerze 1. Otrzymujemy wtedy próbę (2,1). W taki razie nasuwa się pytanie, w ilu próbach występuje każdy obywatel.     
 
-Oto wszystkie możliwe 380 dwuosobowe próby otrzymane wg. wcześniej opisanego schematu.  Widzimy, że niektóre pary w próbach powtarzają się. Możemy bowiem wylosować najpierw osobę o numerze 1, a potem numerze 2. Otrzymujemy wtedy próbę (1,2). Może również zdarzyć się na odwrót. Najpierw wylosujemy osobę o numerze 2. a potem osobę o numerze 1. Otrzymujemy wtedy próbę (2,1). W taki razie nasuwa się pytanie, w ilu próbach znajdzie się każdy obywatel.
+### Tabela 7.2. Liczba wystąpień obywateli w próbach dwuosobowych
 
-### Tabela 7.2. W ilu próbach każdy się znalazł?
 ```{r, echo=FALSE, results='asis'}
 permutacje.wzstepowanie.w.probie<-as.data.frame(table(c(permutacje, permutacje2)))
 colnames(permutacje.wzstepowanie.w.probie)<-c("L.p.", "Liczba wystąpień")
 kable( x = permutacje.wzstepowanie.w.probie, row.names = F, format = "markdown")
 ```
 
-Odpowiedz znajduje się w powyższej tabeli. Każdy obywatel może znaleźć się w 38 próbach. Dlaczego? Tworzy on 19 różnych par z każdym innym obywatelem, a dodatkowo w każdej parze może być na pierwszym lub drugim miejscu. Dlatego liczba wystąpień wynosi 19x2=38.       
+Odpowiedz znajduje się w powyższej tabeli. Każdy obywatel pojawia się w 38 próbach. Dlaczego? Bo tworzy 19 różnych par z każdym innym obywatelem, a dodatkowo, w każdej parze może być na pierwszym lub drugim miejscu. Dlatego liczba wystąpień wynosi 19x2=38.       
+Następne pytanie brzmi, jak policzyć ogólna liczbę różnych możliwych do wylosowania prób. Zacznijmy od tego, że w populacji mamy 20 osób. Zgodnie z naszymi założeniami losowanie dwuelementowej próby przebiega w dwóch etapach. Najpierw losujemy pierwszą osobę spośród 20 dostępnych., a następnie z pozostałych 19 drugą. Stąd prosty wniosek, że próbę można wylosować na 20x19=380 sposobów.            
+Widzimy więc, że przyjęty schemat losowania generuje pewną skończoną i policzalną zbiorowość prób. To bardzo ważne. Sposób w jaki generujemy próby decyduje o tym, co w nich się znajdzie. Zobaczmy, co generuje nasz schemat.   
 
-Jak policzyć ogólna liczbę prób które możemy wylosować. W populacji mamy 20 osób. Zgodnie z naszymi założeniami losowanie dwuelementowej próby przebiega w dwóch etapach. Najpierw losujemy pierwszą osobę spośród 20 dostępnych., a następnie z pozostałych 19 losujemy drugą osobę. Czyli próbę możemy wylosować na 20x19=380 sposobów.      
-Widzimy więc, że przyjęty schemat losowania próby z danej populacji generuje pewną skończoną i policzalną zbiorowość prób. To bardzo ważne. Sposób w jaki generujemy próby decyduje o tym, co w nich się znajdzie. Zobaczmy więc co generuje nasz schemat.   
+Policzmy dla wszystkich wymienionych wcześniej prób odsetek osób, które nie chcą iść na wybory. Ponieważ za każdym razem mamy tylko dwóch respondentów więc możliwe są tylko trzy rodzaje wyników:   
 
-Policzmy dla wszystkich wymienionych wyżej prób odsetek osób, które nie chcą iść na wybory. Ponieważ próba liczy tylko dwie osoby więc możliwe są tylko trzy rodzaje wyników:   
-
- * (ABSENCJA, ABSENCJA)  = (100%) - żadna z dwóch osób NIE zamierza pójść na wybory;      
- * (ABSENCJA, GŁOSOWANIE) lub (GŁOSOWANIE, ABSENCJA) = (50%) - jedna z dwóch osób zamierza wziąć udział w wyborach.
- * (GŁOSOWANIE, GŁOSOWANIE) =  (0%) -  obie osoby zamierzają pójść na wybory;  
+ * (ABSENCJA, ABSENCJA)  => (100%) - żadna z dwóch osób NIE zamierza pójść na wybory;      
+ * (ABSENCJA, GŁOSOWANIE) lub (GŁOSOWANIE, ABSENCJA) => (50%) - jedna z dwóch osób zamierza wziąć udział w wyborach.
+ * (GŁOSOWANIE, GŁOSOWANIE) =>  (0%) -  obie osoby zamierzają pójść na wybory;  
  
-Skoro wiemy czego możemy się spodziewać, to rozpiszmy poziomy absencji we wszystkich próbach (zachowano wcześniejszą kolejność prób):
+Skoro wiemy już czego możemy się spodziewać, to rozpiszmy poziomy absencji we wszystkich próbach (z zachowaniem wcześniejszą kolejność prób):
 
 ```{r,echo=FALSE, results='asis'}
 cat(paste( "("  ,((m$Glosowanie[ permutacje]==-1)+(m$Glosowanie[ permutacje2]==-1))/0.02, "%); ", sep=""))
 ```
 
-Na pierwszy rzut oka widać, że nie wszystkie wyniki są zgodne z tym co obserwujemy w całej populacji. W wielu próbach szacowana ABSENCJA jest zaniżona (0%) lub zawyżona (100%). Ale to nas nie dziwi, bo wynika to z wybranego przez nas schematu losowania próby. Zobaczmy więc ile dokładnie wyników każdego rodzaju daje nam przyjęty schemat losowania próby.     
+Na pierwszy rzut oka widać, że nie wszystkie wyniki są zgodne z tym, co obserwujemy w całej populacji. W wielu próbach szacowana ABSENCJA jest zaniżona (0%) lub zawyżona (100%). Ale to nas nie dziwi, bo wynika to z wybranego przez nas schematu losowania próby. Zobaczmy ile dokładnie wyników każdego rodzaju występuje w naszej zbiorowości prób.     
 
 ### Wykres 7.1. Oszacowanie absencji wyborczej w próbach dwu osobowch
 ```{r, echo=FALSE}
@@ -433,10 +430,11 @@ permutacje.rozklad <- transform(permutacje.rozklad, # przygotowanie danych
 permutacje.rozklad.Tab <- as.data.frame(table(permutacje.rozklad$absencja));
 
 ggplot(permutacje.rozklad, aes(per.roz.kolejnosc))+
-  geom_bar( fill=c("red2","deepskyblue", "yellowgreen"), colour="black")+
+  geom_bar( fill=c("black","black", "black"), colour="black")+ # c("red2","deepskyblue", "yellowgreen")
   ylab("Liczba prób")+
   xlab("Poziom absencji wyborczej w próbie")+
-  geom_text(data=permutacje.rozklad.Tab,aes(x=Var1,y=Freq,label=Freq),vjust=5, size=5, face="bold")+
+  ylim(0,225)+
+  geom_text(data=permutacje.rozklad.Tab ,aes(x=Var1, y=Freq+50, label=Freq),vjust=5, size=5, face="bold")+
   theme(axis.text.x = element_text(face="bold", color = "black", size=15));
 ```
 
@@ -581,7 +579,7 @@ ggplot(p6.2, aes(x = factor(p6.2), y = Freq)) +
   theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
   xlab("Poparcie w próbie")+
   ylab("Liczba prób")+
-   geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq, label=Freq) ,vjust=0.1, size=4, face="bold")
+   geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq+250000, label=Freq) ,vjust=0.1, size=4, face="bold")
 ```
 
 Uporaliśmy się z rozkładem wyników z próby 6-osobowej. Wymagało to od nas trochę wysiłku, ale przynajmniej wiemy już, że nasz schemat losowania nie jest nieprzewidywalny. Widzimy teraz jak często generuje on poszczególne wyniki. Przyjrzyjmy się im dokładnie. Najwięcej prób zawiera poparcie dla partii X na poziomie 2/6. Dużo mniej 1/6 i 3/6. Wyniki 0 oraz 4/6 można nazwać rzadkimi, a 5/6 i 1 bardzo rzadkimi. Zauważmy również, że poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, że nasz schemat jest wadliwy? Jak wiemy "celność" próby określa się na podstawie przeciętnej wartości oszacowania uzyskiwanego z w zbiorowości wszystkich prób. Gdy mierzyliśmy ten parametr dla sondażu dotyczącego absencji w wyborach, wiedzieliśmy, że przynajmniej część prób “trafia w punkt”. Tym razem tak nie jest. Żadna próba nie daje wyniku 35% (7/20) poparcia dla partii X. Jeżeli jednak sprawdzimy przeciętny wynik z próby to okaże się, że wynosi on dokładnie tyle ile w populacji. Zgodnie z tym, co mówiliśmy wcześniej, oznacza to, że nasz schemat losowania 6-osobowych prób jest poprawny. Ale co z tego skoro nie potrafi dokładnie “trafić” w wynik! Najwyraźniej potrzebujemy dodatkowej miary "jakości" schematu. Musi ona określać skalę błędu popełnianego przy korzystaniu z konkretnych schematów. Dzięki temu będziemy mogli porównywać różne schematy, a przede wszystkim określić, jak duże jest ryzyko, że się mylimy korzystają z jednej próby. Nasza miarą błędu będzie wielkość wymyślonym przez statystyków. Dla każdej próby policzmy, jak duży jest rozstęp między wynikiem z próby, a prawdziwym wynikiem w populacji (35%).   
