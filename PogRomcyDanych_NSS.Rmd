@@ -1,5 +1,5 @@
 ---
-title: "PogRomcy_Danych_NSS"
+title: "PogRomcy Danych NSS"
 output: 
   html_document:
     keep_md: true
@@ -579,7 +579,7 @@ ggplot(p6.2, aes(x = factor(p6.2), y = Freq)) +
   theme(axis.text.x = element_text(face="bold", color = "black", size=15))+
   xlab("Poparcie w próbie")+
   ylab("Liczba prób")+
-   geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq+250000, label=Freq) ,vjust=0.1, size=4, face="bold")
+   geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq+250000, label=Freq) ,vjust=0.1, size=2, face="bold")
 ```
 
 Uporaliśmy się z rozkładem wyników z próby 6-osobowej. Wymagało to od nas trochę wysiłku, ale przynajmniej wiemy już, że nasz schemat losowania nie jest nieprzewidywalny. Widzimy teraz jak często generuje on poszczególne wyniki. Przyjrzyjmy się im dokładnie. Najwięcej prób zawiera poparcie dla partii X na poziomie 2/6. Dużo mniej 1/6 i 3/6. Wyniki 0 oraz 4/6 można nazwać rzadkimi, a 5/6 i 1 bardzo rzadkimi. Zauważmy również, że poparcia dla partii X nigdy nie jest równe 35% (7/20). Czy to oznacza, że nasz schemat jest wadliwy? Jak wiemy "celność" próby określa się na podstawie przeciętnej wartości oszacowania uzyskiwanego z w zbiorowości wszystkich prób. Gdy mierzyliśmy ten parametr dla sondażu dotyczącego absencji w wyborach, wiedzieliśmy, że przynajmniej część prób “trafia w punkt”. Tym razem tak nie jest. Żadna próba nie daje wyniku 35% (7/20) poparcia dla partii X. Jeżeli jednak sprawdzimy przeciętny wynik z próby to okaże się, że wynosi on dokładnie tyle ile w populacji. Zgodnie z tym, co mówiliśmy wcześniej, oznacza to, że nasz schemat losowania 6-osobowych prób jest poprawny. Ale co z tego skoro nie potrafi dokładnie “trafić” w wynik! Najwyraźniej potrzebujemy dodatkowej miary "jakości" schematu. Musi ona określać skalę błędu popełnianego przy korzystaniu z konkretnych schematów. Dzięki temu będziemy mogli porównywać różne schematy, a przede wszystkim określić, jak duże jest ryzyko, że się mylimy korzystają z jednej próby. Nasza miarą błędu będzie wielkość wymyślonym przez statystyków. Dla każdej próby policzmy, jak duży jest rozstęp między wynikiem z próby, a prawdziwym wynikiem w populacji (35%).   
