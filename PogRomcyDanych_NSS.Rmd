@@ -268,11 +268,11 @@ __Zadania 6:__
  
 # 7. Dobór próby
 
-Mając już określony problem badawczy, wybraną technikę zbierania danych oraz przygotowany, odporny na kwestie wrażliwe, kwestionariusz, możemy przejść do doboru respondentów. W branży sondażowej korzysta się w tym zakresie z różnych rozwiązań, ale tylko jedno jest dobrze opracowane od strony teoretycznej i przy odpowiedniej staranności wykonania pozwala rzetelnie wnioskować o populacji. Dlatego też zajmiemy się tylko nim – mowa o doborze losowym.         
+Mając już określony problem badawczy, wybraną technikę zbierania danych oraz przygotowany, odporny na kwestie wrażliwe, kwestionariusz, możemy przejść do dobierania respondentów. W branży sondażowej korzysta się w tym zakresie z różnych rozwiązań, ale tylko jedno jest dobrze opracowane od strony teoretycznej i przy odpowiedniej staranności wykonania pozwala rzetelnie wnioskować o populacji. Dlatego też zajmiemy się tylko nim – mowa o doborze losowym.         
 
-Zacznijmy od tego, że chcąc dobrać próbę z populacji w sposób losowy musimy mieć "spis" wszystkich osób do niej należących. Musimy mieć z czego wybierać. Taka lista nazywana jest "__operatem losowania__". Powinna ona zawierać nie tylko informację o tym ile osób znajduje się w populacji, ale także jak można się z nimi "skontaktować", czyli np. gdzie mieszkają. Na szczęście w Polsce istnieją przynajmniej dwa takie operaty, które umożliwiają dobieranie w sposób losowy prób sondażowych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji Ludności) zawierający spis wszystkich obywateli Polski oraz osób posiadających prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarządzany przez _Ministerstwo Spraw Wewnętrznych_. Drugim operatem jest __TERYT__ zawierający informację o wszystkich mieszkaniach w Polsce. Za jego pomocą, dobierając mieszkania, można dobierać próby mieszkańców Polski. Rejestr ten prowadzi _Główny Urząd Statystyczny_.       
+Zacznijmy od tego, że aby dobrać próbę z populacji w sposób losowy potrzebujemy spisu wszystkich osób do niej należących. Musimy mieć z czego wybierać. Taka listę nazywamy [operatem losowania](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/populacja-operat-losowania-i-podstawa-procentowania/). Aby był on użyteczny musi zawierać nie tylko informację o tym, ile osób znajduje się w populacji, ale także jak można się z nimi skontaktować, czyli np. gdzie mieszkają. W Polsce istnieją przynajmniej dwa takie operaty, które umożliwiają dobieranie prób sondażowych w sposób losowy. Pierwszy z nich to rejestr __PESEL__ ([Powszechny Elektroniczny System Ewidencji Ludności](http://pl.wikipedia.org/wiki/PESEL)) zawierający spis wszystkich obywateli Polski oraz osób posiadających prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarządzany przez _Ministerstwo Spraw Wewnętrznych_. Drugim operatem jest __TERYT__ ([Krajowy Rejestr Urzędowy Podziału Terytorialnego Kraju](http://pl.wikipedia.org/wiki/TERYT)) zawierający informację o wszystkich mieszkaniach w Polsce. Za jego pomocą, dobierając mieszkania, można dobierać próby mieszkańców Polski. Rejestr ten prowadzi _Główny Urząd Statystyczny_.       
 
-Wiemy już czego potrzebujemy, żeby dobrać próbą więc możemy się zastanowić, jak to zrobić. Najlepiej gdy skorzystamy z uproszczonego przykładu. Zacznijmy od problemu badawczego i populacji. Załóżmy, że chcemy oszacować poziom absencji wyborczej w (fikcyjnej) populacji pełnoletnich obywateli Polski zamieszkałych w kraju, składającej się z 20 osób (korzystaliśmy już z niej wcześniej).  Będzie nam zależało na tym, aby oszacować, jaki odsetek obywateli deklaruje, że nie pójdzie na wybory (wynosi on 50%). Żeby określić interesującą nas wielkość zastosujemy technikę wywiadu bezpośredniego, w którym zadamy pytanie: "Gdyby w najbliższą niedzielę odbywały się wybory do Sejmu i Senatu, to czy wziął(ęła)by Pan(i) w nich udział?" Zakładamy, że pytanie to nie jest drażliwe i wszyscy respondenci odpowiedzą na nie zgodnie ze swoim sumieniem.       
+Wiemy już czego potrzebujemy, żeby dobrać próbę więc możemy się zastanowić, jak to zrobić. Pomoże nam w tym uproszczony przykład. Załóżmy, że chcemy oszacować poziom absencji wyborczej w (fikcyjnej) populacji pełnoletnich obywateli Polski zamieszkałych w kraju, składającej się z 20 osób (korzystaliśmy już z niej wcześniej).  Będziemy chcieli na podstawie próby oszacować, jaki odsetek obywateli nie pójdzie na wybory (wynosi on 50%). Skorzystamy przy tym z techniki wywiadu bezpośredniego. Naszym respondentom zdamy pytanie: "__Gdyby w najbliższą niedzielę odbywały się wybory do Sejmu i Senatu, to czy wziął(ęła)by Pan(i) w nich udział?__". Zakładamy, że pytanie nie jest ono drażliwe i wszyscy respondenci odpowiedzą na nie zgodnie ze swoimi przekonaniami.       
 
 ```{r 2_populacja, echo=FALSE, include=FALSE}
 # sposob czytania arkuszy Google zaporzyczony ze strony:
@@ -348,21 +348,24 @@ m<-m[,colnames(m)!="X"]
 ```{r, echo=FALSE, results='asis'}
 poparcie_dla_P<-addmargins(table( m$Miasto_wies, m$Glosowanie ) )
 colnames( poparcie_dla_P)<-c("Nie pójdę na wybory", "Nie", "Tak", "RAZEM")
-row.names( poparcie_dla_P)<-c("Miasto", "Wieś", "RAZEM")
+row.names( poparcie_dla_P)<-c("Miasto", "Wieś", "RAZEM") # przerobic
 kable( poparcie_dla_P, format = "markdown")
 ```
+
+Powyższa tabela zawiera rozkład odpowiedzi na nasze pytanie badawcze wśród mieszkańców wsi oraz miast. W normalnych warunkach byłby on dla nas zypełną tajemnicą. My go jednak poznaliśmy, zeby lepiej zrozumieć jaki ma on wpływ na to co dzieje sie w dobieranych przez nas próbach.
+
+Na chwilę załóźmy, ze wciąż nie wiemy jaki jest rozkład absencji wyborczej w naszej populacji i chcemy go zbadć przy pomocy sondazu. W tym celu musimy wylosować próbę, a żeby to zrobić potrzebujemy operatu losowania. W naszym przypadku wygląda on następująco:
 
 W powyższej tabeli znajduje się rozkład liczebności miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. Żeby dobrać próbę potrzebujemy jeszcze operatu losowania. W naszym przypadku wygląda on następująco:    
 
 ```{r, echo=F, results='asis'}
 kable( m, format = "markdown")
 ```
-
-Operat można pobrać ze strony:
+Operat można również pobrać ze strony:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
-Dla wyjaśnienia ustalmy, że kolumny w operacie oznaczają:   
+Dla wyjaśnienia ustalmy, że kolejne kolumny w powyższym zbiorze oznaczaj:   
 
   * L.p.- liczba porządkowa obywatela;
   * Miasto_wies - miejsce zamieszkania obywatela;
@@ -373,10 +376,11 @@ Dla wyjaśnienia ustalmy, że kolumny w operacie oznaczają:
     + 0 - pójdę na wybory, ale NIE zagłosuję na partię X;
     + 1 - pójdę na wybory i zagłosuję na partię X.
     
-Nasz problem badawczy dotyczy absencji wyborczej. Interesuje więc nas odsetek osób, które w kolumnie "Glosowanie" mają wartość -1, czyli na pytanie o to na kogo zagłosują odpowiadają, że nie wybierają się na wybory.     
+Nasz problem badawczy dotyczy absencji wyborczej, co oznacza, że interesuje nas odsetek osób, które w kolumnie "Glosowanie" mają wartość -1, czyli nie wybierają się na wybory. Pozostałe wartości ns razie są nam obojętne.   
 
-Wyznaczyliśmy sobie problem badawczym, zdefiniowaliśmy populację, stworzyliśmy operat losowania, wybraliśmy technikę realizacji badania, stworzyliśmy kwestionariusz - mamy wszystko co potrzeba, aby móc zając się doborem respondentów.      
-Dla naszych potrzeb skorzystamy z bardzo uproszczonego __schematu losowania próby__ ( w ten sposób sondażyści nazywają zasady wg których dobierają respondentów). Z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
+Wyznaczyliśmy sobie problem badawczym, zdefiniowaliśmy populację, stworzyliśmy operat losowania, wybraliśmy technikę realizacji badania, stworzyliśmy kwestionariusz i mamy opret losowania więc możemy zająć się doborem respondentów.
+
+Jak wspomnieliśmy wcześniej skorzystamy z bardzo uproszczonego __schematu losowania próby__ ( w ten sposób sondażyści nazywają zasady wg których dobierają respondentów). Z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
 
   1. Do próby losujemy jedną osobę spośród 20. Każdy obywatel ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/20;   
   2. Spośród pozostałych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowości z której dobierany jest respondent każdy ma takie samo prawdopodobieństwo znalezienia się w próbie - tym razem wynosi ono 1/19;    
