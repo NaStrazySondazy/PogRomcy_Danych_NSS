@@ -249,11 +249,11 @@ __Zadania 6:__
  
 # 7. Dobór próby
 
-Mając już określony problem badawczy, wybraną technikę zbierania danych oraz przygotowany, odporny na kwestie wrażliwe, kwestionariusz, możemy przejść do doboru respondentów. W branży sondażowej korzysta się w tym zakresie z różnych rozwiązań, ale tylko jedno jest dobrze opracowane od strony teoretycznej i przy odpowiedniej staranności wykonania pozwala rzetelnie wnioskować o populacji. Dlatego też zajmiemy się tylko nim – mowa o doborze losowym.         
+Mając już określony problem badawczy, wybraną technikę zbierania danych oraz przygotowany, odporny na kwestie wrażliwe, kwestionariusz, możemy przejść do dobierania respondentów. W branży sondażowej korzysta się w tym zakresie z różnych rozwiązań, ale tylko jedno jest dobrze opracowane od strony teoretycznej i przy odpowiedniej staranności wykonania pozwala rzetelnie wnioskować o populacji. Dlatego też zajmiemy się tylko nim – mowa o doborze losowym.         
 
-Zacznijmy od tego, że chcąc dobrać próbę z populacji w sposób losowy musimy mieć "spis" wszystkich osób do niej należących. Musimy mieć z czego wybierać. Taka lista nazywana jest "__operatem losowania__". Powinna ona zawierać nie tylko informację o tym ile osób znajduje się w populacji, ale także jak można się z nimi "skontaktować", czyli np. gdzie mieszkają. Na szczęście w Polsce istnieją przynajmniej dwa takie operaty, które umożliwiają dobieranie w sposób losowy prób sondażowych. Pierwszy z nich to rejestr __PESEL__ (Powszechny Elektroniczny System Ewidencji Ludności) zawierający spis wszystkich obywateli Polski oraz osób posiadających prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarządzany przez _Ministerstwo Spraw Wewnętrznych_. Drugim operatem jest __TERYT__ zawierający informację o wszystkich mieszkaniach w Polsce. Za jego pomocą, dobierając mieszkania, można dobierać próby mieszkańców Polski. Rejestr ten prowadzi _Główny Urząd Statystyczny_.       
+Zacznijmy od tego, że aby dobrać próbę z populacji w sposób losowy potrzebujemy spisu wszystkich osób do niej należących. Musimy mieć z czego wybierać. Taka listę nazywamy [operatem losowania](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/populacja-operat-losowania-i-podstawa-procentowania/). Aby był on użyteczny musi zawierać nie tylko informację o tym, ile osób znajduje się w populacji, ale także jak można się z nimi skontaktować, czyli np. gdzie mieszkają. W Polsce istnieją przynajmniej dwa takie operaty, które umożliwiają dobieranie prób sondażowych w sposób losowy. Pierwszy z nich to rejestr __PESEL__ ([Powszechny Elektroniczny System Ewidencji Ludności](http://pl.wikipedia.org/wiki/PESEL)) zawierający spis wszystkich obywateli Polski oraz osób posiadających prawo do pobytu na terenie kraju wraz z danymi o miejscu ich zameldowania. Rejestr ten jest zarządzany przez _Ministerstwo Spraw Wewnętrznych_. Drugim operatem jest __TERYT__ ([Krajowy Rejestr Urzędowy Podziału Terytorialnego Kraju](http://pl.wikipedia.org/wiki/TERYT)) zawierający informację o wszystkich mieszkaniach w Polsce. Za jego pomocą, dobierając mieszkania, można dobierać próby mieszkańców Polski. Rejestr ten prowadzi _Główny Urząd Statystyczny_.       
 
-Wiemy już czego potrzebujemy, żeby dobrać próbą więc możemy się zastanowić, jak to zrobić. Najlepiej gdy skorzystamy z uproszczonego przykładu. Zacznijmy od problemu badawczego i populacji. Załóżmy, że chcemy oszacować poziom absencji wyborczej w (fikcyjnej) populacji pełnoletnich obywateli Polski zamieszkałych w kraju, składającej się z 20 osób (korzystaliśmy już z niej wcześniej).  Będzie nam zależało na tym, aby oszacować, jaki odsetek obywateli deklaruje, że nie pójdzie na wybory (wynosi on 50%). Żeby określić interesującą nas wielkość zastosujemy technikę wywiadu bezpośredniego, w którym zadamy pytanie: "Gdyby w najbliższą niedzielę odbywały się wybory do Sejmu i Senatu, to czy wziął(ęła)by Pan(i) w nich udział?" Zakładamy, że pytanie to nie jest drażliwe i wszyscy respondenci odpowiedzą na nie zgodnie ze swoim sumieniem.       
+Wiemy już czego potrzebujemy, żeby dobrać próbę więc możemy się zastanowić, jak to zrobić. Pomoże nam w tym uproszczony przykład. Załóżmy, że chcemy oszacować poziom absencji wyborczej w (fikcyjnej) populacji pełnoletnich obywateli Polski zamieszkałych w kraju, składającej się z 20 osób (korzystaliśmy już z niej wcześniej).  Będziemy chcieli na podstawie próby oszacować, jaki odsetek obywateli nie pójdzie na wybory (wynosi on 50%). Skorzystamy przy tym z techniki wywiadu bezpośredniego. Naszym respondentom zdamy pytanie: "__Gdyby w najbliższą niedzielę odbywały się wybory do Sejmu i Senatu, to czy wziął(ęła)by Pan(i) w nich udział?__". Zakładamy, że pytanie nie jest ono drażliwe i wszyscy respondenci odpowiedzą na nie zgodnie ze swoimi przekonaniami.       
 
 
 
@@ -264,6 +264,10 @@ Wiemy już czego potrzebujemy, żeby dobrać próbą więc możemy się zastanow
 |Miasto |                   6|   1|   5|    12|
 |Wieś   |                   4|   2|   2|     8|
 |RAZEM  |                  10|   3|   7|    20|
+
+Powyższa tabela zawiera rozkład odpowiedzi na nasze pytanie badawcze wśród mieszkańców wsi oraz miast. W normalnych warunkach byłby on dla nas zypełną tajemnicą. My go jednak poznaliśmy, zeby lepiej zrozumieć jaki ma on wpływ na to co dzieje sie w dobieranych przez nas próbach.
+
+Na chwilę załóźmy, ze wciąż nie wiemy jaki jest rozkład absencji wyborczej w naszej populacji i chcemy go zbadć przy pomocy sondazu. W tym celu musimy wylosować próbę, a żeby to zrobić potrzebujemy operatu losowania. W naszym przypadku wygląda on następująco:
 
 W powyższej tabeli znajduje się rozkład liczebności miejsca zamieszkania i odpowiedzi na nasze pytanie badawcze. Widzimy, że w miastach mieszka 12 osób, a na wsi 8. Poparcie dla partii X deklaruje 7 osób, poparcie dla innych partii 3, a na wybory w ogóle nie pójdzie 10 osób. Żeby dobrać próbę potrzebujemy jeszcze operatu losowania. W naszym przypadku wygląda on następująco:    
 
@@ -290,12 +294,11 @@ W powyższej tabeli znajduje się rozkład liczebności miejsca zamieszkania i o
 |18   |W           |-1         |
 |19   |W           |-1         |
 |20   |W           |-1         |
-
-Operat można pobrać ze strony:
+Operat można również pobrać ze strony:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
-Dla wyjaśnienia ustalmy, że kolumny w operacie oznaczają:   
+Dla wyjaśnienia ustalmy, że kolejne kolumny w powyższym zbiorze oznaczaj:   
 
   * L.p.- liczba porządkowa obywatela;
   * Miasto_wies - miejsce zamieszkania obywatela;
@@ -306,10 +309,11 @@ Dla wyjaśnienia ustalmy, że kolumny w operacie oznaczają:
     + 0 - pójdę na wybory, ale NIE zagłosuję na partię X;
     + 1 - pójdę na wybory i zagłosuję na partię X.
     
-Nasz problem badawczy dotyczy absencji wyborczej. Interesuje więc nas odsetek osób, które w kolumnie "Glosowanie" mają wartość -1, czyli na pytanie o to na kogo zagłosują odpowiadają, że nie wybierają się na wybory.     
+Nasz problem badawczy dotyczy absencji wyborczej, co oznacza, że interesuje nas odsetek osób, które w kolumnie "Glosowanie" mają wartość -1, czyli nie wybierają się na wybory. Pozostałe wartości ns razie są nam obojętne.   
 
-Wyznaczyliśmy sobie problem badawczym, zdefiniowaliśmy populację, stworzyliśmy operat losowania, wybraliśmy technikę realizacji badania, stworzyliśmy kwestionariusz - mamy wszystko co potrzeba, aby móc zając się doborem respondentów.      
-Dla naszych potrzeb skorzystamy z bardzo uproszczonego __schematu losowania próby__ ( w ten sposób sondażyści nazywają zasady wg których dobierają respondentów). Z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
+Wyznaczyliśmy sobie problem badawczym, zdefiniowaliśmy populację, stworzyliśmy operat losowania, wybraliśmy technikę realizacji badania, stworzyliśmy kwestionariusz i mamy opret losowania więc możemy zająć się doborem respondentów.
+
+Jak wspomnieliśmy wcześniej skorzystamy z bardzo uproszczonego __schematu losowania próby__ ( w ten sposób sondażyści nazywają zasady wg których dobierają respondentów). Z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
 
   1. Do próby losujemy jedną osobę spośród 20. Każdy obywatel ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/20;   
   2. Spośród pozostałych 19 osób znowu losujemy jednego respondenta. Ponownie w zbiorowości z której dobierany jest respondent każdy ma takie samo prawdopodobieństwo znalezienia się w próbie - tym razem wynosi ono 1/19;    
@@ -320,6 +324,7 @@ Powyższy schemat losowania 2 osób z populacji 20 nazwiemy: __losowaniem prosty
 Zastanówmy się przede wszystkim, jak będą wyglądały dobierane próby. Ustalmy, że respondentów będziemy identyfikować na podstawie ich liczby porządkowej, czyli liczby z kolumny L.p. w naszym operacie. Zapis (1,2) oznaczać będzie, że do próby wylosowaliśmy najpierw osobę o liczbie porządkowej 1, a następnie osobę o liczbie porządkowej 2. Wszystkie możliwe próby rozpiszemy więc korzystając z  prostej reguły. Jeżeli w pierwszym kroku dobierzemy osobę o liczbie porządkowej 1 to w drugim kroku, do pary, możemy dobrać osoby z liczbą porządkową 2, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (1,2), (1,3), (1,4), (1,5), ... lub (1,20). Jeżeli do próby w pierwszym kroku dobierzemy osobę o liczbie porządkowej 2 to w drugim kroku do pary możemy dobrać osoby z liczbą porządkową 1, 3, 4, 5, …lub 20. W ten sposób otrzymamy próby: (2,1), (2,3), (2,4), (2,5), ... lub (2,20). Widzimy więc, że dla każdej z 20 osób w populacji możemy dobrać 19 różnych par, czyli łącznie możemy stworzyć w ten sposób 20x19=380 różnych dwuosobowych prób. Rozpiszmy je, żeby zobaczyć jak wyglądają.     
 
 (1,2);  (1,3);  (1,4);  (1,5);  (1,6);  (1,7);  (1,8);  (1,9);  (1,10);  (1,11);  (1,12);  (1,13);  (1,14);  (1,15);  (1,16);  (1,17);  (1,18);  (1,19);  (1,20);  (2,1);  (2,3);  (2,4);  (2,5);  (2,6);  (2,7);  (2,8);  (2,9);  (2,10);  (2,11);  (2,12);  (2,13);  (2,14);  (2,15);  (2,16);  (2,17);  (2,18);  (2,19);  (2,20);  (3,1);  (3,2);  (3,4);  (3,5);  (3,6);  (3,7);  (3,8);  (3,9);  (3,10);  (3,11);  (3,12);  (3,13);  (3,14);  (3,15);  (3,16);  (3,17);  (3,18);  (3,19);  (3,20);  (4,1);  (4,2);  (4,3);  (4,5);  (4,6);  (4,7);  (4,8);  (4,9);  (4,10);  (4,11);  (4,12);  (4,13);  (4,14);  (4,15);  (4,16);  (4,17);  (4,18);  (4,19);  (4,20);  (5,1);  (5,2);  (5,3);  (5,4);  (5,6);  (5,7);  (5,8);  (5,9);  (5,10);  (5,11);  (5,12);  (5,13);  (5,14);  (5,15);  (5,16);  (5,17);  (5,18);  (5,19);  (5,20);  (6,1);  (6,2);  (6,3);  (6,4);  (6,5);  (6,7);  (6,8);  (6,9);  (6,10);  (6,11);  (6,12);  (6,13);  (6,14);  (6,15);  (6,16);  (6,17);  (6,18);  (6,19);  (6,20);  (7,1);  (7,2);  (7,3);  (7,4);  (7,5);  (7,6);  (7,8);  (7,9);  (7,10);  (7,11);  (7,12);  (7,13);  (7,14);  (7,15);  (7,16);  (7,17);  (7,18);  (7,19);  (7,20);  (8,1);  (8,2);  (8,3);  (8,4);  (8,5);  (8,6);  (8,7);  (8,9);  (8,10);  (8,11);  (8,12);  (8,13);  (8,14);  (8,15);  (8,16);  (8,17);  (8,18);  (8,19);  (8,20);  (9,1);  (9,2);  (9,3);  (9,4);  (9,5);  (9,6);  (9,7);  (9,8);  (9,10);  (9,11);  (9,12);  (9,13);  (9,14);  (9,15);  (9,16);  (9,17);  (9,18);  (9,19);  (9,20);  (10,1);  (10,2);  (10,3);  (10,4);  (10,5);  (10,6);  (10,7);  (10,8);  (10,9);  (10,11);  (10,12);  (10,13);  (10,14);  (10,15);  (10,16);  (10,17);  (10,18);  (10,19);  (10,20);  (11,1);  (11,2);  (11,3);  (11,4);  (11,5);  (11,6);  (11,7);  (11,8);  (11,9);  (11,10);  (11,12);  (11,13);  (11,14);  (11,15);  (11,16);  (11,17);  (11,18);  (11,19);  (11,20);  (12,1);  (12,2);  (12,3);  (12,4);  (12,5);  (12,6);  (12,7);  (12,8);  (12,9);  (12,10);  (12,11);  (12,13);  (12,14);  (12,15);  (12,16);  (12,17);  (12,18);  (12,19);  (12,20);  (13,1);  (13,2);  (13,3);  (13,4);  (13,5);  (13,6);  (13,7);  (13,8);  (13,9);  (13,10);  (13,11);  (13,12);  (13,14);  (13,15);  (13,16);  (13,17);  (13,18);  (13,19);  (13,20);  (14,1);  (14,2);  (14,3);  (14,4);  (14,5);  (14,6);  (14,7);  (14,8);  (14,9);  (14,10);  (14,11);  (14,12);  (14,13);  (14,15);  (14,16);  (14,17);  (14,18);  (14,19);  (14,20);  (15,1);  (15,2);  (15,3);  (15,4);  (15,5);  (15,6);  (15,7);  (15,8);  (15,9);  (15,10);  (15,11);  (15,12);  (15,13);  (15,14);  (15,16);  (15,17);  (15,18);  (15,19);  (15,20);  (16,1);  (16,2);  (16,3);  (16,4);  (16,5);  (16,6);  (16,7);  (16,8);  (16,9);  (16,10);  (16,11);  (16,12);  (16,13);  (16,14);  (16,15);  (16,17);  (16,18);  (16,19);  (16,20);  (17,1);  (17,2);  (17,3);  (17,4);  (17,5);  (17,6);  (17,7);  (17,8);  (17,9);  (17,10);  (17,11);  (17,12);  (17,13);  (17,14);  (17,15);  (17,16);  (17,18);  (17,19);  (17,20);  (18,1);  (18,2);  (18,3);  (18,4);  (18,5);  (18,6);  (18,7);  (18,8);  (18,9);  (18,10);  (18,11);  (18,12);  (18,13);  (18,14);  (18,15);  (18,16);  (18,17);  (18,19);  (18,20);  (19,1);  (19,2);  (19,3);  (19,4);  (19,5);  (19,6);  (19,7);  (19,8);  (19,9);  (19,10);  (19,11);  (19,12);  (19,13);  (19,14);  (19,15);  (19,16);  (19,17);  (19,18);  (19,20);  (20,1);  (20,2);  (20,3);  (20,4);  (20,5);  (20,6);  (20,7);  (20,8);  (20,9);  (20,10);  (20,11);  (20,12);  (20,13);  (20,14);  (20,15);  (20,16);  (20,17);  (20,18);  (20,19); 
+
 Oto wszystkie możliwe 380 dwuosobowych prób otrzymanych wg wcześniej opisanego schematu.  Widzimy, że niektóre pary się powtarzają. Możemy bowiem wylosować najpierw osobę o numerze 1, a potem numerze 2. Otrzymujemy wtedy próbę (1,2). Ale może być też na odwrót. Najpierw wylosujemy osobę o numerze 2. a potem osobę o numerze 1. Otrzymujemy wtedy próbę (2,1). W taki razie nasuwa się pytanie, w ilu próbach występuje każdy obywatel.     
 
 ### Tabela 7.2. Liczba wystąpień obywateli w próbach dwuosobowych
@@ -380,7 +385,7 @@ Na 1000 przypadków w około 237 (90/380\*1000) absencja wyniesie 0%, podobnie w
 ### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 1000 prób
 ![plot of chunk unnamed-chunk-7](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-7.png) 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 238 próbach absencja wyborcza wyniosła 0%, w 510 wyniosła 50%, a w 252 wyniosła 100%. Różnice są niewielkie.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 249 próbach absencja wyborcza wyniosła 0%, w 498 wyniosła 50%, a w 253 wyniosła 100%. Różnice są niewielkie.
 Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Dla ponad połowy wszystkich możliwych prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry”? Że nasze wnioski z badania mogą być trafne?  Spójrzmy na nasz problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby. Zastosujemy przy tym zasadę często stosowaną w szkole. Gdy chcemy się czegoś dowiedzieć o wynikach ucznia w skali całego roku liczmy średnią arytmetyczną jego ocen. Podobnie zróbmy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie gdy podzielimy go przez liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazało się, że “przeciętnie” na próbę przypada 50% absencja!!! To jest dokładnie tyle ile wynosi ono w całej populacji!!! Oto podstawa całej metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe populacji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszystkich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt - próba nie jest obciążona.    
@@ -409,8 +414,8 @@ __Zadania 7:__
   2. Wylosuj próbę 14 osób z populacji załączonej do rozdziału:
     a) zapisz liczby porządkowe (L.p.) osób wybranych do próby;
     b) napisz jaki poziom absencji otrzymasz z wylosowanej próby;
-    c) jaki jest przeciętnych poziom absencji w próbach losowanych wg takiego schematu jak ta wylosowana przez Ciebie?    
-    d) Napisz o ile punktów procentowych różni się wynik z twojej próby od wyniku w całej populacji (50%)
+    c) jaki jest przeciętnych poziom absencji w próbach losowanych wg takiego schematu jak ta wylosowana przez Ciebie?
+    d) Napisz o ile punktów procentowych różni się wynik z twojej próby od wyniku w całej populacji (50%).
 
 # 8. Błąd oszacowania
 
@@ -443,34 +448,34 @@ Zwróćmy uwagę, że nasze oszacowania dotyczą poparcia wśród wszystkich oby
 Ogólnie rzecz biorąc nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15= różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondentów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2= próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mógłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3= trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6= sześcioosobowych próbach, co potwierdzają obliczenia w programie R.      
 
 
-```
-## Warning: package 'gtools' was built under R version 3.1.2
-```
 
 ### Tabela 8.2. Liczba prób, w których występują poszczególni obywatele
 
-| obywatel| L.wystąpień|
-|--------:|-----------:|
-|        1|     8372160|
-|        2|     8372160|
-|        3|     8372160|
-|        4|     8372160|
-|        5|     8372160|
-|        6|     8372160|
-|        7|     8372160|
-|        8|     8372160|
-|        9|     8372160|
-|       10|     8372160|
-|       11|     8372160|
-|       12|     8372160|
-|       13|     8372160|
-|       14|     8372160|
-|       15|     8372160|
-|       16|     8372160|
-|       17|     8372160|
-|       18|     8372160|
-|       19|     8372160|
-|       20|     8372160|
+
+ | obywatel| L.wystąpień|
+  |--------:|-----------:|
+  |        1|     8372160|
+  |        2|     8372160|
+  |        3|     8372160|
+  |        4|     8372160|
+  |        5|     8372160|
+  |        6|     8372160|
+  |        7|     8372160|
+  |        8|     8372160|
+  |        9|     8372160|
+  |       10|     8372160|
+  |       11|     8372160|
+  |       12|     8372160|
+  |       13|     8372160|
+  |       14|     8372160|
+  |       15|     8372160|
+  |       16|     8372160|
+  |       17|     8372160|
+  |       18|     8372160|
+  |       19|     8372160|
+  |       20|     8372160|
+
+
 
 Wiemy już w ilu próbach wystąpi każdy obywatel. Teraz zastanówmy się, z jaką częstotliwością występują poszczególne wyniki, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100% (6/6), ile takich, w których poparcie dla partii X wyniesie 83% (5/6) itd. Odpowiedź na to pytanie można uzyskać na dwa sposoby. Albo stosując proste, ale wymagające dużego skupienia, obliczenia na papierze albo stosując mniej obciążające i szybsze obliczenia na komputerze.           
 Zacznijmy od obliczeń na papierze. Zastanówmy się, ile może być takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przykładowo preferencje w nich mogą się ułożyć w następującej kolejności (X, X, X, X, X, nX). Losowanie tego rodzaju próby przeprowadzimy w następujący sposób. Pierwszego respondenta X dobieramy spośród wszystkich osób popierających partię X w populacji - łącznie jest ich 7. Potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających X, potem trzeciego respondenta dobieramy spośród pozostałych 5 osób popierających X, itd aż dochodzimy do szóstego respondenta. Dobierzemy go z innej grupy, osób nie popierających X (nX). W populacji jest ich 13. Ostatecznie więc liczba prób, dla których preferencje układają się w kolejności (X, X, X, X, X, nX), jest równa 7\*6\*5\*4\*3\*13=. No tak, ale my chcemy wiedzieć, ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich, w których osoba nX ( niepopierająca X) została wylosowana jako ostatnia. Żeby się tego dowiedzieć musimy zauważyć, że obywatel deklarujący nX może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli może on zostać ustawiony na sześć sposobów w próbie. Innymi słowy każda próba typu (X, X, X, X, X, nX) ma swoich pięć odpowiedników, w których występują ci sami obywatele X w tej samej kolejności i tylko obywatel nX "przeskakuje" między nimi. Ostatecznie więc liczba prób dających 83,3% (5/6) poparcia dla partii X wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=.          
@@ -501,7 +506,8 @@ Obliczenia dla pozostałych wyników otrzymywanych przy użyciu schematu losowan
 | 1/6               | (7)\*(13\*12\*11\*10\*9)\*(6)=6486480        | 
 | 0                 | (13\*12\*11\*10\*9\*8)=1235520               | 
 | Razem             | 20\*19\*18\*17\*16\*15=27907200              |    
-     
+
+ 
 ### Wykres 8.1. Poparcie dla partii X w próbach sześcioosobowych
 ![plot of chunk unnamed-chunk-11](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-11.png) 
 
@@ -547,8 +553,11 @@ Podsumowując:
 [Wiecej o będzie statystycznym na naszej stronie.](http://nastrazysondazy.uw.edu.pl/miedzy-proba-a-populacja/)
 
 __Zadania 8:__   
-  1. Co to znaczy, że próba jest reprezentatywna?
-  2. 
+  1. Napisz, jak rozumiesz określenie, że próba jest reprezentatywna
+  2. Dla wylosowanej wcześniej próby oblicz błąd standardowy
+  3. Oblicz oszacowanie poparcia dla partii X w swojej próbie
+  4. CZy oszacowanie poparcia dla partii X w twojej próbie mieści się w przedziale XX-XX
+  5.  
 
 # 9. Błędy systematyczne 
 
@@ -556,13 +565,16 @@ W części piątej mówiliśmy min. o tym, że nie każdy kontakt z dobrana do p
 
 Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z losowania próby, lecz przede wszystkim z terenowej realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy.
 
+Do tej pory wnioskowaliśmy o populacji na podstawie próby wylosowanej. Teraz zajmiemy się próbą zrealizowaną. Różnica między nimi jest zasadnicza. O ile pierwsza jest tylko instrukcją z kim ankieterzy mają przeprowadzić wywiady, o tyle druga jest zbiorem danych o osobach biorących udział w badaniu. Niestety próba zrealizowana zawsze jest mniej liczna niż wylosowana. Dzieje się tak, ponieważ zawsze pewna część respondentów jest nieosiągalna. Wyjechali, nie otwierają drzwi, nie odbierają telefonów itp. W związku z tym 
+Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejszym, ponieważ jest najbardziej kosztownym jego elementem i ma kluczowe znaczenie dla rzetelności całego badania. Żeby zrozumieć w jaki sposób wyniki sondażu zależą od poziomy realizacji próby przyjrzyjmy się następującemu przykładowi.
+
 wróćmy do badania sondażowego na temat poparcia dla partii X. Wyobraźmy sobie sytuację, gdy po wylosowaniu próby przechodzimy do realizacji terenowej (technika CAPI) i nagle okazuje się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb odmawiają wzięcia udziału w badaniu. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni.      
 Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
 Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
 
 ### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
       
-|6 dostępnych respondentów| 5 dostępnychrespondentów | 4 dostępnych respondentów | 3 dostępnych respondentów| 2 dostępnych respondentów | 1 dostępnych respondentów | 0 dostępnych respondentów |
+|6 dostępnych respondentów| 5 dostępnychr espondentów | 4 dostępnych respondentów | 3 dostępnych respondentów| 2 dostępnych respondentów | 1 dostępnych respondentów | 0 dostępnych respondentów |
 |-------------------------|--------------------------|---------------------------|--------------------------|--------------------------|---------------------------|---------------------------|
 |1                        |1                         |1                          |1                         |1                         |1                          |-                          |
 |5/6                      |-                         |-                          |-                         |-                         |-                          |-                          |
@@ -620,7 +632,7 @@ Jak widać tylko dla znikomej części prób liczba dostępnych respondentów wy
 
 ![Niepełna realizacja](Losowanie_wielu_prob/niepelna_prealizacja.png)
 
-Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Niestety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi 0,25.     
+Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Niestety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi 25%.     
 Nie jest to zgodne z tym co dzieje się w populacji. Możemy więc powiedzieć, że próba jest obciążona.
 A jak układa się błąd próby, na ile wynik próby różni się o przeciętnych wyników w próbie     
 
