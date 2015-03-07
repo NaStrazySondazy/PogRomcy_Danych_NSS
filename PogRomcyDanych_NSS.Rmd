@@ -10,9 +10,9 @@ Z badań przeprowadzonych przez zespół Na Straży Sondaży w 2014 r. wynika, �
 Polaków nie wie jak powstają sondaże!
 
 ```{r 1_wykres_slupkowy, echo=FALSE, fig.align='center'}
-options(OutDec= ",");
+options(OutDec= ",", scipen=10); # scipen - zapis naukowy liczb
 library(ggplot2)
-library(knitr)
+
 
 # Generate data
 sonNSS<-data.frame(L=1:100, Poparcie=c(rep("TAK", 5), rep("NIE", 95)))
@@ -525,7 +525,7 @@ Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby do
 gdzie X oznacza "tak, oddałabym/łbym głos na partię X", a nX oznacza "nie, oddałabym/łbym głos na inną partię lub w ogóle nie posza/edł na wybory".    
 Zwróćmy uwagę, że nasze oszacowania dotyczą poparcia wśród wszystkich obywateli, a nie tylko wyborców. Takie rozwiązanie zastosujemy dla uproszczenia dalszych rozważań. Zazwyczaj jednak podstawę procentowania w polskich sondażach dotyczących preferencji wyborczych stanowi zbiorowość wyborów, więc osób deklarujących udział w wyborach, a nie wszystkich obywateli. O problemach związanych z podstawą procentowania w sondażach warto przeczytać [na naszej stronie internetowej](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/populacja-operat-losowania-i-podstawa-procentowania/).      
 
-Ogólnie rzecz biorąc nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15=`r print(20*19*18*17*16*15,digits = 16)` różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondentów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2=`r print(19*2,digits = 16)` próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mógłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3=`r print(19*18*3, digits = 16)` trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6=`r  print(19*18*17*16*15*6, digits = 16)` sześcioosobowych próbach, co potwierdzają obliczenia w programie R.      
+Ogólnie rzecz biorąc nasz nowy schemat losowania generuje aż 20\*19\*18\*17\*16\*15=`r 20*19*18*17*16*15` różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondentów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2=`r 19*2` próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mógłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3=`r print(19*18*3, digits = 16)` trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6=`r  print(19*18*17*16*15*6, digits = 16)` sześcioosobowych próbach, co potwierdzają obliczenia w programie R.      
 
 ```{r, echo=FALSE}
 # # usuniac 'warning'
@@ -614,7 +614,7 @@ Obliczenia dla pozostałych wyników otrzymywanych przy użyciu schematu losowan
 
  
 ### Wykres 8.1. Poparcie dla partii X w próbach sześcioosobowych
-```{r,echo=FALSE}
+```{r,echo=FALSE, fig.align='center', fig.height=7, fig.width=13}
 # p6.2=p6.3<-matrix( m$Glosowanie[p6], nrow = 20*19*18*17*16*15, ncol = 6);
 # p6.2<-rowSums( p6.2==1)/6;
 # p6.2<-data.frame(table(p6.2));
@@ -627,14 +627,14 @@ Obliczenia dla pozostałych wyników otrzymywanych przy użyciu schematu losowan
 #   ylab("Liczba prób")+
 #    geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq+250000, label=Freq) ,vjust=0.1, size=3, face="bold")
 
-par(mfrow=c(1,1))
+par(mfrow=c(1,1), mar=c(3,5,1,0))
 rozklad.p6<-barplot( prawdopo[,3], las=1, ylim=c(0,1.2*10^7) )
 rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = "grey90")
 abline(h=seq(0,10*10^6,2*10^6), col="grey100");
 abline(v=seq(0,8,1), col="grey100");
 barplot( prawdopo[,3], las=1 , add=T, col="black")
 box( col = "grey90")
-text( rozklad.p6, prawdopo[,3]+1.5*10^5, labels = prawdopo[,3],cex=1.3)
+text( rozklad.p6, prawdopo[,3]+3*10^5, labels = prawdopo[,3],cex=1.3)
 
 ```
 
@@ -659,18 +659,149 @@ Zaczynamy od rozpisania wszystkich możliwych wyników z próby (kolumna A). Nas
 Czy istnieje jakiś sposób żeby temu zaradzić? Na szczęście tak. Polega on na zwiększeniu liczebności próby. Czeku większa liczba respondentów pozwala zredukować błąd? W skrócie można powiedzieć, że zmniejsza ona ryzyko wystąpienia skrajnych wyników z próby. Jeżeli dobieramy tylko dwóch respondentów (tak jak w sondażu dotyczącym absencji wyborczej) to poparcie dla partii X możemy oszacować tylko na poziomie 0%, 50% oraz 100%. Wprowadzając trzeciego respondenta zwiększamy zakres możliwości do 0%, 30%, 60%, 90% i 100%. Widzimy więc, że zwiększając próbę zwiększamy różnorodność wyników i jednocześnie zmniejszamy ryzyko trafienia na wynik skrajny, najdalszy od 35%. Mniej skrajnych wyników oznacza mniejszy błąd. Możemy to zobaczyć na wykresie ilustrującym rokad wyników z próby dla schematów losowania od 6 do 19 respondentów.    
 
 ### Wykres 8.1. Rozkłady wyników składających się od 6,  9, 12 lub 15 respondentów
-![Symulacja ]( Losowanie_wielu_prob/losowanie_wielu_prob.png "SYMULACJA")
+
+```{r, echo=FALSE, fig.align='center', fig.height=8, fig.width=13}
+proby<-list()
+for (n in 6:20) {
+  kmin<-(n-13)*(n>12)
+  kmax<-n*(n<8)+7*(n>7)
+  prawdopo<-matrix(0,length( kmin:kmax),2)
+  rownames(prawdopo)<-kmin:kmax/n
+  prawdopo[,1]<-kmin:kmax/n
+  mianownik<- choose(20,n);
+  #l.prob<-prod(20:(20-n+1)) # prod to funkcja zwracajaca iloczyn argumentow
+  for (p in kmin:kmax){
+    prawdopo[which(kmin:kmax==p), 2]<-(choose(7,p)*choose(13,n-p))/mianownik#*l.prob
+  }
+  proby[[ which(6:20==n)]]<-prawdopo
+}
+
+############# 4 wykresy
+
+par(mar = c(4.2,4.2,1,1), mfrow=c(2,2))
+for (i in c(1,4,7,10)) {
+  plot(c(-1,1),
+       c(-1,1), 
+       ylim=c(0,.5), 
+       xlim=c(0,1), 
+       las=1, 
+       xlab="Oszacowanie w próbie", 
+       ylab="Odsetek prób")
+  rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+         "grey90")
+  abline(h=seq(0,1,0.1), col="grey100");
+  abline(v=seq(0,1,0.1), col="grey100");
+  box( col = "grey90");
+  points( proby[[i]], pch=19)
+  for( j in 1:dim(proby[[i]])[1] ){
+    lines( rep(proby[[i]][j,1],2), c(0, proby[[i]][j,2]), lwd=5 )  
+  }
+  abline(v=7/20, col="red", lwd=2)
+  text(0.5, 0.4, paste("Liczba\nrespondentów:", i+5, sep="\n"), adj=0, cex=1.6)
+}
+
+# ![Symulacja ]( Losowanie_wielu_prob/losowanie_wielu_prob.png "SYMULACJA")
+
+```
+
+
 
 Jak widać zwiększanie próby "przybliża" wyniki do prawidłowej wartości. Jeżeli policzmy teraz błąd dla tych wszystkich schematów losowania prób to również zauważymy, że maleje on wraz ze zwiększeniem liczby respondentów. Zwiększanie próby rzeczywiście działa! Dzięki temu otrzymamy próbę, która nie tylko przeciętnie się nie myli, ale przede wszystkim przeciętnie myli się niewiele.      
 Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/blad-statystyczny/). Wyniki sondaży często są opatrzone komentarzem: "błąd statystyczny wynosi 3%. Co to oznacza? Żeby to zrozumieć przyjrzymy się wynikom generowanym przez nasz schemat losowania. Przedtem konieczna jest jednak mała dygresja. Musimy bowiem wiedzieć, że statystycy moją w zwyczaju przypisywać nadzwyczajne znacznie liczbie 95%. Często zakładają, że jeśli coś ma się zdarzyć na 95% to właściwie jest to pewne (bardziej restrykcyjni statystycy przypisują takie znacznie liczbie 99%, a mniej restrykcyjni liczbie 90%). Gdyby ich zapytać dokładnie to powiedzieliby, że oczywiście w życiu nic nie jest pewne, oni podejmują decyzje w oparciu właśnie o tą liczbę. Dlatego stanowi ona wyznacznik/granicę. Gdybyśmy więc byli statystykami i zawężali świat do jego 95% to moglibyśmy się zastanowić jakie wyniki z próba wygenerowanych przez nasz schemat losowania zmieściłaby się w takim przedziale. Przejrzyjmy się naszym wynikom. Poparcie nie mniejsze niż 1/6 i nie większe niż 5/6, czyli w przedziale <35%-x, 35%+x> występuje w --- wszystkich prób. Możemy zacząć się domyślać na czym polega "błąd statystyczny". sprawdźmy jakie przedziały otrzymamy dla schematów losowania od 6 do 19 respondentów.    
 
 ### Wykres 8.2. Przedziały ufności dla schematów losowania od 2 do 20 respondentów
 
-![Przedziały ufności ]( Losowanie_wielu_prob/przedzial_ufnosci.png "Przedziały ufności")
+```{r, echo=FALSE, fig.align='center', fig.height=7, fig.width=13}
+proby<-list()
+for (n in 6:20) {
+  kmin<-(n-13)*(n>12)
+  kmax<-n*(n<8)+7*(n>7)
+  prawdopo<-matrix(0,length( kmin:kmax),2)
+  rownames(prawdopo)<-kmin:kmax/n
+  prawdopo[,1]<-kmin:kmax/n
+  mianownik<- choose(20,n)
+  for (p in kmin:kmax){
+    prawdopo[which(kmin:kmax==p), 2]<-(choose(7,p)*choose(13,n-p))/mianownik
+  }
+  proby[[ which(6:20==n)]]<-prawdopo
+}
+##### funkcja sprawdzajaca przedzialy ufnosci
+
+proby.sumy<-list()
+for (i in 1:15) {
+  dlogosc<-dim(proby[[i]])[1]
+  sumy<-matrix(0,ceiling(dlogosc/2) ,3)
+  for (j in 1:ceiling(dlogosc/2) ){
+    sumy[j,1]<-sum(proby[[i]][j:(dlogosc-j+1),2 ])
+    sumy[j,2]<-proby[[i]][j,1]
+    sumy[j,3]<-proby[[i]][(dlogosc-j+1),1 ]
+  }
+  colnames(sumy)<-c("prawdo", "od", "do")
+  proby.sumy[[i]]<-sumy  
+}
+
+proby.sumy_przedzial<-
+  lapply(proby.sumy, 
+         FUN =function(x){ 
+           y<-(x[,1]-0.95)^2
+           y<-which(y==min(y))
+           return(x[y,])
+         } 
+  )
+proby.sumy_przedzial<-do.call(rbind, proby.sumy_przedzial)
+proby.sumy_przedzial<-cbind(6:20, proby.sumy_przedzial)
+options(OutDec= ",");
+
+par( mfrow=c(1,1))
+plot(proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], ylim=c(0,1), 
+     xlab="Liczebność próby",
+     pch=15,
+     las=1,
+     ylab="Przedział ufności");
+rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+       "grey90")
+abline(h=seq(0,1,0.1), col="grey100");
+abline(v=seq(6,20,1), col="grey100");
+box( col = "grey90");
+abline(h=7/20, col="red", lwd=3);
+points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], pch="-", cex = 6);
+points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,4], pch="-", cex = 6);
+for (i in 1:15) {
+  lines( x=rep(i+5,2), lwd=6,
+         y=rbind( proby.sumy_przedzial[i,3],
+                  proby.sumy_przedzial[i,4]) )
+  text(i+5, proby.sumy_przedzial[i,4]+0.1, paste(round(proby.sumy_przedzial[i,2],3)*100, "%", sep=""), cex=1.3 )
+}
+
+# ![Przedziały ufności ]( Losowanie_wielu_prob/przedzial_ufnosci.png "Przedziały ufności")
+```
+
+
 
 Widzimy, że wraz ze zwiększaniem liczebności próby błąd się zmniejsza. Może nie jest to jednostajny proces, ale widzimy jaki jest ogólny kierunek
 
-![Błędy oszacowania ]( Losowanie_wielu_prob/blad_oszacowania.png "Błędy oszacowania")
+```{r, echo=FALSE, fig.align='center', fig.height=7, fig.width=13}
+plot(6:20,
+     sqrt(unlist(lapply( proby, FUN = function(x) { sum( (x[,1]-0.35)^2*x[,2] )})) ),
+     ylim=c(0,0.2),
+     ylab="Pierwiatek przeciętnego błędu kwadratowego",
+     xlab="Liczebność próby",
+     las=1)
+rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+       "grey90")
+abline(h=seq(0,.2,0.05), col="grey100");
+abline(v=seq(6,20,1), col="grey100");
+box( col = "grey90");
+points(6:20,
+       sqrt(unlist(lapply( proby, FUN = function(x) { sum( (x[,1]-0.35)^2*x[,2] )})) ),
+       pch=19,
+       cex=2)
+# ![Błędy oszacowania ]( Losowanie_wielu_prob/blad_oszacowania.png "Błędy oszacowania")
+
+```
+
+
+
 
 Podsumowując:      
   1. Przeciętny wynik to nie wszystko - liczy się także przeciętny błąd;
@@ -785,8 +916,46 @@ kable( realizacja)
 Łącznie prób sześcioosobowych, w których dostępny jest przynajmniej 1 respondent jest `r print(realizacja[10,2], digits = 16)`, a więc mniej niż poprzednio.
 
 ### Wykres 9.1. Rozkład poparcia partii X w próbach 6 osobowych przy niepełnej realizacji (bez mieszkańców miast)     
+```{r, echo=FALSE, fig.align='center', fig.height=7, fig.width=13}
+realizacja<-c()
+for (i in 0:6) {
+  realizacja[i+1]<-prod(12:(12-5+i))^(i<6)*prod(8:(9-i))^(i>0)*choose(6,i)
+}
 
-![Niepełna realizacja](Losowanie_wielu_prob/niepelna_prealizacja.png)
+realizacja<-list()
+for (i in 1:6){
+  realizacja_wies<-matrix(0,3,2)
+  realizacja_wies[,1]<-c(0,1,2*(i>1))/i
+  realizacja_wies[1,2]<-prod(6:(7-i))* prod(12:(12-5+i))^(i<6)*choose(6,i)
+  realizacja_wies[2,2]<-prod(6:(8-i))^(i>1)*2*choose(i,1) * prod(12:(12-5+i))^(i<6)*choose(6,i)
+  realizacja_wies[3,2]<-prod(6:(9-i))^(i>2)*2*choose(i,2) * prod(12:(12-5+i))^(i<6)*choose(6,i)
+  realizacja[[i]]<-realizacja_wies
+}
+# lapply(realizacja, FUN=function(x){ sum(x[,2])})
+
+
+realizacja<-do.call(rbind , realizacja)
+realizacja<-aggregate( x =realizacja[,2], by = list(realizacja[,1]), sum  )
+realizacja$procent<-realizacja$x/ sum(realizacja$x)
+
+par(mfrow=c(1,1))
+plot( realizacja$Group.1, realizacja$procent, las=1, ylab="Odsetek prób", xlab="Oszacowanie w próbie")
+rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+       "grey90")
+abline(h=seq(0,1,0.1), col="grey100");
+abline(v=seq(0,1,0.1), col="grey100");
+abline(v=7/20, col="green", lwd=3)
+abline(v=sum(realizacja[,1]*realizacja[,2])/sum( realizacja[,2]), col="red", lwd=3, lty=2)
+points( realizacja$Group.1, realizacja$procent, pch=19, cex=2)
+box( col = "grey90")
+for( i in 1:dim(realizacja)[1]) {
+  lines( rep(realizacja$Group.1[i],2), c(0,realizacja$procent[i]), lwd=11)
+}
+#![Niepełna realizacja](Losowanie_wielu_prob/niepelna_prealizacja.png)
+```
+
+
+
 
 Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Niestety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi `r paste(round(sum(realizacja_obliczenia$poparcie.x*realizacja_obliczenia$liczba.prob)/ sum(realizacja_obliczenia$liczba.prob),3)*100,"%", sep="")`.     
 Nie jest to zgodne z tym co dzieje się w populacji. Możemy więc powiedzieć, że próba jest obciążona.
