@@ -398,7 +398,7 @@ Wiemy teraz dokładnie czego możemy się spodziewać po naszym schemacie losowa
 ![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2370 próbach absencja wyborcza wyniosła 0%, w 5259 wyniosła 50%, a w 2371 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2320 próbach absencja wyborcza wyniosła 0%, w 5328 wyniosła 50%, a w 2352 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Dla ponad połowy wszystkich możliwych prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry” i nasze wnioski z badania mogą być trafne?  Spójrzmy na ten problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby generowane przez nasz schemat losowania. Zastosujemy przy tym zasadę często stosowaną w szkole, gdy chcemy się czegoś dowiedzieć o wynikach dane ucznia w skali całego roku. W takim przypadku liczmy średnią arytmetyczną jego ocen. Podobnie zróbimy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie, gdy podzielimy go przez łączną liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazuje się, że “przeciętnie” na próbę przypada 50% absencja wyborcza!!! To jest dokładnie tyle, ile wynosi ono w całej populacji!!! Odkryliśmy w ten sposób podstawową "prawo" dotyczące metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe populacji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszystkich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt, czyli próba nie jest "obciążona" i wyniki z próby nie "odbiegają" od rzeczywistej wartości w populacji. Osiągnęliśmy to dzięki nadaniu wszystkim obywatelom równych szans dostania się do próby lub inaczej równe prawo do swobodnego wyrażenia swojej opinii.     
 
@@ -455,10 +455,11 @@ Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby do
   6. (X, nX, xX, nX, nX, nX) => 17% (1/6)  
   7. (nX, nX, nX, nX, nX, nX) => 0% (0/6)  
 
-gdzie X oznacza "tak, oddałabym/łbym głos na partię X", a nX oznacza "nie, oddałabym/łbym głos na inną partię lub w ogóle nie posza/edł na wybory".    
-Zwróćmy uwagę, że nasze oszacowania dotyczą poparcia wśród wszystkich obywateli, a nie tylko wyborców. Takie rozwiązanie zastosujemy dla uproszczenia nasztch rozważań. Zazwyczaj jednak [podstawę procentowania](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/populacja-operat-losowania-i-podstawa-procentowania/) w polskich sondażach politycznych stanowi zbiorowość wyborów, więc tylko osób deklarujących udział w wyborach. My nie zastosujemy się jednak do tej regułu ponieważ utrudniłaby ona nam prowadzenie niektórych analiz.        
+gdzie X oznacza "tak, oddałabym/łbym głos na partię X", a nX oznacza "nie, oddałabym/łbym głos na inną partię lub w ogóle nie posza/edł na wybory".     
 
-Wróćmy do naszego nowego schematu losowania respondentów. Ogólnie rzecz biorąc generuje on aż 20\*19\*18\*17\*16\*15=27907200 różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondentów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2=38 próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mógłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3=1026 trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6= sześcioosobowych próbach, co potwierdzają obliczenia w programie R.      
+Zwróćmy uwagę, że nasze oszacowania dotyczą poparcia wśród wszystkich obywateli, a nie tylko wyborców. Takie rozwiązanie zastosujemy dla uproszczenia naszych rozważań. Zazwyczaj jednak [podstawę procentowania](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/populacja-operat-losowania-i-podstawa-procentowania/) w polskich sondażach politycznych stanowi zbiorowość wyborów, więc tylko osób deklarujących udział w wyborach. My nie zastosujemy się jednak do tej regułu ponieważ utrudniłaby ona nam prowadzenie niektórych analiz.        
+
+Wróćmy do naszego nowego schematu losowania respondentów. Ogólnie rzecz biorąc generuje on aż 20\*19\*18\*17\*16\*15=27907200 różnych prób. To jest znacznie, znacznie więcej niż w przypadku badania absencji wyborczej, gdzie dobieraliśmy 2 respondentów. Niestety nie mamy miejsca, żeby rozpisać wszystkie próby. Możemy natomiast opisać ich zbiorowość wykonując pewne obliczenia. Zacznijmy od tego, w ilu próbach pojawi się każdy obywatel. W przypadku schematu doboru dwóch respondentów każdy obywatel mógł utworzyć 19 par z innymi osobami z populacji i dodatkowo zająć pierwsze lub drugie miejsce w próbie. W konsekwencji występował w 19\*2=38 próbach. A co by się stało, gdybyśmy dobierali trzyosobowe próby? W tym przypadku dla każdego obywatela można dobrać najpierw jedną osobę spośród 19, a później drugą spośród pozostałych 18. Obywatel mógłby przy tym zajmować pierwsze, drugie lub trzecie miejsce w próbie. W efekcie każdy występowałby w 19\*18\*3=1026 trzyosobowych próbach. Analogicznie w przypadku sześcioosobowej próby najpierw do każdego obywatela można dobrać jedną z 19 osób, potem jedną z 18 pozostałych osób, potem jeszcze jedną z pozostałych 17 osób itd., aż wreszcie ostatnią z pozostałych 15. Dodatkowo nasz obywatel może zając 1,2,3,4,5 lub 6 miejsce w próbie. Ostatecznie więc występuje w 19\*18\*17\*16\*15\*6=8372160 sześcioosobowych próbach.      
 
 
 
@@ -466,30 +467,30 @@ Wróćmy do naszego nowego schematu losowania respondentów. Ogólnie rzecz bior
 ### Tabela 8.2. Liczba prób, w których występują poszczególni obywatele
 
   | Obywatel| Liczba wystąpień|
-  |--------:|-----------:|
-  |        1|     8372160|
-  |        2|     8372160|
-  |        3|     8372160|
-  |        4|     8372160|
-  |        5|     8372160|
-  |        6|     8372160|
-  |        7|     8372160|
-  |        8|     8372160|
-  |        9|     8372160|
-  |       10|     8372160|
-  |       11|     8372160|
-  |       12|     8372160|
-  |       13|     8372160|
-  |       14|     8372160|
-  |       15|     8372160|
-  |       16|     8372160|
-  |       17|     8372160|
-  |       18|     8372160|
-  |       19|     8372160|
-  |       20|     8372160|
+  |---------|-----------------|
+  |        1|          8372160|
+  |        2|          8372160|
+  |        3|          8372160|
+  |        4|          8372160|
+  |        5|          8372160|
+  |        6|          8372160|
+  |        7|          8372160|
+  |        8|          8372160|
+  |        9|          8372160|
+  |       10|          8372160|
+  |       11|          8372160|
+  |       12|          8372160|
+  |       13|          8372160|
+  |       14|          8372160|
+  |       15|          8372160|
+  |       16|          8372160|
+  |       17|          8372160|
+  |       18|          8372160|
+  |       19|          8372160|
+  |       20|          8372160|
 
 Wiemy już w ilu próbach wystąpi każdy obywatel. Teraz zastanówmy się, z jaką częstotliwością występują poszczególne wyniki, czyli ile jest takich prób, w których poparcie dla partii X wyniesie  100% (6/6), ile takich, w których poparcie dla partii X wyniesie 83% (5/6) itd. Odpowiedź na to pytanie można uzyskać na dwa sposoby. Albo stosując proste, ale wymagające dużego skupienia, obliczenia na papierze albo stosując mniej obciążające i szybsze obliczenia na komputerze.           
-Zacznijmy od obliczeń na papierze. Zastanówmy się, ile może być takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przykładowo preferencje w nich mogą się ułożyć w następującej kolejności (X, X, X, X, X, nX). Losowanie tego rodzaju próby przeprowadzimy w następujący sposób. Pierwszego respondenta X dobieramy spośród wszystkich osób popierających partię X w populacji - łącznie jest ich 7. Potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających X, potem trzeciego respondenta dobieramy spośród pozostałych 5 osób popierających X, itd aż dochodzimy do szóstego respondenta. Dobierzemy go z innej grupy, osób nie popierających X (nX). W populacji jest ich 13. Ostatecznie więc liczba prób, dla których preferencje układają się w kolejności (X, X, X, X, X, nX), jest równa 7\*6\*5\*4\*3\*13=. No tak, ale my chcemy wiedzieć, ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich, w których osoba nX ( niepopierająca X) została wylosowana jako ostatnia. Żeby się tego dowiedzieć musimy zauważyć, że obywatel deklarujący nX może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli może on zostać ustawiony na sześć sposobów w próbie. Innymi słowy każda próba typu (X, X, X, X, X, nX) ma swoich pięć odpowiedników, w których występują ci sami obywatele X w tej samej kolejności i tylko obywatel nX "przeskakuje" między nimi. Ostatecznie więc liczba prób dających 83,3% (5/6) poparcia dla partii X wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=.          
+Zacznijmy od obliczeń na papierze. Zastanówmy się, ile może być takich prób, w których poparcie dla partii X wyniesie 83,3% (5/6). Przykładowo preferencje w nich mogą się ułożyć w następującej kolejności (X, X, X, X, X, nX). Losowanie tego rodzaju próby przeprowadzimy w następujący sposób. Pierwszego respondenta X dobieramy spośród wszystkich osób popierających partię X w populacji - łącznie jest ich 7. Potem drugiego respondenta dobieramy spośród pozostałych 6 osób popierających X, potem trzeciego respondenta dobieramy spośród pozostałych 5 osób popierających X, itd aż dochodzimy do szóstego respondenta. Dobierzemy go z innej grupy, osób nie popierających X (nX). W populacji jest ich 13. Ostatecznie więc liczba prób, dla których preferencje układają się w kolejności (X, X, X, X, X, nX), jest równa 7\*6\*5\*4\*3\*13=. No tak, ale my chcemy wiedzieć, ile jest dokładnie wszystkich prób, w  których poparcie wynosi 83,3%, nie tylko takich, w których osoba nX została wylosowana jako ostatnia. Żeby się tego dowiedzieć musimy zauważyć, że obywatel deklarujący nX może zostać wylosowany, jako szósty, piąty, czwarty, … lub jako pierwszy. Czyli może on zostać ustawiony na sześć sposobów w próbie. Innymi słowy każda próba typu (X, X, X, X, X, nX) ma swoich pięć odpowiedników, w których występują ci sami obywatele X w tej samej kolejności i tylko obywatel nX "przeskakuje" między nimi. Ostatecznie więc liczba prób dających 83,3% (5/6) poparcia dla partii X wyniesie (7\*6\*5\*4\*3\*13)\*6=32760\*6=.          
 A ile będzie prób, w których poparcie dla partii X wynosi 66,7% (4/6)? Podobnie jak poprzednio, zacznijmy od przykładowej kombinacji odpowiedzi (X, X, X, X , nX, nX). Dokładnie w tej kolejności preferencje możemy mieć w 7\*6\*5\*4\*13\*12=131040 próbach. Teraz zastanówmy się, na ile sposobów możemy “ustawić” dwie preferencje nX na sześciu miejscach (alternatywnie można się zastanawiać, na ile sposobów ustawić 4 preferencje X, ale wynik będzie dokładnie taki sam).          
 Załóżmy, że preferencje nX otrzymaliśmy od obywatela 7 i 8 - dokładnie w tej kolejności. Mamy więc próbę (X,X,X,X,7,8). Na ile sposobów obywatele 7 i 8 mogą "przeskoczyć" innych respondentów, jednocześnie pozostając w takim samym układzie względem siebie? Jeżeli 7 zajmie pierwsze miejsce to 8 może zająć drugie, trzecie, czwarte, ..., szóste. Czyli jeżeli 7 zajmie pierwsze miejsce to 8 może zając 5 pozostałych. Idąc dalej tym tokiem myślenia  możemy napisać, że:            
 
@@ -499,9 +500,9 @@ Załóżmy, że preferencje nX otrzymaliśmy od obywatela 7 i 8 - dokładnie w t
   * jeżeli 7 zajmuje czwarte miejsce to 8 może zająć 2 pozostałych;
   * jeżeli 7 zajmuje piąte miejsce to 8 może zająć 1 pozostałe;     
  
-Ostatecznie otrzymujemy więc 5\+4\+3\+2\+1= różnych wersji początkowego układu preferencji (X,X,X,X,7,8) Pamiętajmy, że poza 7,8 to tylko jedna z 13\*12= par dających dwie preferencje nX w próbie (inna może byc para 8,7). Na każdą z nich przypada 7\*6\*5\*4=  układów respondentów o preferencjach (X,X,X,X). Ostatecznie więc prób dla których szacowane poparcie dla partii X wyniesie 66,7% (4/7) jest (7\*6\*5\*4)\*(13\*12)\*15=       
-Na powyższy problem można też popatrzeć inaczej. Wystarczy zauważyć, że dla dwóch preferencji mamy do przydzielenia łącznie 6 miejsc. Pierwsza z preferencji może zając jedno miejsce z 6, a druga jedno z 5 pozostałych. Łącznie możemy więc wyróżnić 6\*5= różnych ich ustawień. Ale uwaga! Pamiętajmy , że kolejność respondentów musi pozostać niezmieniona. Jeżeli najpierw dobieramy obywatela 7, a potem 8 to znaczy, że akceptujemy próbę (7,.........,8) a odrzucamy (8,.........7). Pozbywamy się w ten sposób wszystkich "duplikatów". W ten sposób otrzymujemy (6\*5)/2= różnych ustawień dla pary obywateli 7 i 8, przy zachowaniu ich kolejności. To jest dokładnie tyle ile otrzymaliśmy dla wcześniejszych obliczeń.      
-A co z próbami, w których poparcie dla partii X wynosi 50% (3/6). Na podobnej zasadzie jak wcześniej możemy policzyć, że dla prób, w których preferencje występują w kolejności (X, X, X, nX, nX, nX) jest (7\*6\*5)\*(13\*12\*11)= . Następnie liczmy na ile sposobów możemy "wymieszać" każdą taką próbę, nie burząc jednocześnie porządku wśród respondentów o preferencjach X oraz nX oddzielnie. Pierwsza z preferencji nX może zająć jedno z 6  miejsc, druga jedno z pozostałych 5, trzecia jedno z pozostałych 4 - łącznie 6\*5\*4=. Musimy już tylko pozbyć się "duplikatów". Trzy preferencje nX można potencjalnie ustawić na 3\*2\*1= sposobów. Nas interesuje tylko jeden z nich, bo nie chcemy zmieniać kolejności preferencji. W związku z tym respondentów nX można "ustawić" nie na 6\*5\*4=120 tylko na (6\*5\*4)/6=20 sposobów. Szacowana poparcie dla partii X na poziomie 50% (3/6) wystąpi więc w (7\*6\*5)\*(13\*12\*11)\*(6\*5\*4)/6= próbach.      
+Ostatecznie otrzymujemy więc 5\+4\+3\+2\+1=15 różnych wersji początkowego układu preferencji (X,X,X,X,7,8) Pamiętajmy, że 7,8 to tylko jedna z 13\*12=156 par dających dwie preferencje nX w próbie (inna może byc para 8,7). Dodatkowo na każdą z nich przypada 7\*6\*5\*4= 840 różnych układów respondentów tworzących preferencje (X,X,X,X). Ostatecznie więc prób, w których poparcie dla partii X wyniesie 66,7% (4/7) jest (7\*6\*5\*4)\*(13\*12)\*15=1965600       
+Na powyższy problem można też popatrzeć inaczej. Wystarczy zauważyć, że dla dwóch preferencji X mamy do przydzielenia łącznie 6 miejsc. Pierwsza z preferencji może zając jedno miejsce z 6, a druga jedno z 5 pozostałych. Łącznie możemy więc wyróżnić 6\*5=30 różnych ich ustawień. Ale uwaga! Pamiętajmy , że kolejność respondentów musi pozostać niezmieniona. Jeżeli najpierw dobieramy obywatela 7, a potem 8 to znaczy, że akceptujemy próbę (7,..,..,..,..,8) a odrzucamy (8,..,..,..,..,7). Pozbywamy się więc wszystkich "duplikatów". W ten sposób otrzymujemy (6\*5)/2=15 różnych ustawień dla pary obywateli 7 i 8, przy zachowaniu ich kolejności. To jest dokładnie tyle ile otrzymaliśmy dla wcześniejszych obliczeń.      
+A co z próbami, w których poparcie dla partii X wynosi 50% (3/6). Na podobnej zasadzie jak wcześniej możemy policzyć, że dla prób, w których preferencje występują w kolejności (X, X, X, nX, nX, nX) jest (7\*6\*5)\*(13\*12\*11)=360360 . Następnie liczmy na ile sposobów możemy "wymieszać" każdą taką próbę, nie burząc jednocześnie porządku wśród respondentów o preferencjach X oraz nX oddzielnie. Pierwsza z preferencji nX może zająć jedno z 6  miejsc, druga jedno z pozostałych 5, trzecia jedno z pozostałych 4 - łącznie 6\*5\*4=120. Musimy już tylko pozbyć się "duplikatów". Trzy preferencje nX można potencjalnie ustawić na 3\*2\*1=6 sposobów. Nas interesuje tylko jedna z nich, bo nie chcemy zmieniać kolejności preferencji. W związku z tym respondentów nX można "ustawić" nie na 6\*5\*4=120 tylko na (6\*5\*4)/6=20 sposobów. Szacowana poparcie dla partii X na poziomie 50% (3/6) wystąpi więc w (7\*6\*5)\*(13\*12\*11)\*(6\*5\*4)/6=7207200 próbach.      
 
 Obliczenia dla pozostałych wyników otrzymywanych przy użyciu schematu losowania 6 respondentów zostały umieszczone w poniższej tabeli oraz na wykresie.
 
@@ -527,7 +528,6 @@ Uporaliśmy się z rozkładem wyników z próby 6-osobowej. Wymagało to od nas 
 
 ### Tabela 8.4. Podsumowanie obliczeń       
     
-    
 | Poparcie dla partii X (A) | Liczba prób z danym poparciem dla partii X (B) | Różnica między wynikiem w próbie, a poparciem w populacji (A -35%) | Kwadrat różnicy (A-35%)^2 | Iloczyn kwadratu błędu i liczby prób ((A-35%)^2)*B |
 |--------------------------|------------------------------------------------|--------------------------------------------------------------------|---------------------------|----------------------------------------------------|
 | 1                        | 5040                                           | 0,6500                                                             | 0,4225                    | 2129,4                                             |
@@ -540,42 +540,69 @@ Uporaliśmy się z rozkładem wyników z próby 6-osobowej. Wymagało to od nas 
 | Razem                    | 27907200                                       | xxx                                                                | xxx                       | 779688                                             |
 
 
-Zaczynamy od rozpisania wszystkich możliwych wyników z próby (kolumna A). Następnie dopisujemy, ile prób w naszym schemacie daje konkretny wynik (kolumna B). Obliczenia błędy zaczniemy od wyznaczenia różnicy między wynikiem w próbie i wynikiem w populacji (kolumna A - 35%). Następnie wyznaczymy kwadrat tego błędu ((A-35%)^2). W ten sposób otrzymaliśmy kwadrat błędu popełnianego w danym rodzaju próby. Nas interesuje nie błąd dla konkretnej próby (choć to też jest interesujące), ale błąd przeciętnie popełniany dla danego schematu losowania prób. Czyli chcemy po prostu policzyć średnią z naszego błędu - średnią arytmetyczną. Potrzebujemy do tego iloczynu kwadratów błędów w poszczególnych rodzajach prób i liczby prób każdego rodzaju (((A-35%)^2)*B ). Następnie sumujemy otrzymane wartości (779688) i dzielimy przez ogólna liczbę prób. W efekcie otrzymujemy  779688/27907200 = 0,02793859649. Tyle wynosi przeciętny błąd kwadratowy (statystycy nazywają go “wariancją”). Czy to dużo? Trudno powiedzieć. Dlatego policzymy pierwiastek tej liczby. W ten sposób otrzymamy pierwiastek średniego kwadratu błędu, czyli jak gdyby przeciętny błąd jaki popełniamy stosując nasz schemat losowania próby. Wynosi on 0,02793859649^(1/2) = 0,1671484265. W ten sposób otrzymujemy miarę, którą nazywamy odchyleniem standardowym. Trzeba podkreślić, że nie jest to przeciętnym błąd popełniany przez próby tylko pierwiastkiem przeciętnego kwadratu błędu. Mimo to zazwyczaj traktuje się go jako przeciętny błąd. Wiemy więc, że po naszej próbie możemy się spodziewać błędu na poziomie prawie 17% (0,167).  To bardzo dużo biorąc pod uwagę, że rzeczywiste poparcie w próbie wynosi 35%. Nasz miernik pokazuje, że przeciętnie mylimy się o około połowę w naszych oszacowaniach!!!          
+Zaczynamy od rozpisania wszystkich możliwych wyników z próby (kolumna A). Następnie dopisujemy, ile prób w naszym schemacie daje konkretny wynik (kolumna B). Obliczenia błędy zaczniemy od wyznaczenia różnicy między wynikiem w próbie i wynikiem w populacji (kolumna A - 35%). Następnie wyznaczymy kwadrat tego błędu ((A-35%)^2). W ten sposób otrzymaliśmy kwadrat błędu popełnianego w danym rodzaju próby. Nas interesuje nie błąd dla konkretnej próby (choć to też jest interesujące), ale błąd przeciętnie popełniany dla danego schematu losowania prób. Czyli chcemy po prostu policzyć średnią z naszego błędu - średnią arytmetyczną. Potrzebujemy do tego iloczynu kwadratów błędów w poszczególnych rodzajach prób i liczby prób każdego rodzaju (((A-35%)^2)*B ). Następnie sumujemy otrzymane wartości (779688) i dzielimy przez ogólna liczbę prób. W efekcie otrzymujemy  779688/27907200 = 0,02793859649. To jest wartość przeciętnego błędu kwadratowego (statystycy nazywają go wariancją) popełnianego przy wnioskowaniu o poparcia dla partii X na podstawie prób generowanych przez nasz schemat losowania. Czy to dużo? Trudno powiedzieć. Zobaczym, co się stanie, gdy policzymy pierwiastek naszego błędu kwadratowego. W ten sposób otrzymamy jak gdyby przeciętny (nie kwadratowy) błąd  jaki popełniamy stosując nasz schemat losowania próby. Wynosi on 0,02793859649^(1/2) = 0,1671484265. W ten sposób otrzymujemy miarę, którą nazywamy __odchyleniem standardowym__. Trzeba podkreślić, że nie jest to przeciętny błąd popełniany przez próby tylko pierwiastek przeciętnego kwadratu błędu. Dla uproszczenia  traktuje się go jednak jako zwykły przeciętny błąd. Wiemy więc, że po naszej próbie możemy się spodziewać odchylenia standardowego na poziomie prawie 17% (0,167).  To bardzo dużo biorąc pod uwagę, że rzeczywiste poparcie w próbie wynosi 35%!!! 
 
-Czy istnieje jakiś sposób żeby temu zaradzić? Na szczęście tak. Polega on na zwiększeniu liczebności próby. Czeku większa liczba respondentów pozwala zredukować błąd? W skrócie można powiedzieć, że zmniejsza ona ryzyko wystąpienia skrajnych wyników z próby. Jeżeli dobieramy tylko dwóch respondentów (tak jak w sondażu dotyczącym absencji wyborczej) to poparcie dla partii X możemy oszacować tylko na poziomie 0%, 50% oraz 100%. Wprowadzając trzeciego respondenta zwiększamy zakres możliwości do 0%, 30%, 60%, 90% i 100%. Widzimy więc, że zwiększając próbę zwiększamy różnorodność wyników i jednocześnie zmniejszamy ryzyko trafienia na wynik skrajny, najdalszy od 35%. Mniej skrajnych wyników oznacza mniejszy błąd. Możemy to zobaczyć na wykresie ilustrującym rokad wyników z próby dla schematów losowania od 6 do 19 respondentów.    
+Czy istnieje jakiś sposób żeby temu zaradzić? Na szczęście tak. Polega on na zwiększeniu liczebności próby. Ale czemu większa liczba respondentów pozwala zredukować błąd? W skrócie można powiedzieć, że zmniejsza ona ryzyko otrzymania skrajnych wyników w próbie. Jeżeli dobieramy tylko dwóch respondentów (tak jak w sondażu dotyczącym absencji wyborczej) to poparcie dla partii X możemy oszacować tylko na poziomie 0%, 50% oraz 100%. Wprowadzając trzeciego respondenta zwiększamy zakres możliwości do 0%, 30%, 60%, 90% i 100%. Widzimy więc, że zwiększając próbę zwiększamy różnorodność wyników i jednocześnie zmniejszamy ryzyko trafienia na wynik skrajny, najdalszy od 35%. Mniej skrajnych wyników oznacza mniejszy błąd. Możemy to zobaczyć na wykresie ilustrującym rokład wyników z próby dla schematów losowania od 6, 9, 12 oraz 15 respondentów w sposób prosty z naszej (fikcyjnej) populacji.    
 
-### Wykres 8.1. Rozkłady wyników składających się od 6,  9, 12 lub 15 respondentów
-
-
-```
-## Error: brakuje argumentu "x" a brak wartości domyślnej.
-```
+### Wykres 8.1. Rozkłady wyników z prób składających się z 6,  9, 12 lub 15 respondentów
 
 <img src="figure/unnamed-chunk-11.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" style="display: block; margin: auto;" />
 
 
+Na osi poziomej znajduje się poziom poparcia dla partii X w próbach wygenerowanych przy użyciu danego schematu losowania. Na osi pionowej mamy oznaczony odsetek prób, w których poparcie dla partii X osiągnęło konkretny poziom. Przerywaną linią zieloną zaznaczono rzeczywisty poziom poparcia dla partii X w populacji (35%). Widzimy więc, że dla naszego schematu losowania 6 respondentów:    
+  
+  * w 4% wszystkich prób poparcie dla X wynosi 0 (0/6);    
+  *	w 23% wszystkich prób poparcie dla X wynosi   17% (1/6);     
+  *	w 38%  wszystkich prób poparcie dla X wynosi   33% (2/6);    
+  *	w 26% wszystkich  prób poparcie dla X wynosi   50% (3/6);    
+  *	w 7% wszystkich prób poparcie dla X wynosi   67% (4/6);    
+  *	w 0,7% wszystkich  prób poparcie dla X wynosi   83% (5/6);    
+  *	w 0,02% wszystkich  prób poparcie dla X wynosi   100% (6/6);    
 
-Jak widać zwiększanie próby "przybliża" wyniki do prawidłowej wartości. Jeżeli policzmy teraz błąd dla tych wszystkich schematów losowania prób to również zauważymy, że maleje on wraz ze zwiększeniem liczby respondentów. Zwiększanie próby rzeczywiście działa! Dzięki temu otrzymamy próbę, która nie tylko przeciętnie się nie myli, ale przede wszystkim przeciętnie myli się niewiele.      
-Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/blad-statystyczny/). Wyniki sondaży często są opatrzone komentarzem: "błąd statystyczny wynosi 3%. Co to oznacza? Żeby to zrozumieć przyjrzymy się wynikom generowanym przez nasz schemat losowania. Przedtem konieczna jest jednak mała dygresja. Musimy bowiem wiedzieć, że statystycy moją w zwyczaju przypisywać nadzwyczajne znacznie liczbie 95%. Często zakładają, że jeśli coś ma się zdarzyć na 95% to właściwie jest to pewne (bardziej restrykcyjni statystycy przypisują takie znacznie liczbie 99%, a mniej restrykcyjni liczbie 90%). Gdyby ich zapytać dokładnie to powiedzieliby, że oczywiście w życiu nic nie jest pewne, oni podejmują decyzje w oparciu właśnie o tą liczbę. Dlatego stanowi ona wyznacznik/granicę. Gdybyśmy więc byli statystykami i zawężali świat do jego 95% to moglibyśmy się zastanowić jakie wyniki z próba wygenerowanych przez nasz schemat losowania zmieściłaby się w takim przedziale. Przejrzyjmy się naszym wynikom. Poparcie nie mniejsze niż 1/6 i nie większe niż 5/6, czyli w przedziale <35%-x, 35%+x> występuje w --- wszystkich prób. Możemy zacząć się domyślać na czym polega "błąd statystyczny". sprawdźmy jakie przedziały otrzymamy dla schematów losowania od 6 do 19 respondentów.    
+Wiemy już teraz, że zwiększanie próby "przybliża" wyniki do prawidłowej wartości. Im więcej respondentów, tym większy odsetek prób daje oszacowania bliskie rzeczywistemu poparciu dla partii X. Jeżeli policzmy teraz błąd (odchylenie standardowe) poparcia dla partii X dla tych czterech schematów losowania również zauważymy, że maleje on wraz ze zwiększeniem liczby respondentów. Poniżej znajduje się wykres, który ilustruje jak wielkość błędu (odchylenia standardowego) zmniejsza się dla schematów losowania od 6 do 20 respondentów. Ten ostatni przypadek dotyczy sytuacji, w której dobierani są wszyscy obywatele z populacji i w związku z tym błąd oszacowania wynosi 0.   
 
-### Wykres 8.2. Przedziały ufności dla schematów losowania od 2 do 20 respondentów
+### Wykres 8.2. Odchylenie standardowe poparcia dla partii X dla schematów losowania od 6 do 20 respondentów
 
 <img src="figure/unnamed-chunk-12.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" style="display: block; margin: auto;" />
 
 
+Zwiększanie próby rzeczywiście działa! Na wykresie widzimy wyraźnie, jak błąd standardowy zmniejsza się wraz z przyrostem liczby respondentów. W ten sposób odkryliśmy sposób radzenia sobie z dużymi błędami generowanymi przez dobór losowy - duże próby. Dzięki nim nasze wyniki będą nie tylko przeciętnie zgodne z rzeczywistością, ale przede wszystkim będą przeciętnie obarczone niewielkim błędem. 
+
+Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/blad-statystyczny/). Wyniki sondaży często są opatrzone komentarzem: "błąd statystyczny wynosi +/-3%”. Co to oznacza? Żeby to zrozumieć musimy zacząć od małej dygresji dotyczącej sposobu postrzegania świata przez statystyków oraz sondażystów. Musimy wiedzieć, że przypisują oni bardzo duże znaczenie liczbie 95%. Często zakładają, że jeśli prawdopodobieństwo jakiegoś zdarzenia wynosi 95% to właściwie jest ono pewne. Skorzystajmy z tej zasady. Zauważmy, że spośród wszystkich sześcioosobowych prób w 95,6% z nich poparcie dla partii X jest nie większe niż 83%(5/6) i nie mniejsze niż 17%(1/5).   
+
+### Tabela 8.5. Skumulowany odsetek prób sześcioosobowych  
+
+| Poparcie w próbie | Procent prób | Skumulowany odsetek prób (przedział ufności)| 
+|-------------------|------------------------------------------------------------|
+| 100% (6/6)        |  0,02%       | 0,02%                                       |
+| 83% (5/6)         |  0,70%       |\                                            |
+| 66% (4/6)         |  7,04%       |-                                            |
+| 50% (3/6)         |  25,83%      |- } 95,6%                                    |
+| 33% (2/6)         |  38,74%      |-                                            |
+| 17% (1/6)         |  23,24%      |/                                            |
+| 0%  (0/6)         |  4,43%       | 0,02%                                       |
+| Razem             |  100%        | 100%                                        | 
 
 
-Widzimy, że wraz ze zwiększaniem liczebności próby błąd się zmniejsza. Może nie jest to jednostajny proces, ale widzimy jaki jest ogólny kierunek
+Innymi słowy poparcie dla partii X w próbie dobieranej przy użyciu naszego schematu na 95,6%  będzie nie mniejsze niż 35%-18%=17% i nie większe niż 35%+48%=83%.  Statystycy oraz sondażyści powiedzieliby, że oszacowanie z próby „na pewno” będzie równe 35% (-18%. +48%).  Te różnice względem rzeczywistego wyniku nazywamy właśnie __błędem statystycznym__.  Niestety nie jest on ani mały ani symetryczny, tak jak to bywa zazwyczaj w dużych badaniach sondażowych, gdy wynosi (-3%, +3%). Dzieje się tak ponieważ rozkład wyników z prób dla naszego schematu losowania jest asymetryczny względem rzeczywistego wyniku w populacji (35% - zielona przerywana linia na Wykresie 8.1.) i dodatkowo obarczony dużym odchyleniem standardowym. Przyczyną takiego stanu rzeczy jest oczywiście niewielka liczebność próby.     
+Skoro wiemy już czym jest błąd statystyczny to warto żebyśmy poznali również pojęcie __przedziału ufności__. W ten sposób określa się zakres 95% wartości otrzymywanych przy pomocy danego schematu losowania, które mieszczą się w granicach błędu statystycznego. Innymi słowy są to wyniki, które padną „na pewno”. Dla naszego schematu doboru sześciu respondentów przedział ufności ciągnie się od poparcia na poziomie 17% do poparcia na poziomie 83%, a więc jest okropnie szeroki. A co by się stało gdybyśmy zwiększyli liczbę respondentów w próbie? 
 
-### Wykres 8.3. Pierwiastek przeciętnego błędu oszacowania dla schematów losowania od 6 do 20 respondentów
+### Wykres 8.2. Zmiana szerokości przedziału ufności w zależności od liczby respondentów w próbie (od 6 do 20)
 
 <img src="figure/unnamed-chunk-13.png" title="plot of chunk unnamed-chunk-13" alt="plot of chunk unnamed-chunk-13" style="display: block; margin: auto;" />
 
 
+Powyższy wykres ilustruje wpływ wielkości próby na szerokość przedziału ufności. Na osi poziomej zaznaczono liczbę respondentów. Oś pionowa to poziom poparcia dla partii X w próbach generowanych przez kolejne schematy losowania. Przedziały ufności zaznaczono pionowymi czarnymi liniami. Ich granice są zaznaczone poziomymi kreskami poniżej i powyżej których podano skrajne wartości przedziałów. Dodatkowo nad każdym z nich podano, jaki procent prób obejmują. Zielona przerywana linia wyznacza rzeczywisty poziom poparcia dla partii X w populacji. Przykładowo przedział ufności dla pierwszego schematu losowania sześciu respondentów ciągnie się od 17% do 83% poparcia dla partii X i obejmuje 95,6% prób. Przedział ufności dla schematu losowania siedmiu respondentów ciągnie się od 14% do 86% poparcia dla partii X i obejmuje 98% prób itd. Od razu widać, że żaden przedział ufności nie obejmuje równo 95% prób. To dlatego, że wyników otrzymywanych dla poszczególnych schematów nie dało się skumulować dokładnie do takiego odsetka.  Stąd pewne niewielkie odchylenia. Nie maja one jednak większego znaczenia, bo nawet najmniejsza wartość 91,6% oznacza, że prawie wszystkie wyniki z prób mieszą się w wyznaczonym zakresie.  Najważniejsze na powyższym wykresie jest to, że przedziały ufności mają tendencję do zwężania się wraz ze zwiększeniem liczby respondentów. Możemy obserwować pewne fluktuacje, ale ogólny trend jest jednoznaczny. Dla schematów losowania 16 i więcej respondentów generowane przez nie poziomy poparcia dla partii X są już tak bliskie rzeczywistej wartości, że przedziały ufności obejmują wszystkie wyniki. W ostatnim przypadku, losowania 20 respondentów, przedział ufności ma zerową szerokość ponieważ  w istocie jest to badanie na całej populacji, a więc nie jest one obarczone żadną niepewnością.
+
+W ten sposób zamknęliśmy rozważania dotyczące błędu oszacowania poszukiwanej wartości na podstawie próby. Wiemy czym jest odchylenie standardowe, błąd statystyczny, przedział ufności, co zrobić żeby zwiększyć precyzję pomiaru. Nie wyjaśniliśmy tylko jednej kwestii. W jaki sposób obliczyć wszystkie te wartości na podstawie jednej próby. Zauważmy, że do tej pory wszystkie wskaźniki obliczaliśmy wiedząc wszystko o badanej populacji i generowanych z niej próbach. W prawdziwym badaniu nie mamy tego typu danych. Nie znamy rzeczywistej wartości poszukiwanego wskaźnika w populacji, ani wyników ze wszystkich prób generowanych przez dany schemat losowania. Żeby wyjaśnić dokładnie, jak na podstawie jednej próby określa się wielkość błędu statystycznego dla danego schematu losowania musielibyśmy znacząco wydłużyć cały kurs. Niestety nie możemy tego zrobić i dlatego musimy się zadowolić takim oto ogólnym wyjaśnieniem, że wszystko to jest możliwe, dzięki statystyce, a dokładnie jednemu jej działowi zwanemu wnioskowaniem statystycznym. Z pomocą kilku twierdzeń tego zakresu można wnioskować nie tylko o populacji ale również o rozkładzie wyników w próbach generowanych przez dany schemat losowania. Warto jeszcze na koniec dodać, że aparat statystyczny oraz wnioskowanie statystyczne najlepiej działają na dużych próbach. Dlatego im więcej respondentów. Większa próba przekłada się na większą dokładność wyników oraz większy zakres analiz, które można przeprowadzić.
+O metodzie doboru prób do badań sondażowych można przeczytać w niejednej książce zarówno zagranicznej::
+
+jak i polskiej:
 
 
 
-Podsumowując:      
+
+A na koniec jeszcze krótkie podsumowania:      
   1. Przeciętny wynik to nie wszystko - liczy się także przeciętny błąd;
   2. Błąd można zmniejszyć zwiększając liczebność próby;
   3. Określenie "błąd statystyczny" dotyczy granic przedziału, który zdaniem statystyków "na pewno" (czyli na 95%) obejmuje swym zasięgiem poszukiwany parametr.
@@ -585,22 +612,25 @@ Podsumowując:
 __Zadania 8:__   
   1. Napisz, jak rozumiesz określenie, że próba jest reprezentatywna
   2. Dla wylosowanej wcześniej próby oblicz błąd standardowy
-  3. Oblicz oszacowanie poparcia dla partii X w swojej próbie
   4. CZy oszacowanie poparcia dla partii X w twojej próbie mieści się w przedziale XX-XX
-  5.  
+  5. Jak rozumiesz stwierdzenie "poparcie dla partii X wynosi 35% +/-3%":   
+    a) 35% prób daje wyniki 
 
 # 9. Błędy systematyczne 
 
-W części piątej mówiliśmy min. o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obciążone problemem odmów respondentów. 
+W części piątej mówiliśmy o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obciążone odmowami respondentów. 
 
-Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z losowania próby, lecz przede wszystkim z terenowej realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy.
+Do tej pory nauczyliśmy się wnioskować z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z doboru próby, lecz przede wszystkim z jej terenowej realizacji. W zasadzie jest to najważniejszy etap każdego badania sondażowego. 
+
+Od jakości jego realizacji zależy w znacznym stopniu jakość naszych wniosków. Jakie konsekwencje w takim razie może dla nas mieć niepełna realizacja próby? Wyobraźmy sobie sytuację, gdy po wylosowaniu próby sześciu respondentów  przechodzimy do realizacji terenowej (technika CAPI) i nagle okazuje się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb odmawiają wzięcia udziału w badaniu. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni.      
+Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
+Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
+
 
 Do tej pory wnioskowaliśmy o populacji na podstawie próby wylosowanej. Teraz zajmiemy się próbą zrealizowaną. Różnica między nimi jest zasadnicza. O ile pierwsza jest tylko instrukcją z kim ankieterzy mają przeprowadzić wywiady, o tyle druga jest zbiorem danych o osobach biorących udział w badaniu. Niestety próba zrealizowana zawsze jest mniej liczna niż wylosowana. Dzieje się tak, ponieważ zawsze pewna część respondentów jest nieosiągalna. Wyjechali, nie otwierają drzwi, nie odbierają telefonów itp. W związku z tym 
 Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejszym, ponieważ jest najbardziej kosztownym jego elementem i ma kluczowe znaczenie dla rzetelności całego badania. Żeby zrozumieć w jaki sposób wyniki sondażu zależą od poziomy realizacji próby przyjrzyjmy się następującemu przykładowi.
 
-wróćmy do badania sondażowego na temat poparcia dla partii X. Wyobraźmy sobie sytuację, gdy po wylosowaniu próby przechodzimy do realizacji terenowej (technika CAPI) i nagle okazuje się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb odmawiają wzięcia udziału w badaniu. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni.      
-Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
-Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
+
 
 ### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
       

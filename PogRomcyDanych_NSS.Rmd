@@ -735,10 +735,10 @@ Na osi poziomej znajduje się poziom poparcia dla partii X w próbach wygenerowa
   *	w 38%  wszystkich prób poparcie dla X wynosi   33% (2/6);    
   *	w 26% wszystkich  prób poparcie dla X wynosi   50% (3/6);    
   *	w 7% wszystkich prób poparcie dla X wynosi   67% (4/6);    
-  *	w 7% wszystkich  prób poparcie dla X wynosi   83% (5/6);    
+  *	w 0,7% wszystkich  prób poparcie dla X wynosi   83% (5/6);    
   *	w 0,02% wszystkich  prób poparcie dla X wynosi   100% (6/6);    
 
-Jak widać zwiększanie próby "przybliża" wyniki do prawidłowej wartości. Im więcej respondentów, tym większy odsetek prób daje oszacowania bliskie rzeczywistemu poparciu dla partii X. Jeżeli policzmy teraz błąd (odchylenie standardowe) poparcia dla partii X dla tych czterech schematów losowania również zauważymy, że maleje on wraz ze zwiększeniem liczby respondentów. Poniżej znajduje się wykres, który ilustruje jak wielkość błędu (odchylenia standardowego) zmniejsza się dla schematów losowania od 6 do 20 respondentów. Ten ostatni przypadek dotyczy sytuacji, w której dobierani są wszyscy obywatele z populacji i w związku z tym błąd oszacowania wynosi 0.   
+Wiemy już teraz, że zwiększanie próby "przybliża" wyniki do prawidłowej wartości. Im więcej respondentów, tym większy odsetek prób daje oszacowania bliskie rzeczywistemu poparciu dla partii X. Jeżeli policzmy teraz błąd (odchylenie standardowe) poparcia dla partii X dla tych czterech schematów losowania również zauważymy, że maleje on wraz ze zwiększeniem liczby respondentów. Poniżej znajduje się wykres, który ilustruje jak wielkość błędu (odchylenia standardowego) zmniejsza się dla schematów losowania od 6 do 20 respondentów. Ten ostatni przypadek dotyczy sytuacji, w której dobierani są wszyscy obywatele z populacji i w związku z tym błąd oszacowania wynosi 0.   
 
 ### Wykres 8.2. Odchylenie standardowe poparcia dla partii X dla schematów losowania od 6 do 20 respondentów
 
@@ -777,34 +777,28 @@ points(6:20,
 # ![Błędy oszacowania ]( Losowanie_wielu_prob/blad_oszacowania.png "Błędy oszacowania")
 ```
 
-Zwiększanie próby rzeczywiście działa! Na wykresie widzimy wyraźnie, jak błąd standardowy zmniejsza się wraz z przyrostem liczby respondentów. W ten sposób odkryliśmy sposób radzenia sobie z dużymi błędami generowanymi przez dobór losowy - duże próby. Dzięki temu będziemy otrzymywali wyniki, która nie tylko przeciętnie będą zgodne z rzeczywistością, ale przede wszystkim przeciętnie będą obarczone niewielkim błędem. 
+Zwiększanie próby rzeczywiście działa! Na wykresie widzimy wyraźnie, jak błąd standardowy zmniejsza się wraz z przyrostem liczby respondentów. W ten sposób odkryliśmy sposób radzenia sobie z dużymi błędami generowanymi przez dobór losowy - duże próby. Dzięki nim nasze wyniki będą nie tylko przeciętnie zgodne z rzeczywistością, ale przede wszystkim będą przeciętnie obarczone niewielkim błędem. 
 
-Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/blad-statystyczny/). Wyniki sondaży często są opatrzone komentarzem: "błąd statystyczny wynosi +/-3%”. Co to oznacza? Żeby to zrozumieć musimy zacząć od małej dygresji dotyczącej sposobu postrzegania świata przez statystyków oraz sondażystów. Musimy wiedzieć, że przypisują oni bardzo duże znaczenie liczbie 95%. Często zakładają, że jeśli prawdopodobieństwo jakiegoś zdarzenia wynosi 95% to właściwie jest ono pewne. Ma to dla nas duże znaczenie. Zauważmy, że możemy powiedzieć spośród wszystkich sześcioosobowych prób w 95,6% z nich poparcie dla partii X jest nie większe niż 83%(5/6) i nie mniejsze niż 17%(1/5).   
+Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http://nastrazysondazy.uw.edu.pl/metodologia-badan/metodologia/blad-statystyczny/). Wyniki sondaży często są opatrzone komentarzem: "błąd statystyczny wynosi +/-3%”. Co to oznacza? Żeby to zrozumieć musimy zacząć od małej dygresji dotyczącej sposobu postrzegania świata przez statystyków oraz sondażystów. Musimy wiedzieć, że przypisują oni bardzo duże znaczenie liczbie 95%. Często zakładają, że jeśli prawdopodobieństwo jakiegoś zdarzenia wynosi 95% to właściwie jest ono pewne. Skorzystajmy z tej zasady. Zauważmy, że spośród wszystkich sześcioosobowych prób w 95,6% z nich poparcie dla partii X jest nie większe niż 83%(5/6) i nie mniejsze niż 17%(1/5).   
 
-### Tabela 8.5. Przedział   
+### Tabela 8.5. Skumulowany odsetek prób sześcioosobowych  
 
-| Poparcie w próbie | Procent prób | Przedział ufności | 
-|-------------------|----------------------------------|
-| 1                 |  0,02%       | 0,02%             |
-| 5/6               |  0,70%       |                   |
-| 4/6               |  7,04%       |                   |
-| 3/6               |  25,83%      | 0,95,6%           |
-| 2/6               |  38,74%      |                   |
-| 1/6               |  23,24%      |                   |
-| 0                 |  4,43%       | 0,02%             |
-| Razem             |  100%        | 100%              | 
-
-
-Innymi słowy poparcie dla partii X w próbie dobieranej przy użyciu naszego schematu będzie nie mniejsze niż 35%-18%=17% i nie większe niż 35%+48%=83% na 95,6%. Statystycy oraz sondażyści powiedzieliby, że wynik z próby na pewno nie wyjdzie poza przedział (-18%, +48%). To jest właśnie  nasz __błąd statystyczny__. Niestety nie jest on ani mały ani symetryczny, tak jak to bywa zazwyczaj w badaniach sondażowych, gdy wynosi (-3%, +3%). Dzieje się tak ponieważ rozkład wyników z prób dla naszego schematu losowania jest asymetryczny i dodatkowo obarczony dużym odchyleniem standardowym.
+| Poparcie w próbie | Procent prób | Skumulowany odsetek prób (przedział ufności)| 
+|-------------------|------------------------------------------------------------|
+| 100% (6/6)        |  0,02%       | 0,02%                                       |
+| 83% (5/6)         |  0,70%       |\                                            |
+| 66% (4/6)         |  7,04%       |-                                            |
+| 50% (3/6)         |  25,83%      |- } 95,6%                                    |
+| 33% (2/6)         |  38,74%      |-                                            |
+| 17% (1/6)         |  23,24%      |/                                            |
+| 0%  (0/6)         |  4,43%       | 0,02%                                       |
+| Razem             |  100%        | 100%                                        | 
 
 
+Innymi słowy poparcie dla partii X w próbie dobieranej przy użyciu naszego schematu na 95,6%  będzie nie mniejsze niż 35%-18%=17% i nie większe niż 35%+48%=83%.  Statystycy oraz sondażyści powiedzieliby, że oszacowanie z próby „na pewno” będzie równe 35% (-18%. +48%).  Te różnice względem rzeczywistego wyniku nazywamy właśnie __błędem statystycznym__.  Niestety nie jest on ani mały ani symetryczny, tak jak to bywa zazwyczaj w dużych badaniach sondażowych, gdy wynosi (-3%, +3%). Dzieje się tak ponieważ rozkład wyników z prób dla naszego schematu losowania jest asymetryczny względem rzeczywistego wyniku w populacji (35% - zielona przerywana linia na Wykresie 8.1.) i dodatkowo obarczony dużym odchyleniem standardowym. Przyczyną takiego stanu rzeczy jest oczywiście niewielka liczebność próby.     
+Skoro wiemy już czym jest błąd statystyczny to warto żebyśmy poznali również pojęcie __przedziału ufności__. W ten sposób określa się zakres 95% wartości otrzymywanych przy pomocy danego schematu losowania, które mieszczą się w granicach błędu statystycznego. Innymi słowy są to wyniki, które padną „na pewno”. Dla naszego schematu doboru sześciu respondentów przedział ufności ciągnie się od poparcia na poziomie 17% do poparcia na poziomie 83%, a więc jest okropnie szeroki. A co by się stało gdybyśmy zwiększyli liczbę respondentów w próbie? 
 
-
-
-
-
-
-### Wykres 8.2. Przedziały ufności dla schematów losowania od 2 do 20 respondentów
+### Wykres 8.2. Zmiana szerokości przedziału ufności w zależności od liczby respondentów w próbie (od 6 do 20)
 
 ```{r, echo=FALSE, fig.align='center', fig.height=7, fig.width=13}
 ##### funkcja sprawdzajaca przedzialy ufnosci
@@ -832,10 +826,34 @@ proby.sumy_przedzial<-
   )
 proby.sumy_przedzial<-do.call(rbind, proby.sumy_przedzial)
 proby.sumy_przedzial<-cbind(6:20, proby.sumy_przedzial)
-options(OutDec= ",");
+# options(OutDec= ",");
+
+# par( mfrow=c(1,1))
+# plot(proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], ylim=c(0,1), 
+#      xlab="Liczebność próby",
+#      pch=15,
+#      las=1,
+#      ylab="Przedział ufności",
+#      cex.lab=1.5,
+#      cex.axis=1.2);
+# rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
+#        "grey90")
+# abline(h=seq(0,1,0.1), col="grey100");
+# abline(v=seq(6,20,1), col="grey100");
+# box( col = "grey90");
+# abline(h=7/20, col="green", lwd=4, lty=2);
+# points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], pch="-", cex = 6);
+# points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,4], pch="-", cex = 6);
+# for (i in 1:15) {
+#   lines( x=rep(i+5,2), lwd=6,
+#          y=rbind( proby.sumy_przedzial[i,3],
+#                   proby.sumy_przedzial[i,4]) )
+#   text(i+5, proby.sumy_przedzial[i,4]+0.1, paste(round(proby.sumy_przedzial[i,2],3)*100, "%", sep=""), cex=1.3 )
+# }
+proby.sumy_przedzial[,2:4]<-proby.sumy_przedzial[,2:4]*100
 
 par( mfrow=c(1,1))
-plot(proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], ylim=c(0,1), 
+plot(proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], ylim=c(0,100), 
      xlab="Liczebność próby",
      pch=15,
      las=1,
@@ -844,30 +862,37 @@ plot(proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], ylim=c(0,1),
      cex.axis=1.2);
 rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = 
        "grey90")
-abline(h=seq(0,1,0.1), col="grey100");
+abline(h=seq(0,100,10), col="grey100");
 abline(v=seq(6,20,1), col="grey100");
 box( col = "grey90");
-abline(h=7/20, col="green", lwd=4, lty=2);
+abline(h=7/20*100, col="green", lwd=4, lty=2);
 points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], pch="-", cex = 6);
 points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,4], pch="-", cex = 6);
 for (i in 1:15) {
   lines( x=rep(i+5,2), lwd=6,
          y=rbind( proby.sumy_przedzial[i,3],
                   proby.sumy_przedzial[i,4]) )
-  text(i+5, proby.sumy_przedzial[i,4]+0.1, paste(round(proby.sumy_przedzial[i,2],3)*100, "%", sep=""), cex=1.3 )
+  #text(i+5, proby.sumy_przedzial[i,4]+15, paste(round(proby.sumy_przedzial[i,2],0), "%", sep=""), cex=1.3 )
+  text(i+5, 100, paste(round(proby.sumy_przedzial[i,2],1), "%", sep=""), cex=1.3 )
+  text(i+5, proby.sumy_przedzial[i,4]+5, paste(round(proby.sumy_przedzial[i,4],0), "%", sep=""), cex=1, col="grey20")
+  text(i+5, proby.sumy_przedzial[i,3]-5, paste(round(proby.sumy_przedzial[i,3],0), "%", sep=""), cex=1, col="grey20")
 }
+
+
 # ![Przedziały ufności ]( Losowanie_wielu_prob/przedzial_ufnosci.png "Przedziały ufności")
 ```
 
+Powyższy wykres ilustruje wpływ wielkości próby na szerokość przedziału ufności. Na osi poziomej zaznaczono liczbę respondentów. Oś pionowa to poziom poparcia dla partii X w próbach generowanych przez kolejne schematy losowania. Przedziały ufności zaznaczono pionowymi czarnymi liniami. Ich granice są zaznaczone poziomymi kreskami poniżej i powyżej których podano skrajne wartości przedziałów. Dodatkowo nad każdym z nich podano, jaki procent prób obejmują. Zielona przerywana linia wyznacza rzeczywisty poziom poparcia dla partii X w populacji. Przykładowo przedział ufności dla pierwszego schematu losowania sześciu respondentów ciągnie się od 17% do 83% poparcia dla partii X i obejmuje 95,6% prób. Przedział ufności dla schematu losowania siedmiu respondentów ciągnie się od 14% do 86% poparcia dla partii X i obejmuje 98% prób itd. Od razu widać, że żaden przedział ufności nie obejmuje równo 95% prób. To dlatego, że wyników otrzymywanych dla poszczególnych schematów nie dało się skumulować dokładnie do takiego odsetka.  Stąd pewne niewielkie odchylenia. Nie maja one jednak większego znaczenia, bo nawet najmniejsza wartość 91,6% oznacza, że prawie wszystkie wyniki z prób mieszą się w wyznaczonym zakresie.  Najważniejsze na powyższym wykresie jest to, że przedziały ufności mają tendencję do zwężania się wraz ze zwiększeniem liczby respondentów. Możemy obserwować pewne fluktuacje, ale ogólny trend jest jednoznaczny. Dla schematów losowania 16 i więcej respondentów generowane przez nie poziomy poparcia dla partii X są już tak bliskie rzeczywistej wartości, że przedziały ufności obejmują wszystkie wyniki. W ostatnim przypadku, losowania 20 respondentów, przedział ufności ma zerową szerokość ponieważ  w istocie jest to badanie na całej populacji, a więc nie jest one obarczone żadną niepewnością.
+
+W ten sposób zamknęliśmy rozważania dotyczące błędu oszacowania poszukiwanej wartości na podstawie próby. Wiemy czym jest odchylenie standardowe, błąd statystyczny, przedział ufności, co zrobić żeby zwiększyć precyzję pomiaru. Nie wyjaśniliśmy tylko jednej kwestii. W jaki sposób obliczyć wszystkie te wartości na podstawie jednej próby. Zauważmy, że do tej pory wszystkie wskaźniki obliczaliśmy wiedząc wszystko o badanej populacji i generowanych z niej próbach. W prawdziwym badaniu nie mamy tego typu danych. Nie znamy rzeczywistej wartości poszukiwanego wskaźnika w populacji, ani wyników ze wszystkich prób generowanych przez dany schemat losowania. Żeby wyjaśnić dokładnie, jak na podstawie jednej próby określa się wielkość błędu statystycznego dla danego schematu losowania musielibyśmy znacząco wydłużyć cały kurs. Niestety nie możemy tego zrobić i dlatego musimy się zadowolić takim oto ogólnym wyjaśnieniem, że wszystko to jest możliwe, dzięki statystyce, a dokładnie jednemu jej działowi zwanemu wnioskowaniem statystycznym. Z pomocą kilku twierdzeń tego zakresu można wnioskować nie tylko o populacji ale również o rozkładzie wyników w próbach generowanych przez dany schemat losowania. Warto jeszcze na koniec dodać, że aparat statystyczny oraz wnioskowanie statystyczne najlepiej działają na dużych próbach. Dlatego im więcej respondentów. Większa próba przekłada się na większą dokładność wyników oraz większy zakres analiz, które można przeprowadzić.
+O metodzie doboru prób do badań sondażowych można przeczytać w niejednej książce zarówno zagranicznej::
+
+jak i polskiej:
 
 
-Widzimy, że wraz ze zwiększaniem liczebności próby błąd się zmniejsza. Może nie jest to jednostajny proces, ale widzimy jaki jest ogólny kierunek
 
 
-
-
-
-Podsumowując:      
+A na koniec jeszcze krótkie podsumowania:      
   1. Przeciętny wynik to nie wszystko - liczy się także przeciętny błąd;
   2. Błąd można zmniejszyć zwiększając liczebność próby;
   3. Określenie "błąd statystyczny" dotyczy granic przedziału, który zdaniem statystyków "na pewno" (czyli na 95%) obejmuje swym zasięgiem poszukiwany parametr.
@@ -877,22 +902,25 @@ Podsumowując:
 __Zadania 8:__   
   1. Napisz, jak rozumiesz określenie, że próba jest reprezentatywna
   2. Dla wylosowanej wcześniej próby oblicz błąd standardowy
-  3. Oblicz oszacowanie poparcia dla partii X w swojej próbie
   4. CZy oszacowanie poparcia dla partii X w twojej próbie mieści się w przedziale XX-XX
-  5.  
+  5. Jak rozumiesz stwierdzenie "poparcie dla partii X wynosi 35% +/-3%":   
+    a) 35% prób daje wyniki 
 
 # 9. Błędy systematyczne 
 
-W części piątej mówiliśmy min. o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obciążone problemem odmów respondentów. 
+W części piątej mówiliśmy o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obciążone odmowami respondentów. 
 
-Do tej pory poznaliśmy sposoby wnioskowania z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z losowania próby, lecz przede wszystkim z terenowej realizacji. W zasadzie jest to główna część badania. Od niej wszystko zależy.
+Do tej pory nauczyliśmy się wnioskować z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z doboru próby, lecz przede wszystkim z jej terenowej realizacji. W zasadzie jest to najważniejszy etap każdego badania sondażowego. 
+
+Od jakości jego realizacji zależy w znacznym stopniu jakość naszych wniosków. Jakie konsekwencje w takim razie może dla nas mieć niepełna realizacja próby? Wyobraźmy sobie sytuację, gdy po wylosowaniu próby sześciu respondentów  przechodzimy do realizacji terenowej (technika CAPI) i nagle okazuje się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb odmawiają wzięcia udziału w badaniu. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni.      
+Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
+Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
+
 
 Do tej pory wnioskowaliśmy o populacji na podstawie próby wylosowanej. Teraz zajmiemy się próbą zrealizowaną. Różnica między nimi jest zasadnicza. O ile pierwsza jest tylko instrukcją z kim ankieterzy mają przeprowadzić wywiady, o tyle druga jest zbiorem danych o osobach biorących udział w badaniu. Niestety próba zrealizowana zawsze jest mniej liczna niż wylosowana. Dzieje się tak, ponieważ zawsze pewna część respondentów jest nieosiągalna. Wyjechali, nie otwierają drzwi, nie odbierają telefonów itp. W związku z tym 
 Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejszym, ponieważ jest najbardziej kosztownym jego elementem i ma kluczowe znaczenie dla rzetelności całego badania. Żeby zrozumieć w jaki sposób wyniki sondażu zależą od poziomy realizacji próby przyjrzyjmy się następującemu przykładowi.
 
-wróćmy do badania sondażowego na temat poparcia dla partii X. Wyobraźmy sobie sytuację, gdy po wylosowaniu próby przechodzimy do realizacji terenowej (technika CAPI) i nagle okazuje się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb odmawiają wzięcia udziału w badaniu. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni.      
-Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
-Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
+
 
 ### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
       
