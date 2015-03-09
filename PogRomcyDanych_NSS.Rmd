@@ -1,12 +1,9 @@
 ---
-title: "PogRomcy Danych NSS"
+title: "“PogRomcy Danych” feat. Na Straży Sondaży"
 output: 
   html_document:
     keep_md: true
 ---
-# POGROMCY DANYCH & 
-Prezentują 
-
 
 # 1. Wstęp
 Z badań przeprowadzonych przez zespół Na Straży Sondaży w 2014 r. wynika, że 95%
@@ -76,6 +73,8 @@ L.p.          |Czego dotyczy badanie? | Co jest próbą?
 # 4. Sondaż 
 
 Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki często pojawiają się w prasie i mają duże znaczenie dla polityków oraz pewnie trochę mniejsze dla wyborców.  Wyobraźmy sobie, że chcemy zmierzyć poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celów odsłońmy kilka faktów dotyczących badanej zbiorowości:
+
+### Tabela 4.1. Rozkład preferencji politycznych w (fikcyjnej) populacji dorosłych obywateli Polski (%)
 
 |       | Nie biorę udziały w wyborach | NIE |  Tak | Razem |
 |-------|------------------------------|-----|------|-------|
@@ -353,7 +352,7 @@ m<-m[,colnames(m)!="X"]
 poparcie_dla_P<-addmargins(table( m$Miasto_wies, m$Glosowanie ) )
 colnames( poparcie_dla_P)<-c("Nie pójdę na wybory", "Nie", "Tak", "RAZEM")
 row.names( poparcie_dla_P)<-c("Miasto", "Wieś", "RAZEM") # przerobic
-kable( poparcie_dla_P, format = "markdown")
+# kable( poparcie_dla_P, format = "markdown")
 ```
 
 |Miejsce zamieszkania|Tak, pójdę na wybory| Nie, nie pójdę na wybory|RAZEM|
@@ -626,7 +625,7 @@ Obliczenia dla pozostałych wyników otrzymywanych przy użyciu schematu losowan
 #    geom_text(data=p6.2, aes(x = factor(p6.2), y = Freq+250000, label=Freq) ,vjust=0.1, size=3, face="bold")
 
 par(mfrow=c(1,1), mar=c(4,7,1,0))
-rozklad.p6<-barplot( prawdopo[,3], las=1, ylim=c(0,1.2*10^7), xlab="Poparcie w próbie", cex.lab=1.5, cex.axis=1.2)
+rozklad.p6<-barplot( prawdopo[,3], las=1, ylim=c(0,1.2*10^7), xlab="Poparcie w próbie", cex.lab=1.5, cex.axis=1.2, axes=FALSE)
 rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = "grey90")
 abline(h=seq(0,10*10^6,2*10^6), col="grey100");
 abline(v=seq(0,8,1), col="grey100");
@@ -760,7 +759,7 @@ for (n in 6:20) {
 plot(6:20,
      sqrt(unlist(lapply( proby, FUN = function(x) { sum( (x[,1]-0.35)^2*x[,2] )})) ),
      ylim=c(0,0.2),
-     ylab="Pierwiatek przeciętnego błędu kwadratowego",
+     ylab="Odchylenie standardowe",
      xlab="Liczba respondentów próby",
      las=1,
      cex.lab=1.3,
@@ -786,11 +785,11 @@ Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http:/
 | Poparcie w próbie | Procent prób | Skumulowany odsetek prób (przedział ufności)| 
 |-------------------|------------------------------------------------------------|
 | 100% (6/6)        |  0,02%       | 0,02%                                       |
-| 83% (5/6)         |  0,70%       |\                                            |
-| 66% (4/6)         |  7,04%       |-                                            |
-| 50% (3/6)         |  25,83%      |- } 95,6%                                    |
-| 33% (2/6)         |  38,74%      |-                                            |
-| 17% (1/6)         |  23,24%      |/                                            |
+| 83% (5/6)         |  0,70%       |                                             |
+| 66% (4/6)         |  7,04%       |                                             |
+| 50% (3/6)         |  25,83%      | 95,6%                                       |
+| 33% (2/6)         |  38,74%      |                                             |
+| 17% (1/6)         |  23,24%      |                                             |
 | 0%  (0/6)         |  4,43%       | 0,02%                                       |
 | Razem             |  100%        | 100%                                        | 
 
@@ -885,11 +884,6 @@ for (i in 1:15) {
 Powyższy wykres ilustruje wpływ wielkości próby na szerokość przedziału ufności. Na osi poziomej zaznaczono liczbę respondentów. Oś pionowa to poziom poparcia dla partii X w próbach generowanych przez kolejne schematy losowania. Przedziały ufności zaznaczono pionowymi czarnymi liniami. Ich granice są zaznaczone poziomymi kreskami poniżej i powyżej których podano skrajne wartości przedziałów. Dodatkowo nad każdym z nich podano, jaki procent prób obejmują. Zielona przerywana linia wyznacza rzeczywisty poziom poparcia dla partii X w populacji. Przykładowo przedział ufności dla pierwszego schematu losowania sześciu respondentów ciągnie się od 17% do 83% poparcia dla partii X i obejmuje 95,6% prób. Przedział ufności dla schematu losowania siedmiu respondentów ciągnie się od 14% do 86% poparcia dla partii X i obejmuje 98% prób itd. Od razu widać, że żaden przedział ufności nie obejmuje równo 95% prób. To dlatego, że wyników otrzymywanych dla poszczególnych schematów nie dało się skumulować dokładnie do takiego odsetka.  Stąd pewne niewielkie odchylenia. Nie maja one jednak większego znaczenia, bo nawet najmniejsza wartość 91,6% oznacza, że prawie wszystkie wyniki z prób mieszą się w wyznaczonym zakresie.  Najważniejsze na powyższym wykresie jest to, że przedziały ufności mają tendencję do zwężania się wraz ze zwiększeniem liczby respondentów. Możemy obserwować pewne fluktuacje, ale ogólny trend jest jednoznaczny. Dla schematów losowania 16 i więcej respondentów generowane przez nie poziomy poparcia dla partii X są już tak bliskie rzeczywistej wartości, że przedziały ufności obejmują wszystkie wyniki. W ostatnim przypadku, losowania 20 respondentów, przedział ufności ma zerową szerokość ponieważ  w istocie jest to badanie na całej populacji, a więc nie jest one obarczone żadną niepewnością.
 
 W ten sposób zamknęliśmy rozważania dotyczące błędu oszacowania poszukiwanej wartości na podstawie próby. Wiemy czym jest odchylenie standardowe, błąd statystyczny, przedział ufności, co zrobić żeby zwiększyć precyzję pomiaru. Nie wyjaśniliśmy tylko jednej kwestii. W jaki sposób obliczyć wszystkie te wartości na podstawie jednej próby. Zauważmy, że do tej pory wszystkie wskaźniki obliczaliśmy wiedząc wszystko o badanej populacji i generowanych z niej próbach. W prawdziwym badaniu nie mamy tego typu danych. Nie znamy rzeczywistej wartości poszukiwanego wskaźnika w populacji, ani wyników ze wszystkich prób generowanych przez dany schemat losowania. Żeby wyjaśnić dokładnie, jak na podstawie jednej próby określa się wielkość błędu statystycznego dla danego schematu losowania musielibyśmy znacząco wydłużyć cały kurs. Niestety nie możemy tego zrobić i dlatego musimy się zadowolić takim oto ogólnym wyjaśnieniem, że wszystko to jest możliwe, dzięki statystyce, a dokładnie jednemu jej działowi zwanemu wnioskowaniem statystycznym. Z pomocą kilku twierdzeń tego zakresu można wnioskować nie tylko o populacji ale również o rozkładzie wyników w próbach generowanych przez dany schemat losowania. Warto jeszcze na koniec dodać, że aparat statystyczny oraz wnioskowanie statystyczne najlepiej działają na dużych próbach. Dlatego im więcej respondentów. Większa próba przekłada się na większą dokładność wyników oraz większy zakres analiz, które można przeprowadzić.
-O metodzie doboru prób do badań sondażowych można przeczytać w niejednej książce zarówno zagranicznej::
-
-jak i polskiej:
-
-
 
 
 A na koniec jeszcze krótkie podsumowania:      
@@ -908,31 +902,35 @@ __Zadania 8:__
 
 # 9. Błędy systematyczne 
 
-W części piątej mówiliśmy o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są obciążone odmowami respondentów. 
+W części piątej (5. Problem badawczy -> populacja -> technika realizacji badania) mówiliśmy o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są zagrożone odmowami respondentów. 
 
-Do tej pory nauczyliśmy się wnioskować z próby na podstawie wybranego schematu losowania. Musimy jednak pamiętać, że badanie sondażowe nie składa się wyłącznie z doboru próby, lecz przede wszystkim z jej terenowej realizacji. W zasadzie jest to najważniejszy etap każdego badania sondażowego. 
+Do tej pory zajmowaliśmy sie teorią badąń sondażowych. Czas by przejść do praktyki. W tej części naszego odcinka zajmiemy się problemami związanymi z terenową realizacją badania. Wszystko o czym mówiliśmy do tej pory było bardzo ważne, ale dotyczyło przygotowania sodażu. Teraz zajmiemy się najważniejszym elementem każdego badania, a więc zbieraniem danych od wybranych respondentów. Prawidłowy przebieg tego etapu badania ma kolosalne znaczenie dla późniejsze Trafność wniosków.
 
-Od jakości jego realizacji zależy w znacznym stopniu jakość naszych wniosków. Jakie konsekwencje w takim razie może dla nas mieć niepełna realizacja próby? Wyobraźmy sobie sytuację, gdy po wylosowaniu próby sześciu respondentów  przechodzimy do realizacji terenowej (technika CAPI) i nagle okazuje się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb odmawiają wzięcia udziału w badaniu. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni.      
+Kluczową sprawą jest poziom realizacji próby, a więc stosunek liczby respondentów, którzy wzięli udził w badaniu do ogólnej liczby wszystkich wylosowanych respondentów. Im większy odsetek osób odmawia wizięcia udziału tym większe ryzyko, że nasze wnioski o populacji będą niewłaściwe. Dzieje się nie tylko dlatego, że odmowy uczestnictwa zmnieszają liczbę respondentów w próbie, ale także dla tego, że mogą one się przyczynić do wystąpienia __błędów systematycznych__  i __obciążenia__ wyników z próby. Co to oznacza? Wyjaśnimy to na nowym przykładzie.
+
+Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejszym, ponieważ jest najbardziej kosztownym jego elementem i ma kluczowe znaczenie dla rzetelności całego badania.
+
+Znowu odowołajmy się do naszej (fikcyjnej) populacji dorosłych obywateli Polski. Ponownie skorzystamy z przykładu badania sondażowego dotyczącego poziomu poparcia dla partii X. w stosunku do sondażu z poprzedniej części (8. Błąd oszacowania) nie zmieni się nic. Znowu realizujemy badanie techniką CAPI, używamy tego samego kwestionariusza i losujemy 6 respondentów w sposób prosty bezzwrotny. zmieni się tylko jedna rzecz. Do tej pory nikt nam nie odmawiał wzięcia udziału w badaniu. Tym razem okaże się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb naszych ankieterów, odmawiają odpowiedzi na pytania z naszego kwestionariusza. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, rzeczywiście są trudniej uchwytni i sondażyści mają problem z dodarciem do tej grupy społecznej.      
+
+### Tabela 9.1 Rozkład preferencji politycznych w (fikcyjnej) populacji dorosłych obywateli Polski
+
+|Miejsce zamieszkania | Nie biorę udziały w wyborach | NIE |  Tak | Razem |
+|---------------------|------------------------------|-----|------|-------|
+|Miasto               | 6                            | 1   | 5    | 12    |
+|Wies                 | 4                            | 2   | 2    |  8    |
+|RAZEM                | 10                           | 3   | 7    | 20    |
+
 Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
 Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
 
-
-Do tej pory wnioskowaliśmy o populacji na podstawie próby wylosowanej. Teraz zajmiemy się próbą zrealizowaną. Różnica między nimi jest zasadnicza. O ile pierwsza jest tylko instrukcją z kim ankieterzy mają przeprowadzić wywiady, o tyle druga jest zbiorem danych o osobach biorących udział w badaniu. Niestety próba zrealizowana zawsze jest mniej liczna niż wylosowana. Dzieje się tak, ponieważ zawsze pewna część respondentów jest nieosiągalna. Wyjechali, nie otwierają drzwi, nie odbierają telefonów itp. W związku z tym 
-Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejszym, ponieważ jest najbardziej kosztownym jego elementem i ma kluczowe znaczenie dla rzetelności całego badania. Żeby zrozumieć w jaki sposób wyniki sondażu zależą od poziomy realizacji próby przyjrzyjmy się następującemu przykładowi.
-
-
-
 ### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne
       
-|6 dostępnych respondentów| 5 dostępnychr espondentów | 4 dostępnych respondentów | 3 dostępnych respondentów| 2 dostępnych respondentów | 1 dostępnych respondentów | 0 dostępnych respondentów |
+      
+|6 dostępnych respondentów| 5 dostępnychr espondentów| 4 dostępnych respondentów | 3 dostępnych respondentów| 2 dostępnych respondentów| 1 dostępnych respondentów | 0 dostępnych respondentów |
 |-------------------------|--------------------------|---------------------------|--------------------------|--------------------------|---------------------------|---------------------------|
-|1                        |1                         |1                          |1                         |1                         |1                          |-                          |
-|5/6                      |-                         |-                          |-                         |-                         |-                          |-                          |
-|-                        |4/5                       |-                          |-                         |-                         |-                          |-                          |
-|-                        |-                         |3/4                        |-                         |-                         |-                          |-                          |
-|4/6                      |-                         |-                          |2/3                       |-                         |-                          |-                          |
-|-                        |3/5                       |-                          |-                         |-                         |-                          |-                          |
-|3/6                      |-                         |2/4                        |-                         |1/2                       |-                          |-                          |
+|-                        |-                         |-                          |-                         |1                         |1                          |-                          |
+|-                        |-                         |-                          |2/3                       |-                         |-                          |-                          |
+|-                        |-                         |2/4                        |-                         |1/2                       |-                          |-                          |
 |-                        |2/5                       |-                          |-                         |-                         |-                          |-                          |
 |2/6                      |-                         |-                          |1/3                       |-                         |-                          |-                          |
 |-                        |-                         |1/4                        |-                         |-                         |-                          |-                          |
@@ -940,8 +938,8 @@ Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejs
 |1/6                      |-                         |-                          |-                         |-                         |-                          |-                          |
 |0                        |0                         |0                          |0                         |0                         |0                          |-                          |
       
-
-W zaistniałej sytuacji rozkład wyników nie jest już taki prosty do przewidzenia (można go wyznaczyć, ale to byłoby zbyt czasochłonne w tej chwili). Wyznaczymy go więc z pomocą komputera.       
+   
+W zaistniałej sytuacji rozkład wyników nie jest już taki prosty do przewidzenia. Skupmy się przede wszystkim na tym, ilu respondetnów otrzymamy losując 6 osób i wiedząc, że tylko te zamieszkałe na wsi wezmą udział w badaniu.        
 
 ### Tabela 9.2. Liczba dostępnych respondentów w próbach sześcioosobowych
 
@@ -984,7 +982,7 @@ colnames(realizacja)<-c("Poparcie w próbie", "Liczba prób", "Procent prób")
 kable( realizacja)
 ```
 
-Łącznie prób sześcioosobowych, w których dostępny jest przynajmniej 1 respondent jest `r print(realizacja[10,2], digits = 16)`, a więc mniej niż poprzednio.
+Łącznie prób sześcioosobowych, w których dostępny jest przynajmniej 1 respondent jest `r print(realizacja[10,2], digits = 16)`. Oznacza to, że łączna liczba dostępnych prób będzie mniejsza niż poprzenio. Inaczej też rozłożą się wyniki z prób.
 
 ### Wykres 9.1. Rozkład poparcia partii X w próbach 6 osobowych przy niepełnej realizacji (bez mieszkańców miast)  
 
@@ -1005,7 +1003,6 @@ for (i in 1:6){
 }
 # lapply(realizacja, FUN=function(x){ sum(x[,2])})
 
-
 realizacja<-do.call(rbind , realizacja)
 realizacja<-aggregate( x =realizacja[,2], by = list(realizacja[,1]), sum  )
 realizacja$procent<-realizacja$x/ sum(realizacja$x)
@@ -1025,9 +1022,6 @@ for( i in 1:dim(realizacja)[1]) {
 }
 #![Niepełna realizacja](Losowanie_wielu_prob/niepelna_prealizacja.png)
 ```
-
-
-
 
 Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Niestety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi `r paste(round(sum(realizacja_obliczenia$poparcie.x*realizacja_obliczenia$liczba.prob)/ sum(realizacja_obliczenia$liczba.prob),3)*100,"%", sep="")`.     
 Nie jest to zgodne z tym co dzieje się w populacji. Możemy więc powiedzieć, że próba jest obciążona.
