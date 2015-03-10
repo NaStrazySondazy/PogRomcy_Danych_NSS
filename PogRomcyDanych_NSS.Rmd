@@ -871,8 +871,8 @@ for (i in 1:15) {
   lines( x=rep(i+5,2), lwd=6,
          y=rbind( proby.sumy_przedzial[i,3],
                   proby.sumy_przedzial[i,4]) )
-  #text(i+5, proby.sumy_przedzial[i,4]+15, paste(round(proby.sumy_przedzial[i,2],0), "%", sep=""), cex=1.3 )
-  text(i+5, 100, paste(round(proby.sumy_przedzial[i,2],1), "%", sep=""), cex=1.3 )
+  text(i+5, proby.sumy_przedzial[i,4]+15, paste(round(proby.sumy_przedzial[i,2],0), "%", sep=""), cex=1.3 )
+  #text(i+5, 100, paste(round(proby.sumy_przedzial[i,2],1), "%", sep=""), cex=1.3 )
   text(i+5, proby.sumy_przedzial[i,4]+5, paste(round(proby.sumy_przedzial[i,4],0), "%", sep=""), cex=1, col="grey20")
   text(i+5, proby.sumy_przedzial[i,3]-5, paste(round(proby.sumy_przedzial[i,3],0), "%", sep=""), cex=1, col="grey20")
 }
