@@ -178,75 +178,79 @@ Mając wybrany problem badawczy i dobraną do niego odpowiednią technikę zbier
 * inne, 
 * nie wiem. 
 
-W pierwszej grupie aż 30% respondentów wybrało wynalezienie komputera jako najbardziej istotne wydarzenie lub zmianę ostatnich 50 lat. Wśród pozostałych osób podobnej odpowiedzi udzielił zaledwie 1% ankietowanych. Ta ogromna różnica najlepiej pokazuje, jak wiele zależy od formy zadawanych pytań.     
+Pozostali otrzymali pytanie otwarte, a więc sami musieli zaproponować odpowiedzi. W pierwszej grupie aż 30% respondentów wybrało wynalezienie komputera jako najbardziej istotne wydarzenie lub zmianę ostatnich 50 lat. Wśród pozostałych osób podobnej odpowiedzi udzielił zaledwie 1% ankietowanych. Ta ogromna różnica najlepiej pokazuje, jak wiele zależy od formy zadawanych pytań.     
 
 To jednak nie wszystko. Na sposób udzielania odpowiedzi przez respondentów wpływ ma nie tylko konstrukcja pytań ale także użyty w nich język. Dlatego kwestionariusz powinien odnosić się do rzeczywistości w sposób neutralny, bez sądów czy sugerowania, które odpowiedzi są "dobre".   
 
-Czasami jednak kontrowersje są nie do uniknięcia. Dotyczy to tzw. kwestii drażliwych. Stanowią one poważny problem dla sondażystów. Respondenci raczej niechętnie udzielają odpowiedzi na pytania dotyczące ich intymnych spraw.  Trudno im się przyznać do problemów z nałogami, do niewierności w związku czy popełnionych przestępstw. Zazwyczaj w takich sytuacjach nawet gwarancja anonimowości nie jest wystarczającą "zachętą", aby udzielać szczerych odpowiedzi.    
+Czasami jednak kontrowersje są nie do uniknięcia. Dotyczy to tzw. [kwestii drażliwych](http://nastrazysondazy.uw.edu.pl/know-how-pytan-o-kwestie-drazliwe-czyli-jak-zachecic-badanych-do-szczerych-odpowiedzi/). Stanowią one poważny problem dla sondażystów. Respondenci raczej niechętnie udzielają odpowiedzi na pytania dotyczące ich intymnych spraw.  Trudno im się przyznać do problemów z nałogami, do niewierności w związku czy popełnionych przestępstw. Zazwyczaj w takich sytuacjach nawet gwarancja anonimowości nie jest wystarczającą "zachętą", aby udzielać szczerych odpowiedzi. Czasami, aby przełamać niechęć respondentów do opowiadania o swoich intymnych sprawach, stosuje się [techniki niebezpośrednie](http://nastrazysondazy.uw.edu.pl/know-how-pytan-o-kwestie-drazliwe-cz-2-techniki-niebezposrednie/). 
 
-Więcej o problemach związanych z kwestiami drażliwymi i sposobach radzenia sobie z nimi możecie przeczytać na naszych stronach:   
-
-1. http://nastrazysondazy.uw.edu.pl/know-how-pytan-o-kwestie-drazliwe-czyli-jak-zachecic-badanych-do-szczerych-odpowiedzi/   
-
-2. http://nastrazysondazy.uw.edu.pl/know-how-pytan-o-kwestie-drazliwe-cz-2-techniki-niebezposrednie/
+Problemy związane z budowaniem kwestionariusza i interpretacją otrzymanych na jego podstawie wyników przeanalizujemy na przykładzie zadań.
 
 __Zadania 6:__      
 
-  1.  Odpowiedz na pytania związane z następującym badaniem: Firmę Research.NK przygotowała w 2013 r. raport „Prezentacja treści seksualnych przez młodzież poprzez wideoczaty” dla Naukowej Akademickiej Sieci Komputerowej. Dane zostały zebrane od respondentów przez Internet. Próba liczyła 976 nastolatków - osób w wieku 13-16 lat. Spośród nich  528  zdeklarowało, że korzysta z wideo rozmów. W tej grupie 10 osób zadeklarowało, że  rozbiera się w sieci na żywo (Pytanie brzmiało: „Czy zdarzyło Ci się rozbierać się lub prezentować zachowania seksualne podczas wideorozmowy?” ). Wiadomo również, że w badaniu wzięło udział 157 szesnastolatków, z czego 96 z nich korzysta z wideo rozmów, a 5 deklaruje rozbieranie się w czasie . 
-    a. Czy uważasz, że respondenci generalnie (a wiec przytłaczająca większość z nich) udzielali szczerych (zgodnych ze stanem faktycznym), odpowiedzi na pytanie o to, czy rozbierali się w trakcie wideoczatów - zarówno Ci którzy przyznali się do tego typu zachowań jak i ci którzy ich nie potwierdzili?  
+  1.  Odpowiedz na pytania związane z następującym badaniem: Firma EkstraSondaż przygotowała w 2015 r. raport „Młodzież kpująca substancje psychoaktywne przez internet” dla Państwowego Zakładu Badań nad sieciami komputerowymi. Dane zostały zebrane od respondentów przez Internet. W badaniu wzięli udział uczniowie wybranych szkół w całej Polsce, którzy dostali adres internetowy oraz indywidualne hasło do strony z ankietą. Łącznie próba badawcza liczyła 1050 nastolatków - osób w wieku 13-16 lat. Spośród nich  560  zdeklarowało, że robi zakupy przez internet. W tej grupie 15 osób zadeklarowało, że zdarzyło im się kupić substancje psychotropowe (Pytanie brzmiało: „Czy zdarzyło Ci się kupić przez internet  substancje psychotropowe, w tym leki wpływające na funkcjonowanie mózgu?” ). Wiadomo również, że w badaniu wzięło udział 180 szesnastolatków, z czego 110 robi zakupy przez internet, a 10 deklaruje zakup substancji psychotropowych. 
+    a. Czy uważasz, że respondenci generalnie (a wiec przytłaczająca większość z nich) udzielali szczerych  odpowiedzi na pytanie o to, czy kupują substancje psychotropowe - zarówno Ci którzy przyznali się do tego typu zachowań jak i ci którzy ich nie potwierdzili?  
       i. Tak - generalnie odpowiadali szczerze;   
       ii. Nie - generalnie odpowiadali nieszczerze;   
       iii. Nikt tego nie wie. Może część tak, a część nie.   
-      iv. Mam własne zdanie: …………………………………………………………………………………………………………..
-    b. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.
-      i. Tak, ponieważ ...
-      ii. Nie. ponieważ ...
-    c. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.   
-      i. Tak, ponieważ ...   
-      ii. Nie. ponieważ ...    
-    d. Czy w badaniu przeprowadzonym przez Internet byłabyś / byłbyś skłonny odpowiadać szczerze na pytania dotyczące seksualności, chorób intymnych lub łamania prawa? Dlaczego? (Pytania pomocnicze: zastanów się, czy ważna w tych kwestiach jest anonimowość i poufność danych, a także, czy w ogóle mówienie na ten temat sprawia Ci jakieś problemy):
-      i. Tak, ponieważ ...    
-      ii. Nie, ponieważ ...    
-    e. Jaki procent nastolatków, którzy wzięli udział w powyższym badaniu zadeklarował, że korzysta z wideo rozmów i rozbiera się w ich trakcie?
-    f. Jaki procent osób które zadeklarowały, że rozbierają się w trakcie wideoczatów do 16 latkowie?    
-    g. Jaki procent nastolatków, którzy korzystają z wideo rozmów zadeklarował, że się rozbiera w ich trakcie?    
+      iv. Mam własne zdanie: ………………………………………………………………………………………………………….
+    b. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.    
+      i. Tak, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………    
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
+      ii. Nie. ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………   
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
+    c. Czy w badaniu przeprowadzonym przez Internet byłabyś / byłbyś skłonny odpowiadać szczerze na pytania dotyczące seksualności, chorób intymnych lub łamania prawa? Dlaczego? (Pytania pomocnicze: zastanów się, czy ważna w tych kwestiach jest anonimowość i poufność danych, a także, czy w ogóle mówienie na ten temat sprawia Ci jakieś problemy):
+      i. Tak, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
+      ii. Nie, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+    d. Jaki procent nastolatków, którzy wzięli udział w powyższym badaniu zadeklarował, że robi zakupy przez internet i kupuje w ten sposób środki psychotropowe?
+    e. Jaki procent osób, które zadeklarowały w badaniu, że kupują środki psychotropowe to szesnastolatkowie?    
+    f. Jaki procent nastolatków, którzy kupują coś przez internet, kupuje substancje psychotopowe? ……………………     
     h. Czy znając wyniki badania zgodziłabyś/zgodziłbyś się z następującymi określeniami:    
-      i. „Nowa plaga w sieci. Rozbierają się na żywo” - TAK / NIE    
-      ii. „Nagie gimnazjalistki w sieci. Nowa plaga w internecie” - TAK / NIE    
-      iii. “Nowe zjawisko w internecie. Gizmazjaliści rozbierają się w sieci” - TAK / NIE     
-      i.v “Uwaga na wideoczaty. Niektóre nastolatki występują nago” - TAK / NIE     
+      i. „Nowa plaga w sieci. Nastolatki kupują narkotyki przez internet" - TAK / NIE    
+      ii. „Gimnazjalistki kupują psychotropy w sieci. Nowa plaga w internecie" - TAK / NIE    
+      iii. “Nowe zjawisko w internecie. Gizmazjaliści kupują narkotyki w sieci" - TAK / NIE     
+      i.v “Uwaga na zakupy przez internet. Niektóre nastolatki kupują w ten sposób narkotyki" - TAK / NIE     
   2.  Poniżej znajdują się dwa sondaże. Wypełnił je i odpowiedz na pytania:   
-    a. Sondaż 1:
-      i. Czy gdyby wybory odbyły się w najbliższą niedzielę to wziąłby(ęłaby) Pan(i) w nich udział? ” - TAK / NIE    
+    a. Sondaż 1:    
+      i. Czy gdyby wybory odbyły się w najbliższą niedzielę to wziąłby(ęłaby) Pan(i) w nich udział? - TAK / NIE     
       ii. Jeżeli tak, to na jaką jedną partię oddałby Pan(i) głos?   
-      
         1. oddam pusty/nieważny głos;    
         2. na partię X;   
-        3. na partię Przyjaciół Demokracji;  
-        4. na partię Przyjaciół Otwartości;   
-        5. na partię Przyjaciół Społeczeństwa;   
-        6. na partię Przyjaciół Środowiska;   
-        7. na partię Przyjaciół Uczciwości;   
-    b. Sondaż 2.
-      i. Proszę określić, czy zgadza się Pan/Pani z następującymi stwierdzeniami:   
-      
-        1. Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć” - TAK / NIE     
-        2. ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze ” - TAK / NIE     
-        3. Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu” - TAK / NIE     
-        4. każda rodzina powinna móc liczyć na wsparcie ze strony państwa. ” - TAK / NIE     
-      ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii “X”, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin? ” - TAK / NIE        
-      iii. Czy gdyby partia “X” brała udział w najbliższych wyborach do Sejmu to na jaką jedną partię oddałby Pan(i) głos?
-
+        3. na partię Przyjaciół Demokracji;   
+        4. na partię Przyjaciół Otwartości;    
+        5. na partię Przyjaciół Społeczeństwa;    
+        6. na partię Przyjaciół Środowiska;    
+        7. na partię Przyjaciół Uczciwości;    
+    b. Sondaż 2.     
+      i. Proszę określić, czy zgadza się Pan/Pani z następującymi stwierdzeniami:      
+        1. Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć - TAK / NIE     
+        2. ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze - TAK / NIE     
+        3. Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu - TAK / NIE     
+        4. każda rodzina powinna móc liczyć na wsparcie ze strony państwa. - TAK / NIE     
+      ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii X, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin? - TAK / NIE          
+      iii. Czy gdyby partia “X” brała udział w najbliższych wyborach do Sejmu to na jaką jedną partię oddałby Pan(i) głos?        
         1. oddam pusty/nieważny głos;    
-        2. na partię X;   
-        3. na partię Przyjaciół Demokracji;  
-        4. na partię Przyjaciół Otwartości;   
-        5. na partię Przyjaciół Społeczeństwa;   
-        6. na partię Przyjaciół Środowiska;   
-        7. na partię Przyjaciół Uczciwości;   
+        2. na partię X;    
+        3. na partię Przyjaciół Demokracji;      
+        4. na partię Przyjaciół Otwartości;       
+        5. na partię Przyjaciół Społeczeństwa;      
+        6. na partię Przyjaciół Środowiska;      
+        7. na partię Przyjaciół Uczciwości;      
     c. Pytanie do sondaży 1. oraz 2.:     
       i. Czy w obu sondażach wybrałeś taką samą partię? ” - TAK / NIE    
-      ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów? ” - TAK / NIE    
+      ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów?      
+        * Tak, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
+        * Nie, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
      
  
 # 7. Dobór próby
@@ -381,7 +385,7 @@ Wiemy teraz dokładnie czego możemy się spodziewać po naszym schemacie losowa
 ### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 1000 prób
 ![plot of chunk unnamed-chunk-7](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-7.png) 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2464 próbach absencja wyborcza wyniosła 0%, w 5194 wyniosła 50%, a w 2342 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2359 próbach absencja wyborcza wyniosła 0%, w 5217 wyniosła 50%, a w 2424 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Dla ponad połowy wszystkich możliwych prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry” i nasze wnioski z badania mogą być trafne?  Spójrzmy na ten problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby generowane przez nasz schemat losowania. Zastosujemy przy tym zasadę często stosowaną w szkole, gdy chcemy się czegoś dowiedzieć o wynikach dane ucznia w skali całego roku. W takim przypadku liczmy średnią arytmetyczną jego ocen. Podobnie zróbimy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie, gdy podzielimy go przez łączną liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazuje się, że “przeciętnie” na próbę przypada 50% absencja wyborcza!!! To jest dokładnie tyle, ile wynosi ono w całej populacji!!! Odkryliśmy w ten sposób podstawową "prawo" dotyczące metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe populacji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszystkich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt, czyli próba nie jest "obciążona" i wyniki z próby nie "odbiegają" od rzeczywistej wartości w populacji. Osiągnęliśmy to dzięki nadaniu wszystkim obywatelom równych szans dostania się do próby lub inaczej równe prawo do swobodnego wyrażenia swojej opinii.     
 
@@ -399,19 +403,19 @@ Dlatego w następnej części naszego odcinka przyjrzymy się sposobom wnioskowa
 
 __Zadania 7:__   
 
-  1. Odpowiedz na pytania związane z następującym schematem losowania próby z omawianej populacji (załączonej do rozdziału): losowanie proste bez zwracania 4 obywateli z populacji 20 i szacowania poziomu absencji na podstawie próby:      
+  1. Odpowiedz na pytania związane ze schematem losowania __4__ respondentów w sposób prosty bezzwrotny z omawianej populacji 20 obywateli (załączonej do rozdziału):       
   
-    a) pamiętając, że do próby dobierane są 4 osoby napisz jakie różne wyniki można otrzymać dla takiej próby;         
-    b) napisz ile różnych prób można wylosować na podstawie podanego schematu losowania
-    c) napisz w ilu różnych próbach może się pojawić każdy obywatel;      
-    d) jaki będzie przeciętny poziom absencji w próbie;   
-    e) czy próba otrzymana z podanego schematu jest obciążona
+    a) jakie są możliwe poziomy absencji wyborczej w próbie: ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………;             
+    b) ile różnych prób można wylosować na podstawie podanego schematu losowania: ………………………………………………………………………………;
+    c) napisz w ilu różnych próbach może się pojawić każdy obywatel: ………………………………………………………………………………;       
+    d) jaki będzie przeciętny poziom absencji w próbie wylosowanej wg podanego schematu: ………………………………………………………………………………;   
+    e) czy próba otrzymana z podanego schematu jest obciążona: TAK / NIE.
   
-  2. Wylosuj próbę 15 osób z populacji załączonej do rozdziału (losowanie proste bez zwracania):
+  2. Wylosuj w sposób prosty bez zwracania próbę 15 osób z populacji załączonej do rozdziału, a następnie:
     a) podaj liczby porządkowe (L.p.) osób wybranych do próby;
-    b) napisz poziom absencji wyborczej w otrzymany wylosowanej próby;
-    c) jaki jest przeciętnych poziom absencji w próbach losowanych wg takiego schematu jak ta wylosowana przez Ciebie?
-    d) Napisz o ile punktów procentowych różni się wynik z twojej próby od wyniku w całej populacji (50%).
+    b) napisz poziom absencji wyborczej w otrzymany wylosowanej próby: ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………;
+    c) napisz jaki jest przeciętnych poziom absencji w próbach losowanych wg takiego schematu: ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………; 
+    d) napisz o ile punktów procentowych różni się poziom absencji wyborczej w twojej próbie od poziomu w całej populacji (50%): ……………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………….
 
 # 8. Błąd oszacowania
 
@@ -563,7 +567,7 @@ Pozostaje już tylko jedna kwestia do wyjaśnienia: [błąd statystyczny](http:/
 | Razem             |  100%        | 100%                                        | 
 
 
-Innymi słowy poparcie dla partii X w próbie dobieranej przy użyciu naszego schematu na 95,6%  będzie nie mniejsze niż 35%-18%=17% i nie większe niż 35%+48%=83%.  Statystycy oraz sondażyści powiedzieliby, że oszacowanie z próby „na pewno” będzie równe 35% (-18%. +48%).  Te różnice względem rzeczywistego wyniku nazywamy właśnie __błędem statystycznym__.  Niestety nie jest on ani mały ani symetryczny, tak jak to bywa zazwyczaj w dużych badaniach sondażowych, gdy wynosi (-3%, +3%). Dzieje się tak ponieważ rozkład wyników z prób dla naszego schematu losowania jest asymetryczny względem rzeczywistego wyniku w populacji (35% - zielona przerywana linia na Wykresie 8.1.) i dodatkowo obarczony dużym odchyleniem standardowym. Przyczyną takiego stanu rzeczy jest oczywiście niewielka liczebność próby.     
+Innymi słowy poparcie dla partii X w próbie dobieranej przy użyciu naszego schematu na 95,6%  będzie nie mniejsze niż 35%-18%=17% i nie większe niż 35%+48%=83%.  Statystycy oraz sondażyści powiedzieliby, że oszacowanie z próby „na pewno” będzie równe 35% (-18%, +48%).  Te różnice względem rzeczywistego wyniku nazywamy właśnie __błędem statystycznym__.  Niestety nie jest on ani mały ani symetryczny, tak jak to bywa zazwyczaj w dużych badaniach sondażowych, gdy wynosi (-3%, +3%). Dzieje się tak ponieważ rozkład wyników z prób dla naszego schematu losowania jest asymetryczny względem rzeczywistego wyniku w populacji (35% - zielona przerywana linia na Wykresie 8.1.) i dodatkowo obarczony dużym odchyleniem standardowym. Przyczyną takiego stanu rzeczy jest oczywiście niewielka liczebność próby.     
 Skoro wiemy już czym jest błąd statystyczny to warto żebyśmy poznali również pojęcie __przedziału ufności__. W ten sposób określa się zakres 95% wartości otrzymywanych przy pomocy danego schematu losowania, które mieszczą się w granicach błędu statystycznego. Innymi słowy są to wyniki, które padną „na pewno”. Dla naszego schematu doboru sześciu respondentów przedział ufności ciągnie się od poparcia na poziomie 17% do poparcia na poziomie 83%, a więc jest okropnie szeroki. A co by się stało gdybyśmy zwiększyli liczbę respondentów w próbie? 
 
 ### Wykres 8.2. Zmiana szerokości przedziału ufności w zależności od liczby respondentów w próbie (od 6 do 20)
@@ -582,12 +586,21 @@ A na koniec jeszcze krótkie podsumowania:
 
 [Wiecej o będzie statystycznym na naszej stronie.](http://nastrazysondazy.uw.edu.pl/miedzy-proba-a-populacja/)
 
-__Zadania 8:__   
-  1. Napisz, jak rozumiesz określenie, że próba jest reprezentatywna
-  2. Dla wylosowanej wcześniej próby oblicz błąd standardowy
-  4. CZy oszacowanie poparcia dla partii X w twojej próbie mieści się w przedziale XX-XX
-  5. Jak rozumiesz stwierdzenie "poparcie dla partii X wynosi 35% +/-3%":   
-    a) 35% prób daje wyniki 
+__Zadania 8:__     
+  1. Napisz, jak rozumiesz określenie "reprezentatywność próby": …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;         
+  2. Ile wynosi przeciętny poziom poparcia dla partii X w próbach składających się z 15 osób losowanych z naszej populacji w sposób prosty bez zwracania (ten sam schemat losowania jak w Zadaniach 7.): …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;        
+  3. Dla wylosowanej wcześniej próby (Zadania 7. ) oblicz błąd standardowy oszacowania poziomu poparcia dla partii X: …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;          
+  4. Czy szacowany poziom poparcia dla partii X w twojej próbie jest nie mniejszy niż 20% i nie większe ni 40% - TAK / NIE          
+  5. Jak rozumiesz stwierdzenie "poparcie dla partii X wynosi 35% (-15%, +5%)": …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;         
+  
 
 # 9. Błędy systematyczne 
 
@@ -672,5 +685,5 @@ Nie jest to zgodne z tym co dzieje się w populacji. Możemy więc powiedzieć, 
 A jak układa się błąd próby, na ile wynik próby różni się o przeciętnych wyników w próbie     
 
 __Zadania 9:__      
-  1. Z wylosowanej próby wyłącz niektóre obserwacje (PRÓBA B)
+  1. w wylosowanej wcześniej próby 15 osób 
 
