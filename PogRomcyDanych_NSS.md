@@ -145,26 +145,32 @@ L.p.          | Nazwa firmy badawczej| Link do strony z raportem?
     a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoś staje się czytelnikiem? Jak często trzeba czytać żeby stać się czytelnikiem? Ile trzeba przeczytać żeby stać się czytelnikiem?)   
     b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojewódzkich czy także w innych miejscach?)    
   3. W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI) na ogólnopolskiej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.   
-    a. Zdefiniuj badaną populację:..............................................................................................................................................................................................
-    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2013 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2013 r. lub dla późniejszej daty przed końcem 2013 r.):...................     
-    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie:...................................................................................................................................................................................................................................................................................................................................................     
+    a. Zdefiniuj badaną populację:      
+      ......................................................................................................................................................................................;     
+      ......................................................................................................................................................................................;   
+      ......................................................................................................................................................................................; 
+    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2015 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2014 r. lub dla późniejszej daty przed końcem 2013 r.):
+      ......................................................................................................................................................................................;
+    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie:      
+      ......................................................................................................................................................................................      
+      ......................................................................................................................................................................................;       
     d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.  
-      + Tak,............................
-      + Nie,............................
+      + Tak  .......................................................................................................................................................................;     
+      + Nie  .......................................................................................................................................................................;   
   4. Uniwersytecki Zespół Na Straży Sondaży zamówił badanie dotyczące popularności strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodziło oszacowanie odsetka osób w wieku 18-35 lat zamieszkałych w Polsce, które w ciągu ostatniego miesiąca zapoznały się z treścią (przeczytały cały lub prawie cały) przynajmniej jednego artykułu na stronie. Badanie zostało przeprowadzone metoda CAWI przez firmę “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spośród 50 tys. osób które dobrowolnie zarejestrowały się do bazy internetowej firmy i za drobna opłatą zgadzają się odpowiadać na pytania w różnych ankietach. Wiadomo również, ze osoby do badania zostały dobrane w ten sposób, aby rozkład płci wieku oraz wielkości miejscowości deklarowanego zamieszkania był zgodny z danymi podawanymi przez GUS na temat mieszkańców Polski. Odpowiedz na pytania związane z tym badaniem:
     a) Czy populacja osób z posiadających dostęp do Internetu (korzystających z Internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkańców Polski?     
-      i. Tak;   
-      ii. Nie - Nie wszyscy mieszkańcy Polski mają dostęp do Internetu - sprawdź dane GUS.    
+      + Tak  .......................................................................................................................................................................;     
+      + Nie  .......................................................................................................................................................................;              
     b) Czy próba badawcza 917 osób została dobrana z populacji polskich internautów - osób korzystających z Internetu do celów prywatnych (nie związanych z praca zarobkowa, ale np. komunikacją ze znajomymi i rodziną, nauką, czytaniem prasy, graniem, oglądaniem filmów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
-      i. Tak    
-      ii. Nie - próba została dobrana spośród 50 tys. osób, które same zgłosiły się do udzielania odpowiedzi na pytania ankietowe przez Internet. Choć jest to mało prawdopodobne można sobie wyobrazić, że w próbie mógł znaleźć się  kogoś kto korzysta z Internetu tylko w celach zarobkowych, w tym do wypełniania ankiet za pieniądze. Zgodnie z nasza definicją taka osoba nie jest internautą.    
+      + Tak  .......................................................................................................................................................................;     
+      + Nie  .......................................................................................................................................................................;       
     c) Czy badanie zlecone przez Na Straży Sondaży obejmuje populację polskich internautów.    
-      i. Tak - badanie dotyczy oszacowania odsetka wśród mieszkańców Polski ogółem nie tylko internautów. Musimy jednak pamiętać, że Polscy internauci nie maja   ponieważ pytanie dotyczy  odwiedzania strony “Na Straży Sondaży”. Nie można odwiedzić strony internetowej nie będąc    
-      ii. Nie.  
+      + Tak  .......................................................................................................................................................................;     
+      + Nie  .......................................................................................................................................................................; 
     d) Czy badanie zrealizowane przez “Polski Panel Internetowy” obejmuję populacje;   
     e) Czy rozkład płci, wieku i wielkości miejscowości zamieszkania w próbie jest zgodny z rozkładem tych cech w populacji mieszkańców Polski?    
-      i. Tak    
-      ii. Nie - rozkład jest zgodny z danymi GUS dotyczącymi populacji mieszkańców Polski, a nie polskich internautów.        
+      + Tak  .......................................................................................................................................................................;     
+      + Nie  .......................................................................................................................................................................;      
     
 # 6. Kwestionariusz
 
@@ -190,24 +196,25 @@ __Zadania 6:__
 
   1.  Odpowiedz na pytania związane z następującym badaniem: Firma EkstraSondaż przygotowała w 2015 r. raport „Młodzież kpująca substancje psychoaktywne przez internet” dla Państwowego Zakładu Badań nad sieciami komputerowymi. Dane zostały zebrane od respondentów przez Internet. W badaniu wzięli udział uczniowie wybranych szkół w całej Polsce, którzy dostali adres internetowy oraz indywidualne hasło do strony z ankietą. Łącznie próba badawcza liczyła 1050 nastolatków - osób w wieku 13-16 lat. Spośród nich  560  zdeklarowało, że robi zakupy przez internet. W tej grupie 15 osób zadeklarowało, że zdarzyło im się kupić substancje psychotropowe (Pytanie brzmiało: „Czy zdarzyło Ci się kupić przez internet  substancje psychotropowe, w tym leki wpływające na funkcjonowanie mózgu?” ). Wiadomo również, że w badaniu wzięło udział 180 szesnastolatków, z czego 110 robi zakupy przez internet, a 10 deklaruje zakup substancji psychotropowych. 
     a. Czy uważasz, że respondenci generalnie (a wiec przytłaczająca większość z nich) udzielali szczerych  odpowiedzi na pytanie o to, czy kupują substancje psychotropowe - zarówno Ci którzy przyznali się do tego typu zachowań jak i ci którzy ich nie potwierdzili?  
-      i. Tak - generalnie odpowiadali szczerze;   
-      ii. Nie - generalnie odpowiadali nieszczerze;   
-      iii. Nikt tego nie wie. Może część tak, a część nie.   
-      iv. Mam własne zdanie: ………………………………………………………………………………………………………….
+      * Tak - generalnie odpowiadali szczerze;   
+      * Nie - generalnie odpowiadali nieszczerze;   
+      * Nikt tego nie wie. Może część tak, a część nie.   
+      * Mam własne zdanie: .................................................................................................................................................................       
+      ......................................................................................................................................................................................;         
     b. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.    
-      i. Tak, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………    
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
-      ii. Nie. ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………   
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
+      * Tak, ponieważ .................................................................................................................................................................            
+      ......................................................................................................................................................................................          
+      ......................................................................................................................................................................................;        
+      * Nie, ponieważ .................................................................................................................................................................      
+      ......................................................................................................................................................................................          
+      ......................................................................................................................................................................................;               
     c. Czy w badaniu przeprowadzonym przez Internet byłabyś / byłbyś skłonny odpowiadać szczerze na pytania dotyczące seksualności, chorób intymnych lub łamania prawa? Dlaczego? (Pytania pomocnicze: zastanów się, czy ważna w tych kwestiach jest anonimowość i poufność danych, a także, czy w ogóle mówienie na ten temat sprawia Ci jakieś problemy):
-      i. Tak, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
-      ii. Nie, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      + Tak, ponieważ .................................................................................................................................................................     
+      ......................................................................................................................................................................................          
+      ......................................................................................................................................................................................;             
+      + Nie, ponieważ .................................................................................................................................................................     
+      ......................................................................................................................................................................................          
+      ......................................................................................................................................................................................;              
     d. Jaki procent nastolatków, którzy wzięli udział w powyższym badaniu zadeklarował, że robi zakupy przez internet i kupuje w ten sposób środki psychotropowe?
     e. Jaki procent osób, które zadeklarowały w badaniu, że kupują środki psychotropowe to szesnastolatkowie?    
     f. Jaki procent nastolatków, którzy kupują coś przez internet, kupuje substancje psychotopowe? ……………………     
@@ -243,14 +250,8 @@ __Zadania 6:__
         6. na partię Przyjaciół Środowiska;      
         7. na partię Przyjaciół Uczciwości;      
     c. Pytanie do sondaży 1. oraz 2.:     
-      i. Czy w obu sondażach wybrałeś taką samą partię? ” - TAK / NIE    
-      ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów?      
-        * Tak, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………     
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
-        * Nie, ponieważ …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-      …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
+      + Czy w obu sondażach wybrałeś taką samą partię? ” - TAK / NIE    
+      + Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów? - TAK / NIE      
      
  
 # 7. Dobór próby
@@ -385,7 +386,7 @@ Wiemy teraz dokładnie czego możemy się spodziewać po naszym schemacie losowa
 ### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 1000 prób
 ![plot of chunk unnamed-chunk-7](PogRomcyDanych_NSS_files/figure-html/unnamed-chunk-7.png) 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2359 próbach absencja wyborcza wyniosła 0%, w 5217 wyniosła 50%, a w 2424 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2348 próbach absencja wyborcza wyniosła 0%, w 5333 wyniosła 50%, a w 2319 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Dla ponad połowy wszystkich możliwych prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry” i nasze wnioski z badania mogą być trafne?  Spójrzmy na ten problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby generowane przez nasz schemat losowania. Zastosujemy przy tym zasadę często stosowaną w szkole, gdy chcemy się czegoś dowiedzieć o wynikach dane ucznia w skali całego roku. W takim przypadku liczmy średnią arytmetyczną jego ocen. Podobnie zróbimy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie, gdy podzielimy go przez łączną liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazuje się, że “przeciętnie” na próbę przypada 50% absencja wyborcza!!! To jest dokładnie tyle, ile wynosi ono w całej populacji!!! Odkryliśmy w ten sposób podstawową "prawo" dotyczące metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe populacji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszystkich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt, czyli próba nie jest "obciążona" i wyniki z próby nie "odbiegają" od rzeczywistej wartości w populacji. Osiągnęliśmy to dzięki nadaniu wszystkim obywatelom równych szans dostania się do próby lub inaczej równe prawo do swobodnego wyrażenia swojej opinii.     
 
@@ -405,17 +406,25 @@ __Zadania 7:__
 
   1. Odpowiedz na pytania związane ze schematem losowania __4__ respondentów w sposób prosty bezzwrotny z omawianej populacji 20 obywateli (załączonej do rozdziału):       
   
-    a) jakie są możliwe poziomy absencji wyborczej w próbie: ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………;             
-    b) ile różnych prób można wylosować na podstawie podanego schematu losowania: ………………………………………………………………………………;
-    c) napisz w ilu różnych próbach może się pojawić każdy obywatel: ………………………………………………………………………………;       
-    d) jaki będzie przeciętny poziom absencji w próbie wylosowanej wg podanego schematu: ………………………………………………………………………………;   
+    a) jakie są możliwe poziomy absencji wyborczej w próbie:        
+          ......................................................................................................................................................................................;      
+          ......................................................................................................................................................................................; 
+    b) ile różnych prób można wylosować na podstawie podanego schematu losowania:     
+          ......................................................................................................................................................................................;       
+    c) napisz w ilu różnych próbach może się pojawić każdy obywatel:     
+              ......................................................................................................................................................................................;       
+    d) jaki będzie przeciętny poziom absencji w próbie wylosowanej wg podanego schematu:       
+              ......................................................................................................................................................................................;       
     e) czy próba otrzymana z podanego schematu jest obciążona: TAK / NIE.
   
   2. Wylosuj w sposób prosty bez zwracania próbę 15 osób z populacji załączonej do rozdziału, a następnie:
     a) podaj liczby porządkowe (L.p.) osób wybranych do próby;
-    b) napisz poziom absencji wyborczej w otrzymany wylosowanej próby: ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………;
-    c) napisz jaki jest przeciętnych poziom absencji w próbach losowanych wg takiego schematu: ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………; 
-    d) napisz o ile punktów procentowych różni się poziom absencji wyborczej w twojej próbie od poziomu w całej populacji (50%): ……………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………….
+    b) napisz poziom absencji wyborczej w otrzymany wylosowanej próby:       
+              ......................................................................................................................................................................................;       
+    c) napisz jaki jest przeciętnych poziom absencji w próbach losowanych wg takiego schematu:      
+              ......................................................................................................................................................................................;       
+    d) napisz o ile punktów procentowych różni się poziom absencji wyborczej w twojej próbie od poziomu w całej populacji (50%):      
+              ......................................................................................................................................................................................;       
 
 # 8. Błąd oszacowania
 
@@ -587,19 +596,19 @@ A na koniec jeszcze krótkie podsumowania:
 [Wiecej o będzie statystycznym na naszej stronie.](http://nastrazysondazy.uw.edu.pl/miedzy-proba-a-populacja/)
 
 __Zadania 8:__     
-  1. Napisz, jak rozumiesz określenie "reprezentatywność próby": …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;         
-  2. Ile wynosi przeciętny poziom poparcia dla partii X w próbach składających się z 15 osób losowanych z naszej populacji w sposób prosty bez zwracania (ten sam schemat losowania jak w Zadaniach 7.): …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;        
-  3. Dla wylosowanej wcześniej próby (Zadania 7. ) oblicz błąd standardowy oszacowania poziomu poparcia dla partii X: …………………………………………………………………………………………………………………………………………………………………………………………………………………………………       
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………        
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;          
+  1. Napisz, jak rozumiesz określenie "reprezentatywność próby":     
+            ......................................................................................................................................................................................        
+                      ......................................................................................................................................................................................;       
+  2. Ile wynosi przeciętny poziom poparcia dla partii X w próbach składających się z 15 osób losowanych z naszej populacji w sposób prosty bez zwracania (ten sam schemat losowania jak w Zadaniach 7.):     
+            ......................................................................................................................................................................................;       
+                
+  3. Dla wylosowanej wcześniej próby (Zadania 7. ) oblicz błąd standardowy oszacowania poziomu poparcia dla partii X:     
+            ......................................................................................................................................................................................;       
   4. Czy szacowany poziom poparcia dla partii X w twojej próbie jest nie mniejszy niż 20% i nie większe ni 40% - TAK / NIE          
-  5. Jak rozumiesz stwierdzenie "poparcie dla partii X wynosi 35% (-15%, +5%)": …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………      
-  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………;         
+  5. Jak rozumiesz stwierdzenie "poparcie dla partii X wynosi 35% (-15%, +5%)":     
+            ......................................................................................................................................................................................         
+            ......................................................................................................................................................................................       
+            ......................................................................................................................................................................................;       
   
 
 # 9. Błędy systematyczne 
