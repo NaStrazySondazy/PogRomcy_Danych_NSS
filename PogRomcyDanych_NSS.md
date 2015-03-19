@@ -156,7 +156,7 @@ L.p.          | Nazwa firmy badawczej| Link do strony z raportem?
       ......................................................................................................................................................................................;   
       ......................................................................................................................................................................................;     
     b. Podaj liczbę uczniów klas 1-3 w Polsce w 2015 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2014 r. lub dla późniejszej daty przed końcem 2013 r.):
-      ......................................................................................................................................................................................;
+      ......................................................................................................................................................................................;          
     c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie:      
       ......................................................................................................................................................................................      
       ......................................................................................................................................................................................;       
@@ -273,6 +273,17 @@ Wiemy już czego potrzebujemy, żeby dobrać próbę więc możemy się zastanow
 
 ### Tabela 7.1. Populacja wyborców (liczba obserwacji)
 
+```
+## Error: niepoprawny argument 'times'
+```
+
+```
+## Error: nie znaleziono obiektu 'poparcie_dla_P'
+```
+
+```
+## Error: nie znaleziono obiektu 'poparcie_dla_P'
+```
 
 
 |Miejsce zamieszkania|Tak, pójdę na wybory| Nie, nie pójdę na wybory|RAZEM|
@@ -288,28 +299,28 @@ Teraz potrzebujemu operatu losowania. W naszym przypadku wygląda on następują
 
 ### Tabela 7.2. Operat losowania 
 
-|L.p.  |Miasto_wies  |Glosowanie  |
-|:-----|:------------|:-----------|
-|1     |M            |1           |
-|2     |M            |1           |
-|3     |M            |1           |
-|4     |M            |1           |
-|5     |M            |1           |
-|6     |M            |0           |
-|7     |M            |-1          |
-|8     |M            |-1          |
-|9     |M            |-1          |
-|10    |M            |-1          |
-|11    |M            |-1          |
-|12    |M            |-1          |
-|13    |W            |1           |
-|14    |W            |1           |
-|15    |W            |0           |
-|16    |W            |0           |
-|17    |W            |-1          |
-|18    |W            |-1          |
-|19    |W            |-1          |
-|20    |W            |-1          |
+|  L.p.|Miejsce zamieszkania  |Preferencje wyborcze          |
+|-----:|:---------------------|:-----------------------------|
+|     1|MIASTO                |Głosuję na partię X           |
+|     2|MIASTO                |Głosuję na partię X           |
+|     3|MIASTO                |Głosuję na partię X           |
+|     4|MIASTO                |Głosuję na partię X           |
+|     5|MIASTO                |Głosuję na partię X           |
+|     6|MIASTO                |Głosuję na inną partię niż X  |
+|     7|MIASTO                |Nie idę na wybory             |
+|     8|MIASTO                |Nie idę na wybory             |
+|     9|MIASTO                |Nie idę na wybory             |
+|    10|MIASTO                |Nie idę na wybory             |
+|    11|MIASTO                |Nie idę na wybory             |
+|    12|MIASTO                |Nie idę na wybory             |
+|    13|WIEŚ                  |Głosuję na partię X           |
+|    14|WIEŚ                  |Głosuję na partię X           |
+|    15|WIEŚ                  |Głosuję na inną partię niż X  |
+|    16|WIEŚ                  |Głosuję na inną partię niż X  |
+|    17|WIEŚ                  |Nie idę na wybory             |
+|    18|WIEŚ                  |Nie idę na wybory             |
+|    19|WIEŚ                  |Nie idę na wybory             |
+|    20|WIEŚ                  |Nie idę na wybory             |
 
 Operat można również pobrać ze strony:
 
@@ -380,25 +391,25 @@ Sprawdżmy teraz jakie wyniki generuje nasz schemat losowania respondentów. Pol
  
 Skoro wiemy już czego możemy się spodziewać, to rozpiszmy poziomy absencji we wszystkich próbach (z zachowaniem wcześniejszej kolejność prób):
 
-(0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (0%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (0%);  (0%);  (0%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%);  (100%);  (100%);  (100%);  (50%);  (50%);  (50%);  (50%);  (100%);  (100%);  (100%); 
+(%); 
 
 
 Na pierwszy rzut oka widać, że nie wszystkie wyniki są zgodne z tym, co obserwujemy w całej populacji. W wielu próbach szacowana ABSENCJA jest zaniżona (0%) lub zawyżona (100%). Ale to nas nie dziwi, bo wynika to z wybranego przez nas schematu losowania próby. Sprawdźmy ile dokładnie wyników każdego rodzaju występuje w naszej zbiorowości prób.     
 
 ### Wykres 7.1. Poziom absencji wyborczej w próbach dwuosobowch
 
-
+<img src="figure/unnamed-chunk-6.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
 
 
 Na powyższym wykresie widzimy, że w 90 próbach absencja wynosi 0%, w 200 próba 50%, a w 90 próbach 100%. To całkiem logiczny rezultat. Jeżeli w populacji połowa obywateli będzie głosować w wyborach, a połowa nie, to możemy się spodziewać, że najczęściej jedna z dwóch osób w próbie będzie zwiększać absencję, a druga zmniejszać.   
 
 Wiemy teraz dokładnie czego możemy się spodziewać po naszym schemacie losowania próby - które wynika generuje najczęściej, a które najrzadziej. Ale jakie to ma dla nas znaczenie skoro badanie sondażowe polega na wylosowaniu tylko jednej próby? Żeby się przekonać załóżmy na chwilę, że jednak możemy nasz eksperyment powtarzać wielokrotnie. Wyobraźmy sobie, że dobieramy naszą dwuosobową próbę nie raz ale 10000 razy. Dla każdej z nich będziemy obliczać poziom absencji wyborczej, a potem "zwracać" respondentów do populacji. W ten sposób otrzymamy 10000 niezależnych wyników naszego badania. Czy da się przewidzieć, jaki będzie ich rozkład? Okazuje się, że tak. Na 10000 przypadków w około 2368 (90/380\*10000) absencja wyniesie 0%, podobnie w 5263 (200/380\*10000) 50%, a w 2368 (90/380\*10000) 100%, Czyli rozkład wyników powinny być podobne do tego na wykresie słupkowym powyżej, ilustrującym rozkład wyników wśród zbiorowości prób losowanych naszym schematem doboru. Zobaczmy więc teraz jak będą się kształtowały wyniki z naszej symulacji     
 
-### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 1000 prób
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
+### Wykres 7.2. Symulacja - rozkład oszacowania absencji z 10 000 prób
+<img src="figure/unnamed-chunk-7.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" style="display: block; margin: auto;" />
 
 
-Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2322 próbach absencja wyborcza wyniosła 0%, w 5288 wyniosła 50%, a w 2390 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
+Jak widać wyniki symulacji nie odbiegają od tego, co przewidywaliśmy. w 2389 próbach absencja wyborcza wyniosła 0%, w 5217 wyniosła 50%, a w 2394 wyniosła 100%. Różnice są niewielkie. Widzimy więc teraz, że schemat losowania próby determinuje szansę uzyskania poprawnego oszacowania. W przypadku naszego badania wynoszą one 200/380, a więc około 53%.
 
 Dla ponad połowy wszystkich możliwych prób oszacowanie poziomu absencji jest prawidłowe. Wciąż jednak istnieje  spore ryzyko, że się pomylimy. Czy to znaczy, że nasz schemat losowania jest “zły”? Jak w ogóle sprawdzić, czy jest “dobry” i nasze wnioski z badania mogą być trafne?  Spójrzmy na ten problem w następujący sposób: wiadomo, że poszczególne próby dobierane do badania sondażowego mogą dawać trochę inne wyniki. Najlepiej gdyby oszacowania te, jeżeli nie trafiały w punkt, to przynajmniej oscylowały wokół prawidłowego wyniki. Schemat doboru próby powinien być tak zaprojektowany, aby wyniki z generowanych przy jego użyciu prób “ciążyły” w kierunku wartości obserwowanej w populacji. Co to znaczy? Zastanówmy się jaki wynik przeciętnie dają próby generowane przez nasz schemat losowania. Zastosujemy przy tym zasadę często stosowaną w szkole, gdy chcemy się czegoś dowiedzieć o wynikach dane ucznia w skali całego roku. W takim przypadku liczmy średnią arytmetyczną jego ocen. Podobnie zróbimy z naszymi próbami. Policzmy czego możemy się po nich przeciętnie spodziewać. W tym celu dodajemy do siebie wszystkie 380 możliwych oszacowań, a następnie dzielimy je przez liczbę wszystkich prób, czyli 380 - zupełnie jak średnią ocen w szkole. Możemy sobie uprościć to zadanie i zsumować wyniki w następujący sposób: 0%\*90+100%\*90+50%\*200=19000%. Chwilowo rezultat jest absurdalny, ale to minie, gdy podzielimy go przez łączną liczbę prób: 19000% / (90\+90\+200) = 19000% / 380 =50% !!! I tu docieramy do sedna sprawy. Oto okazuje się, że “przeciętnie” na próbę przypada 50% absencja wyborcza!!! To jest dokładnie tyle, ile wynosi ono w całej populacji!!! Odkryliśmy w ten sposób podstawową "prawo" dotyczące metody reprezentacyjnej - przeciętny wynik z próby powinien być równy wynikowi dla całe populacji. Jest to najważniejsza zasada badań sondażowych, ale także ogólnie wszystkich badań prowadzonych na próbach. Dzięki temu wiemy, że przeciętnie trafiamy w punkt, czyli próba nie jest "obciążona" i wyniki z próby nie "odbiegają" od rzeczywistej wartości w populacji. Osiągnęliśmy to dzięki nadaniu wszystkim obywatelom równych szans dostania się do próby lub inaczej równe prawo do swobodnego wyrażenia swojej opinii.     
 
@@ -447,11 +458,10 @@ Zagadnienie błędu oszacowań uzyskiwanych z prób losowych omówimy na nowym p
 W stosunku do badania absencji wyborczej zmienimy niewiele. Po prostu w kolumnie “Glosowanie” zamiast wartości -1  teraz będziemy analizowali występowanie wartości 1, czyli glosowania na partię X. Zwiększymy również liczbę respondentów - z 2 do 6. Tak samo jak wcześniej zastosujemy jednak losowanie proste bez zwracania i technikę CAPI. Pytanie w kwestionariuszu będzie natomiast brzmiało: "__Gdyby wybory do sejmu odbywały się w najbliższą niedzielę to czy zagłosowałby/ałaby Pan/i na partię X?__". Odpowiedzi "nie chodzę na wybory" oraz "zagłosuję na inną partię" liczymy razem, jako brak poparcia dla X.    
 
 ### Tabela 8.1. Rozkład poparcia dla partii X w (fikcyjnej) populacji dorosłych obywateli Polski
-|id      |  Nie pójdę na wybory|  Nie|  Tak|  RAZEM|
-|:-------|--------------------:|----:|----:|------:|
-|Miasto  |                    6|    1|    5|     12|
-|Wieś    |                    4|    2|    2|      8|
-|RAZEM   |                   10|    3|    7|     20|
+
+```
+## Error: nie znaleziono obiektu 'poparcie_dla_P'
+```
 
 
 Zacznijmy od sprawdzenia, jakie poparcie dla partii X mogą generować próby dobrane przy użyciu naszego nowego schemat losowania. Ponieważ będziemy dobierali 6 respondentów więc możliwych jest 7 wyników:   
@@ -630,26 +640,21 @@ __Zadania 8:__
 
 # 9. Błędy systematyczne 
 
-W części piątej (5. Problem badawczy -> populacja -> technika realizacji badania) mówiliśmy o tym, że nie każdy kontakt z dobrana do próby osobą kończy się sukcesem. Wszystkie techniki zbierania danych są zagrożone odmowami respondentów. 
+__POMINIĘTE OBLICZENIA__
 
-Do tej pory zajmowaliśmy sie teorią badąń sondażowych. Czas by przejść do praktyki. W tej części naszego odcinka zajmiemy się problemami związanymi z terenową realizacją badania. Wszystko o czym mówiliśmy do tej pory było bardzo ważne, ale dotyczyło przygotowania sodażu. Teraz zajmiemy się najważniejszym elementem każdego badania, a więc zbieraniem danych od wybranych respondentów. Prawidłowy przebieg tego etapu badania ma kolosalne znaczenie dla późniejsze Trafność wniosków.
+Do tej pory zajmowaliśmy sie głównie teorią badań ankietowych. Czas przejść do praktyki, czyli realizacji wywiadów w "terenie". Zbieranie danych od respondentów, bo oni mowa, jest najważniejszą i zarazem najbardziej kosztowną częścią każdego badania sondażowego. Wcześniej (...) mówiliśmy o tym, że nie zawsze udaje się nawiązać kontakt ze wszystkimi osobami dobranymi do próby, a nawet, gdy to się nam uda nie mamy gwarancji, że wywiad zostanie zrealizowany. Niestety odmowy wzięcia udziału w badaniu towarzyszą wszystkim technikom zbierania danych. Czasem zjawisko to jest mniejsze (CAPI), a czasem większe (CAWI). Można je zmierzyć przy pomocy wskaźnika zwanego __poziomem realizacji próby__. Oblicza się go wyznaczając stosunek liczby respondentów, którzy wzięli udział w badaniu, do ogólnej liczby wszystkich wylosowanych osób. Niższy poziom realizacji próby zwiększa ryzyko, że nasze wnioski o populacji będą obarczone dużym błędem. Dzieje się tak nie tylko, dlatego, że odmowy uczestnictwa zmniejszają liczbę respondentów w próbie, ale także dlatego, że mogą się przyczynić do wystąpienia __błędów systematycznych__ i __obciążenia__ wyników z próby. Co to oznacza? Jak zwykle wyjaśnimy to na przykładzie.
 
-Kluczową sprawą jest poziom realizacji próby, a więc stosunek liczby respondentów, którzy wzięli udził w badaniu do ogólnej liczby wszystkich wylosowanych respondentów. Im większy odsetek osób odmawia wizięcia udziału tym większe ryzyko, że nasze wnioski o populacji będą niewłaściwe. Dzieje się nie tylko dlatego, że odmowy uczestnictwa zmnieszają liczbę respondentów w próbie, ale także dla tego, że mogą one się przyczynić do wystąpienia __błędów systematycznych__  i __obciążenia__ wyników z próby. Co to oznacza? Wyjaśnimy to na nowym przykładzie.
-
-Faza realizacji jest niezwykle ważnym etapem sondażu, może nawet najważniejszym, ponieważ jest najbardziej kosztownym jego elementem i ma kluczowe znaczenie dla rzetelności całego badania.
-
-Znowu odowołajmy się do naszej (fikcyjnej) populacji dorosłych obywateli Polski. Ponownie skorzystamy z przykładu badania sondażowego dotyczącego poziomu poparcia dla partii X. w stosunku do sondażu z poprzedniej części (8. Błąd oszacowania) nie zmieni się nic. Znowu realizujemy badanie techniką CAPI, używamy tego samego kwestionariusza i losujemy 6 respondentów w sposób prosty bezzwrotny. zmieni się tylko jedna rzecz. Do tej pory nikt nam nie odmawiał wzięcia udziału w badaniu. Tym razem okaże się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb naszych ankieterów, odmawiają odpowiedzi na pytania z naszego kwestionariusza. To oczywiście skrajny przypadek. W rzeczywistości nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, rzeczywiście są trudniej uchwytni i sondażyści mają problem z dodarciem do tej grupy społecznej.      
 
 ### Tabela 9.1 Rozkład preferencji politycznych w (fikcyjnej) populacji dorosłych obywateli Polski
 
 |Miejsce zamieszkania | Nie biorę udziały w wyborach | NIE |  Tak | Razem |
 |---------------------|------------------------------|-----|------|-------|
 |Miasto               | 6                            | 1   | 5    | 12    |
-|Wies                 | 4                            | 2   | 2    |  8    |
+|__Wies__                 | __4__                            | __2__   | __2__    |  __8__    |
 |RAZEM                | 10                           | 3   | 7    | 20    |
 
-Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów?
-Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki. Ich liczba będzie bowiem zależała nie tylko od tego, ile osób dobraliśmy do próby, ale także od tego ile z nich będzie chciało wziąć udział w badaniu.
+Ponownie skorzystamy z naszej (fikcyjnej populacji) dorosłych obywateli Polski. Tak jak ostatnio przeanalizujemy przykład badania sondażowego dotyczącego poparcia dla partii X. Wykorzystamy tą samą technikę zbierania danych (CAPI), ten sam kwestionariusz i znowu będziemy losować 6 respondentów w sposób prosty bezzwrotny. Cała metodologia badania pozostanie bez zmian. Inaczej natomiast będzie przebiegała realizacja badania. Tym razem będziemy musieli się zmierzyć z problemem odmów odpowiedzi ze strony respondentów. Okaże się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb naszych ankieterów, będą odmawiać udzielania odpowiedzi na pytania z naszego kwestionariusza. To oczywiście skrajny przypadek. W rzeczywistości nigdy nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, rzeczywiście są trudniej uchwytni i sondażyści mają dużo problemów z dotarciem do tej grupy społecznej.    
+Jakie konsekwencje dla naszego schematu losowania będą miały odmowy uczestnictwa respondentów zamieszkałych w mieście? Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki otrzymywane z 6-osobowych prób. Będa one bowiem zależały nie tylko od tego, ile osób dobieramy do próby, ale także od tego, które z nich zgodzą się wziąć udział w badaniu. 
 
 ### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne      
       
@@ -668,6 +673,8 @@ Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki
    
 W zaistniałej sytuacji rozkład wyników nie jest już taki prosty do przewidzenia. Skupmy się przede wszystkim na tym, ilu respondetnów otrzymamy losując 6 osób i wiedząc, że tylko te zamieszkałe na wsi wezmą udział w badaniu.        
 
+Zauważmy, że w naszej sytuacji, gdy odpowiedzi udzielają wyłącznie mieszkańcy wsi, maksymalna liczba zwolenników partii X w próbie jest równa  2. Tylu jest mieszkańców wsi, którzy zamierzają głosować na to ugrupowanie. Co więcej może się okazać, że mimo, iż początkowo dobierzemy 6 respondentów, to praktycznie dostępnych będzie tylko 5, 4, 3, 2, lub żaden. W efekcie, przy niepełnej realizacji próby nasz schemat losowania będzie generował inne wyniki niż obserwowaliśmy to wcześniej.  Zestawienie wszystkich możliwych wyników znajduje się powyżej.
+
 ### Tabela 9.2. Liczba dostępnych respondentów w próbach sześcioosobowych
 
 |Liczba dostępnych respondentów  |  Liczba prób|  Procent prób|
@@ -682,7 +689,8 @@ W zaistniałej sytuacji rozkład wyników nie jest już taki prosty do przewidze
 |Razem                           |     27907200|        100,00|
 
 
-Jak widać tylko dla znikomej części prób liczba dostępnych respondentów wyniesie 6. Większość będzie zawierała nie więcej niż 2. W tej sytuacji oczywiste jest, że rozkład wyników z prób będzie inny niż poprzednio, gdy dostępni byli wszyscy respondenci. Zanim przystąpimy do wyznaczani rozkładu musimy ustalić, że próby, w których wszyscy respondenci odmówili wzięcia udziału w badaniu musimy odrzucić. Nie da się na ich podstawie określić, jakie może być poparcie dla partii X. natomiast w naszej zbiorowości prób pozostawimy jednoosobowe próby dla których oszacowanie poparcia może wynieść 0% lub 100%. Zobaczmy jak w takim razie rozkładają się wyniki.     
+Łącznie, dla schematu losowania 6 osób, prób w których dostępnych jest przynajmniej jeden respondent jest 27241920, czyli wyraźnie mniej niż w poprzednim przykładzie. Widzimy również, że w prawie połowie wszystkich prób poparcie dla partii X wyniesie 0%. Do tej grupy zaliczają się wszystkie próby 6, 5, 4, 3, 2 i 1 osobowe, w których żadna osoba nie opowiedziała się za  partią X. Następną liczne grupy stanowią próby, w których poparcie dla partii X wyniosło 50% oraz 33%. Pozostałe wyniki pojawiają się sporadycznie. Może to zobaczyć wyraźnie na wykresie. 
+
 
 ### Tabela 9.3. Liczba dostępnych respondentów w próbach sześcioosobowych
 |Poparcie w próbie  |  Liczba prób|  Procent prób|
@@ -704,6 +712,11 @@ Jak widać tylko dla znikomej części prób liczba dostępnych respondentów wy
 ### Wykres 9.1. Rozkład poparcia partii X w próbach 6 osobowych przy niepełnej realizacji (bez mieszkańców miast)  
 
 <img src="figure/unnamed-chunk-16.png" title="plot of chunk unnamed-chunk-16" alt="plot of chunk unnamed-chunk-16" style="display: block; margin: auto;" />
+
+
+Inaczej niż przy pełnej realizacji, tym razem wyniki z prób są bardzo rozproszone. Oczywiście jest to spowodowane odmowami mieszkańców miast. W tej sytuacji musimy zadać pytanie, czy przy niepełnej realizacji nasz schemat losowania respondentów wciąż jest tak dobry wcześniej? Patrząc na powyższy wykres można mieć wątpliwości. Żeby ostatecznie się przekonać, czy obniżony poziom realizacji rzeczywiście obniża wiarygodność otrzymywanych wyników wystarczy sprawdzić przeciętne poparcia dla partii X w zrealizowanych próbach. okazuje się, że jest ono równe  25%! Czyli znacznie mniej niż wynosi ono w populacji 35%. Próba jest schemat losowania jest obciążony - próby dają przeciętnie niższy poziom poparcia niż jest on w rzeczywistości. 
+Obciążenie i błąd systematyczny - wyniki z próby przeciętnie różnią się od szacowanej wielkości w populacji. De facto nasze badanie nie jest już reprezentatywne dla całej naszej (fikcyjne) populacji obywateli Polski, a jedynie dla 
+Korzystając z prób, w których realizacja była niepełna narażamy się na popełnianie błędów systematycznych - systematycznie nasz wynik z próby jest inny niż w badanej populacji. Do tego właśnie prowadzi niepełna realizacja - wyniki są 
 
 
 Co się stanie z przeciętnym wynikiem z próby? Czy próby wciąż będą trafiały w punkt? Niestety nie. Jeżeli wyłączymy z obliczeń próby liczbą osób dostępnych równą 0 lub 1, bo na ich podstawie nie da się przeprowadzić szacowania, to przeciętny wynik z próby wynosi 25%.     
