@@ -723,7 +723,7 @@ Zaczynamy od rozpisania wszystkich możliwych wyników z próby (kolumna A). Nas
 
 Czy istnieje jakiś sposób żeby temu zaradzić? Na szczęście tak. Polega on na zwiększeniu liczebności próby. Ale czemu większa liczba respondentów pozwala zredukować błąd? W skrócie można powiedzieć, że zmniejsza ona ryzyko otrzymania skrajnych wyników w próbie. Jeżeli dobieramy tylko dwóch respondentów (tak jak w sondażu dotyczącym absencji wyborczej) to poparcie dla partii X możemy oszacować tylko na poziomie 0%, 50% oraz 100%. Wprowadzając trzeciego respondenta zwiększamy zakres możliwości do 0%, 30%, 60%, 90% i 100%. Widzimy więc, że zwiększając próbę zwiększamy różnorodność wyników i jednocześnie zmniejszamy ryzyko trafienia na wynik skrajny, najdalszy od 35%. Mniej skrajnych wyników oznacza mniejszy błąd. Możemy to zobaczyć na wykresie ilustrującym rokład wyników z próby dla schematów losowania od 6, 9, 12 oraz 15 respondentów w sposób prosty z naszej (fikcyjnej) populacji.    
 
-### Wykres 8.1. Rozkłady wyników z prób składających się z 6,  9, 12 lub 15 respondentów
+### Wykres 8.1. Rozkłady wyników z prób składających się z 6,  9, 12 oraz 15 respondentów
 
 ```{r, echo=FALSE, fig.align='center', fig.height=8, fig.width=13}
 proby<-list()
