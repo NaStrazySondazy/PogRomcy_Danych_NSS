@@ -12,6 +12,8 @@ Polaków nie wie jak powstają sondaże!
 
 ```{r 1_wykres_slupkowy, echo=FALSE, fig.align='center', fig.height=8, fig.width=10}
 options(OutDec= ",", scipen=10); # scipen - zapis naukowy liczb
+kolor<-"blue3";
+
 library(ggplot2)
 
 sonNSS<-data.frame(L=1:100, Poparcie=c(rep("TAK", 5), rep("NIE", 95)))
@@ -22,15 +24,6 @@ abline(h=seq(0,100,10), col="grey100");
 abline(v=sonNSS_bar, col="grey100");
 barplot(sonNSS, las=1, col=c("green3", "red3" ), add=T, ylab="Procent", main="Czy wiesz jak powstają sondaże?")
 box( col = "grey90")
-
-# qplot(factor(Poparcie), data=sonNSS, geom="bar", fill=factor(Poparcie))+
-#     guides(fill=FALSE)+
-#   ylab("Procent") +
-#     ggtitle("Czy wiesz jak powstają sondaże?") +
-#   theme(axis.title.x=element_blank())+
-#   scale_fill_manual(values=c("red3", "green3"))+
-#   theme(axis.text.x = element_text(face="bold", color = "black", size=15), 
-#         plot.title = element_text(lineheight=.8, face="bold", size=20))
 ```
 
 Jak interpretować ten wynik? Co on oznacza? Odpowiedź jest prosta. Praktycznie nic, bo ta informacja nie ma żadnej wartości. Dlaczego? Nie tylko dlatego, że jest zmyślona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedziałem dokładnie kiedy zorganizowano badanie, jaką techniką je przeprowadzono (telefonicznie czy bezpośrednio), jak zadano pytanie - co to znaczy, że ktoś wie jak powstają sondaże, a także nie zdefiniowałem kim są Polacy - czy są to obywatele, czy mieszkańcy Polski, w jakim byli wieku. Nie podałem również jakim błędem mogą być obarczone wyniki (tzw. błąd statystyczny), ani ile osób wzięło udział w badaniu. Codziennie w prasie i innych mediach pojawiają się podobne “dane sondażowe”. Czy mają one jakąkolwiek wartość? Czy można im zaufać? Jak odróżnić “dobry” sondaż od “złego”.
@@ -73,26 +66,26 @@ __Zadania 3:__
 
 L.p.          |Czego dotyczy badanie? | Co jest próbą?  
 --------------|-----------------------|----------------
-1.            |  Opis badania         | Opis próby          
-2.            |  Opis badania         | Opis próby      
-3.            |  Opis badania         | Opis próby      
+1.            |                       |           
+2.            |                       |       
+3.            |                       |       
 
 # 4. Sondaż 
 
 Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki często pojawiają się w prasie i mają duże znaczenie dla polityków oraz pewnie trochę mniejsze dla wyborców.  Wyobraźmy sobie, że chcemy zmierzyć poziom poparcia dla wybranej partii X w wyborach do parlamentu. Dla naszych celów odsłońmy kilka faktów dotyczących badanej zbiorowości:
 
-### Tabela 4.1. Rozkład preferencji politycznych w (fikcyjnej) populacji dorosłych obywateli Polski (%)
+### Tabela 4.1. Rozkład preferencji politycznych w (fikcyjnej) populacji dorosłych obywateli Polski ( w %)
 
-|       | Nie biorę udziały w wyborach | NIE |  Tak | Razem |
-|-------|------------------------------|-----|------|-------|
-|Miasto | 30                           | 5   | 25   | 60    |
-|Wies   | 20                           | 10  | 10   | 40    |
-|RAZEM  | 50                           | 15  | 35   | 100   |
+|       | Popieram partię X | Nie popieram partii X | Nie biorę udziały w wyborach |  Razem |
+|-------|-------------------|-----------------------|------------------------------|--------|
+|Miasto | 25                |5                      |30                            | 60     |
+|Wies   | 10                |10                     |20                            | 40     |
+|RAZEM  | 35                |15                     |50                            | 100    |
 
 W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą poparcie dla partii X (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię X, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię X stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. 
  
 Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię X?
-I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na  (bo 25%/60%???0,4), a na wsi 1 na 4 (bo 10%/40%=0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
+I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na  (bo 25%/60%=0,4), a na wsi 1 na 4 (bo 10%/40% = 0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
 Żeby przeprowadzić nasz polityczny sondaż musimy zrealizować badanie zarówno na wsi jak i w mieście. Każda osoba należąca do populacji musi mieć szansę znalezienia się w próbie. To bardzo ważne. Sposób dobierania próby, zwany schematem, nie może uniemożliwiać nikomu znalezienia się w próbie. 
 W dalszej części kursu pokażemy jak prawidłowo zdefiniować populację, jak błędy w kwestionariuszu mogą wpłynąć na zachowanie respondentów, jak dobrać, a dokładnie wylosować próbę reprezentatywną, 
 
@@ -101,9 +94,9 @@ __Zadania 4:__
   1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?    
     + TAK
     + NIE     
-  2. Na podstawie danych z Tabeli 1. POPULACJA WYBORÓW odpowiedz na poniższe pytania:     
-    a. Jaki procent mieszkańców wsi popiera ?    
-    b. Jaki procent mieszkańców miasta nie pójdzie na wybory?    
+  2. Na podstawie danych z Tabela 4.1. POPULACJA WYBORÓW odpowiedz na poniższe pytania:     
+    a. Jaki procent mieszkańców wsi popiera partię X?    
+    b. Jaki procent mieszkańców miasta nie bierze udziału w wyborach?    
     c. Jaki procent osób które nie popierają partii X mieszka w mieście?
 
 # 5. Problem badawczy -> populacja -> technika realizacji badania
@@ -144,15 +137,15 @@ Aby łatwiej rozróżniać poszczególne metody zbierania danych sondażyści, n
 | Technika | PAPI (Paper And Pencil Interviewing)                                                                                                         | CAPI,(ComputerAssisted Personal Interviewing)                                                                                                                                                | CATI (Computer Assisted Telephone Interviewing)                                                                                                                                                                  | CAWI (Computer Assisted Web Interviewing)                                                                             |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Opis     | Wywiad bezpośredni - respondent dostaje od ankietera kartkę z pytaniami, bierze ołówek lub długopis i zapisuje (zaznacza) swoje odpowiedzi;   | Wywiad bezpośredni - ankieter przychodzi do respondenta z laptopem (lub innym urządzeniem mobilnym) i odczytuje ze specjalnego programu pytania, a następnie zapisuje w nim odpowiedzi.        | Wywiad telefoniczny - ankieter dzwoni pod losowo wybrany numer telefonu i osobie, która odbierze, zadaje pytania z przygotowanego kwestionariusza. Odpowiedzi są zapisywane w specjalnym programie komputerowym. | Ankieta internetowe - brak ankietera, respondent wypełnia kwestionariusz samodzielnie na stronie internetowej. |
-| Zalety   | * możliwość stosowania techniki do bardzo różnych populacji; * stosunkowo niski odsetek odmów wzięcia udziału w badaniu;                     | * możliwość stosowania techniki do bardzo różnych populacji; * stosunkowo niski odsetek odmów wzięcia udziału w badaniu; * możliwość gromadzenia danych bezpośrednio w systemie komputerowym | * bardzo szybka realizacja; * stosunkowo niskie koszty; * możliwość gromadzenia danych bezpośrednio w systemie komputerowym                                                                                      | * bardzo niskie koszty; * możliwość gromadzenia danych bezpośrednio w systemie komputerowym                           |
-| Wady     | * wysokie koszty; * długi czas realizacji; * konieczność przepisywania wyników z ankiety papierowej do systemu komputerowego - możliwe błędy | * wysoki koszt; * długi czas realizacji;                                                                                                                                                     | * duży odsetek odmów wzięcia udziału w badaniu; * ograniczone zastosowanie techniki                                                                                                                              | * bardzo ograniczone zastosowanie techniki;                                                                                                                     |
+| Zalety   | możliwość stosowania techniki do bardzo różnych populacji; stosunkowo niski odsetek odmów wzięcia udziału w badaniu;                     | możliwość stosowania techniki do bardzo różnych populacji; stosunkowo niski odsetek odmów wzięcia udziału w badaniu; możliwość gromadzenia danych bezpośrednio w systemie komputerowym | bardzo szybka realizacja; stosunkowo niskie koszty; możliwość gromadzenia danych bezpośrednio w systemie komputerowym                                                                                      | bardzo niskie koszty; możliwość gromadzenia danych bezpośrednio w systemie komputerowym                           |
+| Wady     | wysokie koszty; długi czas realizacji; konieczność przepisywania wyników z ankiety papierowej do systemu komputerowego - możliwe błędy | wysoki koszt; długi czas realizacji;                                                                                                                                                     | duży odsetek odmów wzięcia udziału w badaniu; ograniczone zastosowanie techniki                                                                                                                              | bardzo ograniczone zastosowanie techniki;                                                                                                                     |
 
 Szczególnie istotną cechą różnicującą opisane powyżej techniki jest tak zwany poziom realizacji próby (nazywany również poziomem response-rate), czyli odsetek osób wytypowanych przez nas do udziału w badaniu, z którymi faktycznie udało się przeprowadzić wywiad. Warto wiedzieć, że praktycznie nigdy nie występuje sytuacja, w której sondażystom udaje się zapytać o opinię wszystkie osoby dobrane przez nich do próby. Dzieje się tak z kilku powodów. Po pierwsze, nie do wszystkich osób udaje się dotrzeć/dodzwonić. Powodem mogą być choroby, wakacje, delegacje służbowe itp. Ponadto część osób, do których uda się dotrzeć, z różnych przyczyn odmawia wzięcia udziału w badaniu.  Oba te czynniki są dodatkowym źródłem błędu w badaniu i celem każdego dobrego badacza jest ich zminimalizowanie. Jest to kolejny powód dla które technika zbierania danych ma tak istotne znacznie.     
 
 Problem poprawnego zdefiniowania populacji oraz dobrania do niej odpowiedniej techniki badawczej dobrze ilustruje przykład historyczny. W 1936 roku „Literary Digest”, popularny magazyn informacyjny przeprowadził w USA badanie przedwyborcze. Do ludzi wybranych z książek telefonicznych i list rejestracyjnych samochodów wysłano DZIESIĘĆ MILIONÓW kart pocztowych, pytając, na kogo zamierzają oddać głos w wyborach prezydenckich – na republikanina Alfa Landona czy demokratę Franklina Roosevelta? Odpowiedziało ponad dwa miliony ludzi, wskazując że nowym prezydentem wybrany zostanie Alf Landon (57%), a nie Franklin Roosevelt (43%). Mogłoby się wydawać, że przebadanie tylu osób jest dużo bardziej wiarygodne i miarodajne niż przeprowadzenie badania na niewielkim wycinku populacji. Nic bardziej mylnego. Realne wybory dość drastycznie zweryfikowały wnioski z tych badań – nowym prezydentem został Franklin Roosevelt, mając największą przewagę głosów w historii – otrzymał 61%.        
 Dla porównania, w tym samym czasie, przedwyborczy sondaż przeprowadził również  George Gallup, który trafnie przewidział wyniki wyborów. W swoim badaniu posłużył się on jednak niewielką próbą kwotową (czyli opartą na znajomości określonych cech populacji, np. płeć, dochód, wiek, miejsce zamieszkania itp.) zrealizowaną technika bezpośrednią.     
 Na czym więc polegał problem „Literary Digest”? Na całkowitym braku kontroli nad próbą. Na pytanie zadane przez magazyn odpowiedziało zaledwie 22% wszystkich zapytanych osób. Jak się okazało karty w większości odsyłali republikanie. Drugi problem polegał na nieprawidłowym zdefiniowaniu populacji. Respondenci do badania zostali dobrani na podstawie spisu abonentów telefonicznych i właścicieli samochodów. Taka konstrukcja próby dawała nadreprezentację zamożnych wyborców, czyli pominięcie ludzi biednych, którzy w większości głosowali na „New deal” Roosevelta.     
-Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Analizując wyniki badań sondażowych należy zawsze zwracać uwagę na technikę realizacji oraz sposób definiowania populacji. Prawidłowa definicja zbiorowości generalnej powinna zawierać informacje o:
+Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniowanej populacji może doprowadzić do zupełnie nietrafnych wniosków.  Dlatego analizując wyniki badań sondażowych należy zawsze zwracać uwagę na technikę realizacji oraz sposób definiowania populacji. Prawidłowa definicja zbiorowości generalnej powinna zawierać informacje o:
 
 * położeniu w przestrzeni zbiorowości (mieszkańcy Polski, mieszkańcy Poznania itp.)  
 * wieku respondentów (pełnoletni Polacy, osoby w wieku 15 i więcej ukończonych lat itp.)   
@@ -164,40 +157,45 @@ __Zadania 5:__
 
 L.p.          | Nazwa firmy badawczej| Link do strony z raportem?  
 --------------|----------------------|----------------
-1.            |  Nazwa firmy         | Raport          
-2.            |  Nazwa firmy         | Raport     
-3.            |  Nazwa firmy         | Raport     
+1.            |                      |           
+2.            |                      |     
+3.            |                      |    
 
-  2. Odpowiedz na pytania związane z następującym problemem badawczym. Zamierzasz zmierzyć poziom czytelnictwa tygodnika "_Na Straży Sondaży_". Ukazuje się on wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewody). Pismo jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.   
-    a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoś staje się czytelnikiem? Jak często trzeba czytać żeby stać się czytelnikiem? Ile trzeba przeczytać żeby stać się czytelnikiem?)   
-    b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojewódzkich czy także w innych miejscach?)    
-  3. W 2013 r. Dom Badawczy Maison przygotowała na zlecenie Polskiej Fundacji Pomocy Dzieciom „Maciuś” raport pt.:“Głód i niedożywienie dzieci w Polsce”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI) na ogólnopolskiej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Z raportu wynika, że pracownicy szkół i pracownicy OPS/PCPR szacują, że co dziesiąte dziecko z klas 1–3 dotyka problem niedożywienia.   
+  2. Odpowiedz na pytania związane z następującym problemem badawczy: Chcesz zmierzyć poziom czytelnictwa tygodnika "_Na Straży Sondaży_". Ukazuje się on wyłącznie w formie drukowanej w miastach wojewódzkich (siedzibach wojewodów lub/i w siedzibach sejmików wojewódzkicj). Pismo ma charakter popularnonaukowy i jest przeznaczone dla wszystkich, niezależnie od wykształcenia czy wieku.   
+    a. Jak zdefiniujesz czytelnictwo? ( Pytania pomocnicze: Kiedy ktoś staje się czytelnikiem? Jak często trzeba czytać żeby stać się czytelnikiem? Ile trzeba przeczytać żeby stać się czytelnikiem?)      
+      ......................................................................................................................................................................................     
+      ......................................................................................................................................................................................   
+      ......................................................................................................................................................................................    
+    b. Jak zdefiniujesz populację czytelników? (Pytania pomocnicze: jaki jest minimalny wiek czytelnika? czy czytelnicy mieszkają tylko w miastach wojewódzkich czy także w innych miejscach?)      
+      ......................................................................................................................................................................................     
+      ......................................................................................................................................................................................   
+      ......................................................................................................................................................................................     
+  3. Odpowiedz na pytania związane z następującym badaniem:  Dom Badań Marketingowych przygotowała na zlecenie Fundacji Wspieramjmy Potrzebujace Dzieci raport pt.:“Niedożywienie polskich dzieci”. Został on przygotowany na podstawie badanie przeprowadzono telefonicznie (technika CATI) na ogólnopolskiej próbie 800 przedstawicieli instytucji zajmujących się dziećmi i ich sytuacją życiową. Badanie dotyczyło dzieci uczęszczających do klas 1-3. Z raportu wynika, że pracownicy szkół i pracownicy Ośrodków Pomocy Społecznej szacują, że co dziesiąte dziecko w tej grupie wiekowej dotyka problem niedożywienia.   
     a. Zdefiniuj badaną populację:      
-      ......................................................................................................................................................................................;     
-      ......................................................................................................................................................................................;   
-      ......................................................................................................................................................................................;     
-    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2015 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2014 r. lub dla późniejszej daty przed końcem 2013 r.):
-      ......................................................................................................................................................................................;          
-    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez niedożywienie:      
+      ......................................................................................................................................................................................     
+      ......................................................................................................................................................................................   
+      ......................................................................................................................................................................................     
+    b. Podaj liczbę uczniów klas 1-3 w Polsce w 2015 r.(mogą to być dane zgodne ze stanem na 1 czerwca 2014 r. lub dla wcześniejszej daty przed końcem 2013 r.):
+      ......................................................................................................................................................................................          
+    c. Maksymalnie w trzech zdaniach napisz co rozumiesz przez __niedożywienie__:      
       ......................................................................................................................................................................................      
-      ......................................................................................................................................................................................;       
-    d. Czy z danych przedstawionych w raporcie może wynikać, że w Polsce z głodu cierpi około 800 000 dzieci? Odpowiedź uzasadnij.  
-      + Tak  .......................................................................................................................................................................;     
-      + Nie  .......................................................................................................................................................................;   
-  4. Uniwersytecki Zespół Na Straży Sondaży zamówił badanie dotyczące popularności strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodziło oszacowanie odsetka osób w wieku 18-35 lat zamieszkałych w Polsce, które w ciągu ostatniego miesiąca zapoznały się z treścią (przeczytały cały lub prawie cały) przynajmniej jednego artykułu na stronie. Badanie zostało przeprowadzone metoda CAWI przez firmę “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spośród 50 tys. osób które dobrowolnie zarejestrowały się do bazy internetowej firmy i za drobna opłatą zgadzają się odpowiadać na pytania w różnych ankietach. Wiadomo również, ze osoby do badania zostały dobrane w ten sposób, aby rozkład płci wieku oraz wielkości miejscowości deklarowanego zamieszkania był zgodny z danymi podawanymi przez GUS na temat mieszkańców Polski. Odpowiedz na pytania związane z tym badaniem:
-    a) Czy populacja osób z posiadających dostęp do Internetu (korzystających z Internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkańców Polski?     
-      + Tak  .......................................................................................................................................................................;     
-      + Nie  .......................................................................................................................................................................;              
-    b) Czy próba badawcza 917 osób została dobrana z populacji polskich internautów - osób korzystających z Internetu do celów prywatnych (nie związanych z praca zarobkowa, ale np. komunikacją ze znajomymi i rodziną, nauką, czytaniem prasy, graniem, oglądaniem filmów, robieniem zakupów itp.)  w domu, kawiarence internetowej, bibliotece, pracy lub szkole/uczelni?   
-      + Tak  .......................................................................................................................................................................;     
-      + Nie  .......................................................................................................................................................................;       
+      ......................................................................................................................................................................................       
+    d. W raporcie z badania stwierdzono, że w Polsce z głodu cierpi około 800 000 dzieci. Czy dane zebrane na potrzeby badania dają podstawy dla takiego wniosku?  Odpowiedź uzasadnij.  
+      + Tak, ...............................................................................................................................................................................     
+      + Nie, ...............................................................................................................................................................................   
+  4. Uniwersytecki Zespół Na Straży Sondaży zamówił badanie dotyczące popularności strony internetowej “www.nastrazysondazy.uw.edu.pl”. Chodziło oszacowanie odsetka osób w wieku 18-35 lat zamieszkałych w Polsce, które w ciągu ostatniego miesiąca zapoznały się z treścią (przeczytały cały lub prawie cały) przynajmniej jednego artykułu na stronie. Badanie zostało przeprowadzone metoda CAWI przez firmę “Polski Panel Internetowy” na próbie 917 osób w wieku 18-35 lat spośród 50 tys. osób które dobrowolnie zarejestrowały się do bazy internetowej firmy i za drobna opłatą zgadzają się odpowiadać na pytania w różnych ankietach. Wiadomo również, ze osoby do badania zostały dobrane w ten sposób, aby rozkład płci wieku oraz wielkości miejscowości deklarowanego zamieszkania był zgodny z danymi podawanymi przez GUS na temat mieszkańców Polski. Odpowiedzi na pytania związane z tym badaniem:
+    a) Czy populacja osób posiadających dostęp do Internetu (korzystających z Internetu do celów prywatnych w domu, bibliotece, pracy lub szkole/uczelni) obejmuje wszystkich mieszkańców Polski?     
+      + Tak, ...............................................................................................................................................................................           
+      + Nie, ...............................................................................................................................................................................                  
+    b) Czy próba badawcza 917 respondentów została dobrana z populacji osób posiadających dostęp do Internetu?   
+      + Tak, ...............................................................................................................................................................................         
+      + Nie, ...............................................................................................................................................................................          
     c) Czy badanie zlecone przez Na Straży Sondaży obejmuje populację polskich internautów.    
-      + Tak  .......................................................................................................................................................................;     
-      + Nie  .......................................................................................................................................................................; 
-    d) Czy badanie zrealizowane przez “Polski Panel Internetowy” obejmuję populacje;   
-    e) Czy rozkład płci, wieku i wielkości miejscowości zamieszkania w próbie jest zgodny z rozkładem tych cech w populacji mieszkańców Polski?    
-      + Tak  .......................................................................................................................................................................;     
-      + Nie  .......................................................................................................................................................................;      
+      + Tak, ...............................................................................................................................................................................         
+      + Nie, ...............................................................................................................................................................................     
+    d) Czy rozkład płci, wieku i wielkości miejscowości zamieszkania w próbie jest zgodny z rozkładem tych cech w populacji osób posiadających dostęp do Internetu w Polsce?    
+      + Tak, ...............................................................................................................................................................................          
+      + Nie, ...............................................................................................................................................................................        
     
 # 6. Kwestionariusz
 
@@ -226,25 +224,25 @@ __Zadania 6:__
       * Tak - generalnie odpowiadali szczerze;   
       * Nie - generalnie odpowiadali nieszczerze;   
       * Nikt tego nie wie. Może część tak, a część nie.   
-      * Mam własne zdanie: .................................................................................................................................................................       
-      ......................................................................................................................................................................................;         
+      * Mam własne zdanie:      
+      ......................................................................................................................................................................................      
+      ......................................................................................................................................................................................               
     b. Czy uważasz, że badanie przez Internet daje większe poczucie anonimowości niż klasyczne badania prowadzone przez telefon lub twarzą w twarz z ankieterem? Uzasadnij maksymalnie w trzech zdaniach.    
-      * Tak, ponieważ .................................................................................................................................................................            
-      ......................................................................................................................................................................................          
-      ......................................................................................................................................................................................;        
-      * Nie, ponieważ .................................................................................................................................................................      
-      ......................................................................................................................................................................................          
-      ......................................................................................................................................................................................;               
+      + Tak, ...............................................................................................................................................................................           
+      ......................................................................................................................................................................................           
+      + Nie, ...............................................................................................................................................................................           
+      ......................................................................................................................................................................................   
     c. Czy w badaniu przeprowadzonym przez Internet byłabyś / byłbyś skłonny odpowiadać szczerze na pytania dotyczące seksualności, chorób intymnych lub łamania prawa? Dlaczego? (Pytania pomocnicze: zastanów się, czy ważna w tych kwestiach jest anonimowość i poufność danych, a także, czy w ogóle mówienie na ten temat sprawia Ci jakieś problemy):
-      + Tak, ponieważ .................................................................................................................................................................     
-      ......................................................................................................................................................................................          
-      ......................................................................................................................................................................................;             
-      + Nie, ponieważ .................................................................................................................................................................     
-      ......................................................................................................................................................................................          
-      ......................................................................................................................................................................................;              
-    d. Jaki procent nastolatków, którzy wzięli udział w powyższym badaniu zadeklarował, że robi zakupy przez internet i kupuje w ten sposób środki psychotropowe?
+      + Tak, ...............................................................................................................................................................................           
+      ......................................................................................................................................................................................           
+      + Nie, ...............................................................................................................................................................................           
+      ......................................................................................................................................................................................            
+    d. Jaki procent nastolatków, którzy wzięli udział w powyższym badaniu zadeklarował, że robi zakupy przez internet i kupuje w ten sposób środki psychotropowe?     
+          ......................................................................................................................................................................................     
     e. Jaki procent osób, które zadeklarowały w badaniu, że kupują środki psychotropowe to szesnastolatkowie?    
-    f. Jaki procent nastolatków, którzy kupują coś przez internet, kupuje substancje psychotopowe? ……………………     
+          ......................................................................................................................................................................................     
+    f. Jaki procent nastolatków, którzy kupują coś przez internet, kupuje substancje psychotopowe?
+          ......................................................................................................................................................................................          
     h. Czy znając wyniki badania zgodziłabyś/zgodziłbyś się z następującymi określeniami:    
       i. „Nowa plaga w sieci. Nastolatki kupują narkotyki przez internet" - TAK / NIE    
       ii. „Gimnazjalistki kupują psychotropy w sieci. Nowa plaga w internecie" - TAK / NIE    
@@ -277,7 +275,7 @@ __Zadania 6:__
         6. na partię Przyjaciół Środowiska;      
         7. na partię Przyjaciół Uczciwości;      
     c. Pytanie do sondaży 1. oraz 2.:     
-      + Czy w obu sondażach wybrałeś taką samą partię? ” - TAK / NIE    
+      + Czy w obu sondażach wybrałeś taką samą partię? - TAK / NIE    
       + Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów? - TAK / NIE      
      
  
@@ -396,19 +394,19 @@ Operat można również pobrać ze strony:
 
 https://docs.google.com/spreadsheets/d/1iSt2ZD9F8DhEh8UonnYqZ71wG7gqm5MSlpiZM2vL-Gw/pubhtml?gid=1189066294&single=true
 
-Dla wyjaśnienia ustalmy, że kolejne kolumny w powyższym zbiorze oznaczaj:   
+Ustalmy, że kolejne kolumny w powyższym zbiorze oznaczaj:   
 
-  * L.p.- oznaczenie obywatela - jego liczba porządkowa;
+  * L.p.- liczbę porządkowa obywatela - jego identyfikator;
   * Miejsce zamieszkania - miasto lub wieś;
-  * Preferencje wyborcze - czy i jak zagłosowałby, gdyby 
+  * Preferencje wyborcze - czy i jak dany obywatel zagłosowałby, gdyby wybory odbyły się w najbliższą niedzielę;
   
-Nasz problem badawczy dotyczy absencji wyborczej, co oznacza, że interesuje nas odsetek osób, które na pytanie o preferencje wyborcze (kolumna "Preferencje wyborcze") odpowiadają, że "Nie idę na wybory". Pozostałe odpowiedzi są dla nas bez znaczenia.
+Nasz problem badawczy dotyczy absencji wyborczej, co oznacza, że interesuje nas odsetek osób, które na pytanie o preferencje wyborcze (kolumna "Preferencje wyborcze") odpowiadają: "Nie, nie pójdę na wybory".
 
 Określiliśmy problem badawczym, zdefiniowaliśmy populację, wybraliśmy technikę realizacji badania, stworzyliśmy kwestionariusz, mamy operat losowania więc możemy wreszcie zająć się losowaniem respondentów.
 
 Skorzystamy z bardzo uproszczonego __schematu doboru próby__ ( w ten sposób sondażyści nazywają zasady wg których dobierają respondentów). Z naszej 20 osobowej populacji będziemy losowali 2 różne osoby w następujących krokach:      
 
-  1. Do próby losujemy jedną osobę spośród 20. Każdy obywatel w populacji ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/20;   
+  1. Losujemy pierwszego respondenta - jedną osobę spośród 20. Każdy obywatel w populacji ma takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/20;   
   2. Spośród pozostałych 19 osób losujemy drugiego respondenta. Ponownie wszystkie osoby pozostające w popuacji mają takie samo prawdopodobieństwo znalezienia się w próbie - wynosi ono 1/19;    
   3. Otrzymujemy próbę, w której znajdują się dwie osoby. Poza próbą zostaje 18 obywateli.   
 
@@ -451,12 +449,12 @@ Na pierwszy rzut oka widać, że nie wszystkie wyniki są zgodne z tym, co obser
 
 ```{r, echo=FALSE, fig.align='center', fig.height=7, fig.width=13}
 
-par(mar=c(5,4,1,0))
+par(mar=c(5,4,1,0), col.axis = kolor)
 b.6<-barplot(c(10*9, 20*10, 10*9), las=1, ylim=c(0, 230))
 rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = "grey90")
 abline(h=seq(0,100,50), col="grey100");
 abline(v=b.6, col="grey100");
-barplot(c(10*9, 20*10, 10*9), las=1, names.arg = c("0%", "50%", "100%"), add=T, col="black", ylim=c(0, 230), ylab = "Liczba prób", xlab="Poziom absencji wyborczej w próbie", cex.names = 1.5 );
+barplot(c(10*9, 20*10, 10*9), las=1, names.arg = c("0%", "50%", "100%"), add=T, col=kolor, ylim=c(0, 230), ylab = "Liczba prób", xlab="Poziom absencji wyborczej w próbie", cex.names = 1.5 );
 box( col = "grey90")
 text(b.6, c(10*9, 20*10, 10*9)+10, labels = c(10*9, 20*10, 10*9), cex = 1.4);
 
@@ -495,7 +493,7 @@ b.2<-barplot(p2, las=1, ylim=c(0,6000), names.arg = "")
 rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = "grey90")
 abline(h=seq(0,6000,1000), col="grey100");
 abline(v=b.2, col="grey100");
-barplot(p2, las=1, add=T, col="black", ylim=c(0, 230), ylab = "Liczba prób", xlab="Poziom absencji wyborczej w próbie", cex.names = 1.5 );
+barplot(p2, las=1, add=T, col=kolor, ylim=c(0, 230), ylab = "Liczba prób", xlab="Poziom absencji wyborczej w próbie", cex.names = 1.5 );
 box( col = "grey90")
 text(b.6, p2+500, labels = p2, cex = 1.4);
 
@@ -697,7 +695,7 @@ rozklad.p6<-barplot( prawdopo[,3], las=1, ylim=c(0,1.2*10^7), xlab="Poparcie w p
 rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = "grey90")
 abline(h=seq(0,10*10^6,2*10^6), col="grey100");
 abline(v=seq(0,8,1), col="grey100");
-barplot( prawdopo[,3], las=1 , add=T, col="black")
+barplot( prawdopo[,3], las=1 , add=T, col=kolor)
 box( col = "grey90")
 text( rozklad.p6, prawdopo[,3]+3*10^5, labels = prawdopo[,3],cex=1.3)
 title(ylab="Liczba prób",mgp=c(5,1,0))
@@ -933,12 +931,12 @@ abline(h=seq(0,100,10), col="grey100");
 abline(v=seq(6,20,1), col="grey100");
 box( col = "grey90");
 abline(h=7/20*100, col="green", lwd=4, lty=2);
-points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], pch="-", cex = 6);
-points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,4], pch="-", cex = 6);
+points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,3], pch="-", cex = 6, col=kolor);
+points( proby.sumy_przedzial[,1], proby.sumy_przedzial[,4], pch="-", cex = 6, col=kolor);
 for (i in 1:15) {
   lines( x=rep(i+5,2), lwd=6,
          y=rbind( proby.sumy_przedzial[i,3],
-                  proby.sumy_przedzial[i,4]) )
+                  proby.sumy_przedzial[i,4]), col=kolor )
   text(i+5, proby.sumy_przedzial[i,4]+15, paste(round(proby.sumy_przedzial[i,2],0), "%", sep=""), cex=1.3 )
   #text(i+5, 100, paste(round(proby.sumy_przedzial[i,2],1), "%", sep=""), cex=1.3 )
   text(i+5, proby.sumy_przedzial[i,4]+5, paste(round(proby.sumy_przedzial[i,4],0), "%", sep=""), cex=1, col="grey20")
@@ -991,19 +989,19 @@ Wcześniej (_5. Problem badawczy -> populacja -> technika realizacji badania_) m
 Ponownie skorzystamy z naszej (fikcyjnej) populacji dorosłych obywateli Polski. Tak jak ostatnio (_8. Błąd oszacowania_) przeanalizujemy przykład badania sondażowego dotyczącego poparcia dla partii X. Wykorzystamy tą samą technikę zbierania danych (CAPI), ten sam kwestionariusz i znowu będziemy losować 6 respondentów w sposób prosty bezzwrotny. Cała metodologia badania pozostanie bez zmian. Inaczej natomiast będzie przebiegała realizacja. Tym razem będziemy musieli się zmierzyć z problemem niedostępnością niektórych respondentów. Okaże się, że osoby zamieszkałe w mieście konsekwentnie, pomimo próśb i gróźb naszych ankieterów, będą odmawiać udzielania odpowiedzi na pytania z naszego kwestionariusza. To oczywiście skrajny przypadek. W rzeczywistości nigdy nie jest aż tak źle. Prawdą jest jednak, że mieszkańcy miast, z różnych powodów, są trudniej uchwytni i sondażyści mają dużo problemów z dotarciem do tej grupy społecznej.    
 Jakie konsekwencje dla naszego schematu losowania będzie miała niedostępność respondentów zamieszkałych w mieście? Niestety bardzo poważne. Po pierwsze zmienią się możliwe do uzyskania wyniki otrzymywane z 6-osobowych prób. Będa one bowiem zależały w znacznym stopniu od tego, którzy respondenci zgodzą się wziąć udział w badaniu. 
 
-### Tabela 9.1 Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne      
+### Tabela 9.2. Niepełna realizacja próby - wyniki z próby sześcioosobowej, gdy osoby mieszkające w mieście są niedostępne      
       
-6 dostępnych respondentów | 5 dostępnych respondentów | 4 dostępnych respondentów | 3 dostępnych respondentów | 2 dostępnych respondentów | 1 dostępnych respondentów | 0 dostępnych respondentów |
- ------------------------ | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- |
--                         |-                          |-                          |-                          |1                          |1                          |-                          |
--                         |-                          |-                          |2/3                        |-                          |-                          |-                          |
--                         |-                          |2/4                        |-                          |1/2                        |-                          |-                          |
--                         |2/5                        |-                          |-                          |-                          |-                          |-                          |
-2/6                       |-                          |-                          |1/3                        |-                          |-                          |-                          |
--                         |-                          |1/4                        |-                          |-                          |-                          |-                          |
--                         |1/5                        |-                          |-                          |-                          |-                          |-                          |
-1/6                       |-                          |-                          |-                          |-                          |-                          |-                          |
-0                         |0                          |0                          |0                          |0                          |0                          |-                          |
+| 6 dostępnych respondentów | 5 dostępnych respondentów | 4 dostępnych respondentów | 3 dostępnych respondentów | 2 dostępnych respondentów | 1 dostępnych respondentów | 0 dostępnych respondentów |
+| ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- |
+| -                         |-                          |-                          |-                          |1                          |1                          |-                          |
+| -                         |-                          |-                          |2/3                        |-                          |-                          |-                          |
+| -                         |-                          |2/4                        |-                          |1/2                        |-                          |-                          |
+| -                         |2/5                        |-                          |-                          |-                          |-                          |-                          |
+| 2/6                       |-                          |-                          |1/3                        |-                          |-                          |-                          |
+| -                         |-                          |1/4                        |-                          |-                          |-                          |-                          |
+| -                         |1/5                        |-                          |-                          |-                          |-                          |-                          |
+| 1/6                       |-                          |-                          |-                          |-                          |-                          |-                          |
+| 0                         |0                          |0                          |0                          |0                          |0                          |-                          |
   
 Zauważmy, że w naszej sytuacji, gdy mieszkańcy miast są niedostępni, maksymalna liczba zwolenników partii X w próbie jest równa  2. Tylu dokładnie jest mieszkańców wsi, którzy zamierzają głosować na to ugrupowanie. Co więcej, przy niepełnej realizacji próby może się okazać, że mimo, iż początkowo dobierzemy 6 respondentów, to praktycznie wywiady uda się przeprowadzić tylko z 5, 4, 3, 2 z nich lub z żadnym. W efekcie nasz schemat losowania, mimo iż nic w nim nie zmieniliśmy, zacznie generować zupełnie inne wyniki.
 Łącznie jest ich 9 (tyle ile wierszy w powyższej tabeli) - od 0% poparcia do 100% poparcia. W znacznej mierze  są one kreowane przez liczbę dostępnych respondentów. W związku z tym rozkład wyników jest trochę trudniejszy do wyznaczenia niż wcześniej. Tym razem pominiemy jednak obliczenie (niewiel różnią się od tych przy pełnej realizacji - trzeba tylko uwzględnić fakt, że w próbie może być różna liczba respondentów, od 0 do 6, i że wszyscy są mieszkańcami wsi) i skupimy się na rozwiązaniach.     
@@ -1085,7 +1083,7 @@ abline(v=sum(realizacja[,1]*realizacja[,2])/sum( realizacja[,2]), col="red", lwd
 #points( realizacja$Group.1, realizacja$procent, pch=15, cex=2)
 box( col = "grey90")
 for( i in 1:dim(realizacja)[1]) {
-  lines( rep(realizacja$Group.1[i],2), c(0,realizacja$procent[i]), lwd=11)
+  lines( rep(realizacja$Group.1[i],2), c(0,realizacja$procent[i]), lwd=11, col=kolor)
 }
 #![Niepełna realizacja](Losowanie_wielu_prob/niepelna_prealizacja.png)
 ```
