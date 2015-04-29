@@ -32,7 +32,7 @@ box( col = "grey90")
 Jak interpretować ten wynik? Co on oznacza? Odpowiedź jest prosta. Praktycznie nic, bo ta informacja nie ma żadnej wartości. Dlaczego? Nie tylko dlatego, że jest zmyślona. Podstawowy problem stanowi brak jakiejkolwiek noty metodologicznej: nie powiedziałem dokładnie kiedy zorganizowano badanie, jaką techniką je przeprowadzono (telefonicznie czy bezpośrednio), jak zadano pytanie - co to znaczy, że ktoś wie jak powstają sondaże, a także nie zdefiniowałem kim są Polacy - czy są to obywatele, czy mieszkańcy Polski, w jakim byli wieku. Nie podałem również jakim błędem mogą być obarczone wyniki (tzw. błąd statystyczny), ani ile osób wzięło udział w badaniu. Codziennie w prasie i innych mediach pojawiają się podobne “dane sondażowe”. Czy mają one jakąkolwiek wartość? Czy można im zaufać? Jak odróżnić “dobry” sondaż od “złego”.
 Na te oraz inne pytania postaramy się udzielić odpowiedzi w trakcie naszego kursu. Pokażemy na czym polega sondaż, z jakich elementów się składa, jakie są jago ograniczenia - czego nie powie nam nawet najlepsze badanie. Zaczniemy od przykładów łatwych, a skończymy na bardziej zaawansowanych próbując wcielić się na chwilę w rolę “sondażysty”. W imieniu zespołu Na Straży Sondaży zapraszamy do odkrywania niezwykłych możliwości, ale także pewnych ograniczeń metody zwanej reprezentacyjną, metody która stoi za wszystkimi sondażami.
 
-__Zadania 1:__  
+# Zadania 1:    
 
   1. Wymień trzy artykuły prasowe z 2014 r., w których powołano się na wyniki badań społecznych (sondaży). Napisz ile osób wzięło udział w badaniu oraz kiedy je zrealizowano, o ile w artykule podano tego rodzaju informacje. 
 
@@ -48,7 +48,7 @@ L.p.          | Tytuł artykułu| Link do strony z artykułem | Czy podano wielk
 Na pierwszy rzut oka badanie sondażowe, badanie na próbie, może się wydawać zadaniem karkołomnym. Oto na podstawie niewielkiej liczby obserwacji np. 1000 respondentów, staramy się opisać dużo większą, czasami nawet o kilka rzędów, populację. Czy ma to jakikolwiek sens? Czy da się wyznaczyć na tej podstawie przeciętną wagę, wzrost, miesięczne wydatki, liczbę przeczytanych książek albo czas spędzany dziennie na Facebooku przez dorosłych mieszkańców Polski. Trzeba wiedzieć, że oficjalnie mieszka około 31 mln ludzi w wieku 18 i więcej lat. W tej sytuacji 1000 osób stanowi w zaokrągleniu trzy dziesięciotysięczne PROCENTA populacji (1 000 /31 000 000 = 0,000032)!!! To bardzo mało. Trudno uwierzyć, że taka garstka obserwacji może dostarczyć nam wiarygodnych informacji o całej badanej zbiorowości. Dla porównania zastanówmy się, czy na podstawie jednego kilometra drogi da się powiedzieć, jak będzie wyglądała cała podróż mierząca 300 000 km (Ziemia w obwodzie liczy tylko 40 000 km). Na pierwszy rzut oka nie. Okazuje się jednak, że nauka, pod postacią statystyki, daje nam pewne narzędzia, które pozwalają trafnie wnioskować o dużych “obiektach” nawet na podstawie ich niewielkiego wycinka. W przypadku podróży kluczem do sukcesu byłoby umiejętne wybranie takich małych odcinków z całej drogi, które ułożą się w próbny kilometr.
 Statystycy i badacze społeczni wiedzą doskonale, że dobrze dobrana próba stanowi świetny opis całej populacji. Jak to możliwe? Co trzeba zrobić, żeby przy użyciu małego kamyka dowiedzieć się czegoś o wielkiej "górze"?
 
-__Zadania 2:__      
+# Zadania 2:      
 
   1. Wymień trzy badania na próbach przeprowadzone przez instytucje państwowe  i podaj link do ich wyników lub raportu. Mogą to być badania z roku 2014, ale także wcześniejszych lat. 
 
@@ -63,7 +63,7 @@ L.p.          |Nazwa instytucji publikującej wyniki | Tytuł badania  | Link do
 Zacznijmy od naszych codziennych doświadczeń. Wbrew pozorom większość naszej wiedzy o świecie czerpiemy z prób. I nie chodzi tu o metodę prób i błędów. Przyjrzyjmy się naszemu zdrowiu. Czasami zdarza się, że lekarz każe nam zrobić badanie krwi. Ale czy to oznacza, że trzeba zbadać całą krew w organizmie, wszystkie komórki? Na szczęście nie. Wystarczy mała próbka. Lekarz pobiera od nas zaledwie 10 ml krwi. W całym organizmie mamy jej aż 4,5l (4500ml). Tak więc próba stanowi 1/450. całej objętości krwi. To bardzo bardzo mało. Mimo to lekarz potrafi określić, co dzieje się w całym organizmie, a nie tylko w pobranej próbce. 
 Weźmy inny, mniej dramatyczny przykład. Wyobraźmy sobie, że chcemy ugotować zupę i lubimy, gdy jest ona odpowiednio słona. Jak to sprawdzamy? Czy musimy wypić całą zupę z garnka? Absolutnie nie. Wystarczy jedna łyżeczka, która zawiera 15ml zupy i stanowi zaledwie 3/1000 pięciolitrowego garnka. Znowu dobraliśmy niewielką próbkę, żeby zbadać większą całość. Ale przypadek zupy jest szczególny. Żeby przekonać się, czy zupa jest odpowiednio słona, musimy ją najpierw dobrze WYMIESZAĆ. Tylko wtedy proporcja soli w łyżce zupy, będzie taka sama jak proporcja w całym garnku - łyżka zupy będzie dobrze reprezentować całą zupę. Kluczową kwestią jest więc REPREZENTATYWNOŚĆ PRÓBY.  Na pewno niektórzy słyszeli już to pojęcie. Zapamiętajmy je na chwilę, chociaż później będziemy musieli z niego zrezygnować. Reprezentatywność można rozumieć na różne sposoby. Często mówi się, że tak jak w przypadku łyżki zupy, próba musi być “miniaturą” populacji. Innymi słowy powinna odtwarzać strukturę i zależności obserwowane w całej zbiorowości. W przypadku badania krwi lub zupy brzmi to sensownie. Zauważmy jednak, że badane substancje są “jednorodne”. Każda porcja zupy czy krwi jest właściwie identyczna (dla uproszczenia, bo specjaliści z pewnością powiedzą, że to nie jest takie proste). A co jeśli badana zbiorowość nie jest i nie może być jednorodna? To problem, z którym bardzo często mierzą się nauki społeczne.
 
-__Zadania 3:__      
+# Zadania 3:      
 
   1. Podaj przykład badania na próbie, które można przeprowadzić w naszym codziennym życiu (np. badanie ilości soli w zupie). 
 
@@ -87,12 +87,12 @@ Przejdźmy do badań społecznych i tzw.  sondaży politycznych. Ich wyniki czę
 
 W powyższej tabeli umieściliśmy procentowy rozkład dwóch cech w populacji pełnoletnich  mieszkańców Polski (dane fikcyjne). Pierwszą cechą jest miejsce zamieszkania (w wierszach), a drugą poparcie dla partii X (w kolumnach). Widzimy, że w miastach mieszka 60% ludności, a na wsi 40%. Łącznie w całej zbiorowości (RAZEM) 35% obywateli zagłosowałoby na partię X, 15% na inną partię, a 50% w ogóle nie wzięłoby udziału w wyborach. Możemy również powiedzieć, że osoby mieszkające w mieście i popierające partię X stanowią 25% ogółu  uprawnionych do głosowania, a także że osoby które mieszkają na wsi i nie biorą udziału w wyborach stanowią 20% populacji. Oczywiście, w normalnych warunkach tego typu informacje są niedostępne dla badacze. My je “odsłaniamy” potrzeby kursu. 
  
-Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię X?
-I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na  (bo 25%/60%=0,4), a na wsi 1 na 4 (bo 10%/40% = 0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
+Zastanówmy się jak z powyższej populacji dobrać próbę reprezentatywną, aby móc trafnie na jej podstawie ocenić, jaki procent mieszkańców Polski popiera partię X.
+I tu pojawia się pierwszy problem. Nie da się bowiem “wymieszać” obywateli tak jak zupy. Zbiorowość nie jest jednorodna. Preferencje wśród mieszkańców miast i wsi nie są identyczne. Nie ma więc gwarancji, że jeśli idąc ulicą w mieście lub na wsi zapytamy dowolnych 10 osób o ich preferencje partyjne to będziemy mogli powiedzieć, jakie jest poparcie w całym kraju. W uproszczeniu w mieście 4 na 10 osób zagłosowałoby na  (bo 25%/60%=0,4), a na wsi 1 na 4 (bo 10%/40% = 0,25). W pierwszym przypadku poparcie będzie zawyżone, a w drugim zaniżone, w stosunku do ogólnokrajowych wyników (35%). Widać więc, że nie każda próba będzie “REPREZENTATYWNA”. I tu zatrzymajmy się znowu przy definicji REPREZENTATYWNOŚCI. Zauważmy, że zależy nam na tym, aby wynik z próby był zgodny z tym co obserwujemy w populacji. Czyli w zasadzie nie musi być tak, że próba jest miniatura populacji. Ważniejsze jest to, że na jej podstawie prawidłowo odgadujemy wyniki dla całej zbiorowości.
 Żeby przeprowadzić nasz polityczny sondaż musimy zrealizować badanie zarówno na wsi jak i w mieście. Każda osoba należąca do populacji musi mieć szansę znalezienia się w próbie. To bardzo ważne. Sposób dobierania próby, zwany schematem, nie może uniemożliwiać nikomu znalezienia się w próbie. 
 W dalszej części kursu pokażemy jak prawidłowo zdefiniować populację, jak błędy w kwestionariuszu mogą wpłynąć na zachowanie respondentów, jak dobrać, a dokładnie wylosować próbę reprezentatywną, 
 
-__Zadania 4:__      
+# Zadania 4:      
 
   1. Czy w przypadku badania populacji mieszkańców Polski, wyniki sondy ulicznej przeprowadzonej w Warszawie, Krakowie lub Poznaniu można uznać za wiarygodne (dające się uogólnić na całą populację)?    
     + Tak
@@ -157,7 +157,7 @@ Przykład ten ilustruje, jak dobór nawet dużej próby z niepoprawnie zdefiniow
 * wieku respondentów (pełnoletni Polacy, osoby w wieku 15 i więcej ukończonych lat itp.)   
 * inne cechy (osoby posiadające obywatelstwo polskie, osoby z wykształceniem wyższym itp.)
 
-__Zadania 5:__      
+# Zadania 5:      
 
   1. Wymień trzy firmy zajmujące się badaniem rynku i opinii społecznej, które w 2014 r. prowadziły badania sondażowe w Polsce. Podaj link do strony, na której firmy te publikują swoje raporty.     
 
@@ -225,7 +225,7 @@ Czasami jednak kontrowersje są nie do uniknięcia. Dotyczy to tzw. [kwestii dra
 
 Problemy związane z budowaniem kwestionariusza i interpretacją otrzymanych na jego podstawie wyników przeanalizujemy na przykładzie zadań.
 
-__Zadania 6:__      
+# Zadania 6:         
 
   1.  Odpowiedz na pytania związane z następującym badaniem: Firma EkstraSondaż przygotowała w 2015 r. raport „Młodzież kpująca substancje psychoaktywne przez internet” dla Państwowego Zakładu Badań nad sieciami komputerowymi. Dane zostały zebrane od respondentów przez Internet. W badaniu wzięli udział uczniowie wybranych szkół w całej Polsce, którzy dostali adres internetowy oraz indywidualne hasło do strony z ankietą. Łącznie próba badawcza liczyła 1050 nastolatków - osób w wieku 13-16 lat. Spośród nich  560  zdeklarowało, że robi zakupy przez internet. W tej grupie 15 osób zadeklarowało, że zdarzyło im się kupić substancje psychotropowe (Pytanie brzmiało: „Czy zdarzyło Ci się kupić przez internet  substancje psychotropowe, w tym leki wpływające na funkcjonowanie mózgu?” ). Wiadomo również, że w badaniu wzięło udział 180 szesnastolatków, z czego 110 robi zakupy przez internet, a 10 deklaruje zakup substancji psychotropowych. 
     a. Czy uważasz, że respondenci generalnie (a wiec przytłaczająca większość z nich) udzielali szczerych  odpowiedzi na pytanie o to, czy kupują substancje psychotropowe - zarówno Ci którzy przyznali się do tego typu zachowań jak i ci którzy ich nie potwierdzili?   
@@ -279,22 +279,22 @@ __Zadania 6:__
               + na partię Przyjaciół Uczciwości;      
     b. Sondaż 2.       
           i. Proszę określić, czy zgadza się Pan/Pani z następującymi stwierdzeniami:      
-              + Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć     
+              + Podatki w Polsce są za wysokie i należy je niezwłocznie obniżyć.     
                     + Tak    
                     + Nie       
-              + ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze     
+              + ZUS jest organizacją drogą, nieefektywną i marnującą publiczne pieniądze.     
                     + Tak    
                     + Nie   
-              + Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu     
+              + Obywatele lepiej będą zarządzać swymi pieniędzmi niż urzędnicy w ich imieniu.     
                     + Tak    
                     + Nie   
-              + każda rodzina powinna móc liczyć na wsparcie ze strony państwa.     
+              + Każda rodzina powinna móc liczyć na wsparcie ze strony państwa.     
                     + Tak     
                     + Nie   
           ii. Czy słyszał(a) Pan(i) o powstaniu nowej partii X, której programem jest m. in. obniżenie podatków, ograniczenie obciążeń biurokratycznych, zmniejszenie liczby urzędników oraz wsparcie dla rodzin?    
               + Tak    
               + Nie     
-          iii. Czy gdyby partia “X” brała udział w najbliższych wyborach do Sejmu to na jaką jedną partię oddałby Pan(i) głos?        
+          iii. Czy gdyby partia X brała udział w najbliższych wyborach do Sejmu to na jaką jedną partię oddałby Pan(i) głos?        
               + oddam pusty/nieważny głos;    
               + na partię X;   
               + na partię Przyjaciół Demokracji;   
@@ -303,7 +303,7 @@ __Zadania 6:__
               + na partię Przyjaciół Środowiska;    
               + na partię Przyjaciół Uczciwości;   
     c. Pytanie do sondaży 1. oraz 2.:     
-          i. Czy w obu sondażach wybrałeś taką samą partię?    
+          i. Czy w obu sondażach wybrałaś/wybrałeś taką samą partię?    
               + Tak
               + Nie     
           ii. Czy twoim zdaniem kolejność pytań w sondażu 1. 2. może mieć wpływ na odpowiedzi respondentów? 
@@ -530,7 +530,7 @@ Dla ponad połowy wszystkich możliwych prób oszacowanie poziomu absencji jest 
 Oczywiście to, że nasz schemat doboru respondentów generuje próby, które przeciętnie się nie mylą, nie rozwiązuje problemu błędów, czyli przeszacowań i niedoszacowań. Zauważmy, że w przypadku losowania prób dwuosobowych i badania problemu absencji wyborczej prawie co druga próba daje wynik poważnie "obciążone", czyli odbigające od rzeczywistych. 
 Dlatego w następnej części naszego odcinka przyjrzymy się sposobom wnioskowania na podstawie próby i sposobom radzenia sobie z błędami oszacowań generowanymi dla danego schematu losowania próby.     
 
-__Zadania 7:__   
+# Zadania 7:    
 
   1. Odpowiedz na pytania związane ze schematem losowania __4__ respondentów w sposób prosty bezzwrotny z omawianej populacji 20 obywateli (załączonej do rozdziału):       
   
@@ -869,7 +869,6 @@ for (i in 1:15) {
 Powyższy wykres ilustruje wpływ wielkości próby na szerokość przedziału ufności. Na osi poziomej zaznaczono liczbę respondentów. Oś pionowa to poziom poparcia dla partii X w próbach generowanych przez kolejne schematy losowania. Przedziały ufności zaznaczono pionowymi czarnymi liniami. Ich granice są zaznaczone poziomymi kreskami poniżej i powyżej których podano skrajne wartości przedziałów. Nad każdym z nich dodatkowo opisano jaki procent prób obejmują. Zielona przerywana linia wyznacza rzeczywisty poziom poparcia dla partii X w populacji. Przykładowo przedział ufności dla pierwszego schematu losowania sześciu respondentów ciągnie się od 17% do 83% poparcia dla partii X i obejmuje 95,6% prób. Przedział ufności dla schematu losowania siedmiu respondentów ciągnie się od 14% do 86% poparcia dla partii X i obejmuje 98% prób itd. Od razu widać, że żaden przedział ufności nie obejmuje równo 95% prób. To dlatego, że wyników otrzymywanych dla poszczególnych schematów nie dało się skumulować dokładnie do takiego odsetka.  Stąd pewne niewielkie odchylenia. Nie maja one jednak większego znaczenia, bo nawet najmniejsza wartość 91,6% oznacza, że prawie wszystkie wyniki z prób mieszą się w wyznaczonym zakresie.  
 Najważniejsze jest dla nas jednak to, że przedziały ufności mają tendencję do zwężania się wraz ze zwiększeniem liczby respondentów. Możemy obserwować pewne fluktuacje, ale ogólny trend jest jednoznaczny. Do tego stopnia, że dla schematów losowania 16 i więcej respondentów generowane przez nie poziomy poparcia dla partii X są już tak bliskie rzeczywistej wartości, że przedziały ufności obejmują wszystkie wyniki. W ostatnim przypadku, losowania 20 respondentów, przedział ufności ma zerową szerokość ponieważ  w istocie jest to badanie na całej populacji, a więc nie jest one obarczone żadną niepewnością.
 
-
 Dowiedzieliśmy się już czym jest odchylenie standardowe, błąd statystyczny, przedział ufności, co zrobić żeby zwiększyć precyzję pomiaru. Nie wyjaśniliśmy tylko jednej kwestii. W jaki sposób obliczyć te wartości na podstawie jednej próby? Zauważmy, że do tej pory wszystkie wskaźniki obliczaliśmy znając dokładnie populację oraz generowane z niej próby. W prawdziwym badaniu nie mamy tego typu danych. Nie znamy rzeczywistej wartości poszukiwanego wskaźnika w populacji, ani wyników ze wszystkich prób generowanych przez dany schemat losowania.    
 Niestety nie mamy tyle miejsca i czasu, żeby wyjaśnić, jak na podstawie jednej próby określa się wielkość błędu statystycznego dla danego schematu losowania. Warto jednak, żebyśmy wiedzieli, że to przede wszystkim zasługa procedur statystyczny. Z pomocą kilku twierdzeń można wnioskować nie tylko o populacji, ale również o rozkładzie wyników w próbach generowanych przez dany schemat losowania. Warto jeszcze na koniec dodać, że aparat statystyczny oraz wnioskowanie statystyczne najlepiej działają na dużych próbach. Dlatego większa próba przekłada się na większą dokładność wyników oraz większy zakres analiz, które można przeprowadzić.
 
@@ -879,7 +878,7 @@ W ten sposób zamknęliśmy rozważania dotyczące błędów oszacowania. Najwa�
   3. Określenie "błąd statystyczny" dotyczy granic przedziału, który zdaniem statystyków "na pewno" (czyli na 95%) obejmuje swym zasięgiem poszukiwany parametr.        
 
 
-__Zadania 8:__      
+# Zadania 8:      
 
   1. Napisz, jak rozumiesz określenie "reprezentatywność próby":     
       ......................................................................................................................................................................................      
@@ -1026,7 +1025,7 @@ Tak oto przekonaliśmy się, że wszystkie wysiłki włożone w przygotowanie ko
 
 Niski poziom realizacji próby, może sie przyczynić do obciążenia wyników. Będą one wtedy systematynie dążyły do innej wartośći niż ta w badanej zbiorowości. Właściwie będą one dazyły do wartości występującej w populacji dostępnych respondentów. W konsekwencji im bardziej dostępni respondenci różnią się od respondentów niedostępnych, tym większe obciążenie wyników. Na koniec kursu zapamiętajmy więc, że prawdziwi sondażyści robią wszystko co w ich mocy, żeby poziom realizacji próby był jak najwyższy. Pamiętajcie o tym, gdy ktoś zaprosi Was do udziału w badaniu sondażowy.
 
-__Zadania 9:__      
+# Zadania 9:      
 
   1. Z wylosowanej wcześniej próby 15 osób (_Zadania 8._) wyłącz wszyskie osoby zamieszkałe w mieście. Podaj liczby porządkowe osób, kótre zostały w próbie.     
       ......................................................................................................................................................................................               
